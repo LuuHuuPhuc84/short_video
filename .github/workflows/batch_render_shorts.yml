@@ -71,7 +71,7 @@ jobs:
     strategy:
       matrix:
         video_id: ${{ fromJson(needs.matrix-discovery.outputs.matrix) }}
-      max-parallel: 10
+      max-parallel: 2
       fail-fast: false
 
     steps:
