@@ -86,7 +86,7 @@ export const BookVideoTNH: React.FC<BookVideoProps> = (props) => {
             durationInFrames={bgDuration}
           >
             <SceneBackground
-              imageSrc={staticFile(scene.image)}
+              imageSrc={scene.image ? staticFile(scene.image) : ""}
               durationInFrames={bgDuration}
               index={index}
               videoDurationInFrames={scene.videoDurationInFrames}
@@ -272,6 +272,10 @@ const SceneBackground: React.FC<{
   videoDurationInFrames?: number;
 }> = ({ imageSrc, durationInFrames, index, videoDurationInFrames }) => {
   const frame = useCurrentFrame();
+
+  if (!imageSrc) {
+    return <AbsoluteFill style={{ backgroundColor: "#0a0f1e" }} />;
+  }
 
   const isVideo =
     imageSrc.toLowerCase().endsWith(".mp4") ||

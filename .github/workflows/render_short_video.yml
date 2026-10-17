@@ -4,6 +4,7 @@ on:
   push:
     branches:
       - 'render-*'
+      - '!render-batch*'
   workflow_dispatch:
     inputs:
       video_id:
