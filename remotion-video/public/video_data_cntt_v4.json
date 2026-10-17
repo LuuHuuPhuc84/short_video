@@ -1,0 +1,64 @@
+{
+  "id": "cntt_v4",
+  "episode": 1,
+  "title": "BẠN ĐANG SỐNG HAY CHỈ LÀ CÁI BÓNG?",
+  "titleHook": "ĐANG SỐNG HAY TỒN TẠI?",
+  "showTitleHook": true,
+  "subtitle": "CHỈ NAM CHO NGƯỜI TRẺ - THIỀN SƯ THÍCH NHẤT HẠNH",
+  "book": "CHỈ NAM CHO NGƯỜI TRẺ",
+  "author": "Thiền sư Thích Nhất Hạnh",
+  "chapter": "",
+  "showHeroHeader": false,
+  "fps": 30,
+  "width": 1080,
+  "height": 1920,
+  "durationInFrames": 854,
+  "audioFile": "voiceover_cntt_v4.wav",
+  "scenes": [
+    {
+      "scene": 1,
+      "tag": "",
+      "text": "Thân bạn ở đây, nhưng tâm trí bạn, đang trôi dạt ở đâu?",
+      "highlight": "TÂM BẠN ĐANG Ở ĐÂU?",
+      "image": "cntt_v4_scene1.jpg",
+      "startFrame": 0,
+      "durationInFrames": 148
+    },
+    {
+      "scene": 2,
+      "tag": "",
+      "text": "Triết gia Camus từng viết: Rất nhiều người, sống như một người đã chết.",
+      "highlight": "SỐNG NHƯ ĐÃ CHẾT?",
+      "image": "cntt_v4_scene2.jpg",
+      "startFrame": 156,
+      "durationInFrames": 173
+    },
+    {
+      "scene": 3,
+      "tag": "",
+      "text": "Đừng chạy trốn nữa. Hãy dùng hơi thở làm cây cầu, đưa tâm về lại với thân.",
+      "highlight": "HƠI THỞ LÀ CÂY CẦU",
+      "image": "cntt_v4_scene3.jpg",
+      "startFrame": 338,
+      "durationInFrames": 192
+    },
+    {
+      "scene": 4,
+      "tag": "",
+      "text": "Thở vào, biết mình còn sống; thở ra, mỉm cười buông lỏng hai vai.",
+      "highlight": "THỞ VÀO • MỈM CƯỜI",
+      "image": "cntt_v4_scene4.jpg",
+      "startFrame": 539,
+      "durationInFrames": 171
+    },
+    {
+      "scene": 5,
+      "tag": "",
+      "text": "Ngay lúc này, bạn đã thở thật sâu một hơi chưa?",
+      "highlight": "BẠN ĐÃ THỞ CHƯA?",
+      "image": "cntt_v4_scene5.jpg",
+      "startFrame": 718,
+      "durationInFrames": 128
+    }
+  ]
+}
