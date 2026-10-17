@@ -103,6 +103,7 @@ jobs:
 
       - name: ☁️ Tự động Upload sang Google Drive
         if: success()
+        continue-on-error: true
         env:
           GDRIVE_SA_KEY: ${{ secrets.GDRIVE_SA_KEY }}
           GDRIVE_FOLDER_ID: ${{ secrets.GDRIVE_FOLDER_ID }}

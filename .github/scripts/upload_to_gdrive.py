@@ -30,35 +30,41 @@ def upload_video_to_gdrive(file_path, folder_id):
         service_account_info, scopes=scopes
     )
 
-    drive_service = build('drive', 'v3', credentials=creds)
+    try:
+        drive_service = build('drive', 'v3', credentials=creds)
 
-    file_metadata = {
-        'name': path.name,
-        'parents': [folder_id]
-    }
+        file_metadata = {
+            'name': path.name,
+            'parents': [folder_id]
+        }
 
-    media = MediaFileUpload(
-        str(path),
-        mimetype='video/mp4',
-        resumable=True
-    )
+        media = MediaFileUpload(
+            str(path),
+            mimetype='video/mp4',
+            resumable=True
+        )
 
-    print(f"☁️ Đang tải {path.name} ({round(path.stat().st_size / 1024 / 1024, 2)} MB) lên Google Drive...")
-    request = drive_service.files.create(
-        body=file_metadata,
-        media_body=media,
-        fields='id, webViewLink'
-    )
+        print(f"☁️ Đang tải {path.name} ({round(path.stat().st_size / 1024 / 1024, 2)} MB) lên Google Drive...")
+        request = drive_service.files().create(
+            body=file_metadata,
+            media_body=media,
+            fields='id, webViewLink',
+            supportsAllDrives=True
+        )
 
-    response = None
-    while response is None:
-        status, response = request.next_chunk()
-        if status:
-            print(f"   Đang tải: {int(status.progress() * 100)}%")
+        response = None
+        while response is None:
+            status, response = request.next_chunk()
+            if status:
+                print(f"   Đang tải: {int(status.progress() * 100)}%")
 
-    print(f"✅ TẢI LÊN GOOGLE DRIVE THÀNH CÔNG!")
-    print(f"📁 File ID: {response.get('id')}")
-    print(f"🔗 Xem trên Drive: {response.get('webViewLink')}")
+        print(f"✅ TẢI LÊN GOOGLE DRIVE THÀNH CÔNG!")
+        print(f"📁 File ID: {response.get('id')}")
+        print(f"🔗 Xem trên Drive: {response.get('webViewLink')}")
+    except Exception as e:
+        print(f"❌ Lỗi khi tải file lên Google Drive: {e}")
+        print("💡 Gợi ý: Hãy kiểm tra xem Service Account đã được Share quyền 'Editor' vào thư mục Google Drive chưa, và Google Drive API đã được Enable trong Google Cloud chưa.")
+        sys.exit(1)
 
 if __name__ == "__main__":
     if len(sys.argv) < 3:
