@@ -4,7 +4,7 @@
 
 # 1. Pipeline & Scripts nội bộ (không đẩy lên Git)
 pipeline/
-scripts/
+/scripts/
 avatar/
 downloads/
 output/
