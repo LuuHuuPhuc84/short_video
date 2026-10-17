@@ -1,0 +1,50 @@
+# =======================================================
+# BẢO VỆ DỮ LIỆU LOCAL & BẢO MẬT CHO REPO PUBLIC
+# =======================================================
+
+# 1. Pipeline & Scripts nội bộ (không đẩy lên Git)
+pipeline/
+scripts/
+avatar/
+downloads/
+output/
+.gemini/
+
+# 2. Toàn bộ sách, ghi chú, tài liệu nội bộ
+*.mobi
+*.epub
+*.pdf
+*.md
+*.txt
+!README.md
+
+# 3. Thông tin tài khoản & Token bí mật
+pipeline/token.json
+pipeline/client_secrets.json
+pipeline/sessionid.txt
+*.token
+*.secret
+*.cookie
+.env
+
+# 4. Media & Assets của từng video trong remotion-video/public
+# (Chỉ đưa lên tạm thời khi render bằng lệnh force-add, xong là dọn sạch)
+remotion-video/public/*.mp4
+remotion-video/public/*.wav
+remotion-video/public/video_data_*.json
+remotion-video/public/bg_*.png
+remotion-video/public/ch*.jpg
+remotion-video/public/scene*.jpg
+remotion-video/public/bhca*.mp4
+remotion-video/public/broll*.mp4
+
+# 5. Node, build & cache
+node_modules/
+remotion-video/node_modules/
+remotion-video/build/
+__pycache__/
+*.pyc
+.DS_Store
+Thumbs.db
+.vscode/
+.idea/
