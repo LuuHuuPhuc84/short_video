@@ -1,0 +1,138 @@
+name: Batch Render Shorts (Parallel Matrix)
+
+on:
+  push:
+    branches:
+      - 'render-batch*'
+  workflow_dispatch:
+    inputs:
+      video_ids:
+        description: 'Danh sách video_id cách nhau bằng dấu phẩy (vd: cntt_v1,cntt_v2) hoặc để trống để tự quét'
+        required: false
+        default: ''
+
+permissions:
+  contents: write
+
+jobs:
+  matrix-discovery:
+    name: 🔍 Tìm kiếm danh sách Video cần Render
+    runs-on: ubuntu-22.04
+    outputs:
+      matrix: ${{ steps.set-matrix.outputs.matrix }}
+      count: ${{ steps.set-matrix.outputs.count }}
+    steps:
+      - name: 📥 Checkout repository
+        uses: actions/checkout@v4
+
+      - name: 📋 Quét các file video_data_*.json
+        id: set-matrix
+        run: |
+          set +e
+          if [ -n "${{ github.event.inputs.video_ids }}" ]; then
+            IFS=',' read -ra VIDS <<< "${{ github.event.inputs.video_ids }}"
+            JSON_ARR="["
+            for v in "${VIDS[@]}"; do
+              v_clean=$(echo "$v" | xargs)
+              if [ -n "$v_clean" ]; then
+                JSON_ARR="$JSON_ARR\"$v_clean\","
+              fi
+            done
+            JSON_ARR="${JSON_ARR%,}]"
+          else
+            cd remotion-video/public
+            FILES=(video_data_*.json)
+            JSON_ARR="["
+            for f in "${FILES[@]}"; do
+              if [ -f "$f" ]; then
+                vid="${f#video_data_}"
+                vid="${vid%.json}"
+                JSON_ARR="$JSON_ARR\"$vid\","
+              fi
+            done
+            JSON_ARR="${JSON_ARR%,}]"
+            cd ../..
+          fi
+
+          if [ "$JSON_ARR" = "[]" ] || [ -z "$JSON_ARR" ]; then
+            echo "❌ Không tìm thấy file metadata video_data_*.json nào!"
+            exit 1
+          fi
+
+          echo "matrix=$JSON_ARR" >> $GITHUB_OUTPUT
+          COUNT=$(echo "$JSON_ARR" | jq '. | length')
+          echo "count=$COUNT" >> $GITHUB_OUTPUT
+          echo "🚀 Phát hiện $COUNT videos cần render song song: $JSON_ARR"
+
+  render:
+    name: 🎬 Render ${{ matrix.video_id }}
+    needs: matrix-discovery
+    runs-on: ubuntu-22.04
+    strategy:
+      matrix:
+        video_id: ${{ fromJson(needs.matrix-discovery.outputs.matrix) }}
+      max-parallel: 10
+      fail-fast: false
+
+    steps:
+      - name: 📥 Checkout repository
+        uses: actions/checkout@v4
+
+      - name: ⚙️ Setup Node.js 20
+        uses: actions/setup-node@v4
+        with:
+          node-version: 20
+          cache: 'npm'
+          cache-dependency-path: remotion-video/package-lock.json
+
+      - name: 📦 Cài đặt thư viện hệ thống cho Chromium & FFmpeg
+        run: |
+          sudo apt-get update
+          sudo apt-get install -y ffmpeg libnss3 libatk1.0-0 libatk-bridge2.0-0 libcups2 libdrm2 libxkbcommon0 libxcomposite1 libxdamage1 libxrandr2 libgbm1 fonts-noto-cjk
+          sudo apt-get install -y libasound2 || sudo apt-get install -y libasound2t64
+
+      - name: 📦 Cài đặt Dependencies Remotion
+        working-directory: remotion-video
+        run: npm ci
+
+      - name: 🎥 Render Remotion Video (Full HD 1080x1920)
+        working-directory: remotion-video
+        run: |
+          set +e
+          VID="${{ matrix.video_id }}"
+          mkdir -p output/$VID
+          
+          PROPS_FILE="$(pwd)/public/video_data_${VID}.json"
+          if [ ! -f "$PROPS_FILE" ]; then
+            PROPS_FILE="$(pwd)/public/${VID}.json"
+          fi
+          echo "🔍 PROPS_FILE: $PROPS_FILE"
+
+          OUT_FILE="$(pwd)/output/$VID/video_${VID}.mp4"
+          echo "🚀 Đang render video: $OUT_FILE"
+
+          npx remotion render src/index.ts TiktokShort "$OUT_FILE" --props="$PROPS_FILE" --log=verbose 2>&1 | tee render.log
+          RENDER_EXIT=${PIPESTATUS[0]}
+          if [ $RENDER_EXIT -ne 0 ]; then
+            echo "❌ Remotion render thất bại (Exit code: $RENDER_EXIT). Chi tiết:"
+            cat render.log
+            exit $RENDER_EXIT
+          fi
+
+      - name: ☁️ Tự động Upload sang Google Drive (Folder riêng + file mô tả)
+        env:
+          GDRIVE_CLIENT_ID: ${{ secrets.GDRIVE_CLIENT_ID }}
+          GDRIVE_CLIENT_SECRET: ${{ secrets.GDRIVE_CLIENT_SECRET }}
+          GDRIVE_REFRESH_TOKEN: ${{ secrets.GDRIVE_REFRESH_TOKEN }}
+          GDRIVE_SA_KEY: ${{ secrets.GDRIVE_SA_KEY }}
+          GDRIVE_FOLDER_ID: ${{ secrets.GDRIVE_FOLDER_ID }}
+        run: |
+          if [ -n "$GDRIVE_FOLDER_ID" ] && ([ -n "$GDRIVE_REFRESH_TOKEN" ] || [ -n "$GDRIVE_SA_KEY" ]); then
+            python3 -m pip install --quiet google-api-python-client google-auth
+            VID="${{ matrix.video_id }}"
+            VIDEO_PATH="remotion-video/output/$VID/video_$VID.mp4"
+            python3 .github/scripts/upload_to_gdrive.py "$VIDEO_PATH" "$GDRIVE_FOLDER_ID"
+          else
+            echo "❌ Lỗi: Chưa cấu hình GDRIVE Secrets!"
+            exit 1
+          fi
