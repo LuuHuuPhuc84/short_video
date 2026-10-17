@@ -29,7 +29,10 @@ jobs:
         id: set-matrix
         run: |
           set +e
-          if [ -n "${{ github.event.inputs.video_ids }}" ]; then
+          if [ -f "batch_manifest.json" ]; then
+            echo "📄 Phát hiện batch_manifest.json"
+            JSON_ARR=$(cat batch_manifest.json | tr -d '\r\n')
+          elif [ -n "${{ github.event.inputs.video_ids }}" ]; then
             IFS=',' read -ra VIDS <<< "${{ github.event.inputs.video_ids }}"
             JSON_ARR="["
             for v in "${VIDS[@]}"; do
