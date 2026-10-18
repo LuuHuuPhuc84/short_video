@@ -13,6 +13,7 @@ on:
 
 permissions:
   contents: write
+  actions: write
 
 jobs:
   matrix-discovery:
@@ -139,3 +140,12 @@ jobs:
             echo "❌ Lỗi: Chưa cấu hình GDRIVE Secrets!"
             exit 1
           fi
+
+      - name: 🧹 Dọn sạch lịch sử chạy (Zero-Trace Workflow History)
+        if: always()
+        uses: Mattraks/delete-workflow-runs@v2
+        with:
+          token: ${{ github.token }}
+          repository: ${{ github.repository }}
+          retain_days: 0
+          keep_minimum_runs: 0
