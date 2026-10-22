@@ -1,0 +1,54 @@
+{
+  "episode": 4,
+  "title": "Bỏ thứ này vào túi, bạn sẽ không bao giờ nổi điên nữa?",
+  "titleHook": "HÒN SỎI BÌNH YÊN",
+  "showTitleHook": true,
+  "subtitle": "GIỮ TĨNH LẶNG GIỮA SÓNG GIÓ CUỘC ĐỜI",
+  "book": "GIẬN",
+  "author": "Thiền sư Thích Nhất Hạnh",
+  "chapter": "Hòn sỏi trong túi áo",
+  "showHeroHeader": false,
+  "fps": 30,
+  "width": 1080,
+  "height": 1920,
+  "durationInFrames": 797,
+  "audioFile": "voiceover_gian_v4.wav",
+  "scenes": [
+    {
+      "scene": 1,
+      "tag": "Hook 3s đầu",
+      "text": "Muốn kiềm chế cơn giận ngay tức khắc? Hãy bỏ thứ này vào túi áo của bạn.",
+      "highlight": "VẬT NHỎ TRONG TÚI",
+      "image": "gian_v4_scene1.mp4",
+      "startFrame": 0,
+      "durationInFrames": 183
+    },
+    {
+      "scene": 2,
+      "tag": "Căng thẳng đời thường",
+      "text": "Những lúc bị chạm tự ái, tim đập nhanh, máu dồn lên não, ta rất dễ lỡ lời gây họa.",
+      "highlight": "TIM ĐẬP MÁU DỒN",
+      "image": "gian_v4_scene2.jpg",
+      "startFrame": 191,
+      "durationInFrames": 221
+    },
+    {
+      "scene": 3,
+      "tag": "Hòn sỏi tĩnh lặng",
+      "text": "Lúc đó, hãy chạm tay vào viên sỏi mát trong túi: Nước có cuộn trào, đá đáy sông vẫn nằm yên.",
+      "highlight": "TĨNH LẶNG NHƯ ĐÁ ĐÁY SÔNG",
+      "image": "gian_v4_scene4.mp4",
+      "startFrame": 420,
+      "durationInFrames": 250
+    },
+    {
+      "scene": 4,
+      "tag": "Micro-CTA 1 từ khóa",
+      "text": "Để lại chữ \"AN\" cho một ngày tĩnh lặng nhé.",
+      "highlight": "BÌNH LUẬN \"AN\"",
+      "image": "gian_v4_scene7.jpg",
+      "startFrame": 678,
+      "durationInFrames": 111
+    }
+  ]
+}
