@@ -1,0 +1,54 @@
+{
+  "episode": 5,
+  "title": "Nghệ thuật hạ nhiệt cơn giận với người thương",
+  "titleHook": "HẸN TỐI THỨ SÁU",
+  "showTitleHook": true,
+  "subtitle": "LÙI MỘT BƯỚC ĐỂ BẢO VỆ TÌNH THÂN",
+  "book": "GIẬN",
+  "author": "Thiền sư Thích Nhất Hạnh",
+  "chapter": "Hẹn tối thứ sáu",
+  "showHeroHeader": false,
+  "fps": 30,
+  "width": 1080,
+  "height": 1920,
+  "durationInFrames": 811,
+  "audioFile": "voiceover_gian_v5.wav",
+  "scenes": [
+    {
+      "scene": 1,
+      "tag": "Hook 3s đầu",
+      "text": "Khi người thương làm bạn nổi điên, sai lầm lớn nhất là trút giận ngay tại chỗ.",
+      "highlight": "ĐỪNG TRÚT GIẬN NGAY TẠI CHỖ",
+      "image": "gian_v5_scene1.mp4",
+      "startFrame": 0,
+      "durationInFrames": 202
+    },
+    {
+      "scene": 2,
+      "tag": "Vết đinh trong thân cây",
+      "text": "Lời cay độc như đinh đóng vào cây, dù có nhổ ra thì vết sẹo vẫn ở lại mãi mãi.",
+      "highlight": "VẾT SẸO VĨNH VIỄN",
+      "image": "gian_v5_scene2.jpg",
+      "startFrame": 210,
+      "durationInFrames": 220
+    },
+    {
+      "scene": 3,
+      "tag": "Hiệp ước tối thứ sáu",
+      "text": "Trong sách Giận, Thiền sư khuyên: Đừng cãi nhau ngay, hãy lùi lại và nhẹ nhàng hẹn tối thứ sáu.",
+      "highlight": "HẸN NHAU TỐI THỨ SÁU",
+      "image": "gian_v5_scene4.mp4",
+      "startFrame": 439,
+      "durationInFrames": 244
+    },
+    {
+      "scene": 4,
+      "tag": "Micro-CTA 1 từ khóa",
+      "text": "Bình luận \"SẴN SÀNG\" nếu bạn làm được điều này.",
+      "highlight": "BÌNH LUẬN \"SẴN SÀNG\"",
+      "image": "gian_v5_scene7.jpg",
+      "startFrame": 691,
+      "durationInFrames": 111
+    }
+  ]
+}
