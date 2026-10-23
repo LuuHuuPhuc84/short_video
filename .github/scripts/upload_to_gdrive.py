@@ -121,6 +121,24 @@ def upload_video_to_gdrive(file_path, parent_folder_id):
         print(f"========================================================")
         subfolder_id = create_drive_folder(drive_service, video_id, parent_folder_id)
 
+        # 1.5 Chuẩn hóa & Đổi tên các file cũ để giải phóng 100% tên file chính thức (tránh sinh đuôi (1), (2))
+        import datetime
+        try:
+            q_old = f"'{subfolder_id}' in parents and trashed=false"
+            res_old = drive_service.files().list(q=q_old, fields="files(id, name, createdTime)").execute()
+            for old_f in res_old.get("files", []):
+                oname = old_f.get("name", "")
+                if oname == path.name or oname.startswith(f"{path.stem} (") or oname == "info.json" or oname.startswith("info ("):
+                    c_time = old_f.get("createdTime", "").replace(":", "").replace("-", "")[:15] or datetime.datetime.now().strftime("%Y%m%d_%H%M%S")
+                    if oname.endswith(".mp4"):
+                        new_oname = f"{path.stem}_old_{c_time}.mp4"
+                    else:
+                        new_oname = f"info_old_{c_time}.json"
+                    drive_service.files().update(fileId=old_f["id"], body={"name": new_oname}).execute()
+                    print(f"📦 Đã đổi tên bản cũ trên Drive: {oname} -> {new_oname}")
+        except Exception as e:
+            print(f"⚠️ Cảnh báo kiểm tra file cũ Drive: {e}")
+
         # 2. Upload video MP4 vào thư mục riêng
         video_response = upload_file_to_folder(drive_service, file_path, subfolder_id, 'video/mp4')
         print(f"✅ VIDEO ĐÃ LÊN GOOGLE DRIVE THÀNH CÔNG!")
