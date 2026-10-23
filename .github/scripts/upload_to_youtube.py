@@ -51,6 +51,7 @@ def upload_short_to_youtube(video_path, video_id):
     # Tìm thông tin metadata (ưu tiên info.json, sau đó là video_data_*.json)
     info_file = None
     possible_infos = [
+        Path("output") / video_id / "info.json",
         vpath.parent / "info.json",
         Path("remotion-video/public") / f"info_{video_id}.json",
         Path("pipeline") / f"script_{video_id}.json",
@@ -72,11 +73,39 @@ def upload_short_to_youtube(video_path, video_id):
             title = d.get("title") or title
             description = d.get("description") or description
             tags = d.get("tags") or tags
+            schedule_str = d.get("schedule")
         except Exception:
-            pass
+            schedule_str = None
 
     if "#shorts" not in title.lower():
         title = f"{title} #shorts"
+
+    status_dict = {
+        "privacyStatus": "private",
+        "selfDeclaredMadeForKids": False
+    }
+
+    publish_log = "PRIVATE (Bản nháp / Draft)"
+    if schedule_str:
+        try:
+            import datetime
+            s = str(schedule_str).strip()
+            now = datetime.datetime.now()
+            if " " in s:
+                schedule_dt = datetime.datetime.strptime(s, "%Y-%m-%d %H:%M")
+            else:
+                time_part = datetime.datetime.strptime(s, "%H:%M").time()
+                schedule_dt = datetime.datetime.combine(now.date(), time_part)
+                if schedule_dt <= now:
+                    schedule_dt += datetime.timedelta(days=1)
+            tz_vn = datetime.timezone(datetime.timedelta(hours=7))
+            schedule_dt = schedule_dt.replace(tzinfo=tz_vn)
+            utc_dt = schedule_dt.astimezone(datetime.timezone.utc)
+            iso_utc = utc_dt.strftime("%Y-%m-%dT%H:%M:%SZ")
+            status_dict["publishAt"] = iso_utc
+            publish_log = f"SCHEDULED (Hẹn giờ phát sóng lúc {schedule_str} VN -> {iso_utc})"
+        except Exception as e:
+            print(f"⚠️ Lỗi định dạng schedule '{schedule_str}': {e}. Giữ chế độ private.")
 
     body = {
         "snippet": {
@@ -87,16 +116,13 @@ def upload_short_to_youtube(video_path, video_id):
             "defaultLanguage": "vi",
             "defaultAudioLanguage": "vi"
         },
-        "status": {
-            "privacyStatus": "private",  # Chế độ Nháp / Riêng tư (Draft)
-            "selfDeclaredMadeForKids": False
-        }
+        "status": status_dict
     }
 
     print(f"\n========================================================")
     print(f"🚀 BẮT ĐẦU TẢI YOUTUBE SHORTS TỪ GITHUB ACTIONS:")
     print(f"📌 Tiêu đề: {title}")
-    print(f"📢 Chế độ: PRIVATE (Bản nháp / Draft)")
+    print(f"📢 Chế độ: {publish_log}")
     print(f"📁 Dung lượng: {round(vpath.stat().st_size / (1024*1024), 2)} MB")
     print(f"========================================================")
 
