@@ -15,9 +15,9 @@ SCOPES = [
 ]
 
 def get_youtube_service():
-    client_id = os.environ.get("YOUTUBE_CLIENT_ID")
-    client_secret = os.environ.get("YOUTUBE_CLIENT_SECRET")
-    refresh_token = os.environ.get("YOUTUBE_REFRESH_TOKEN")
+    client_id = (os.environ.get("YOUTUBE_CLIENT_ID") or "").strip()
+    client_secret = (os.environ.get("YOUTUBE_CLIENT_SECRET") or "").strip()
+    refresh_token = (os.environ.get("YOUTUBE_REFRESH_TOKEN") or "").strip()
 
     if not (client_id and client_secret and refresh_token):
         print("❌ Lỗi: Thiếu YOUTUBE Secrets (YOUTUBE_CLIENT_ID, YOUTUBE_CLIENT_SECRET, YOUTUBE_REFRESH_TOKEN).")
