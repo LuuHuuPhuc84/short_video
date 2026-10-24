@@ -19,28 +19,34 @@ def get_drive_credentials():
 
     if client_id and client_secret and refresh_token:
         print("🔑 Sử dụng Google OAuth 2.0 Credentials (Tài khoản Google cá nhân)...")
-        creds = Credentials(
-            None,
-            refresh_token=refresh_token,
-            token_uri="https://oauth2.googleapis.com/token",
-            client_id=client_id,
-            client_secret=client_secret,
-            scopes=['https://www.googleapis.com/auth/drive']
-        )
-        creds.refresh(Request())
-        return creds
+        try:
+            creds = Credentials(
+                None,
+                refresh_token=refresh_token,
+                token_uri="https://oauth2.googleapis.com/token",
+                client_id=client_id,
+                client_secret=client_secret,
+                scopes=['https://www.googleapis.com/auth/drive']
+            )
+            creds.refresh(Request())
+            return creds
+        except Exception as e:
+            print(f"⚠️ Lỗi refresh Google Drive token: {e}")
 
     # 2. Dự phòng: Service Account Key (Dành cho Google Workspace Shared Drive)
     sa_json = os.environ.get("GDRIVE_SA_KEY")
     if sa_json:
-        print("🔑 Sử dụng Google Service Account Key...")
-        service_account_info = json.loads(sa_json)
-        return service_account.Credentials.from_service_account_info(
-            service_account_info, scopes=['https://www.googleapis.com/auth/drive']
-        )
+        try:
+            print("🔑 Sử dụng Google Service Account Key...")
+            service_account_info = json.loads(sa_json)
+            return service_account.Credentials.from_service_account_info(
+                service_account_info, scopes=['https://www.googleapis.com/auth/drive']
+            )
+        except Exception as e:
+            print(f"⚠️ Lỗi Service Account: {e}")
 
-    print("❌ Không tìm thấy thông tin xác thực Google Drive (cần GDRIVE_CLIENT_ID/GDRIVE_CLIENT_SECRET/GDRIVE_REFRESH_TOKEN hoặc GDRIVE_SA_KEY).")
-    sys.exit(1)
+    print("⚠️ Không thể kết nối Google Drive (Token hết hạn hoặc chưa cấu hình).")
+    return None
 
 def create_drive_folder(drive_service, folder_name, parent_id):
     """Tạo hoặc lấy subfolder trên Google Drive theo tên."""
@@ -111,6 +117,9 @@ def upload_video_to_gdrive(file_path, parent_folder_id):
 
     video_id = path.parent.name
     creds = get_drive_credentials()
+    if not creds:
+        print("⚠️ Bỏ qua upload Google Drive do chưa có token hợp lệ. Video đã render thành công!")
+        return
 
     try:
         drive_service = build('drive', 'v3', credentials=creds)

@@ -101,10 +101,9 @@ jobs:
             python3 -m pip install --quiet google-api-python-client google-auth
             VID="${{ steps.parse_id.outputs.video_id }}"
             VIDEO_PATH="remotion-video/output/$VID/video_$VID.mp4"
-            python3 .github/scripts/upload_to_gdrive.py "$VIDEO_PATH" "$GDRIVE_FOLDER_ID"
+            python3 .github/scripts/upload_to_gdrive.py "$VIDEO_PATH" "$GDRIVE_FOLDER_ID" || echo "⚠️ Bỏ qua upload Drive do token lỗi."
           else
-            echo "❌ Lỗi: Chưa cấu hình GDRIVE Secrets (GDRIVE_CLIENT_ID, GDRIVE_CLIENT_SECRET, GDRIVE_REFRESH_TOKEN, GDRIVE_FOLDER_ID)!"
-            exit 1
+            echo "ℹ️ Bỏ qua upload Google Drive."
           fi
 
       - name: 📺 Tự động Upload lên YouTube Shorts (Chế độ Nháp / Draft)
