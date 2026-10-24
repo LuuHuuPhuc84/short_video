@@ -1,0 +1,386 @@
+import os
+import sys
+import json
+import time
+import shutil
+import io
+import urllib.request
+import urllib.error
+import subprocess
+from pathlib import Path
+
+sys.stdout.reconfigure(encoding='utf-8', line_buffering=True)
+
+BASE_DIR = Path(__file__).resolve().parent.parent
+REMOTION_DIR = BASE_DIR / "remotion-video"
+PUBLIC_DIR = REMOTION_DIR / "public"
+OUTPUT_DIR = BASE_DIR / "output"
+TOKEN_FILE = BASE_DIR / "pipeline" / "gdrive_token.json"
+SHORT_VIDEO_FOLDER_ID = "1FUTzv6wXSe6o-0q_7Fuy-al7b9CsZ2qx"
+
+REPO_OWNER = "LuuHuuPhuc84"
+REPO_NAME = "short_video"
+API_BASE = f"https://api.github.com/repos/{REPO_OWNER}/{REPO_NAME}"
+
+def run_git(cmd_list, check=True):
+    res = subprocess.run(["git"] + cmd_list, cwd=str(BASE_DIR), capture_output=True, text=True, encoding="utf-8")
+    if check and res.returncode != 0:
+        print(f"❌ Git error: {res.stderr.strip()}")
+        raise RuntimeError(res.stderr.strip())
+    return res.stdout.strip()
+
+def get_json_api(url):
+    headers = {
+        "User-Agent": "Antigravity-Render-Client",
+        "Accept": "application/vnd.github.v3+json"
+    }
+    gh_token = os.environ.get("GITHUB_TOKEN")
+    if not gh_token:
+        gh_token_file = BASE_DIR / "pipeline" / "github_token.txt"
+        if gh_token_file.exists():
+            gh_token = gh_token_file.read_text().strip()
+    if gh_token:
+        headers["Authorization"] = f"Bearer {gh_token}"
+    req = urllib.request.Request(url, headers=headers)
+    try:
+        with urllib.request.urlopen(req) as resp:
+            return json.loads(resp.read().decode("utf-8"))
+    except Exception:
+        return None
+
+def download_video_from_drive(video_id, target_path):
+    """Tải video trực tiếp từ Google Drive về máy local nếu có token."""
+    if not TOKEN_FILE.exists():
+        return False
+    try:
+        from google.oauth2.credentials import Credentials
+        from google.auth.transport.requests import Request
+        from googleapiclient.discovery import build
+        from googleapiclient.http import MediaIoBaseDownload
+
+        with open(TOKEN_FILE, "r", encoding="utf-8") as f:
+            token_data = json.load(f)
+
+        creds = Credentials(
+            None,
+            refresh_token=token_data.get("refresh_token"),
+            token_uri="https://oauth2.googleapis.com/token",
+            client_id=token_data.get("client_id"),
+            client_secret=token_data.get("client_secret"),
+            scopes=['https://www.googleapis.com/auth/drive']
+        )
+        creds.refresh(Request())
+        service = build('drive', 'v3', credentials=creds)
+
+        # Tìm folder video_id trong SHORT_VIDEO_FOLDER_ID
+        q_folder = f"name='{video_id}' and '{SHORT_VIDEO_FOLDER_ID}' in parents and mimeType='application/vnd.google-apps.folder' and trashed=false"
+        res_folder = service.files().list(q=q_folder, fields="files(id, name)").execute()
+        folders = res_folder.get("files", [])
+        if not folders:
+            # Fallback nếu là folder độc lập
+            q_folder_fb = f"name='{video_id}' and mimeType='application/vnd.google-apps.folder' and trashed=false"
+            res_fb = service.files().list(q=q_folder_fb, fields="files(id, name)").execute()
+            folders = res_fb.get("files", [])
+            if not folders:
+                return False
+
+        folder_id = folders[0]["id"]
+
+        # Tìm file mp4 trong folder, ưu tiên bản video_{video_id}.mp4 chuẩn
+        q_file = f"'{folder_id}' in parents and name = 'video_{video_id}.mp4' and trashed=false"
+        res_files = service.files().list(
+            q=q_file,
+            fields="files(id, name, size, createdTime)",
+            orderBy="createdTime desc"
+        ).execute()
+        files = res_files.get("files", [])
+        if not files:
+            # Fallback nếu tên khác video_{video_id}.mp4
+            q_file_fb = f"'{folder_id}' in parents and name contains '.mp4' and trashed=false"
+            res_fb = service.files().list(q=q_file_fb, fields="files(id, name, size, createdTime)", orderBy="createdTime desc").execute()
+            files = res_fb.get("files", [])
+        if not files:
+            return False
+
+        # Luôn lấy file render mới nhất
+        file_info = files[0]
+        file_id = file_info["id"]
+        size_mb = round(int(file_info.get("size", 0)) / (1024*1024), 2)
+
+        print(f"⬇️ Đang tải video mới nhất từ Google Drive về máy ({file_info['name']} - {size_mb} MB)...")
+        request = service.files().get_media(fileId=file_id)
+        target_path.parent.mkdir(parents=True, exist_ok=True)
+        with open(target_path, "wb") as f:
+            downloader = MediaIoBaseDownload(f, request, chunksize=1024*1024*5)
+            done = False
+            while not done:
+                status, done = downloader.next_chunk()
+                if status:
+                    print(f"   Tiến độ tải về: {int(status.progress() * 100)}%")
+
+        print(f"✅ ĐÃ ĐỒNG BỘ VIDEO VỀ MÁY LOCAL: {target_path}")
+
+        # Dọn dẹp các bản trùng lặp cũ trên Drive (nếu có file cũ sinh đuôi (1))
+        if len(files) > 1:
+            for old_f in files[1:]:
+                try:
+                    service.files().delete(fileId=old_f["id"]).execute()
+                    print(f"   🧹 Đã dọn dẹp bản cũ trùng lặp trên Drive: {old_f['name']}")
+                except:
+                    pass
+            # Đổi tên file mới nhất về chuẩn không có đuôi (1)
+            if "(1)" in file_info["name"]:
+                try:
+                    clean_name = f"video_{video_id}.mp4"
+                    service.files().update(fileId=file_id, body={"name": clean_name}).execute()
+                    print(f"   🏷️ Đã đổi tên chuẩn trên Drive: {clean_name}")
+                except:
+                    pass
+        return True
+    except Exception as e:
+        print(f"ℹ️ Không thể tự động tải từ Drive (sẽ dùng bản trực tiếp trên Cloud): {e}")
+        return False
+
+def check_video_ready_on_drive(video_id):
+    if not TOKEN_FILE.exists():
+        return None
+    try:
+        from google.oauth2.credentials import Credentials
+        from google.auth.transport.requests import Request
+        from googleapiclient.discovery import build
+
+        with open(TOKEN_FILE, "r", encoding="utf-8") as f:
+            token_data = json.load(f)
+
+        creds = Credentials(
+            None,
+            refresh_token=token_data.get("refresh_token"),
+            token_uri="https://oauth2.googleapis.com/token",
+            client_id=token_data.get("client_id"),
+            client_secret=token_data.get("client_secret"),
+            scopes=['https://www.googleapis.com/auth/drive']
+        )
+        creds.refresh(Request())
+        service = build('drive', 'v3', credentials=creds)
+
+        # Tìm folder video_id trong SHORT_VIDEO_FOLDER_ID
+        q_folder = f"name='{video_id}' and '{SHORT_VIDEO_FOLDER_ID}' in parents and mimeType='application/vnd.google-apps.folder' and trashed=false"
+        res_folder = service.files().list(q=q_folder, fields="files(id, name)").execute()
+        folders = res_folder.get("files", [])
+        if not folders:
+            q_folder_fb = f"name='{video_id}' and mimeType='application/vnd.google-apps.folder' and trashed=false"
+            res_fb = service.files().list(q=q_folder_fb, fields="files(id, name)").execute()
+            folders = res_fb.get("files", [])
+            if not folders:
+                return None
+
+        folder_id = folders[0]["id"]
+        # Chỉ kiểm tra đúng file video_{video_id}.mp4 chính thức (các bản cũ đã được đổi tên thành _old_*.mp4)
+        q_file = f"'{folder_id}' in parents and name = 'video_{video_id}.mp4' and trashed=false"
+        res_files = service.files().list(q=q_file, fields="files(id, name, size)").execute()
+        files = res_files.get("files", [])
+        if files and int(files[0].get("size", 0)) > 1024*1024:
+            return files[0]
+        return None
+    except Exception:
+        return None
+
+def render_short_video_via_github(video_id, auto_cleanup=True, download_local=False):
+    print("========================================================")
+    print(f"🎬 BẮT ĐẦU RENDER TRÊN GITHUB ACTIONS: {video_id}")
+    print("☁️ Quy chuẩn: Render Cloud -> Đẩy Google Drive (Folder riêng + info.json)")
+    print("✨ Bảo mật: Không lưu MP4/Release trên GitHub, tự động dọn sạch Git")
+    print("========================================================")
+
+    # 0.0 QUY CHUẨN: Kiểm tra & Cảnh báo sớm thời hạn YouTube Token (Token Guard)
+    try:
+        from token_guard import ensure_token_health
+        ensure_token_health(auto_refresh=True)
+    except Exception as e:
+        print(f"⚠️ Pre-render Token Guard: {e}")
+
+    # 0.1 QUY CHUẨN MỚI 1: Tự động cập nhật kịch bản vào Excel TRƯỚC KHI RENDER
+    try:
+        from export_scripts_excel import export_video_to_excel
+        export_video_to_excel(video_id, project="short")
+    except Exception as e:
+        print(f"⚠️ Pre-render Excel: {e}")
+
+    # 0.2 QUY CHUẨN MỚI 2: Copy toàn bộ hình ảnh / video B-roll đã cắt vào output/{video_id}/input/
+    try:
+        from pack_inputs import pack_video_input
+        pack_video_input(video_id)
+    except Exception as e:
+        print(f"⚠️ Pre-render Pack Input: {e}")
+
+    # 0.3 QUY CHUẨN MỚI 3: Copy toàn bộ thư mục input/ lên Google Drive
+    try:
+        from sync_input_to_drive import sync_input_to_drive
+        sync_input_to_drive(video_id, project="short")
+    except Exception as e:
+        print(f"⚠️ Pre-render Sync Drive Input: {e}")
+
+    # 0.4 Tiền xử lý chuẩn hóa: Đổi tên các bản render cũ trên Local & Google Drive trước khi render
+    try:
+        from archive_render import archive_previous_renders
+        archive_previous_renders(video_id, target_filename=f"video_{video_id}.mp4")
+    except Exception as e:
+        print(f"⚠️ Pre-render archive: {e}")
+
+    # 1. Kiểm tra file Metadata
+    meta_path = PUBLIC_DIR / f"video_data_{video_id}.json"
+    if not meta_path.exists():
+        meta_path = PUBLIC_DIR / f"{video_id}.json"
+    if not meta_path.exists():
+        print(f"❌ Không tìm thấy file metadata: {meta_path}")
+        return False
+
+    with open(meta_path, "r", encoding="utf-8") as f:
+        meta_data = json.load(f)
+
+    # 2. Thu thập danh sách file cần thiết của riêng video này
+    files_to_push = [meta_path]
+    audio_file = meta_data.get("audioFile", "")
+    if audio_file:
+        audio_path = PUBLIC_DIR / audio_file
+        if audio_path.exists():
+            files_to_push.append(audio_path)
+        else:
+            print(f"⚠️ Cảnh báo: Không thấy audio {audio_path}")
+
+    # Thu thập B-roll / Images từ scenes
+    scenes = meta_data.get("scenes", [])
+    for sc in scenes:
+        bg = sc.get("image") or sc.get("backgroundVideo") or sc.get("video")
+        if bg:
+            bg_path = PUBLIC_DIR / bg
+            if bg_path.exists() and bg_path not in files_to_push:
+                files_to_push.append(bg_path)
+
+    # Đính kèm info.json nếu đã có sẵn ở local
+    local_info = OUTPUT_DIR / video_id / "info.json"
+    if local_info.exists() and local_info not in files_to_push:
+        files_to_push.append(local_info)
+
+    # Đính kèm thumbnail_{video_id}.jpg trong cả public/ và output/ để Remotion render Frame 0 và Cloud Worker upload lên YouTube & Drive
+    pub_thumb = PUBLIC_DIR / f"thumbnail_{video_id}.jpg"
+    inp_thumb = OUTPUT_DIR / video_id / "input" / f"thumbnail_{video_id}.jpg"
+    out_thumb = OUTPUT_DIR / video_id / f"thumbnail_{video_id}.jpg"
+    
+    # Đảm bảo public/ có thumbnail
+    if not pub_thumb.exists():
+        for src in [inp_thumb, out_thumb]:
+            if src.exists():
+                shutil.copy2(src, pub_thumb)
+                break
+    if pub_thumb.exists() and pub_thumb not in files_to_push:
+        files_to_push.append(pub_thumb)
+
+    if inp_thumb.exists() and inp_thumb not in files_to_push:
+        files_to_push.append(inp_thumb)
+
+    print(f"📦 Các file nguyên liệu cần đưa lên ({len(files_to_push)} files):")
+    for fp in files_to_push:
+        print(f"   - {fp.name} ({round(fp.stat().st_size / (1024*1024), 2)} MB)")
+
+    # 3. Đóng gói và push thẳng lên branch render trên GitHub (Zero-switch)
+    branch_name = f"render-{video_id}"
+    print(f"\n📦 Đang đóng gói nguyên liệu và chuẩn bị đẩy lên nhánh: {branch_name}...")
+    rel_paths = [str(fp.relative_to(BASE_DIR)).replace("\\", "/") for fp in files_to_push]
+    run_git(["add", "-f"] + rel_paths)
+    run_git(["commit", "-m", f"render: upload assets for {video_id}"])
+
+    head_sha = run_git(["rev-parse", "HEAD"])
+    print(f"🚀 Đang đẩy nguyên liệu lên GitHub (Commit: {head_sha[:7]})...")
+    run_git(["push", "-f", "origin", f"HEAD:refs/heads/{branch_name}"])
+    print(f"✓ Đã đẩy nhánh {branch_name} lên GitHub thành công!")
+
+    # 4. Trả lại trạng thái commit ban đầu cho Local (giữ nguyên 100% file nguyên liệu trên máy)
+    run_git(["reset", "HEAD~1"])
+    print(f"🔒 Local đã được giữ nguyên vẹn trên 'main', không bị mất file.")
+
+    # 5. Theo dõi tiến trình GitHub Actions & Google Drive
+    print(f"\n⏳ Đang đợi GitHub Actions render và tự động đẩy lên Google Drive...")
+    print(f"🔗 Xem trực tiếp tại: https://github.com/{REPO_OWNER}/{REPO_NAME}/actions")
+
+    start_time = time.time()
+    last_status = ""
+    completed = False
+    success = False
+
+    while not completed:
+        time.sleep(12)
+        elapsed = int(time.time() - start_time)
+
+        # Cách 1: Kiểm tra trực tiếp trên Google Drive
+        drive_file = check_video_ready_on_drive(video_id)
+        if drive_file:
+            print(f"   [{elapsed}s] ☁️ Video đã render xong và xuất hiện trên Google Drive: {drive_file['name']}!")
+            completed = True
+            success = True
+            break
+
+        # Cách 2: Gọi GitHub API (nếu chưa bị rate-limit)
+        runs_data = get_json_api(f"{API_BASE}/actions/runs?branch={branch_name}")
+        if runs_data and runs_data.get("workflow_runs"):
+            latest_run = runs_data["workflow_runs"][0]
+            status = latest_run.get("status")
+            conclusion = latest_run.get("conclusion")
+
+            if status != last_status:
+                print(f"   [{elapsed}s] Trạng thái GitHub Actions: {status} (Đang render & tải lên Drive)...")
+                last_status = status
+
+            if status == "completed":
+                completed = True
+                success = (conclusion == "success")
+                break
+        else:
+            print(f"   [{elapsed}s] Đang render trên Cloud Worker (chờ tín hiệu từ Drive)...")
+
+        if elapsed > 900:  # 15 phút timeout
+            print("❌ Quá thời gian chờ (15 phút).")
+            return False
+
+    if success:
+        print(f"\n🎉 RENDER & ĐẨY LÊN GOOGLE DRIVE THÀNH CÔNG! (Thời gian: {elapsed}s)")
+    else:
+        print(f"\n❌ GitHub Actions hoàn tất nhưng kết quả thất bại! Hãy kiểm tra log tại GitHub Actions.")
+
+    out_video_file = OUTPUT_DIR / str(video_id) / f"video_{video_id}.mp4"
+    if success:
+        if download_local:
+            download_video_from_drive(video_id, out_video_file)
+        else:
+            print("\n💡 [0% Dung Lượng Máy] Video đã tự động lưu trữ trên Google Drive và tải lên YouTube Shorts ở chế độ Nháp (Draft).")
+            print("   (Dùng cờ '--download' nếu bạn muốn tải file MP4 về ổ cứng máy tính).")
+
+        # Tự động xuất / cập nhật kịch bản vào Excel
+        try:
+            from export_scripts_excel import export_video_to_excel
+            xlsx_path = export_video_to_excel(video_id, project="short")
+            print(f"📊 Kịch bản đã tự động cập nhật vào Excel: {xlsx_path}")
+        except Exception as e:
+            print(f"⚠️ Tự động xuất Excel: {e}")
+
+    # 7. Dọn dẹp trên Git (Xóa sạch branch tạm trên GitHub)
+    if auto_cleanup:
+        print(f"\n🧹 Đang xóa sạch nhánh tạm '{branch_name}' trên GitHub...")
+        try:
+            run_git(["push", "origin", "--delete", branch_name], check=False)
+            run_git(["branch", "-D", branch_name], check=False)
+            print(f"✨ ĐÃ XÓA SẠCH DẤU VẾT TRÊN GITHUB! Repo trở lại trạng thái khung rỗng sạch sẽ.")
+            print(f"🛡️ Không có file MP4 hay Release nào được lưu trữ trên GitHub.")
+        except Exception as e:
+            print(f"⚠️ Dọn dẹp branch gặp lỗi nhẹ: {e}")
+
+    print("\n========================================================")
+    print(f"🏁 HOÀN TẤT TOÀN BỘ QUY TRÌNH CHO: {video_id}")
+    print(f"📺 Kiểm tra video nháp tại: https://studio.youtube.com")
+    print("========================================================")
+    return success
+
+if __name__ == "__main__":
+    vid = sys.argv[1] if len(sys.argv) > 1 and not sys.argv[1].startswith("--") else "bhca_v1"
+    dl_flag = "--download" in sys.argv
+    render_short_video_via_github(vid, download_local=dl_flag)
