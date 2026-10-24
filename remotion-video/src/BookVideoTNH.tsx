@@ -36,6 +36,7 @@ export interface BookVideoProps {
   height?: number;
   durationInFrames?: number;
   audioFile?: string;
+  thumbnailImage?: string;
   showHeroHeader?: boolean;
   scenes?: SceneItem[];
 }
@@ -52,6 +53,7 @@ export const BookVideoTNH: React.FC<BookVideoProps> = (props) => {
   const shouldShowTitleHook =
     props.showTitleHook !== false && Boolean(titleHook);
   const audioFile = props.audioFile || "voiceover_ch2.wav";
+  const thumbnailImage = props.thumbnailImage || "";
   const scenes = props.scenes || [];
   const durationInFrames = props.durationInFrames || 1800;
 
@@ -65,6 +67,16 @@ export const BookVideoTNH: React.FC<BookVideoProps> = (props) => {
         overflow: "hidden",
       }}
     >
+      {/* 0. THUMBNAIL COVER FRAME (FRAME 0 - 30, TỨC 1 GIÂY ĐẦU TIÊN):
+          Bắt buộc hiển thị ảnh Thumbnail hoàn chỉnh 1080x1920 ở giây đầu tiên.
+          Tối ưu 100% cho YouTube Shorts khi chọn ảnh bìa (chỉ cần kéo về frame 0).
+          Sau 1s, cross-fade mượt mà sang video B-roll chuyển động. */}
+      {thumbnailImage && (
+        <Sequence from={0} durationInFrames={30}>
+          <ThumbnailCoverFrame imageSrc={thumbnailImage} />
+        </Sequence>
+      )}
+
       {/* 1. Dynamic B-roll Scenes với hiệu ứng Ken Burns luân phiên & gối đầu chống chớp đen */}
       {scenes.map((scene: SceneItem, index: number) => {
         const nextScene = scenes[index + 1];
@@ -104,9 +116,9 @@ export const BookVideoTNH: React.FC<BookVideoProps> = (props) => {
       {/* 4. Top persistent book & author badge xuyên suốt video */}
       <TopBookBadge book={book} author={author} />
 
-      {/* 5. TITLE HOOK HEADER: 1.8s đầu (Frame 0-55) tối ưu làm Thumbnail tự động có CTR cao cho YouTube Shorts */}
+      {/* 5. TITLE HOOK HEADER: 2-3s đầu (Frame 0-80) tối ưu làm Hook thị giác & Thumbnail YouTube Shorts */}
       {shouldShowTitleHook && (
-        <Sequence from={0} durationInFrames={55}>
+        <Sequence from={0} durationInFrames={80}>
           <TitleHookHeader titleHook={titleHook} />
         </Sequence>
       )}
@@ -131,6 +143,29 @@ export const BookVideoTNH: React.FC<BookVideoProps> = (props) => {
 
       {/* 8. Neon Progress Bar */}
       <ProgressBar totalFrames={durationInFrames} />
+    </AbsoluteFill>
+  );
+};
+
+// 0. Component ThumbnailCoverFrame: Khung hình 1s đầu (Frame 0–30) hiển thị 100% hình Thumbnail Shorts
+const ThumbnailCoverFrame: React.FC<{ imageSrc: string }> = ({ imageSrc }) => {
+  const frame = useCurrentFrame();
+  // Giữ nguyên 100% từ frame 0 đến 24, cross-fade mượt mà trong 5 frames (25–29) sang video B-roll
+  const opacity = interpolate(frame, [24, 29], [1, 0], {
+    extrapolateLeft: "clamp",
+    extrapolateRight: "clamp",
+  });
+
+  return (
+    <AbsoluteFill style={{ zIndex: 60, opacity }}>
+      <Img
+        src={staticFile(imageSrc)}
+        style={{
+          width: "100%",
+          height: "100%",
+          objectFit: "cover",
+        }}
+      />
     </AbsoluteFill>
   );
 };
@@ -200,27 +235,27 @@ const TitleHookHeader: React.FC<{
 }> = ({ titleHook }) => {
   const frame = useCurrentFrame();
 
-  // Hiển thị rõ nét 100% từ frame 0 đến frame 42 (~1.4s), sau đó fade out mượt mà trong 13 frames tiếp theo
-  const fadeOut = interpolate(frame, [42, 55], [1, 0], {
+  // Hiển thị rõ nét 100% từ frame 0 đến frame 65 (~2.2s), sau đó fade out mượt mà trong 15 frames tiếp theo (đến frame 80 ~ 2.67s)
+  const fadeOut = interpolate(frame, [65, 80], [1, 0], {
     extrapolateLeft: "clamp",
     extrapolateRight: "clamp",
   });
 
-  const exitTranslateY = interpolate(frame, [42, 55], [0, -25], {
+  const exitTranslateY = interpolate(frame, [65, 80], [0, -30], {
     extrapolateLeft: "clamp",
     extrapolateRight: "clamp",
   });
 
-  // Tự động điều chỉnh kích thước chữ nếu câu quá dài
-  const fontSize = titleHook.length > 25 ? 46 : 52;
+  // Chữ rất to, màu tương phản (trắng viền đen hoặc vàng), tối đa 6-8 chữ
+  const fontSize = titleHook.length > 25 ? 54 : 64;
 
   return (
     <div
       style={{
         position: "absolute",
-        top: 290, // Tọa độ vàng Safe Zone 1/3 phía trên, dưới badge sách/tác giả, tránh va chạm UI Shorts
-        left: 50,
-        right: 50,
+        top: 360, // Khoảng 1/3 trên màn hình, tránh che cạnh phải và đáy
+        left: 60,
+        right: 60,
         display: "flex",
         flexDirection: "column",
         alignItems: "center",
@@ -231,13 +266,13 @@ const TitleHookHeader: React.FC<{
     >
       <div
         style={{
-          backgroundColor: "rgba(10, 15, 30, 0.72)",
-          border: "2px solid rgba(251, 191, 36, 0.65)",
-          borderRadius: 24,
-          padding: "20px 36px",
-          backdropFilter: "blur(20px)",
+          backgroundColor: "rgba(10, 15, 30, 0.85)",
+          border: "3px solid #fbbf24",
+          borderRadius: 28,
+          padding: "24px 38px",
+          backdropFilter: "blur(24px)",
           boxShadow:
-            "0 15px 45px rgba(0, 0, 0, 0.85), 0 0 35px rgba(251, 191, 36, 0.3)",
+            "0 20px 50px rgba(0, 0, 0, 0.95), 0 0 40px rgba(251, 191, 36, 0.4)",
           textAlign: "center",
           maxWidth: 960,
           width: "100%",
@@ -253,8 +288,9 @@ const TitleHookHeader: React.FC<{
             textTransform: "uppercase",
             color: "#fbbf24",
             textShadow:
-              "0 4px 18px rgba(0, 0, 0, 0.95), 0 0 30px rgba(251, 191, 36, 0.5)",
+              "0 4px 18px rgba(0, 0, 0, 1), 0 0 25px rgba(0, 0, 0, 0.9), 0 0 35px rgba(251, 191, 36, 0.6)",
             display: "inline-block",
+            WebkitTextStroke: "1px rgba(0, 0, 0, 0.8)",
           }}
         >
           {titleHook}
