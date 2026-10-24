@@ -144,6 +144,35 @@ def upload_short_to_youtube(video_path, video_id):
     print(f"🔗 Link Shorts: {yt_url}")
     print(f"🛠️ Link chỉnh sửa Studio: {studio_url}")
 
+    # TỰ ĐỘNG UPLOAD THUMBNAIL LÊN YOUTUBE
+    thumb_path = None
+    possible_thumbs = [
+        Path("output") / video_id / f"thumbnail_{video_id}.jpg",
+        Path("output") / video_id / "input" / f"thumbnail_{video_id}.jpg",
+        Path("remotion-video/public") / f"thumbnail_{video_id}.jpg",
+        vpath.parent / f"thumbnail_{video_id}.jpg",
+        vpath.parent / "input" / f"thumbnail_{video_id}.jpg",
+    ]
+    for pt in possible_thumbs:
+        if pt.exists():
+            thumb_path = pt
+            break
+
+    if thumb_path:
+        try:
+            print(f"🖼️ Đang tự động upload Thumbnail lên YouTube: {thumb_path.name}...")
+            thumb_media = MediaFileUpload(str(thumb_path), mimetype="image/jpeg")
+            youtube.thumbnails().set(
+                videoId=yt_id,
+                media_body=thumb_media
+            ).execute()
+            print("✅ ĐÃ UPLOAD THUMBNAIL LÊN YOUTUBE THÀNH CÔNG 100%!")
+        except Exception as te:
+            print(f"ℹ️ Không thể set thumbnail tự động qua API (Do chính sách Shorts API hoặc kênh chưa xác minh SĐT): {te}")
+            print(f"👉 Bạn có thể click vào link Studio để upload thủ công trong 2 giây: {studio_url}")
+    else:
+        print("ℹ️ Không tìm thấy file thumbnail để upload kèm.")
+
     return {
         "youtube_id": yt_id,
         "youtube_url": yt_url,
