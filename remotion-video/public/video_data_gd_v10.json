@@ -1,0 +1,66 @@
+{
+  "id": "gd_v10",
+  "episode": 10,
+  "title": "Con bạn không nghe bạn nói, chúng đang nhìn bạn sống",
+  "titleHook": "CON NHÌN BẠN SỐNG",
+  "showTitleHook": true,
+  "subtitle": "Dạy con bằng gương",
+  "book": "NỬA CHÉN TRÀ",
+  "author": "Bài học gia đình",
+  "chapter": "Dạy con bằng gương",
+  "showHeroHeader": false,
+  "fps": 30,
+  "width": 1080,
+  "height": 1920,
+  "durationInFrames": 1000,
+  "audioFile": "voiceover_gd_v10.wav",
+  "schedule": "2026-10-29 11:30",
+  "scenes": [
+    {
+      "scene": 1,
+      "tag": "Hook 3s",
+      "text": "Con bạn không nghe bạn nói, chúng đang nhìn bạn sống.",
+      "highlight": "CON NHÌN BẠN SỐNG",
+      "image": "gd_v10_scene1.mp4",
+      "startFrame": 0,
+      "durationInFrames": 114
+    },
+    {
+      "scene": 2,
+      "tag": "Tương phản",
+      "text": "Bạn bảo con đọc sách, nhưng tay lúc nào cũng cầm điện thoại. Bạn dạy con lễ phép, nhưng cãi nhau với ông bà trước mặt con.",
+      "highlight": "BẢO ĐỌC SÁCH",
+      "image": "gd_v10_scene2.mp4",
+      "startFrame": 123,
+      "durationInFrames": 280
+    },
+    {
+      "scene": 3,
+      "tag": "Làm gương",
+      "text": "Trẻ con không học từ lời giảng, chúng học từ những gì chúng thấy mỗi ngày. Người xưa nói: dạy con trước tiên là sửa mình.",
+      "highlight": "TRẺ CON HỌC TỪ THỰC TẾ",
+      "image": "gd_v10_scene3.mp4",
+      "startFrame": 411,
+      "durationInFrames": 277
+    },
+    {
+      "scene": 4,
+      "tag": "Sửa mình",
+      "text": "Muốn con thành người thế nào, hãy sống thành người như thế.",
+      "highlight": "SỬA MÌNH LÀM GƯƠNG",
+      "image": "gd_v10_scene4.mp4",
+      "startFrame": 697,
+      "durationInFrames": 118
+    },
+    {
+      "scene": 5,
+      "tag": "Câu chốt",
+      "text": "Con là tấm gương phản chiếu, nó chỉ trả lại đúng những gì bạn đã cho đi.",
+      "highlight": "TẤM GƯƠNG PHẢN CHIẾU",
+      "image": "gd_v10_scene5.mp4",
+      "startFrame": 824,
+      "durationInFrames": 168
+    }
+  ],
+  "thumbnailImage": "thumbnail_gd_v10.jpg"
+}
