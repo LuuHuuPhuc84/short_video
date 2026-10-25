@@ -22,7 +22,7 @@ export interface SceneItem {
   durationInFrames: number;
 }
 
-export interface BookVideoProps {
+export interface ZenShortVideoProps {
   id?: string;
   book?: string;
   author?: string;
@@ -41,6 +41,8 @@ export interface BookVideoProps {
   showHeroHeader?: boolean;
   scenes?: SceneItem[];
 }
+
+export type BookVideoProps = ZenShortVideoProps;
 
 export interface StylePresetConfig {
   filter: string;
@@ -71,12 +73,11 @@ export const STYLE_PRESETS: Record<string, StylePresetConfig> = {
   },
 };
 
-export const BookVideoTNH: React.FC<BookVideoProps> = (props) => {
-  const book = props.book || "AN TRÚ TRONG HIỆN TẠI";
-  const author = props.author || "Thiền sư Thích Nhất Hạnh";
-  const chapter = props.chapter || "CHƯƠNG 2: NGỒI THỞ VÀ KINH HÀNH";
+export const ZenShortVideo: React.FC<ZenShortVideoProps> = (props) => {
+  const book = props.book || "NỬA CHÉN TRÀ";
+  const author = props.author || "Nhìn Sâu Để Sống Nhẹ";
   const title =
-    props.title || "BÀI TẬP 60 GIÂY THỞ VÀ MỈM CƯỜI, GIẢI TỎA CĂNG THẲNG";
+    props.title || "TRIẾT LÝ SỐNG & BÀI HỌC CUỘC SỐNG";
   const rawTitleHook =
     props.titleHook || props.scenes?.[0]?.highlight || title.split(",")[0] || "";
   const titleHook = rawTitleHook.trim();
@@ -182,6 +183,9 @@ export const BookVideoTNH: React.FC<BookVideoProps> = (props) => {
     </AbsoluteFill>
   );
 };
+
+// Backward-compatible alias
+export const BookVideoTNH = ZenShortVideo;
 
 // 0. Component ThumbnailCoverFrame: Khung hình 1s đầu (Frame 0–30) hiển thị 100% hình Thumbnail Shorts
 const ThumbnailCoverFrame: React.FC<{ imageSrc: string }> = ({ imageSrc }) => {
