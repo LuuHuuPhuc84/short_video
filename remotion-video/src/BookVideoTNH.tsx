@@ -37,9 +37,39 @@ export interface BookVideoProps {
   durationInFrames?: number;
   audioFile?: string;
   thumbnailImage?: string;
+  stylePreset?: "zen_amber" | "clean_natural" | "vintage_warm" | "film_contrast" | string;
   showHeroHeader?: boolean;
   scenes?: SceneItem[];
 }
+
+export interface StylePresetConfig {
+  filter: string;
+  washColor: string;
+  vignette: string;
+}
+
+export const STYLE_PRESETS: Record<string, StylePresetConfig> = {
+  zen_amber: {
+    filter: "contrast(1.02) saturate(0.92) sepia(0.08)",
+    washColor: "rgba(224, 169, 109, 0.04)",
+    vignette: "radial-gradient(circle at 50% 50%, transparent 68%, rgba(0, 0, 0, 0.22) 100%)",
+  },
+  clean_natural: {
+    filter: "none",
+    washColor: "transparent",
+    vignette: "none",
+  },
+  vintage_warm: {
+    filter: "contrast(1.04) saturate(0.88) sepia(0.12)",
+    washColor: "rgba(224, 169, 109, 0.06)",
+    vignette: "radial-gradient(circle at 50% 50%, transparent 64%, rgba(0, 0, 0, 0.28) 100%)",
+  },
+  film_contrast: {
+    filter: "contrast(1.06) saturate(0.95)",
+    washColor: "rgba(10, 15, 30, 0.03)",
+    vignette: "radial-gradient(circle at 50% 50%, transparent 70%, rgba(0, 0, 0, 0.20) 100%)",
+  },
+};
 
 export const BookVideoTNH: React.FC<BookVideoProps> = (props) => {
   const book = props.book || "AN TRÚ TRONG HIỆN TẠI";
@@ -56,6 +86,8 @@ export const BookVideoTNH: React.FC<BookVideoProps> = (props) => {
   const thumbnailImage = props.thumbnailImage || "";
   const scenes = props.scenes || [];
   const durationInFrames = props.durationInFrames || 1800;
+  const stylePresetKey = props.stylePreset || "zen_amber";
+  const preset = STYLE_PRESETS[stylePresetKey] || STYLE_PRESETS.zen_amber;
 
   return (
     <AbsoluteFill
@@ -102,13 +134,17 @@ export const BookVideoTNH: React.FC<BookVideoProps> = (props) => {
               durationInFrames={bgDuration}
               index={index}
               videoDurationInFrames={scene.videoDurationInFrames}
+              filter={preset.filter}
             />
           </Sequence>
         );
       })}
 
-      {/* 2. Cinematic Lighting Gradient nhẹ */}
-      <CinematicGradientOverlay />
+      {/* 2. Cinematic Lighting Gradient nhẹ theo Preset */}
+      <CinematicGradientOverlay
+        washColor={preset.washColor}
+        vignette={preset.vignette}
+      />
 
       {/* 3. Audio (Single Pre-mixed Voiceover + Piano BGM - Tránh crash Temp trên Windows) */}
       <Audio src={staticFile(audioFile)} volume={1.0} />
@@ -306,7 +342,8 @@ const SceneBackground: React.FC<{
   durationInFrames: number;
   index: number;
   videoDurationInFrames?: number;
-}> = ({ imageSrc, durationInFrames, index, videoDurationInFrames }) => {
+  filter?: string;
+}> = ({ imageSrc, durationInFrames, index, videoDurationInFrames, filter }) => {
   const frame = useCurrentFrame();
 
   if (!imageSrc) {
@@ -368,7 +405,7 @@ const SceneBackground: React.FC<{
               height: "100%",
               objectFit: "cover",
               transform: `scale(${scale}) translateY(${translateY}px)`,
-              filter: "contrast(1.02) saturate(0.92) sepia(0.08)",
+              filter: filter || "none",
             }}
           />
         </Loop>
@@ -380,7 +417,7 @@ const SceneBackground: React.FC<{
             height: "100%",
             objectFit: "cover",
             transform: `scale(${scale}) translateY(${translateY}px)`,
-            filter: "contrast(1.02) saturate(0.92) sepia(0.08)",
+            filter: filter || "none",
           }}
         />
       )}
@@ -388,30 +425,34 @@ const SceneBackground: React.FC<{
   );
 };
 
-// QUY CHUẨN TÔNG MÀU "ZEN AMBER GLASS" & VIGNETTE THOANG THOẢNG:
-// 1. Áp dụng ánh ấm hổ phách đồng nhất (4%)
-// 2. Vignette cực nhẹ ngoài rìa (giữ 68% vùng trung tâm trong trẻo 100%, bảo vệ Badge & Subtitle)
-const CinematicGradientOverlay: React.FC = () => {
+// QUY CHUẨN TÔNG MÀU THEO PRESET (ZEN AMBER / CLEAN NATURAL / VINTAGE...):
+const CinematicGradientOverlay: React.FC<{
+  washColor?: string;
+  vignette?: string;
+}> = ({ washColor, vignette }) => {
+  if (!washColor && !vignette) return null;
+
   return (
     <AbsoluteFill style={{ pointerEvents: "none", zIndex: 5 }}>
-      {/* Lớp phủ hổ phách ấm (Amber Wash) đồng nhất 4% */}
-      <div
-        style={{
-          position: "absolute",
-          inset: 0,
-          backgroundColor: "rgba(224, 169, 109, 0.04)",
-          mixBlendMode: "color",
-        }}
-      />
-      {/* Vignette cực nhẹ ở 4 góc ngoài rìa */}
-      <div
-        style={{
-          position: "absolute",
-          inset: 0,
-          background:
-            "radial-gradient(circle at 50% 50%, transparent 68%, rgba(0, 0, 0, 0.22) 100%)",
-        }}
-      />
+      {washColor && washColor !== "transparent" && (
+        <div
+          style={{
+            position: "absolute",
+            inset: 0,
+            backgroundColor: washColor,
+            mixBlendMode: "color",
+          }}
+        />
+      )}
+      {vignette && vignette !== "none" && (
+        <div
+          style={{
+            position: "absolute",
+            inset: 0,
+            background: vignette,
+          }}
+        />
+      )}
     </AbsoluteFill>
   );
 };
