@@ -368,6 +368,7 @@ const SceneBackground: React.FC<{
               height: "100%",
               objectFit: "cover",
               transform: `scale(${scale}) translateY(${translateY}px)`,
+              filter: "contrast(1.02) saturate(0.92) sepia(0.08)",
             }}
           />
         </Loop>
@@ -379,6 +380,7 @@ const SceneBackground: React.FC<{
             height: "100%",
             objectFit: "cover",
             transform: `scale(${scale}) translateY(${translateY}px)`,
+            filter: "contrast(1.02) saturate(0.92) sepia(0.08)",
           }}
         />
       )}
@@ -386,11 +388,32 @@ const SceneBackground: React.FC<{
   );
 };
 
-// QUY CHUẨN MỚI (BẢO TOÀN ÁNH SÁNG GỐC 100%):
-// Bỏ toàn bộ lớp phủ đen/gradient dìm tối toàn màn hình.
-// Chỉ duy nhất ô hộp phụ đề (PacedCaptionCard) ở phía dưới là có nền kính mờ riêng để bảo đảm tương phản chữ.
+// QUY CHUẨN TÔNG MÀU "ZEN AMBER GLASS" & VIGNETTE THOANG THOẢNG:
+// 1. Áp dụng ánh ấm hổ phách đồng nhất (4%)
+// 2. Vignette cực nhẹ ngoài rìa (giữ 68% vùng trung tâm trong trẻo 100%, bảo vệ Badge & Subtitle)
 const CinematicGradientOverlay: React.FC = () => {
-  return null;
+  return (
+    <AbsoluteFill style={{ pointerEvents: "none", zIndex: 5 }}>
+      {/* Lớp phủ hổ phách ấm (Amber Wash) đồng nhất 4% */}
+      <div
+        style={{
+          position: "absolute",
+          inset: 0,
+          backgroundColor: "rgba(224, 169, 109, 0.04)",
+          mixBlendMode: "color",
+        }}
+      />
+      {/* Vignette cực nhẹ ở 4 góc ngoài rìa */}
+      <div
+        style={{
+          position: "absolute",
+          inset: 0,
+          background:
+            "radial-gradient(circle at 50% 50%, transparent 68%, rgba(0, 0, 0, 0.22) 100%)",
+        }}
+      />
+    </AbsoluteFill>
+  );
 };
 
 // Component hiển thị phụ đề với hiệu ứng nhảy nảy chữ từng từ (Word Bounce / Karaoke Pop) theo giọng đọc

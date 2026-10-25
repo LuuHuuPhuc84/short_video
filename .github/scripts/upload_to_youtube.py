@@ -70,6 +70,9 @@ def upload_short_to_youtube(video_path, video_id):
         try:
             with open(info_file, "r", encoding="utf-8") as f:
                 d = json.load(f)
+            if d.get("skip_youtube") or d.get("no_youtube"):
+                print("ℹ️ Bỏ qua upload YouTube theo cấu hình info.json (skip_youtube=True).")
+                return "SKIPPED_BY_CONFIG"
             title = d.get("title") or title
             description = d.get("description") or description
             tags = d.get("tags") or tags
@@ -82,7 +85,8 @@ def upload_short_to_youtube(video_path, video_id):
 
     status_dict = {
         "privacyStatus": "private",
-        "selfDeclaredMadeForKids": False
+        "selfDeclaredMadeForKids": False,
+        "containsSyntheticMedia": True
     }
 
     publish_log = "PRIVATE (Bản nháp / Draft)"
