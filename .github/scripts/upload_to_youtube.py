@@ -68,7 +68,7 @@ def upload_short_to_youtube(video_path, video_id):
 
     if info_file and info_file.exists():
         try:
-            with open(info_file, "r", encoding="utf-8") as f:
+            with open(info_file, "r", encoding="utf-8-sig") as f:
                 d = json.load(f)
             if d.get("skip_youtube") or d.get("no_youtube"):
                 print("ℹ️ Bỏ qua upload YouTube theo cấu hình info.json (skip_youtube=True).")
@@ -77,7 +77,9 @@ def upload_short_to_youtube(video_path, video_id):
             description = d.get("description") or description
             tags = d.get("tags") or tags
             schedule_str = d.get("schedule")
-        except Exception:
+        except Exception as e:
+            print(f"⚠️ Lỗi đọc file metadata {info_file}: {e}")
+            schedule_str = None
             schedule_str = None
 
     if "#shorts" not in title.lower():
