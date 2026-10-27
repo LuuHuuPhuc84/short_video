@@ -52,10 +52,13 @@ def upload_short_to_youtube(video_path, video_id):
     info_file = None
     possible_infos = [
         Path("output") / video_id / "info.json",
+        Path("output") / video_id / "input" / "info.json",
         vpath.parent / "info.json",
+        vpath.parent / "input" / "info.json",
+        Path("remotion-video/public") / "info.json",
         Path("remotion-video/public") / f"info_{video_id}.json",
-        Path("pipeline") / f"script_{video_id}.json",
-        Path("remotion-video/public") / f"video_data_{video_id}.json"
+        Path("remotion-video/public") / f"video_data_{video_id}.json",
+        Path("pipeline") / f"script_{video_id}.json"
     ]
     for p in possible_infos:
         if p.exists():
