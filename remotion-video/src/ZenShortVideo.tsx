@@ -150,8 +150,14 @@ export const ZenShortVideo: React.FC<ZenShortVideoProps> = (props) => {
       {/* 3. Audio (Single Pre-mixed Voiceover + Piano BGM - Tránh crash Temp trên Windows) */}
       <Audio src={staticFile(audioFile)} volume={1.0} />
 
-      {/* 4. Top persistent book & author badge xuyên suốt video */}
-      <TopBookBadge book={book} author={author} />
+      {/* 4. Top persistent book & author badge xuyên suốt video (ẩn ở 100 frames cuối để nhường chỗ cho EndChannelCard) */}
+      {durationInFrames > 120 ? (
+        <Sequence from={0} durationInFrames={durationInFrames - 100}>
+          <TopBookBadge book={book} author={author} />
+        </Sequence>
+      ) : (
+        <TopBookBadge book={book} author={author} />
+      )}
 
       {/* 5. TITLE HOOK HEADER: 2-3s đầu (Frame 0-80) tối ưu làm Hook thị giác & Thumbnail YouTube Shorts */}
       {shouldShowTitleHook && (
@@ -640,35 +646,29 @@ const ProgressBar: React.FC<{ totalFrames: number }> = ({ totalFrames }) => {
   );
 };
 
-// Component Thẻ Kênh CTA "Ngẫm Mỗi Ngày" (Phương án 1 - Hiện 3.3s cuối)
+// Component Thẻ Kênh CTA "NỬA CHÉN TRÀ" (Hiện ở top 100 frames cuối, không che nhân vật ở giữa)
 const EndChannelCard: React.FC = () => {
   const frame = useCurrentFrame();
 
-  // Hiệu ứng trượt nhẹ từ dưới lên và mờ dần xuất hiện (trong 15 frames đầu)
-  const translateY = interpolate(frame, [0, 18], [40, 0], {
-    extrapolateLeft: "clamp",
-    extrapolateRight: "clamp",
-  });
   const opacity = interpolate(frame, [0, 15], [0, 1], {
     extrapolateLeft: "clamp",
     extrapolateRight: "clamp",
   });
-  const pulseScale = interpolate(
-    Math.sin(frame * 0.15),
-    [-1, 1],
-    [0.97, 1.03]
-  );
+
+  const translateY = interpolate(frame, [0, 15], [-20, 0], {
+    extrapolateLeft: "clamp",
+    extrapolateRight: "clamp",
+  });
 
   return (
     <div
       style={{
         position: "absolute",
-        top: 480, // Tọa độ trung tâm thị giác của video
-        left: 60,
-        right: 60,
+        top: 130, // Đưa lên đỉnh màn hình trong safe zone, giải phóng 100% trung tâm thị giác
+        left: 0,
+        right: 0,
         display: "flex",
-        flexDirection: "column",
-        alignItems: "center",
+        justifyContent: "center",
         zIndex: 40,
         transform: `translateY(${translateY}px)`,
         opacity,
@@ -676,91 +676,42 @@ const EndChannelCard: React.FC = () => {
     >
       <div
         style={{
-          backgroundColor: "rgba(3, 7, 18, 0.92)",
-          border: "2px solid rgba(251, 191, 36, 0.7)",
-          borderRadius: 32,
-          padding: "36px 40px",
-          backdropFilter: "blur(30px)",
-          boxShadow:
-            "0 25px 60px rgba(0, 0, 0, 0.9), 0 0 45px rgba(251, 191, 36, 0.35)",
-          textAlign: "center",
-          maxWidth: 960,
-          width: "100%",
           display: "flex",
-          flexDirection: "column",
           alignItems: "center",
+          gap: 12,
+          backgroundColor: "rgba(3, 7, 18, 0.88)",
+          border: "1.5px solid rgba(251, 191, 36, 0.6)",
+          borderRadius: 36,
+          padding: "10px 28px",
+          backdropFilter: "blur(20px)",
+          boxShadow:
+            "0 8px 30px rgba(0, 0, 0, 0.7), 0 0 20px rgba(251, 191, 36, 0.3)",
         }}
       >
-        {/* Biểu tượng Chén Trà thiền tinh tế */}
-        <div
+        <span style={{ fontSize: 26 }}>🍵</span>
+        <span
           style={{
-            display: "flex",
-            alignItems: "center",
-            justifyContent: "center",
-            width: 76,
-            height: 76,
-            borderRadius: "50%",
-            backgroundColor: "rgba(251, 191, 36, 0.15)",
-            border: "1.5px solid #fbbf24",
-            fontSize: 38,
-            marginBottom: 16,
-            boxShadow: "0 0 20px rgba(251, 191, 36, 0.4)",
-          }}
-        >
-          🍵
-        </div>
-
-        {/* Tên Kênh TikTok */}
-        <div
-          style={{
-            fontSize: 48,
+            fontSize: 24,
             fontWeight: 900,
             letterSpacing: 2,
             color: "#fbbf24",
             textTransform: "uppercase",
-            marginBottom: 12,
-            textShadow:
-              "0 4px 15px rgba(0, 0, 0, 0.9), 0 0 25px rgba(251, 191, 36, 0.5)",
+            textShadow: "0 2px 10px rgba(0, 0, 0, 0.8)",
           }}
         >
           NỬA CHÉN TRÀ
-        </div>
-
-        {/* Thông điệp định vị kênh */}
-        <div
+        </span>
+        <span style={{ color: "rgba(251, 191, 36, 0.5)", fontSize: 20 }}>•</span>
+        <span
           style={{
-            fontSize: 26,
-            fontWeight: 600,
-            color: "#e2e8f0",
-            lineHeight: 1.45,
-            marginBottom: 24,
-            maxWidth: 780,
-            letterSpacing: 0.5,
+            fontSize: 22,
+            fontWeight: 700,
+            letterSpacing: 0.8,
+            color: "#f8fafc",
           }}
         >
           Nhìn sâu để sống nhẹ
-        </div>
-
-        {/* Nút bấm Kêu gọi Follow (hiệu ứng thở nhẹ) */}
-        <div
-          style={{
-            display: "inline-flex",
-            alignItems: "center",
-            gap: 12,
-            backgroundColor: "#fbbf24",
-            color: "#030712",
-            padding: "12px 36px",
-            borderRadius: 40,
-            fontSize: 26,
-            fontWeight: 900,
-            letterSpacing: 1.2,
-            boxShadow: "0 8px 30px rgba(251, 191, 36, 0.7)",
-            transform: `scale(${pulseScale})`,
-          }}
-        >
-          <span>➕</span>
-          <span>NHẤN THEO DÕI</span>
-        </div>
+        </span>
       </div>
     </div>
   );

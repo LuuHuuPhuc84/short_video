@@ -3,6 +3,26 @@
 > Agent đọc file này đầu mỗi phiên và cập nhật khi có quyết định mới. Chỉ ghi điều đã chốt.
 
 ## Quyết định đã chốt
+- **KIẾN TRÚC MODULE HÓA ĐƠN NHIỆM (TIẾT KIỆM 90% TOKEN & KHÔNG PHỤ THUỘC LẪN NHAU):**
+  Hệ thống tách biệt hoàn toàn thành 3 module độc lập qua CLI trung tâm `pipeline/cli.py`:
+  1. *Module 1 - Render thuần túy (`pipeline/core_render.py` hoặc `python pipeline/cli.py render <id>`):*
+     - Chỉ làm 1 việc duy nhất: Sinh file video `output/{id}/video_{id}.mp4` (mặc định Cloud, thêm `--local` nếu render máy).
+     - Tuyệt đối KHÔNG tự tiện tải lên YouTube hay Drive.
+     - Toàn bộ Style/Color (Zen Amber, Clean Natural, Vintage Warm) được chọn qua trường `"stylePreset"` trong file JSON, KHÔNG BAO GIỜ sửa trực tiếp code React `.tsx`.
+  2. *Module 2 - Google Drive Sync (`pipeline/core_drive.py` hoặc `python pipeline/cli.py drive <id>`):*
+     - Chỉ làm 1 việc: Tải video thành phẩm hoặc thư mục `input/` (`--input`) lên Google Drive cá nhân để xem thử hoặc lưu trữ.
+  3. *Module 3 - YouTube Publisher (`pipeline/core_youtube.py` hoặc `python pipeline/cli.py youtube <id>`):*
+     - Chỉ làm 1 việc: Xuất bản video đã có lên YouTube Shorts (Draft hoặc Scheduled) kèm thumbnail và `containsSyntheticMedia: True`.
+     - CHỈ KÍCH HOẠT khi người dùng đã xem và ra lệnh duyệt xuất bản.
+    4. *Module 4 - Assets Hub Manager (`pipeline/core_assets.py` hoặc `python pipeline/cli.py assets <check|music|thumb|pack>`):*
+     - Quản trị tập trung kho tài nguyên `assets_hub/` (kho 18 bản nhạc No-Copyright và hơn 160 video B-roll thiên nhiên).
+     - Tự động gợi ý nhạc nền phù hợp với tần số cảm xúc (`assets music "<câu_thoại>"`).
+     - Tự động tạo ảnh Thumbnail chuẩn Safe Zone (`assets thumb <id>`).
+     - Tự động đóng gói nguyên liệu vào `output/<id>/input/` để duyệt (`assets pack <id>`).
+  5. *Lệnh quy trình toàn diện (khi cần chạy 1-click trọn gói):* `python pipeline/cli.py all <id>`.
+- **TỰ ĐỘNG GIA HẠN TOKEN OAUTH HÀNG TUẦN (ZERO-TOUCH TOKEN GUARDS):**
+  1. *YouTube Token AutoGuard:* Task Schedule `\YouTube_Token_AutoGuard` chạy 9:00 AM hàng ngày và khi login. Khi token đạt 5.5 - 6 ngày, tự động mở Opera để gia hạn và sync GitHub Secrets.
+  2. *Google Drive Token AutoGuard:* Task Schedule `\GDrive_Token_AutoGuard` chạy 9:05 AM hàng ngày và khi login. Khi token đạt 5.5 - 6 ngày, tự động mở Microsoft Edge để người dùng bấm Allow 1-click, lưu token và đồng bộ tự động lên GitHub Secrets cho cả 2 repo Short & Long Video.
 - Chủ đề: Bài học cuộc sống, triết lý ứng dụng đời thường; chắt lọc từ "An Trú Trong Hiện Tại" của Thiền sư Thích Nhất Hạnh & trí tuệ cổ xưa.
 - Định vị nội dung: **Độc lập 100% (Standalone Shorts)**. Tuyệt đối không để chữ "Chương X" hay "Tập X" để tránh gây rào cản cho người xem ngẫu nhiên.
 - Nhận diện sách & tác giả: Đưa Tên sách ("AN TRÚ TRONG HIỆN TẠI") và Tác giả **"Thiền sư Thích Nhất Hạnh"** thành thanh badge nhỏ tinh tế ở góc trên, KHÔNG dùng Hero Header lớn che kín 3 giây đầu.
@@ -10,17 +30,15 @@
   1. *Thời lượng & Dung lượng chữ:* Khung thời lượng chuẩn vàng là **38s – 42s** (dung lượng lý tưởng **90 – 100 từ** ở tốc độ TTS 0.95 có nhịp thở 0.28s) để vừa bảo đảm tối ưu Retention (APV > 75–85% với tổng Watch Time cao ~32s+), vừa có đủ chiều sâu câu chuyện và "độ lắng" cảm xúc (Emotional Breathing Room) chạm đến trái tim người xem, không bị vội vã.
   2. *Hook 3 giây đầu:* Đánh thẳng vào nỗi đau / nghịch lý đời thực (stress, overthinking, mất ngủ, nóng giận), giao diện thoáng, chữ Hook lớn nổi bật.
   3. *Hình ảnh & B-roll:* Chuyển sang dùng **Video B-roll chuyển động cinematic** (khói trà, mưa rơi, rừng cây, nước chảy...) hoặc Hybrid (Hook bắt buộc là video B-roll). Chuyển cảnh nhịp 2–3s/cảnh.
-  4. *Giọng đọc & Nhịp điệu (TTS):* Vietneu-TTS giọng Đức Trí hoặc giọng clone mẫu **"laytutritueconhan"** (trích xuất từ `mau.mp3`, giọng chiêm nghiệm sâu lắng, đĩnh đạc) tốc độ chuẩn **0.95** (chậm rãi, trầm ấm, đĩnh đạc, đúng chất kể chuyện chiêm nghiệm).
+  4. *Giọng đọc & Nhịp điệu (TTS):* Mặc định 100% sử dụng **VieNeu-TTS v3 Turbo** chất lượng phòng thu **48kHz** (thay cho v3nano 24kHz trước đây). Hỗ trợ giọng Đức Trí hoặc giọng clone mẫu **"laytutritueconhan"** (nạp tức thì qua preset `voice_preset_turbo.json`, giọng chiêm nghiệm sâu lắng, đĩnh đạc) tốc độ chuẩn **0.95** (chậm rãi, trầm ấm, đĩnh đạc, xử lý tempo in-memory qua FFmpeg atempo giữ nguyên cao độ và chất lượng 48kHz).
   5. *Quy chuẩn xử lý âm thanh tự nhiên (Audio Mastering):*
      - *Gieo nhịp thở (Phrase Chunking):* Chia câu thành các cụm từ ngắn có nghĩa bằng dấu phẩy `,` để AI tự động lấy hơi và hạ giọng tự nhiên như người thật.
      - *Khử giật & tiếng khựng:* Áp dụng Micro-fade (25ms in / 35ms out) và khoảng nghỉ nhịp thở **0.28s** giữa các câu.
      - *Hòa âm Sidechain Ducking:* Nhạc nền Piano tự thở (lùi xuống 8–10% khi có lời thoại, nổi lên 16–18% ở các khoảng nghỉ ngắt câu).
      - *Broadcast Warmth EQ & EBU R128:* Tăng dải trầm 220Hz tạo độ dày ấm, giảm chói gắt 6000Hz, chuẩn hóa độ to -14 LUFS cho YouTube Shorts / TikTok.
-  7. *CTA (Keyword Comment Hook - Tối ưu tương tác 1 từ khóa):*
-     - *Nguyên tắc:* Tuyệt đối không dùng câu hỏi mở mơ hồ (bắt người xem nghĩ và gõ dài gây lười comment). Sử dụng kỹ thuật Micro-CTA yêu cầu gõ một từ khóa cụ thể, ngắn gọn (1–2 phím chạm) để giảm lực cản hành động (Cognitive Friction = 0), kích hoạt thuật toán phân phối viral.
-     - *Đồng bộ 2 lớp ở 2–3 giây cuối:*
-       + *Lời đọc (Voiceover):* Câu chốt kêu gọi hành động trực tiếp. (Ví dụ: *"Nếu bạn vừa thở một hơi thật sâu, hãy bình luận chữ 'ĐÃ THỞ' nhé."*, *"Hôm nay bạn đã gọi cho mẹ chưa? Hãy bình luận 'RỒI' hoặc 'CHƯA'."*, *"Cầu chúc bạn một đêm an giấc, để lại chữ 'AN' nhé."*).
-       + *Chữ trên màn hình (Highlight Text):* Thẻ chữ nổi bật cỡ lớn, màu vàng hổ phách `#fbbf24`, hiển thị rõ ràng từ khóa cần gõ (ví dụ: `BÌNH LUẬN "ĐÃ THỞ"`, `BÌNH LUẬN "RỒI" / "CHƯA"`).
+  7. *Kết thúc tự nhiên & Nhận diện kênh (Ending & Brand Outro):*
+     - Không gượng ép kêu gọi bình luận hay bắt người xem tương tác giả tạo.
+     - Cuối mỗi video kết thúc bằng câu đúc kết sâu sắc, tự nhiên của kịch bản, kèm hình ảnh nửa chén trà và slogan nhận diện: *"Nhìn sâu để sống nhẹ"* để lại dư âm lắng đọng cho người xem.
 - **QUY CHUẨN ÂM NHẠC BẮT BUỘC (ZERO COPYRIGHT CLAIM POLICY - 100% NHẠC SẠCH KHÔNG BẢN QUYỀN):**
   1. *Nguyên tắc triệt để:* Tuyệt đối KHÔNG sử dụng các bài nhạc lofi/ambient trôi nổi có đăng ký bảo hộ Content ID qua các bên thứ ba như HAAWK, Identifyy, Audiam, CD Baby, Believe Music (bài học: bản nhạc *Lofi Study* của FASSounds từng bị HAAWK claim từ 2:27 đến 5:39 ở tập 5).
   2. *Nguồn nhạc hợp lệ duy nhất:*
@@ -29,6 +47,7 @@
      - Nhạc piano thiền định của Liborio Conti (*On A Piano Cloud*, *Tranquil Reflections*) không đăng ký Content ID.
      - Nhạc tự sản xuất hoặc Public Domain (CC0).
   3. *Lưu trữ chuẩn:* File nhạc nền chính thức được đặt tại `remotion-video/public/background_music.mp3` của cả 2 dự án (bản chuẩn hiện tại là *On A Piano Cloud*, 20 phút piano ambient thư thái, an toàn 100% không Content ID).
+  4. *Kho nhạc đa dạng & Tự động chọn nhạc theo nội dung (Mood-based Dynamic Music Selection):* Đã tích hợp kho 18 bản nhạc No-Copyright chuẩn Studio đặt tại `assets_hub/music/` (kèm file `music_registry.json`). Module `pipeline/music_selector.py` tự động phân tích tiêu đề và kịch bản (gia đình, cha mẹ, cơn giận, thiền trà, hy vọng) để ghép bản nhạc có tần số cảm xúc tương thích nhất cho từng video.
 - **QUY CHUẨN BẮT BUỘC TẠO THUMBNAIL CHO SHORTS & DUYỆT THỊ GIÁC (MỚI CHỐT):**
   1. *Bắt buộc tạo file Thumbnail riêng (1080x1920):* Do YouTube Shorts đã mở tính năng upload ảnh bìa (Upload file) trực tiếp từ PC, mỗi video Shorts khi sản xuất BẮT BUỘC phải tạo 1 file ảnh thumbnail riêng (`thumbnail_{video_id}.jpg`).
   2. *Bắt buộc đưa Thumbnail vào thư mục `input/` để duyệt:* File ảnh thumbnail BẮT BUỘC phải được lưu trong thư mục `output/{video_id}/input/` để người dùng mở kiểm tra và duyệt trực tiếp cùng với toàn bộ nguyên liệu trước khi kích hoạt render.
@@ -44,6 +63,13 @@
      - Khi người dùng đăng video Shorts trên điện thoại hoặc hệ thống tự động bắt frame đầu, chỉ cần chọn ngay Frame 0 (giây đầu tiên) là video có ngay ảnh bìa hoàn mỹ, chuyên nghiệp, giữ chân người xem.
      - Hơn 97% thời lượng còn lại (từ giây thứ 1 đến hết) là 100% Video B-roll chuyển động thực tế, bảo đảm an toàn tuyệt đối cho chính sách Bật kiếm tiền (YPP) của YouTube (hoàn toàn không bị tính là video slideshow tĩnh).
 
+- **QUY CHUẨN B-ROLL CHO SHORTS (100% NATIVE VERTICAL 9:16 & ƯU TIÊN TẢI MỚI):**
+  1. *Nguyên tắc bắt buộc 100% video quay dọc (Native Vertical 1080x1920):* Bắt buộc `height >= width` (1080x1920 hoặc 4K dọc). Tuyệt đối cấm lấy video ngang 16:9 zoom crop làm vỡ hạt. Toàn bộ video ngang trong assets_hub của Short đã bị thanh trừng, chỉ lưu trữ 100% video dọc.
+  2. *Quy trình ưu tiên tải video mới (New Native Vertical First):*
+     - Khi sản xuất video, pipeline BẮT BUỘC ưu tiên tìm kiếm và tải các video MỚI từ kho stock quay dọc (Mixkit Vertical, Pexels Portrait) bám sát chi tiết ngữ cảnh của từng cảnh trong kịch bản.
+     - Chỉ trong trường hợp không thể tải hoặc không tìm thấy video mới phù hợp, mới được phép tái sử dụng video trong kho nội bộ.
+  3. *Bắt buộc trích xuất Keyframe thẩm định thị giác:*
+     - Mỗi khi tải video mới về, pipeline BẮT BUỘC dùng FFmpeg cắt ra 1–3 khung hình tiêu biểu (keyframes) để thẩm định trực tiếp: đúng phong cách Á Đông, tĩnh lặng, ấm áp, giàu tính điện ảnh và đúng ẩn dụ kịch bản, tuyệt đối không chọn dựa trên thẻ tags văn bản.
 - **QUY CHUẨN THẨM ĐỊNH THỊ GIÁC KHI TẢI / CHỌN B-ROLL (STRICT VISUAL INSPECTION - TUYỆT ĐỐI KHÔNG DỰA TRÊN NHÃN/TAGS):**
   1. *Nguyên tắc cốt tử:* TUYỆT ĐỐI KHÔNG dựa trên tiêu đề, thẻ tag hay mô tả văn bản của video stock để chọn bừa vào kịch bản (bài học: tag "father", "tea", "nature" trên stock thường là cảnh người phương Tây, bánh pancake, đường phố hiện đại hoặc cành lá/mặt nước vu vơ không liên quan).
   2. *Bắt buộc trích xuất Frame thẩm định bằng mắt:* Khi tải hoặc cân nhắc video B-roll, pipeline BẮT BUỘC phải dùng FFmpeg cắt ra 1–3 khung hình tiêu biểu (keyframes) để xem xét trực tiếp tính phù hợp trước khi quyết định chọn.
@@ -60,6 +86,8 @@
   2. *Bước 2 - Copy toàn bộ video/hình ảnh đã cắt vào thư mục input để duyệt:* Copy toàn bộ các file hình ảnh hoặc video B-roll đã cắt (footage/clips/images chuẩn tỷ lệ 9:16 cho Short hoặc 16:9 cho Long) của tất cả các cảnh vào thư mục `output/{video_id}/input/` đầu ra (cùng với `video_data.json`, `voiceover.wav`, `script.json`, `script.md`) để người dùng có thể mở ra kiểm tra, duyệt thị giác trực tiếp.
   3. *Bước 3 - Đồng bộ toàn bộ thư mục input lên Google Drive sau khi duyệt:* Sau khi người dùng xác nhận duyệt xong kịch bản, giờ hẹn lịch và nguyên liệu, pipeline mới tiến hành copy/đồng bộ TOÀN BỘ thư mục `output/{video_id}/input/` (chứa đầy đủ video, hình ảnh đã cắt, audio, script, metadata) lên Google Drive cá nhân tại thư mục `{video_id}/input/` tương ứng.
   4. *Bước 4 - Render & Tự động lên lịch phát sóng:* Sau khi đồng bộ Drive thành công 100%, mới kích hoạt bước render video thành phẩm. Hệ thống tự động sử dụng giờ schedule đã thống nhất để đặt lịch phát sóng (Scheduled) trực tiếp lên YouTube (ở chế độ Private Scheduled) và TikTok.
+- **QUY CHUẨN BẮT BUỘC TICK NỘI DUNG AI (containsSyntheticMedia = True):**
+  Mọi video (cả Short và Long Video) khi upload lên YouTube (dù qua Cloud GitHub Actions hay Local script) BẮT BUỘC luôn tự động đặt `"containsSyntheticMedia": True` trong `status` của YouTube Data API v3. Điều này bảo đảm minh bạch 100% nội dung AI (giọng đọc TTS/clone, hình ảnh AI), bảo vệ kênh an toàn tuyệt đối, tránh mọi nguy cơ bị YouTube quét phạt hoặc tước quyền Bật kiếm tiền (YPP).
 - **QUY TRÌNH PHÊ DUYỆT & RENDER (MẶC ĐỊNH GITHUB ACTIONS CLOUD WORKER):**
   - **Duyệt kịch bản:** Liệt kê chi tiết nội dung (Timeline, Lời thoại/Voiceover, Highlight, Mô tả B-roll/Visual) trước trong chat để người dùng duyệt và sửa đổi.
   - **Render mặc định qua GitHub Actions Cloud Worker (0% tài nguyên máy):**
