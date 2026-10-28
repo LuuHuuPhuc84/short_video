@@ -11,6 +11,12 @@ import {
   Loop,
 } from "remotion";
 
+export interface WordTiming {
+  word: string;
+  startFrame: number;
+  endFrame: number;
+}
+
 export interface SceneItem {
   scene: number;
   tag?: string;
@@ -20,6 +26,7 @@ export interface SceneItem {
   videoDurationInFrames?: number;
   startFrame: number;
   durationInFrames: number;
+  words?: WordTiming[];
 }
 
 export interface ZenShortVideoProps {
@@ -471,14 +478,24 @@ const CinematicGradientOverlay: React.FC<{
 const KaraokeWordBounce: React.FC<{
   text: string;
   durationInFrames: number;
-}> = ({ text, durationInFrames }) => {
+  wordTimings?: WordTiming[];
+}> = ({ text, durationInFrames, wordTimings }) => {
   const frame = useCurrentFrame();
 
   const words = React.useMemo(() => {
+    // Ưu tiên 1: Dùng wordTimings chính xác từng từ từ Whisper / Forced Alignment
+    if (wordTimings && wordTimings.length > 0) {
+      return wordTimings.map((wt) => ({
+        word: wt.word,
+        start: wt.startFrame,
+        end: wt.endFrame,
+      }));
+    }
+
+    // Ưu tiên 2 (Fallback): Phân bổ thời lượng theo độ dài từ và dấu câu
     const rawWords = text.trim().split(/\s+/);
     if (rawWords.length === 0) return [];
 
-    // Phân bổ thời lượng theo độ dài từ và dấu câu
     const weights = rawWords.map((w) => {
       let weight = Math.max(w.length, 2);
       if (/[.,!?;:…]$/.test(w)) {
@@ -500,7 +517,7 @@ const KaraokeWordBounce: React.FC<{
       curr = end;
       return { word, start, end };
     });
-  }, [text, durationInFrames]);
+  }, [text, durationInFrames, wordTimings]);
 
   return (
     <div
@@ -611,6 +628,7 @@ const PacedCaptionCard: React.FC<{ scene: SceneItem }> = ({ scene }) => {
         <KaraokeWordBounce
           text={scene.text}
           durationInFrames={scene.durationInFrames}
+          wordTimings={scene.words}
         />
       </div>
     </div>

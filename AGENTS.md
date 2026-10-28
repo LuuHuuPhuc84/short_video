@@ -35,7 +35,11 @@
   3. *Hình ảnh & Nhịp điệu bổ trợ (Visual Pacing):*
      - Chuyển sang dùng **Video B-roll chuyển động cinematic** (khói trà, mưa rơi, rừng cây, nước chảy...) hoặc Hybrid (Hook bắt buộc là video B-roll).
      - Đối với các video triết lý/chiêm nghiệm, tránh giữ một góc quay tĩnh quá 3–4 giây. Hãy xen kẽ các cảnh quay cận (rót nước, ánh sáng, góc mặt, cử chỉ tay, làn khói) để người xem không bị cảm giác nhàm chán. Chuyển cảnh nhịp 2–3s/cảnh.
-  4. *Giọng đọc & Nhịp điệu (TTS):* Mặc định 100% sử dụng **VieNeu-TTS v3 Turbo** chất lượng phòng thu **48kHz** (thay cho v3nano 24kHz trước đây). Hỗ trợ giọng Đức Trí hoặc giọng clone mẫu **"laytutritueconhan"** (nạp tức thì qua preset `voice_preset_turbo.json`, giọng chiêm nghiệm sâu lắng, đĩnh đạc) tốc độ chuẩn **0.95** (chậm rãi, trầm ấm, đĩnh đạc, xử lý tempo in-memory qua FFmpeg atempo giữ nguyên cao độ và chất lượng 48kHz).
+  4. *Giọng đọc & Nhịp điệu (TTS v3 Turbo 0.95) & Phụ đề Karaoke chuẩn xác (Word-level Timestamps):*
+     - **Giọng đọc chuẩn:** Mặc định 100% cho cả Short Video và Long Video sử dụng **VieNeu-TTS v3 Turbo** chất lượng phòng thu **48kHz** (tốc độ chuẩn **0.95**, trầm ấm, chiêm nghiệm, ngắt nhịp thở 0.28s). Nạp giọng clone mẫu `laytutritueconhan` qua preset `voice_preset_turbo.json`.
+     - **Phụ đề Karaoke khớp từng mili-giây (Word-level Timestamps):** Bắt buộc trích xuất chính xác timestamp từng từ (`words: [{word, startFrame, endFrame}]`) qua Whisper / Forced Alignment trực tiếp từ audio thực tế. Tuyệt đối KHÔNG chia đều thời lượng cảnh tuyến tính (tránh chữ đi sau tiếng 1–3s). Remotion component `KaraokeWordBounce` đọc trực tiếp `startFrame` và `endFrame` thực tế của từng từ, đảm bảo chữ nảy khớp 100% từng từ phát ra.
+     - **Quy chuẩn chống trùng lặp B-roll (Strict Anti-Duplicate B-roll Registry):** Quản trị kho B-roll độc bản, kiểm tra mã SHA-256 nội dung của từng clip trước khi gán vào kịch bản. Tuyệt đối không để 2 cảnh trong các tập video khác nhau sử dụng cùng 1 clip video stock.
+     - **Quy tắc bảo vệ video đã công chiếu:** Các video đã được công chiếu hoặc người dùng đánh dấu đã phát sóng (ví dụ `nct_v08`) phải được loại trừ 100% khỏi các lệnh batch render lại.
   5. *Quy chuẩn xử lý âm thanh tự nhiên (Audio Mastering):*
      - *Gieo nhịp thở (Phrase Chunking):* Chia câu thành các cụm từ ngắn có nghĩa bằng dấu phẩy `,` để AI tự động lấy hơi và hạ giọng tự nhiên như người thật.
      - *Khử giật & tiếng khựng:* Áp dụng Micro-fade (25ms in / 35ms out) và khoảng nghỉ nhịp thở **0.28s** giữa các câu.
