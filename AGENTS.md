@@ -28,16 +28,22 @@
 - Nhận diện sách & tác giả: Đưa Tên sách ("AN TRÚ TRONG HIỆN TẠI") và Tác giả **"Thiền sư Thích Nhất Hạnh"** thành thanh badge nhỏ tinh tế ở góc trên, KHÔNG dùng Hero Header lớn che kín 3 giây đầu.
 - **QUY CHUẨN VIDEO SHORTS MỚI (ÁP DỤNG TỪ VIDEO TIẾP THEO):**
   1. *Thời lượng & Dung lượng chữ:* Khung thời lượng chuẩn vàng là **38s – 42s** (dung lượng lý tưởng **90 – 100 từ** ở tốc độ TTS 0.95 có nhịp thở 0.28s) để vừa bảo đảm tối ưu Retention (APV > 75–85% với tổng Watch Time cao ~32s+), vừa có đủ chiều sâu câu chuyện và "độ lắng" cảm xúc (Emotional Breathing Room) chạm đến trái tim người xem, không bị vội vã.
-  2. *Hook 3 giây đầu:* Đánh thẳng vào nỗi đau / nghịch lý đời thực (stress, overthinking, mất ngủ, nóng giận), giao diện thoáng, chữ Hook lớn nổi bật.
-  3. *Hình ảnh & B-roll:* Chuyển sang dùng **Video B-roll chuyển động cinematic** (khói trà, mưa rơi, rừng cây, nước chảy...) hoặc Hybrid (Hook bắt buộc là video B-roll). Chuyển cảnh nhịp 2–3s/cảnh.
+  2. *Hook 3 giây đầu & Xuất hiện ngay giây 00:00:*
+     - Khán giả lướt Shorts cực nhanh. Tuyệt đối tránh mở đầu bằng khoảng lặng hay intro nhạc nền dài. Câu nói đầu tiên và dòng chữ đầu tiên phải xuất hiện ngay lập tức tại giây `00:00`.
+     - Đánh thẳng vào nỗi đau / nghịch lý đời thực (stress, overthinking, mất ngủ, nóng giận), giao diện thoáng, chữ Hook lớn nổi bật.
+     - Tận dụng phụ đề động (dynamic captions) với từ khóa nổi bật được đổi màu để kích thích thị giác người xem ngay từ mili-giây đầu tiên.
+  3. *Hình ảnh & Nhịp điệu bổ trợ (Visual Pacing):*
+     - Chuyển sang dùng **Video B-roll chuyển động cinematic** (khói trà, mưa rơi, rừng cây, nước chảy...) hoặc Hybrid (Hook bắt buộc là video B-roll).
+     - Đối với các video triết lý/chiêm nghiệm, tránh giữ một góc quay tĩnh quá 3–4 giây. Hãy xen kẽ các cảnh quay cận (rót nước, ánh sáng, góc mặt, cử chỉ tay, làn khói) để người xem không bị cảm giác nhàm chán. Chuyển cảnh nhịp 2–3s/cảnh.
   4. *Giọng đọc & Nhịp điệu (TTS):* Mặc định 100% sử dụng **VieNeu-TTS v3 Turbo** chất lượng phòng thu **48kHz** (thay cho v3nano 24kHz trước đây). Hỗ trợ giọng Đức Trí hoặc giọng clone mẫu **"laytutritueconhan"** (nạp tức thì qua preset `voice_preset_turbo.json`, giọng chiêm nghiệm sâu lắng, đĩnh đạc) tốc độ chuẩn **0.95** (chậm rãi, trầm ấm, đĩnh đạc, xử lý tempo in-memory qua FFmpeg atempo giữ nguyên cao độ và chất lượng 48kHz).
   5. *Quy chuẩn xử lý âm thanh tự nhiên (Audio Mastering):*
      - *Gieo nhịp thở (Phrase Chunking):* Chia câu thành các cụm từ ngắn có nghĩa bằng dấu phẩy `,` để AI tự động lấy hơi và hạ giọng tự nhiên như người thật.
      - *Khử giật & tiếng khựng:* Áp dụng Micro-fade (25ms in / 35ms out) và khoảng nghỉ nhịp thở **0.28s** giữa các câu.
      - *Hòa âm Sidechain Ducking:* Nhạc nền Piano tự thở (lùi xuống 8–10% khi có lời thoại, nổi lên 16–18% ở các khoảng nghỉ ngắt câu).
      - *Broadcast Warmth EQ & EBU R128:* Tăng dải trầm 220Hz tạo độ dày ấm, giảm chói gắt 6000Hz, chuẩn hóa độ to -14 LUFS cho YouTube Shorts / TikTok.
-  7. *Kết thúc tự nhiên & Nhận diện kênh (Ending & Brand Outro):*
+  6. *Cú chốt, Vòng lặp & Nhận diện kênh (Ending, Looping & Brand Outro):*
      - Không gượng ép kêu gọi bình luận hay bắt người xem tương tác giả tạo.
+     - Câu kết của Shorts được gọt giũa ngắn gọn, tạo cảm giác lắng đọng hoặc kết nối mượt mà trở lại câu mở đầu (Seamless Looping), khiến người xem muốn dừng lại xem lại lần 2 hoặc để lại bình luận chia sẻ câu chuyện của chính họ.
      - Cuối mỗi video kết thúc bằng câu đúc kết sâu sắc, tự nhiên của kịch bản, kèm hình ảnh nửa chén trà và slogan nhận diện: *"Nhìn sâu để sống nhẹ"* để lại dư âm lắng đọng cho người xem.
 - **QUY CHUẨN ÂM NHẠC BẮT BUỘC (ZERO COPYRIGHT CLAIM POLICY - 100% NHẠC SẠCH KHÔNG BẢN QUYỀN):**
   1. *Nguyên tắc triệt để:* Tuyệt đối KHÔNG sử dụng các bài nhạc lofi/ambient trôi nổi có đăng ký bảo hộ Content ID qua các bên thứ ba như HAAWK, Identifyy, Audiam, CD Baby, Believe Music (bài học: bản nhạc *Lofi Study* của FASSounds từng bị HAAWK claim từ 2:27 đến 5:39 ở tập 5).
@@ -54,7 +60,8 @@
   3. *Tiêu chuẩn thiết kế Thumbnail Shorts:*
      - *Tỷ lệ & Kích thước:* Chuẩn dọc 9:16 (1080 x 1920 Full HD).
      - *Hình ảnh nền:* Dùng hình ảnh AI nghệ thuật vẽ đúng bối cảnh, sâu lắng, chân thực và đậm chất cảm xúc của kịch bản.
-     - *Title Hook đắt giá:* Chữ to (60–64px bold), tối đa 6–8 chữ (ví dụ: `"BỐ CHƯA TỪNG NÓI YÊU CON"`, `"MÓN ĂN KHÔNG MUA ĐƯỢC Ở ĐÂU"`), màu vàng hổ phách `#fbbf24` hoặc trắng viền đen tương phản cao. Thẻ kính mờ Zen Amber Glass viền vàng.
+     - *Chọn khung hình có biểu cảm / hành động đắt giá:* Khi chọn ảnh bìa (thumbnail) hoặc chọn frame trích xuất, ưu tiên khung hình rõ nét, giàu cảm xúc nhất (khoảnh khắc rót trà, bàn tay nhăn nheo của cha mẹ, ánh mắt lặng lẽ).
+     - *Title Hook đắt giá & Text Overlay:* Dòng chữ ngắn (3–5 từ, tối đa 6–8 chữ, ví dụ: `"Càng giữ, càng khó ngủ"`, `"Đừng để chữ MAI..."`), chữ to (60–64px bold), màu vàng hổ phách `#fbbf24` hoặc trắng viền đen tương phản cao, đặt ở nửa trên khung hình (Safe Zone) tránh bị nút Like/Comment che. Thẻ kính mờ Zen Amber Glass viền vàng.
      - *Tọa độ Safe Zone vàng:* Nằm ở 1/3 phía trên khung hình (`top: 280px – 350px`), dưới badge thương hiệu/sách, tuyệt đối tránh vùng đáy và cạnh phải để không bị tên kênh và cụm nút tương tác của Shorts che.
   4. *BẮT BUỘC 1 GIÂY ĐẦU TIÊN CỦA VIDEO LÀ HÌNH THUMBNAIL (COVER FRAME TRICK):*
      - Do YouTube Shorts trên ứng dụng điện thoại chỉ cho phép kéo con trỏ chọn ảnh bìa từ các khung hình bên trong video, mỗi video Shorts khi render BẮT BUỘC phải chèn ảnh Thumbnail (`thumbnail_{video_id}.jpg`) vào đúng **1 giây đầu tiên (Frame 0 – 30 @ 30fps)** của video.

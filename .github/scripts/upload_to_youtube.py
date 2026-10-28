@@ -182,6 +182,23 @@ def upload_short_to_youtube(video_path, video_id):
     else:
         print("ℹ️ Không tìm thấy file thumbnail để upload kèm.")
 
+    # TỰ ĐỘNG XÓA BẢN VIDEO CŨ NẾU CÓ YÊU CẦU THAY THẾ (replace_youtube_id)
+    old_yt_id = None
+    if info_file and info_file.exists():
+        try:
+            with open(info_file, "r", encoding="utf-8-sig") as f:
+                inf = json.load(f)
+            old_yt_id = inf.get("replace_youtube_id") or inf.get("old_youtube_id")
+        except Exception:
+            pass
+    if old_yt_id and old_yt_id != yt_id:
+        try:
+            print(f"🗑️ Đang tự động gỡ bỏ video cũ trên YouTube: {old_yt_id}...")
+            youtube.videos().delete(id=old_yt_id).execute()
+            print(f"✅ ĐÃ XÓA THÀNH CÔNG VIDEO CŨ ({old_yt_id}) ĐỂ THAY THẾ BẰNG BẢN MỚI ({yt_id})!")
+        except Exception as de:
+            print(f"⚠️ Cảnh báo gỡ video cũ {old_yt_id}: {de}")
+
     return {
         "youtube_id": yt_id,
         "youtube_url": yt_url,
