@@ -88,14 +88,19 @@ def upload_short_to_youtube(video_path, video_id):
     if "#shorts" not in title.lower():
         title = f"{title} #shorts"
 
+    privacy = d.get("privacyStatus") or d.get("privacy") or "private"
+    if str(schedule_str).strip().lower() in ["now", "public", "công chiếu ngay", "công chiếu luôn", "immediately"]:
+        privacy = "public"
+        schedule_str = None
+
     status_dict = {
-        "privacyStatus": "private",
+        "privacyStatus": privacy,
         "selfDeclaredMadeForKids": False,
         "containsSyntheticMedia": True
     }
 
-    publish_log = "PRIVATE (Bản nháp / Draft)"
-    if schedule_str:
+    publish_log = f"{privacy.upper()} ({'Công chiếu công khai ngay' if privacy == 'public' else 'Bản nháp / Draft'})"
+    if schedule_str and privacy != "public":
         try:
             import datetime
             s = str(schedule_str).strip()
