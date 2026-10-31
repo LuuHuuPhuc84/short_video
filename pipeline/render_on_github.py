@@ -257,10 +257,38 @@ def render_short_video_via_github(video_id, auto_cleanup=True, download_local=Fa
             if bg_path.exists() and bg_path not in files_to_push:
                 files_to_push.append(bg_path)
 
-    # Đính kèm info.json nếu đã có sẵn ở local
+    # Đính kèm info.json nếu đã có sẵn ở local (đảm bảo luôn có hashtag số tập)
     local_info = OUTPUT_DIR / video_id / "info.json"
-    if local_info.exists() and local_info not in files_to_push:
-        files_to_push.append(local_info)
+    if local_info.exists():
+        try:
+            with open(local_info, "r", encoding="utf-8") as f:
+                idata = json.load(f)
+            ep_hashtag = f"#{video_id}"
+            cur_desc = idata.get("description", "")
+            changed = False
+            if ep_hashtag not in cur_desc and video_id not in cur_desc:
+                if "#shorts" in cur_desc:
+                    idata["description"] = cur_desc.replace("#shorts", f"{ep_hashtag} #shorts")
+                else:
+                    idata["description"] = f"{cur_desc.strip()} {ep_hashtag}"
+                changed = True
+            cur_tags = idata.get("tags", [])
+            if not isinstance(cur_tags, list):
+                cur_tags = [str(cur_tags)] if cur_tags else []
+            if video_id not in cur_tags:
+                cur_tags.insert(0, video_id)
+                changed = True
+            idata["tags"] = cur_tags
+            if changed:
+                with open(local_info, "w", encoding="utf-8") as f:
+                    json.dump(idata, f, ensure_ascii=False, indent=2)
+                pub_inf = PUBLIC_DIR / f"info_{video_id}.json"
+                with open(pub_inf, "w", encoding="utf-8") as f:
+                    json.dump(idata, f, ensure_ascii=False, indent=2)
+        except Exception as e:
+            print(f"⚠️ Kiểm tra hashtag {video_id}: {e}")
+        if local_info not in files_to_push:
+            files_to_push.append(local_info)
 
     # Đính kèm thumbnail_{video_id}.jpg trong cả public/ và output/ để Remotion render Frame 0 và Cloud Worker upload lên YouTube & Drive
     pub_thumb = PUBLIC_DIR / f"thumbnail_{video_id}.jpg"

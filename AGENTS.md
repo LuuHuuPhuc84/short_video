@@ -4,22 +4,34 @@
 
 ## Quyết định đã chốt
 - **KIẾN TRÚC MODULE HÓA ĐƠN NHIỆM (TIẾT KIỆM 90% TOKEN & KHÔNG PHỤ THUỘC LẪN NHAU):**
-  Hệ thống tách biệt hoàn toàn thành 3 module độc lập qua CLI trung tâm `pipeline/cli.py`:
-  1. *Module 1 - Render thuần túy (`pipeline/core_render.py` hoặc `python pipeline/cli.py render <id>`):*
+  Hệ thống chuẩn hóa hoàn toàn thành 10 module độc lập điều phối qua CLI trung tâm `pipeline/cli.py`:
+  1. *Module 1 - Render thuần túy (`pipeline/core_render.py` hoặc `python pipeline/cli.py render <id> [--local]`):*
      - Chỉ làm 1 việc duy nhất: Sinh file video `output/{id}/video_{id}.mp4` (mặc định Cloud, thêm `--local` nếu render máy).
-     - Tuyệt đối KHÔNG tự tiện tải lên YouTube hay Drive.
-     - Toàn bộ Style/Color (Zen Amber, Clean Natural, Vintage Warm) được chọn qua trường `"stylePreset"` trong file JSON, KHÔNG BAO GIỜ sửa trực tiếp code React `.tsx`.
-  2. *Module 2 - Google Drive Sync (`pipeline/core_drive.py` hoặc `python pipeline/cli.py drive <id>`):*
-     - Chỉ làm 1 việc: Tải video thành phẩm hoặc thư mục `input/` (`--input`) lên Google Drive cá nhân để xem thử hoặc lưu trữ.
-  3. *Module 3 - YouTube Publisher (`pipeline/core_youtube.py` hoặc `python pipeline/cli.py youtube <id>`):*
-     - Chỉ làm 1 việc: Xuất bản video đã có lên YouTube Shorts (Draft hoặc Scheduled) kèm thumbnail và `containsSyntheticMedia: True`.
-     - CHỈ KÍCH HOẠT khi người dùng đã xem và ra lệnh duyệt xuất bản.
-    4. *Module 4 - Assets Hub Manager (`pipeline/core_assets.py` hoặc `python pipeline/cli.py assets <check|music|thumb|pack>`):*
-     - Quản trị tập trung kho tài nguyên `assets_hub/` (kho 18 bản nhạc No-Copyright và hơn 160 video B-roll thiên nhiên).
-     - Tự động gợi ý nhạc nền phù hợp với tần số cảm xúc (`assets music "<câu_thoại>"`).
-     - Tự động tạo ảnh Thumbnail chuẩn Safe Zone (`assets thumb <id>`).
-     - Tự động đóng gói nguyên liệu vào `output/<id>/input/` để duyệt (`assets pack <id>`).
-  5. *Lệnh quy trình toàn diện (khi cần chạy 1-click trọn gói):* `python pipeline/cli.py all <id>`.
+     - Toàn bộ Style/Color được chọn qua `"stylePreset"`, KHÔNG BAO GIỜ sửa trực tiếp code React `.tsx`.
+  2. *Module 2 - Google Drive Sync (`pipeline/core_drive.py` hoặc `python pipeline/cli.py drive <id> [--input]`):*
+     - Chỉ làm 1 việc: Tải video thành phẩm hoặc thư mục `input/` lên Google Drive cá nhân để xem thử hoặc lưu trữ.
+  3. *Module 3 - YouTube Publisher (`pipeline/core_youtube.py` hoặc `python pipeline/cli.py youtube <id> [--schedule]`):*
+     - Chỉ làm 1 việc: Xuất bản video đã có lên YouTube (Draft hoặc Scheduled) kèm thumbnail và `containsSyntheticMedia: True`.
+  4. *Module 4 - Reschedule Siêu Tốc (`pipeline/core_schedule.py` hoặc `python pipeline/cli.py schedule <id|batch> <time>`):*
+     - Đổi lịch phát sóng đã xuất bản trên YouTube (publishAt), cập nhật file Excel và info.json trong ~1 giây.
+  5. *Module 5 - Fast Music Manager (`pipeline/core_music.py` hoặc `python pipeline/cli.py music {list|suggest|swap}`):*
+     - Quản trị 18 bản nhạc No-Copyright trong kho `assets_hub/music/`.
+     - Fast Music Swap: Đổi bài nhạc nền và hòa âm lại audio trong đúng 1-2 giây mà KHÔNG cần đọc lại TTS hay chạy lại Whisper.
+     - Tự động áp dụng chuẩn hòa âm: BGM cố định volume=0.15 (Shorts) hoặc Gentle Sidechain Ducking (Long).
+  6. *Module 6 - AI Voice & Karaoke (`pipeline/core_voice.py` hoặc `python pipeline/cli.py voice {gen|align} <id>`):*
+     - Sinh giọng đọc mộc 48kHz VieNeu-TTS v3 Turbo (Thiện Minh 0.88, ngắt nghỉ 0.35s).
+     - Trích xuất phụ đề Karaoke Whisper Forced Alignment (Text Lock) khớp từng mili-giây.
+  7. *Module 7 - B-roll & Visual Inspection (`pipeline/core_broll.py` hoặc `python pipeline/cli.py broll {inspect|swap} <id>`):*
+     - Trích xuất keyframes tiêu biểu từng cảnh ra thư mục `preview/` để người dùng duyệt mắt trong 3 giây.
+     - Fast Scene Swap: Thay thế 1 cảnh B-roll bất kỳ trong 1 giây mà không ảnh hưởng audio.
+  8. *Module 8 - Thumbnail & Cover Studio (`pipeline/core_thumb.py` hoặc `python pipeline/cli.py thumb make <id>`):*
+     - Tạo ảnh bìa chuẩn Safe Zone (Top 280-350px, thẻ Zen Amber Glass). Tự động chèn Cover Frame Trick (Frame 0-30 @ 30fps) cho Shorts.
+  9. *Module 9 - Cloud Worker Coordinator (`pipeline/core_cloud.py` hoặc `python pipeline/cli.py cloud {batch|single|status}`):*
+     - Điều phối GitHub Actions Parallel Matrix Worker render video song song và kiểm tra tiến độ trực tiếp qua CLI.
+  10. *Module 10 - System Doctor & Backup (`pipeline/core_doctor.py` hoặc `python pipeline/cli.py {doctor|backup}`):*
+     - Khám sức khỏe toàn diện hệ thống (Token Drive, Token YouTube, GitHub PAT, Disk Space).
+     - Sao lưu 100% hệ thống lên Google Drive.
+  11. *Lệnh quy trình toàn diện:* `python pipeline/cli.py all <id>`.
 - **TỰ ĐỘNG GIA HẠN TOKEN OAUTH HÀNG TUẦN (ZERO-TOUCH TOKEN GUARDS):**
   1. *YouTube Token AutoGuard:* Task Schedule `\YouTube_Token_AutoGuard` chạy 9:00 AM hàng ngày và khi login. Khi token đạt 5.5 - 6 ngày, tự động mở Opera để gia hạn và sync GitHub Secrets.
   2. *Google Drive Token AutoGuard:* Task Schedule `\GDrive_Token_AutoGuard` chạy 9:05 AM hàng ngày và khi login. Khi token đạt 5.5 - 6 ngày, tự động mở Microsoft Edge để người dùng bấm Allow 1-click, lưu token và đồng bộ tự động lên GitHub Secrets cho cả 2 repo Short & Long Video.
@@ -35,20 +47,33 @@
   3. *Hình ảnh & Nhịp điệu bổ trợ (Visual Pacing):*
      - Chuyển sang dùng **Video B-roll chuyển động cinematic** (khói trà, mưa rơi, rừng cây, nước chảy...) hoặc Hybrid (Hook bắt buộc là video B-roll).
      - Đối với các video triết lý/chiêm nghiệm, tránh giữ một góc quay tĩnh quá 3–4 giây. Hãy xen kẽ các cảnh quay cận (rót nước, ánh sáng, góc mặt, cử chỉ tay, làn khói) để người xem không bị cảm giác nhàm chán. Chuyển cảnh nhịp 2–3s/cảnh.
-  4. *Giọng đọc & Nhịp điệu (TTS v3 Turbo 0.95) & Phụ đề Karaoke chuẩn xác (Word-level Timestamps):*
-     - **Giọng đọc chuẩn:** Mặc định 100% cho cả Short Video và Long Video sử dụng **VieNeu-TTS v3 Turbo** chất lượng phòng thu **48kHz** (tốc độ chuẩn **0.95**, trầm ấm, chiêm nghiệm, ngắt nhịp thở 0.28s). Nạp giọng clone mẫu `laytutritueconhan` qua preset `voice_preset_turbo.json`.
-     - **Phụ đề Karaoke khớp từng mili-giây (Word-level Timestamps):** Bắt buộc trích xuất chính xác timestamp từng từ (`words: [{word, startFrame, endFrame}]`) qua Whisper / Forced Alignment trực tiếp từ audio thực tế. Tuyệt đối KHÔNG chia đều thời lượng cảnh tuyến tính (tránh chữ đi sau tiếng 1–3s). Remotion component `KaraokeWordBounce` đọc trực tiếp `startFrame` và `endFrame` thực tế của từng từ, đảm bảo chữ nảy khớp 100% từng từ phát ra.
-     - **Quy chuẩn chống trùng lặp B-roll (Strict Anti-Duplicate B-roll Registry):** Quản trị kho B-roll độc bản, kiểm tra mã SHA-256 nội dung của từng clip trước khi gán vào kịch bản. Tuyệt đối không để 2 cảnh trong các tập video khác nhau sử dụng cùng 1 clip video stock.
+  4. *Giọng đọc & Nhịp điệu (TTS v3 Turbo 0.88) & Phụ đề Karaoke chuẩn xác (Word-level Timestamps):*
+     - **Giọng đọc chuẩn:** Mặc định 100% cho cả Short Video và Long Video sử dụng **VieNeu-TTS v3 Turbo** chất lượng phòng thu **48kHz** (tốc độ chuẩn **0.88**, trầm ấm, chiêm nghiệm, ngắt nhịp thở 0.35s). Sử dụng giọng đọc chuẩn sạch bản quyền **`Thiện Minh`** (Nam · Bắc · Đĩnh đạc & kể chuyện triết lý).
+     - **Phụ đề Karaoke khớp từng mili-giây (Word-level Timestamps) & Khóa cứng văn bản kịch bản gốc (Forced Alignment Text Lock):**
+       + Bắt buộc trích xuất chính xác timestamp từng từ (`words: [{word, startFrame, endFrame}]`) qua Whisper / Forced Alignment trực tiếp từ audio thực tế. Tuyệt đối KHÔNG chia đều thời lượng cảnh tuyến tính (tránh chữ đi sau tiếng 1–3s). Remotion component `KaraokeWordBounce` đọc trực tiếp `startFrame` và `endFrame` thực tế của từng từ, đảm bảo chữ nảy khớp 100% từng từ phát ra.
+       + **BẮT BUỘC KHÓA CỨNG VĂN BẢN KỊCH BẢN GỐC (TEXT LOCK):** Mảng `words` hiển thị trên màn hình BẮT BUỘC lấy 100% từ ngữ từ kịch bản gốc (`sc['text'].split()`). Whisper CHỈ ĐƯỢC PHÉP cung cấp mốc thời gian (`startFrame`, `endFrame`), TUYỆT ĐỐI KHÔNG lấy văn bản nhận dạng (ASR transcription) của Whisper gán vào `word`. Quy tắc này bảo đảm 100% không bao giờ bị sai chính tả hay biến dạng chữ khi Whisper nghe nhầm phương ngữ (như giọng miền Nam bị nghe nhầm 'dài' -> 'giải', 'trà nguội' -> 'tràn nguội', 'đang' -> 'đàn').
+     - **Quy chuẩn chống trùng lặp B-roll & Cơ chế nhảy đoạn an toàn (Strict Anti-Duplicate & Safe Offset Engine):** 
+       + Quản trị kho B-roll độc bản bằng mã SHA-256 và sổ cái persistent `assets_hub/broll_segment_tracker.json`.
+       + **Cơ chế nhảy đoạn an toàn (Safe Offset Engine):** Khi một file video stock (dài 15s-40s) được sử dụng hoặc tải lại, hệ thống tự động lưu vết chính xác khoảng giây đã dùng `[start_sec, end_sec]`. Lần sau nếu tái sử dụng file đó, hệ thống tự động nhảy sang phân đoạn mới với **Khoảng bảo vệ (Safety Buffer = 2.0s)** (ví dụ: lần 1 dùng `0s - 4.5s`, lần 2 tự động lấy từ `6.5s` trở đi), bảo đảm 100% không trùng lặp góc nhìn thị giác.
+       + **Từ chối tái sử dụng khi cạn thời lượng:** Khi file gốc không còn đủ khoảng trống an toàn cho thời lượng câu thoại mới, hệ thống tự động từ chối và bắt buộc người dùng chọn video stock mới khác.
+       + Lệnh kiểm tra sổ cái phân đoạn: `python pipeline/cli.py broll tracker`.
      - **Quy tắc bảo vệ video đã công chiếu:** Các video đã được công chiếu hoặc người dùng đánh dấu đã phát sóng (ví dụ `nct_v08`) phải được loại trừ 100% khỏi các lệnh batch render lại.
   5. *Quy chuẩn xử lý âm thanh tự nhiên (Audio Mastering):*
      - *Gieo nhịp thở (Phrase Chunking):* Chia câu thành các cụm từ ngắn có nghĩa bằng dấu phẩy `,` để AI tự động lấy hơi và hạ giọng tự nhiên như người thật.
-     - *Khử giật & tiếng khựng:* Áp dụng Micro-fade (25ms in / 35ms out) và khoảng nghỉ nhịp thở **0.28s** giữa các câu.
-     - *Hòa âm Sidechain Ducking:* Nhạc nền Piano tự thở (lùi xuống 8–10% khi có lời thoại, nổi lên 16–18% ở các khoảng nghỉ ngắt câu).
+     - *Khử giật & tiếng khựng:* Áp dụng Micro-fade (25ms in / 35ms out) và khoảng nghỉ nhịp thở **0.35s** giữa các câu.
+     - *Hòa âm BGM chuẩn hóa theo từng dự án (Khắc phục triệt để nghẹt tiếng khi thoại dày):*
+       + **Dự án Short Video (38s-42s, đọc liên tục):** Giữ cố định nhạc nền ở mức **`volume=0.15`** (khoảng 0.14 - 0.16), KHÔNG dùng Sidechain Compression để tránh nhạc bị dìm mất hút khi đọc liên tục. Nhạc piano dìu dặt chảy đều làm nền êm ái, rõ ràng.
+       + **Dự án Long Video (8-15 phút, nhiều đoạn ngắt ý):** Áp dụng Gentle Sidechain Ducking (`volume=0.26`, `ratio=2`, `attack=30`, `release=180ms`). Khi có lời thoại nhạc chỉ lùi nhẹ xuống ~12-14% (nghe rõ giai điệu, không bị lấn át), khi ngắt câu 0.35s nhạc nhả nén nhanh ngân nga lên 24-26% tạo chiều sâu điện ảnh.
      - *Broadcast Warmth EQ & EBU R128:* Tăng dải trầm 220Hz tạo độ dày ấm, giảm chói gắt 6000Hz, chuẩn hóa độ to -14 LUFS cho YouTube Shorts / TikTok.
   6. *Cú chốt, Vòng lặp & Nhận diện kênh (Ending, Looping & Brand Outro):*
      - Không gượng ép kêu gọi bình luận hay bắt người xem tương tác giả tạo.
      - Câu kết của Shorts được gọt giũa ngắn gọn, tạo cảm giác lắng đọng hoặc kết nối mượt mà trở lại câu mở đầu (Seamless Looping), khiến người xem muốn dừng lại xem lại lần 2 hoặc để lại bình luận chia sẻ câu chuyện của chính họ.
      - Cuối mỗi video kết thúc bằng câu đúc kết sâu sắc, tự nhiên của kịch bản, kèm hình ảnh nửa chén trà và slogan nhận diện: *"Nhìn sâu để sống nhẹ"* để lại dư âm lắng đọng cho người xem.
+  7. *Quy chuẩn bắt buộc ghi Hashtag số tập (#<video_id>) vào Mô tả & Tags (Strict Episode Tagging Rule):*
+     - Mọi video Shorts khi sản xuất mới hoặc upload BẮT BUỘC phải chứa hashtag số tập tương ứng (ví dụ: `#nct_v25`, `#nct_v26`, `#nct_v100`) trong:
+       + Phần mô tả (Description) của YouTube, TikTok, file Excel và `info.json`.
+       + Danh sách từ khóa (Tags) của video trên YouTube (`<video_id>`).
+     - Toàn bộ pipeline (`auto_make_video.py`, `core_youtube.py`, `upload_to_youtube.py`, `batch_render_on_github.py`, `render_on_github.py`, `batch_rebuild.py`) đều tự động kiểm tra và chèn hashtag số tập này nếu chưa có trước khi lưu file hoặc upload lên YouTube Studio.
 - **QUY CHUẨN ÂM NHẠC BẮT BUỘC (ZERO COPYRIGHT CLAIM POLICY - 100% NHẠC SẠCH KHÔNG BẢN QUYỀN):**
   1. *Nguyên tắc triệt để:* Tuyệt đối KHÔNG sử dụng các bài nhạc lofi/ambient trôi nổi có đăng ký bảo hộ Content ID qua các bên thứ ba như HAAWK, Identifyy, Audiam, CD Baby, Believe Music (bài học: bản nhạc *Lofi Study* của FASSounds từng bị HAAWK claim từ 2:27 đến 5:39 ở tập 5).
   2. *Nguồn nhạc hợp lệ duy nhất:*
@@ -58,6 +83,10 @@
      - Nhạc tự sản xuất hoặc Public Domain (CC0).
   3. *Lưu trữ chuẩn:* File nhạc nền chính thức được đặt tại `remotion-video/public/background_music.mp3` của cả 2 dự án (bản chuẩn hiện tại là *On A Piano Cloud*, 20 phút piano ambient thư thái, an toàn 100% không Content ID).
   4. *Kho nhạc đa dạng & Tự động chọn nhạc theo nội dung (Mood-based Dynamic Music Selection):* Đã tích hợp kho 18 bản nhạc No-Copyright chuẩn Studio đặt tại `assets_hub/music/` (kèm file `music_registry.json`). Module `pipeline/music_selector.py` tự động phân tích tiêu đề và kịch bản (gia đình, cha mẹ, cơn giận, thiền trà, hy vọng) để ghép bản nhạc có tần số cảm xúc tương thích nhất cho từng video.
+  5. *BẮT BUỘC CHỌN NHẠC ĐỘNG CHO MỌI VIDEO (TUYỆT ĐỐI CẤM DÙNG DUY NHẤT 1 BÀI CHO TOÀN KÊNH):*
+     - Tuyệt đối KHÔNG hardcode hay mặc định dùng duy nhất một bản *On A Piano Cloud* cho toàn bộ các video. Việc lặp lại một bài nhạc duy nhất sẽ gây nhàm chán và làm mất cảm xúc riêng của từng chủ đề.
+     - Mọi script sản xuất trong pipeline (`auto_make_video.py`, v.v.) BẮT BUỘC phải gọi `music_selector.select_music_for_content(title, script_text)` để tự động gán bản nhạc phù hợp nhất từ kho 18 bài trong `assets_hub/music/`.
+     - Tên bản nhạc đã chọn bắt buộc phải được ghi nhận vào `info.json`, `video_data.json` và file Excel `scripts_short_video.xlsx`.
 - **QUY CHUẨN BẮT BUỘC TẠO THUMBNAIL CHO SHORTS & DUYỆT THỊ GIÁC (MỚI CHỐT):**
   1. *Bắt buộc tạo file Thumbnail riêng (1080x1920):* Do YouTube Shorts đã mở tính năng upload ảnh bìa (Upload file) trực tiếp từ PC, mỗi video Shorts khi sản xuất BẮT BUỘC phải tạo 1 file ảnh thumbnail riêng (`thumbnail_{video_id}.jpg`).
   2. *Bắt buộc đưa Thumbnail vào thư mục `input/` để duyệt:* File ảnh thumbnail BẮT BUỘC phải được lưu trong thư mục `output/{video_id}/input/` để người dùng mở kiểm tra và duyệt trực tiếp cùng với toàn bộ nguyên liệu trước khi kích hoạt render.
@@ -264,6 +293,63 @@
   - Chạy dọn sạch rác tự động cho cả 2 dự án (Short Video & Long Video):
     `& "E:\Programs\vieneu-env\Scripts\python.exe" pipeline/clean_disk.py`
   - *Cơ chế an toàn:* Xóa sạch cache build Remotion, dọn `downloads/`, dọn staging `public/` (chỉ giữ nhạc nền và chuông thiền), thu hồi bộ nhớ `.git/` (`git gc --prune=now`). Tuyệt đối không xóa video `output/` hay nguyên liệu `input/`.
+- **QUY CHUẨN ĐẶT TIÊU ĐỀ YOUTUBE & KHUNG PROMPT CHUẨN (PACKAGING CHO LONG VIDEO & SHORTS):**
+  1. *Triết lý chung (YouTube Packaging — Quy tắc 1 + 1 = 3):*
+     - Tiêu đề và Thumbnail / Hook text không bao giờ lặp lại nguyên văn mà tung hứng cho nhau (Thumbnail/Hook khơi gợi thị giác & gây tò mò, Tiêu đề mở rộng bối cảnh & chạm đúng nỗi niềm).
+     - Tuyệt đối không spoil câu trả lời / kết luận trong tiêu đề (tránh làm người lướt đọc xong thấy đã đủ).
+     - Giữ giọng điệu điềm đạm, chiêm nghiệm, ấm áp và sâu lắng của "Nửa Chén Trà" (triệt để cấm clickbait rẻ tiền, giật gân, thô thiển).
+     - Không viết hoa toàn bộ (All Caps), không chèn số tập (#01, #02), không chèn tên kênh vào tiêu đề.
+  2. *Khung Prompt chuẩn cho YouTube Long Video (Dưới 55 ký tự):*
+     - *Quy chuẩn kỹ thuật:* Tiêu đề dài tối đa **55 ký tự** (tính cả dấu cách) để hiển thị trọn vẹn 100% trên điện thoại mà không bị cắt ba chấm `...`. Bắt buộc ghi rõ `[số ký tự]` ở cuối mỗi gợi ý.
+     - *Mẫu prompt chuẩn:*
+       ```markdown
+       Bạn là chuyên gia tư vấn đóng gói nội dung (packaging) cho kênh YouTube chủ đề triết lý sống, tản văn, tĩnh tâm và chữa lành (Kênh: "Nửa Chén Trà").
+
+       Hãy giúp tôi đặt tiêu đề YouTube cho video tiếp theo dựa trên thông tin sau:
+       - Chủ đề chính / Tóm tắt nội dung video: [Dán tóm tắt nội dung hoặc ý tưởng video vào đây]
+       - Cảm xúc / Thông điệp cốt lõi muốn gửi gắm: [Ví dụ: Giúp người nghe buông bỏ kỳ vọng, bớt mệt mỏi nội tâm...]
+       - Ý tưởng hình ảnh & Text trên thumbnail dự kiến: [Ví dụ: Hình ảnh tách trà nghiêng bóng hoàng hôn, chữ trên ảnh: "Thôi chấp niệm"]
+
+       Yêu cầu kỹ thuật & phong cách đặt tiêu đề:
+       1. Độ dài: Tối đa 55 ký tự (tính cả dấu cách) để hiển thị trọn vẹn 100% trên giao diện điện thoại. Ghi rõ [số ký tự] ở cuối mỗi tiêu đề.
+       2. Quy tắc nội dung & Packaging:
+          - Tạo "khoảng trống tò mò" (Curiosity Gap) hoặc chạm trúng nỗi trăn trở nội tâm, sự mệt mỏi thầm kín của người xem.
+          - Không tiết lộ ngay bài học/kết luận trong tiêu đề (tránh làm người lướt đọc xong thấy đã đủ câu trả lời).
+          - Tung hứng ăn ý với Thumbnail: Không lặp lại chữ trên thumbnail; Thumbnail tạo ấn tượng thị giác, Tiêu đề khơi gợi câu hỏi hoặc mở ra bối cảnh.
+          - Không giật tít câu view rẻ tiền, giữ giọng điệu chiêm nghiệm, điềm đạm, sâu lắng.
+          - Không viết hoa toàn bộ (All Caps), không chèn số tập (#01, #02), không để tên kênh vào tiêu đề.
+
+       Hãy đưa ra gợi ý theo 2 nhóm (mỗi nhóm 3-4 phương án):
+       1. Nhóm 'Hợp phong cách kênh': Nhẹ nhàng, trầm lắng, triết lý gần gũi, tạo cảm giác được vỗ về, chữa lành.
+       2. Nhóm 'Tăng tương tác & kích thích tò mò': Đặt góc nhìn sắc bén, đặt câu hỏi hoặc khơi mào mâu thuẫn cảm xúc khiến người xem muốn bấm vào tìm câu trả lời (phù hợp để làm A/B Test).
+       ```
+  3. *Khung Prompt chuẩn cho YouTube Shorts (25 – 40 ký tự + 2 hashtag):*
+     - *Quy chuẩn kỹ thuật:* Phần tiêu đề chữ dài từ **25 đến 40 ký tự**. Tổng chuỗi (Tiêu đề + 2 hashtag ngắn như `#chualanh #shorts`) không vượt quá **55 ký tự** để không bị giao diện Shorts di động che khuất.
+     - *Phối hợp Hook 1.5s đầu:* Title Hook trên màn hình (Frame 0–1.5s) đập vào mắt người xem; tiêu đề bên dưới giữ chân và kích hoạt hành vi "Lưu lại" (Save/Loop) để nghe lại ban đêm.
+     - *Mẫu prompt chuẩn:*
+       ```markdown
+       Bạn là chuyên gia sáng tạo nội dung YouTube Shorts cho kênh tản văn, triết lý sống, chữa lành và tĩnh tâm (Kênh: "Nửa Chén Trà").
+
+       Hãy giúp tôi đặt tiêu đề cho video Shorts tiếp theo dựa trên thông tin sau:
+       - Câu nói hay nhất / Đoạn trích đắt giá trong video: [Dán câu nói đắt giá nhất hoặc tóm tắt 30-45 giây nội dung vào đây]
+       - Cảm xúc cốt lõi của người xem: [Ví dụ: Thấy nhẹ nhõm, bừng tỉnh, được vỗ về khi cô đơn, bớt dằn vặt bản thân...]
+       - Chữ hiển thị trên màn hình ở 3 giây đầu (Hook Text): [Dán dòng chữ Hook trên video nếu có]
+
+       Yêu cầu kỹ thuật & phong cách đặt tiêu đề Shorts:
+       1. Độ dài: Cực kỳ tinh gọn, từ 25 đến 40 ký tự (không tính hashtag). Tổng độ dài (Tiêu đề + 2 hashtag) không vượt quá 55 ký tự để hiển thị nguyên vẹn 100% trên giao diện Shorts điện thoại. Ghi rõ [số ký tự] ở mỗi câu.
+       2. Phối hợp với Hook 3 giây đầu:
+          - Tiêu đề bên dưới KHÔNG lặp lại dòng chữ Hook trên màn hình.
+          - Dòng chữ trên màn hình đánh thức sự chú ý, dòng tiêu đề bên dưới giữ chân người xem và chạm vào một nỗi niềm cụ thể.
+       3. Yếu tố kích thích tương tác ngầm:
+          - Tạo cảm giác đồng cảm sâu sắc khiến người nghe muốn bấm "Lưu lại" (Save) để nghe lại khi tĩnh lặng hoặc trước lúc ngủ.
+          - Giữ giọng điệu mộc mạc, tĩnh lặng, ấm áp của "Nửa Chén Trà"; tuyệt đối không dùng từ ngữ giật gân, câu view rẻ tiền.
+       4. Hashtag: Mỗi gợi ý tự động đính kèm đúng 2 hashtag ngắn gọn ở cuối (ví dụ: #chualanh #shorts hoặc #tamly #shorts).
+
+       Hãy đưa ra các gợi ý theo 3 phong cách sau (mỗi phong cách 2-3 phương án):
+       1. Nhóm 'Chạm cảm xúc': Ngắn gọn, ấm áp, như một cái ôm cho tâm hồn đang mệt mỏi.
+       2. Nhóm 'Chiêm nghiệm sâu sắc': Một góc nhìn lạ hoặc một câu hỏi tự vấn khiến người lướt phải dừng lại suy ngẫm.
+       3. Nhóm 'Lời nhắn nhủ': Lời thì thầm nhắc nhở bản thân buông bỏ bớt gánh nặng và sống chậm lại.
+       ```
 
 ## Backlog ý tưởng
 - [x] Chương 1: Tiếng Chuông Thức Tỉnh, Dập Tắt Mọi Cơn Giận (Chương 1 - Nghe chuông và chắp tay)

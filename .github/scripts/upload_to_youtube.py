@@ -83,7 +83,19 @@ def upload_short_to_youtube(video_path, video_id):
         except Exception as e:
             print(f"⚠️ Lỗi đọc file metadata {info_file}: {e}")
             schedule_str = None
-            schedule_str = None
+
+    # QUY CHUẨN BẮT BUỘC: Luôn luôn ghi hashtag số tập #<video_id> vào mô tả và thẻ tags
+    ep_hashtag = f"#{video_id}"
+    if ep_hashtag not in description and video_id not in description:
+        if "#shorts" in description:
+            description = description.replace("#shorts", f"{ep_hashtag} #shorts")
+        else:
+            description = f"{description.strip()} {ep_hashtag}"
+
+    if not isinstance(tags, list):
+        tags = [str(tags)] if tags else []
+    if video_id not in tags:
+        tags.insert(0, video_id)
 
     if "#shorts" not in title.lower():
         title = f"{title} #shorts"
