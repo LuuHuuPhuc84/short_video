@@ -61,10 +61,35 @@ def update_local_metadata(video_id, schedule_str):
 
 EXCEL_PATH = BASE_DIR / "scripts_short_video.xlsx"
 
+def reorder_sheets_by_schedule(wb):
+    """
+    Sắp xếp lại thứ tự các sheet tab trong file Excel:
+    Sheet có thời gian phát sóng xa nhất / cuối cùng trong tương lai sẽ đứng ở vị trí ĐẦU TIÊN (tab bên trái nhất).
+    Các sheet trước đó giảm dần theo thời gian phát sóng.
+    """
+    def get_sheet_schedule(ws):
+        for r in range(1, 35):
+            val_label = ws.cell(r, 1).value
+            if val_label and "LỊCH ĐĂNG" in str(val_label).upper():
+                val_time = ws.cell(r, 2).value
+                if val_time:
+                    m = re.search(r"(\d{4}-\d{2}-\d{2}\s+\d{2}:\d{2})", str(val_time))
+                    if m:
+                        try:
+                            return datetime.datetime.strptime(m.group(1), "%Y-%m-%d %H:%M")
+                        except Exception:
+                            pass
+        return datetime.datetime.min
+
+    wb._sheets.sort(key=get_sheet_schedule, reverse=True)
+    if wb._sheets:
+        wb.active = wb._sheets[0]
+
 def update_excel_schedule(video_id, new_schedule_str=None, wb=None, save=True):
     """
     Cập nhật trực tiếp (in-place) đúng 1 ô 'LỊCH ĐĂNG' trong sheet của video_id.
     TUYỆT ĐỐI KHÔNG XÓA SHEET, giữ nguyên 100% định dạng, nội dung bảng và dữ liệu.
+    Tự động đưa sheet phát sóng cuối cùng lên vị trí đầu tiên.
     """
     if not EXCEL_PATH.exists():
         print(f"  ⚠️ Không tìm thấy file Excel: {EXCEL_PATH}")
@@ -115,10 +140,13 @@ def update_excel_schedule(video_id, new_schedule_str=None, wb=None, save=True):
         export_video_to_excel(video_id, project="short")
         return True
 
+    # Sắp xếp lại thứ tự tab: video phát sóng cuối cùng đứng ở đầu tiên
+    reorder_sheets_by_schedule(wb)
+
     if save and should_close:
         wb.save(str(EXCEL_PATH))
 
-    print(f"  ✓ Đã cập nhật ô 'LỊCH ĐĂNG' ({video_id} -> {new_schedule_str}) [In-Place, không xóa sheet]")
+    print(f"  ✓ Đã cập nhật ô 'LỊCH ĐĂNG' ({video_id} -> {new_schedule_str}) [In-Place, xếp lịch mới nhất lên đầu]")
     return True
 
 def update_youtube_schedule(video_id, schedule_str):
@@ -370,9 +398,10 @@ def pull_schedule_from_youtube(target_video_id=None):
             else:
                 print(f"  ✓ [{matched_vid}] Khớp lịch: {sched_vn}")
 
-    if excel_wb and updated_count > 0:
+    if excel_wb:
+        reorder_sheets_by_schedule(excel_wb)
         excel_wb.save(str(EXCEL_PATH))
-        print("  💾 Đã lưu thay đổi vào scripts_short_video.xlsx (In-Place)")
+        print("  💾 Đã sắp xếp tab theo lịch phát sóng cuối cùng lên đầu và lưu file Excel (In-Place)")
 
     print("\n" + "=" * 56)
     print(f"🎉 TỔNG KẾT ĐỒNG BỘ: Đã khớp {matched_count} video, cập nhật {updated_count} video vào Excel!")
