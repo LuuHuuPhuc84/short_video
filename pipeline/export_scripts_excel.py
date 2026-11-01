@@ -512,6 +512,8 @@ def update_master_overview_tab(wb, project: str = "short") -> None:
                 status = "Đã phát sóng"
             else:
                 status = "Đã lên lịch"
+        elif "công khai" in sched_str.lower() or "đã xuất bản" in sched_str.lower() or data.get("privacyStatus") == "public":
+            status = "Đã phát sóng"
         else:
             status = "Bản nháp"
 
