@@ -92,8 +92,24 @@ export const ZenShortVideo: React.FC<ZenShortVideoProps> = (props) => {
     props.showTitleHook !== false && Boolean(titleHook);
   const audioFile = props.audioFile || "voiceover_ch2.wav";
   const thumbnailImage = props.thumbnailImage || "";
-  const scenes = props.scenes || [];
-  const durationInFrames = props.durationInFrames || 1800;
+  const rawScenes = props.scenes || [];
+  let accumulatedFrame = 0;
+  const scenes: SceneItem[] = rawScenes.map((sc: any, idx: number) => {
+    const startFrame = typeof sc.startFrame === "number" ? sc.startFrame : accumulatedFrame;
+    const durationInFrames = sc.durationInFrames || 150;
+    accumulatedFrame = startFrame + durationInFrames;
+    const mediaFile = sc.image || sc.video || sc.backgroundVideo || "";
+    return {
+      ...sc,
+      scene: sc.scene || idx + 1,
+      startFrame,
+      durationInFrames,
+      image: mediaFile,
+      highlight: sc.highlight || "",
+      text: sc.text || "",
+    };
+  });
+  const durationInFrames = props.durationInFrames || accumulatedFrame || 1800;
   const stylePresetKey = props.stylePreset || "zen_amber";
   const preset = STYLE_PRESETS[stylePresetKey] || STYLE_PRESETS.zen_amber;
 
