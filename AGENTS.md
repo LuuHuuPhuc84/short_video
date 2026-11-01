@@ -3,6 +3,10 @@
 > Agent đọc file này đầu mỗi phiên và cập nhật khi có quyết định mới. Chỉ ghi điều đã chốt.
 
 ## Quyết định đã chốt
+- **QUY CHUẨN RENDER BẮT BUỘC 100% QUA GITHUB ACTIONS CLOUD WORKER (STRICT NO LOCAL RENDER POLICY):**
+  - **Mặc định bắt buộc:** Toàn bộ quá trình render video (dù là render lẻ, render batch, render lại sửa lỗi hay tạo mới) BẮT BUỘC 100% phải đẩy qua GitHub Actions Parallel Cloud Worker (pipeline/render_on_github.py, pipeline/batch_render_on_github.py hoặc python pipeline/cli.py render <id> / python pipeline/cli.py cloud {single|batch}).
+  - **Tuyệt đối KHÔNG tự ý render Local trên máy người dùng:** Nghiêm cấm chạy lệnh Remotion Render trực tiếp trên máy tính cá nhân làm tốn tài nguyên, nóng máy hoặc chiếm dụng CPU/GPU của người dùng. Render Local CHỈ ĐƯỢC PHÉP khi và chỉ khi người dùng ra lệnh bằng văn bản hoặc truyền cờ --local một cách tường minh.
+  - Tận dụng tối đa tài nguyên đám mây GitHub Actions miễn phí, 0% CPU/GPU máy cá nhân, hệ thống tự động tải video thành phẩm về output/{video_id}/video_{video_id}.mp4 và đồng bộ/xuất bản tiếp theo.
 - **KIẾN TRÚC MODULE HÓA ĐƠN NHIỆM (TIẾT KIỆM 90% TOKEN & KHÔNG PHỤ THUỘC LẪN NHAU):**
   Hệ thống chuẩn hóa hoàn toàn thành 10 module độc lập điều phối qua CLI trung tâm `pipeline/cli.py`:
   1. *Module 1 - Render thuần túy (`pipeline/core_render.py` hoặc `python pipeline/cli.py render <id> [--local]`):*
@@ -36,6 +40,10 @@
   1. *YouTube Token AutoGuard:* Task Schedule `\YouTube_Token_AutoGuard` chạy 9:00 AM hàng ngày và khi login. Khi token đạt 5.5 - 6 ngày, tự động mở Opera để gia hạn và sync GitHub Secrets.
   2. *Google Drive Token AutoGuard:* Task Schedule `\GDrive_Token_AutoGuard` chạy 9:05 AM hàng ngày và khi login. Khi token đạt 5.5 - 6 ngày, tự động mở Microsoft Edge để người dùng bấm Allow 1-click, lưu token và đồng bộ tự động lên GitHub Secrets cho cả 2 repo Short & Long Video.
 - Chủ đề: Bài học cuộc sống, triết lý ứng dụng đời thường; chắt lọc từ "An Trú Trong Hiện Tại" của Thiền sư Thích Nhất Hạnh & trí tuệ cổ xưa.
+- **QUY CHUẨN TIÊU ĐỀ VIDEO SHORTS (STRICT NO #SHORTS IN TITLE POLICY):**
+  Tuyệt đối KHÔNG bao giờ gắn chữ `#shorts` (hoặc `#Shorts`) vào tiêu đề (Title) của video. Tiêu đề cần giữ trang nhã, gợi mở cảm xúc và sạch sẽ (ví dụ: *"Mẹ hỏi ăn cơm chưa, là mẹ đang nhớ con"*). Hashtag `#shorts` chỉ được phép xuất hiện ở phần Mô tả (Description) và danh sách Từ khóa (Tags).
+- **QUY CHUẨN TIÊU ĐỀ VIDEO SHORTS (STRICT NO #SHORTS IN TITLE POLICY):**
+  Tuyệt đối KHÔNG bao giờ gắn chữ `#shorts` (hoặc `#Shorts`) vào tiêu đề (Title) của video. Tiêu đề cần giữ trang nhã, gợi mở cảm xúc và sạch sẽ (ví dụ: *"Mẹ hỏi ăn cơm chưa, là mẹ đang nhớ con"*). Hashtag `#shorts` chỉ được phép xuất hiện ở phần Mô tả (Description) và danh sách Từ khóa (Tags).
 - Định vị nội dung: **Độc lập 100% (Standalone Shorts)**. Tuyệt đối không để chữ "Chương X" hay "Tập X" để tránh gây rào cản cho người xem ngẫu nhiên.
 - Nhận diện sách & tác giả: Đưa Tên sách ("AN TRÚ TRONG HIỆN TẠI") và Tác giả **"Thiền sư Thích Nhất Hạnh"** thành thanh badge nhỏ tinh tế ở góc trên, KHÔNG dùng Hero Header lớn che kín 3 giây đầu.
 - **QUY CHUẨN VIDEO SHORTS MỚI (ÁP DỤNG TỪ VIDEO TIẾP THEO):**

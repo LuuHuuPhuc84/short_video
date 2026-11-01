@@ -479,16 +479,26 @@ const KaraokeWordBounce: React.FC<{
   text: string;
   durationInFrames: number;
   wordTimings?: WordTiming[];
-}> = ({ text, durationInFrames, wordTimings }) => {
+  sceneStartFrame?: number;
+}> = ({ text, durationInFrames, wordTimings, sceneStartFrame = 0 }) => {
   const frame = useCurrentFrame();
 
   const words = React.useMemo(() => {
     // Ưu tiên 1: Dùng wordTimings chính xác từng từ từ Whisper / Forced Alignment
     if (wordTimings && wordTimings.length > 0) {
+      const firstStart = wordTimings[0]?.startFrame ?? 0;
+      // Tự động chuẩn hóa: Nếu wordTimings bị offset theo global time, tự động đưa về tương đối (relative) trong Scene
+      const baseOffset =
+        sceneStartFrame > 0 && firstStart >= sceneStartFrame
+          ? sceneStartFrame
+          : firstStart >= durationInFrames
+          ? firstStart
+          : 0;
+
       return wordTimings.map((wt) => ({
         word: wt.word,
-        start: wt.startFrame,
-        end: wt.endFrame,
+        start: Math.max(0, wt.startFrame - baseOffset),
+        end: Math.max(1, wt.endFrame - baseOffset),
       }));
     }
 
@@ -629,6 +639,7 @@ const PacedCaptionCard: React.FC<{ scene: SceneItem }> = ({ scene }) => {
           text={scene.text}
           durationInFrames={scene.durationInFrames}
           wordTimings={scene.words}
+          sceneStartFrame={scene.startFrame}
         />
       </div>
     </div>
