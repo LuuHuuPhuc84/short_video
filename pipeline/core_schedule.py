@@ -64,9 +64,18 @@ EXCEL_PATH = BASE_DIR / "scripts_short_video.xlsx"
 def reorder_sheets_by_schedule(wb):
     """
     Sắp xếp lại thứ tự các sheet tab trong file Excel:
-    Sheet có thời gian phát sóng xa nhất / cuối cùng trong tương lai sẽ đứng ở vị trí ĐẦU TIÊN (tab bên trái nhất).
-    Các sheet trước đó giảm dần theo thời gian phát sóng.
+    1. Sheet '📋 TỔNG QUAN' LUÔN LUÔN đứng ở vị trí ĐẦU TIÊN (tab index 0).
+    2. Các sheet video tiếp theo được sắp xếp theo thời gian phát sóng xa nhất / mới nhất giảm dần.
     """
+    overview_sheet = None
+    video_sheets = []
+
+    for ws in list(wb._sheets):
+        if "TỔNG QUAN" in ws.title.upper():
+            overview_sheet = ws
+        else:
+            video_sheets.append(ws)
+
     def get_sheet_schedule(ws):
         for r in range(1, 35):
             val_label = ws.cell(r, 1).value
@@ -81,9 +90,15 @@ def reorder_sheets_by_schedule(wb):
                             pass
         return datetime.datetime.min
 
-    wb._sheets.sort(key=get_sheet_schedule, reverse=True)
-    if wb._sheets:
-        wb.active = wb._sheets[0]
+    video_sheets.sort(key=get_sheet_schedule, reverse=True)
+
+    if overview_sheet:
+        wb._sheets = [overview_sheet] + video_sheets
+        wb.active = overview_sheet
+    else:
+        wb._sheets = video_sheets
+        if wb._sheets:
+            wb.active = wb._sheets[0]
 
 def update_excel_schedule(video_id, new_schedule_str=None, wb=None, save=True):
     """
@@ -140,13 +155,20 @@ def update_excel_schedule(video_id, new_schedule_str=None, wb=None, save=True):
         export_video_to_excel(video_id, project="short")
         return True
 
-    # Sắp xếp lại thứ tự tab: video phát sóng cuối cùng đứng ở đầu tiên
+    # Cập nhật Tab Tổng Quan
+    try:
+        from export_scripts_excel import update_master_overview_tab
+        update_master_overview_tab(wb, project="short")
+    except Exception as e:
+        print(f"  ⚠️ Lỗi update master overview: {e}")
+
+    # Sắp xếp lại thứ tự tab: Tổng quan ở đầu, video phát sóng cuối cùng đứng kế tiếp
     reorder_sheets_by_schedule(wb)
 
     if save and should_close:
         wb.save(str(EXCEL_PATH))
 
-    print(f"  ✓ Đã cập nhật ô 'LỊCH ĐĂNG' ({video_id} -> {new_schedule_str}) [In-Place, xếp lịch mới nhất lên đầu]")
+    print(f"  ✓ Đã cập nhật ô 'LỊCH ĐĂNG' ({video_id} -> {new_schedule_str}) & Tab '📋 TỔNG QUAN' [In-Place]")
     return True
 
 def update_youtube_schedule(video_id, schedule_str):
@@ -399,9 +421,14 @@ def pull_schedule_from_youtube(target_video_id=None):
                 print(f"  ✓ [{matched_vid}] Khớp lịch: {sched_vn}")
 
     if excel_wb:
+        try:
+            from export_scripts_excel import update_master_overview_tab
+            update_master_overview_tab(excel_wb, project="short")
+        except Exception as e:
+            print(f"  ⚠️ Lỗi update master overview: {e}")
         reorder_sheets_by_schedule(excel_wb)
         excel_wb.save(str(EXCEL_PATH))
-        print("  💾 Đã sắp xếp tab theo lịch phát sóng cuối cùng lên đầu và lưu file Excel (In-Place)")
+        print("  💾 Đã cập nhật Tab '📋 TỔNG QUAN' và sắp xếp thứ tự các sheet theo lịch phát sóng!")
 
     print("\n" + "=" * 56)
     print(f"🎉 TỔNG KẾT ĐỒNG BỘ: Đã khớp {matched_count} video, cập nhật {updated_count} video vào Excel!")
