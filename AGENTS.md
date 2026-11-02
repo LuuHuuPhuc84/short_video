@@ -3,10 +3,17 @@
 > Agent đọc file này đầu mỗi phiên và cập nhật khi có quyết định mới. Chỉ ghi điều đã chốt.
 
 ## Quyết định đã chốt
-- **QUY CHUẨN RENDER BẮT BUỘC 100% QUA GITHUB ACTIONS CLOUD WORKER (STRICT NO LOCAL RENDER POLICY):**
-  - **Mặc định bắt buộc:** Toàn bộ quá trình render video (dù là render lẻ, render batch, render lại sửa lỗi hay tạo mới) BẮT BUỘC 100% phải đẩy qua GitHub Actions Parallel Cloud Worker (pipeline/render_on_github.py, pipeline/batch_render_on_github.py hoặc python pipeline/cli.py render <id> / python pipeline/cli.py cloud {single|batch}).
-  - **Tuyệt đối KHÔNG tự ý render Local trên máy người dùng:** Nghiêm cấm chạy lệnh Remotion Render trực tiếp trên máy tính cá nhân làm tốn tài nguyên, nóng máy hoặc chiếm dụng CPU/GPU của người dùng. Render Local CHỈ ĐƯỢC PHÉP khi và chỉ khi người dùng ra lệnh bằng văn bản hoặc truyền cờ --local một cách tường minh.
-  - Tận dụng tối đa tài nguyên đám mây GitHub Actions miễn phí, 0% CPU/GPU máy cá nhân, hệ thống tự động tải video thành phẩm về output/{video_id}/video_{video_id}.mp4 và đồng bộ/xuất bản tiếp theo.
+- **QUY CHUẨN RENDER & UPLOAD YOUTUBE BẮT BUỘC 100% QUA GITHUB ACTIONS CLOUD WORKER (STRICT 100% CLOUD RENDER & CLOUD UPLOAD POLICY):**
+  - **Mặc định bắt buộc 100%:** Toàn bộ quá trình RENDER video MP4 và UPLOAD LÊN YOUTUBE SHORTS (kèm thumbnail, lịch phát sóng Scheduled, tick `containsSyntheticMedia: True`) BẮT BUỘC 100% phải do GitHub Actions Parallel Cloud Worker thực hiện độc lập (`pipeline/render_on_github.py`, `pipeline/batch_render_on_github.py` hoặc `python pipeline/cli.py render <id>` / `python pipeline/cli.py cloud {single|batch}`).
+  - **Tuyệt đối KHÔNG tự ý render Local và KHÔNG tự ý upload YouTube từ Local:**
+    + Nghiêm cấm chạy lệnh Remotion Render trực tiếp trên máy tính cá nhân làm tốn tài nguyên, nóng máy hoặc chiếm dụng CPU/GPU của người dùng (Render Local CHỈ ĐƯỢC PHÉP khi người dùng truyền cờ `--local` tường minh).
+    + Tuyệt đối KHÔNG gọi lệnh upload YouTube từ máy Local (`pipeline/core_youtube.py` hoặc `cli.py youtube`) trong quy trình sản xuất tự động để tránh gây trùng lặp video với GitHub Actions. Khâu upload YouTube ở Local chỉ dành riêng cho trường hợp người dùng chủ động yêu cầu sửa đổi metadata/thumbnail thủ công sau này.
+  - **Quy trình Cloud Worker khép kín tự động 100%:** Khi đẩy lệnh lên GitHub Actions, runner trên Cloud tự động:
+    1. Render video MP4 Full HD 1080x1920 (Studio Quality CRF 16, 320k audio).
+    2. Tải video MP4 và đồng bộ nguyên liệu lên Google Drive.
+    3. Tự động upload video MP4 lên YouTube Shorts, gắn Thumbnail Safe Zone, tick `containsSyntheticMedia: True` và đặt lịch phát sóng `publishAt` (Schedule) theo đúng file `info.json`.
+    4. Tự động xóa sạch lịch sử Workflow Run (Zero-Trace) và xóa nhánh tạm.
+  - **Vai trò của máy Local:** Sau khi GitHub Actions hoàn tất, script local (`render_on_github.py`) chỉ kéo file video thành phẩm về `output/{video_id}/video_{video_id}.mp4` (nếu có cờ `--download`) và đồng bộ cập nhật vào file Excel `scripts_short_video.xlsx`.
 - **KIẾN TRÚC MODULE HÓA ĐƠN NHIỆM (TIẾT KIỆM 90% TOKEN & KHÔNG PHỤ THUỘC LẪN NHAU):**
   Hệ thống chuẩn hóa hoàn toàn thành 10 module độc lập điều phối qua CLI trung tâm `pipeline/cli.py`:
   1. *Module 1 - Render thuần túy (`pipeline/core_render.py` hoặc `python pipeline/cli.py render <id> [--local]`):*
@@ -41,9 +48,8 @@
   2. *Google Drive Token AutoGuard:* Task Schedule `\GDrive_Token_AutoGuard` chạy 9:05 AM hàng ngày và khi login. Khi token đạt 5.5 - 6 ngày, tự động mở Microsoft Edge để người dùng bấm Allow 1-click, lưu token và đồng bộ tự động lên GitHub Secrets cho cả 2 repo Short & Long Video.
 - Chủ đề: Bài học cuộc sống, triết lý ứng dụng đời thường; chắt lọc từ "An Trú Trong Hiện Tại" của Thiền sư Thích Nhất Hạnh & trí tuệ cổ xưa.
 - **QUY CHUẨN TIÊU ĐỀ VIDEO SHORTS (STRICT NO #SHORTS IN TITLE POLICY):**
-  Tuyệt đối KHÔNG bao giờ gắn chữ `#shorts` (hoặc `#Shorts`) vào tiêu đề (Title) của video. Tiêu đề cần giữ trang nhã, gợi mở cảm xúc và sạch sẽ (ví dụ: *"Mẹ hỏi ăn cơm chưa, là mẹ đang nhớ con"*). Hashtag `#shorts` chỉ được phép xuất hiện ở phần Mô tả (Description) và danh sách Từ khóa (Tags).
-- **QUY CHUẨN TIÊU ĐỀ VIDEO SHORTS (STRICT NO #SHORTS IN TITLE POLICY):**
-  Tuyệt đối KHÔNG bao giờ gắn chữ `#shorts` (hoặc `#Shorts`) vào tiêu đề (Title) của video. Tiêu đề cần giữ trang nhã, gợi mở cảm xúc và sạch sẽ (ví dụ: *"Mẹ hỏi ăn cơm chưa, là mẹ đang nhớ con"*). Hashtag `#shorts` chỉ được phép xuất hiện ở phần Mô tả (Description) và danh sách Từ khóa (Tags).
+  - Tuyệt đối KHÔNG bao giờ gắn chữ `#shorts` (hoặc `#Shorts`) vào tiêu đề (Title) của video. Tiêu đề cần giữ trang nhã, gợi mở cảm xúc và sạch sẽ (ví dụ: *"Mẹ hỏi ăn cơm chưa, là mẹ đang nhớ con"*). Hashtag `#shorts` chỉ được phép xuất hiện ở phần Mô tả (Description) và danh sách Từ khóa (Tags).
+  - Toàn bộ pipeline (`auto_make_video.py`, `export_scripts_excel.py`, `core_thumb.py`, `core_youtube.py`, `.github/scripts/upload_to_youtube.py`) đều tự động kích hoạt bộ lọc `re.sub(r'\s*#shorts\b', '', title, flags=re.IGNORECASE).strip()` để triệt tiêu vĩnh viễn `#shorts` nếu vô tình xuất hiện.
 - Định vị nội dung: **Độc lập 100% (Standalone Shorts)**. Tuyệt đối không để chữ "Chương X" hay "Tập X" để tránh gây rào cản cho người xem ngẫu nhiên.
 - Nhận diện sách & tác giả: Đưa Tên sách ("AN TRÚ TRONG HIỆN TẠI") và Tác giả **"Thiền sư Thích Nhất Hạnh"** thành thanh badge nhỏ tinh tế ở góc trên, KHÔNG dùng Hero Header lớn che kín 3 giây đầu.
 - **QUY CHUẨN VIDEO SHORTS MỚI (ÁP DỤNG TỪ VIDEO TIẾP THEO):**
@@ -110,6 +116,20 @@
      - Từ Frame 24 đến 29: Cross-fade hòa tan mượt mà (5 frames) sang video B-roll chuyển động.
      - Khi người dùng đăng video Shorts trên điện thoại hoặc hệ thống tự động bắt frame đầu, chỉ cần chọn ngay Frame 0 (giây đầu tiên) là video có ngay ảnh bìa hoàn mỹ, chuyên nghiệp, giữ chân người xem.
      - Hơn 97% thời lượng còn lại (từ giây thứ 1 đến hết) là 100% Video B-roll chuyển động thực tế, bảo đảm an toàn tuyệt đối cho chính sách Bật kiếm tiền (YPP) của YouTube (hoàn toàn không bị tính là video slideshow tĩnh).
+
+- **QUY CHUẨN BẮT BUỘC: KÍCH THƯỚC CHUẨN & PHỐI HỢP VISUAL HYBRID (B-ROLL + TRANH AI KHỚP NỘI DUNG):**
+  1. *Quy định kích thước bắt buộc (Strict Dimension Policy):*
+     - **Short Video:** Bắt buộc 100% chuẩn dọc **9:16 (`1080 x 1920 Full HD`)**. Toàn bộ Video B-roll phải là Native Vertical (`height >= width`), tuyệt đối cấm lấy video ngang 16:9 zoom crop làm vỡ hạt.
+     - **Long Video:** Bắt buộc 100% chuẩn ngang **16:9 (`1920 x 1080 Full HD`)**. Toàn bộ B-roll và Tranh AI phải là Native Horizontal 16:9 (`1920 x 1080`).
+  2. *Quy chuẩn bắt buộc phối hợp Visual Hybrid (B-roll + Tranh AI nghệ thuật khớp nội dung):*
+     - **Bắt buộc phối hợp:** Trong mỗi video (đặc biệt là Shorts 5 cảnh), BẮT BUỘC phải kết hợp hài hòa giữa **Video B-roll chuyển động thực tế** và **Tranh nghệ thuật AI (Zen Cinematic Art)** được tạo riêng bám sát cốt truyện / ẩn dụ bài học.
+     - **Tỷ lệ phân bổ chuẩn vàng:**
+       + **Tối thiểu 60% – 80% thời lượng là Video B-roll chuyển động thực tế** (để giữ nhịp thở sống động và an toàn 100% cho chính sách Bật kiếm tiền YPP của YouTube, tuyệt đối không bị tính là video slideshow tĩnh).
+       + **1 – 2 cảnh là Tranh nghệ thuật AI Zen Cinematic** (ưu tiên đặt tại Cảnh 2 phân tích căn nguyên / câu chuyện triết lý hoặc Cảnh 5 đúc kết sâu lắng). Tranh AI bắt buộc áp dụng hiệu ứng chuyển động Ken Burns (Slow Pan / Zoom nhẹ nhàng) trong Remotion để tạo chiều sâu thị giác, không đứng hình.
+     - **Quy tắc Cảnh Hook (Scene 1):** Bắt buộc 100% là **Video B-roll chuyển động ấn tượng** ngay từ giây 00:00 (mưa rơi, suối chảy, rừng trúc trong gió, khói trà) để giữ chân người xem lập tức khi lướt Shorts.
+     - **Tính tương thích nội dung & thẩm mỹ đồng nhất:**
+       + Tranh AI phải được vẽ theo đúng chi tiết ngữ cảnh kịch bản (ví dụ: cảnh "Chiếc bình nứt" có kintsugi viền vàng; "Mũi tên thứ hai" có hình ảnh ẩn dụ tâm trí; "Ly trà tràn" có chén trà sứ men rạn Á Đông).
+       + Phong cách nghệ thuật: Đậm chất Á Đông, thiền định, hoài niệm, màu sắc ấm áp (Zen Amber / Warm Cinematic), cùng tông màu với B-roll, tuyệt đối không dùng hình hoạt hình 3D sặc sỡ hay phong cách Tây phương lạc điệu.
 
 - **QUY CHUẨN B-ROLL CHO SHORTS (100% NATIVE VERTICAL 9:16 & ƯU TIÊN TẢI MỚI):**
   1. *Nguyên tắc bắt buộc 100% video quay dọc (Native Vertical 1080x1920):* Bắt buộc `height >= width` (1080x1920 hoặc 4K dọc). Tuyệt đối cấm lấy video ngang 16:9 zoom crop làm vỡ hạt. Toàn bộ video ngang trong assets_hub của Short đã bị thanh trừng, chỉ lưu trữ 100% video dọc.

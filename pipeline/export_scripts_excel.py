@@ -221,6 +221,10 @@ def _load_video_data(video_id: str, project: str = "short") -> dict:
         result.setdefault("width",  vd.get("width"))
         result.setdefault("height", vd.get("height"))
 
+    # QUY CHUẨN: Tuyệt đối không để #shorts trong tiêu đề
+    if result.get("title"):
+        result["title"] = re.sub(r'\s*#shorts\b', '', str(result["title"]), flags=re.IGNORECASE).strip()
+
     return result
 
 
@@ -240,11 +244,14 @@ def _write_sheet(ws, data: dict):
     # ws.freeze_panes = None  # Không đóng băng dòng nào để người dùng cuộn lên cuộn xuống dễ nhìn
     ws.freeze_panes = None
 
+    raw_title = str(data.get("title", "—"))
+    clean_title = re.sub(r'\s*#shorts\b', '', raw_title, flags=re.IGNORECASE).strip()
+
     # ── PHẦN 1: THÔNG TIN TỔNG QUAN ──────────────────────────────────────────
     meta_rows = [
         ("VIDEO ID",   data.get("video_id",  "—")),
         ("DỰ ÁN",      "Short Video" if data.get("project") == "short" else "Long Video"),
-        ("TIÊU ĐỀ",    data.get("title",     "—")),
+        ("TIÊU ĐỀ",    clean_title),
         ("SÁCH / NGUỒN", data.get("book",    data.get("subtitle", "—"))),
         ("TÁC GIẢ",    data.get("author",    "—")),
         ("CHƯƠNG",     data.get("chapter",   "—")),
@@ -252,7 +259,7 @@ def _write_sheet(ws, data: dict):
     ]
     # Hàng 1: Tiêu đề lớn (merge A1:E1) và Nút quay lại Tổng Quan (F1)
     title_cell = ws.cell(row=1, column=1,
-                         value=f"📋  KỊCH BẢN: {data.get('title','').upper()}")
+                         value=f"📋  KỊCH BẢN: {clean_title.upper()}")
     title_cell.font      = _font(bold=True, size=13, color=COLOR["accent"])
     title_cell.alignment = _align(h="center", v="center", wrap=False)
     title_cell.fill      = _fill(COLOR["meta_bg"])

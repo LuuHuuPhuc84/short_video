@@ -1,4 +1,5 @@
 import json
+import re
 import os
 import sys
 import argparse
@@ -174,6 +175,9 @@ def make_video(
         showHeroHeader = False
         showTitleHook = True
         titleHook = ""
+
+    # QUY CHUẨN: Tuyệt đối không gắn #shorts vào tiêu đề video Shorts
+    title = re.sub(r'\s*#shorts\b', '', str(title), flags=re.IGNORECASE).strip()
 
     # Tự động gán Title Hook 3-5 từ đắt giá làm Thumbnail Shorts nếu chưa chỉ định rõ
     if not titleHook:
@@ -369,9 +373,12 @@ def make_video(
     if video_id not in raw_tags:
         raw_tags.insert(0, video_id)
 
+    # QUY CHUẨN: Tiêu đề video Shorts tuyệt đối KHÔNG chứa chữ #shorts
+    clean_title = re.sub(r'#shorts', '', title, flags=re.IGNORECASE).strip()
+
     info_data = {
         "id": video_id,
-        "title": title,
+        "title": clean_title,
         "subtitle": subtitle,
         "book": book if book else existing_info.get("book", ""),
         "author": author if author else existing_info.get("author", ""),
@@ -497,9 +504,12 @@ def make_video(
         except Exception:
             existing_info = {}
 
+    # QUY CHUẨN: Tiêu đề video Shorts tuyệt đối KHÔNG chứa chữ #shorts
+    clean_title = re.sub(r'#shorts', '', title, flags=re.IGNORECASE).strip()
+
     info_data = {
         "id": video_id,
-        "title": title,
+        "title": clean_title,
         "subtitle": subtitle,
         "book": book if book else existing_info.get("book", ""),
         "author": author if author else existing_info.get("author", ""),

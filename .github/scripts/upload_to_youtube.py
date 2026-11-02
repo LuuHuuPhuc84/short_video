@@ -1,4 +1,5 @@
 import os
+import re
 import sys
 import json
 from pathlib import Path
@@ -65,7 +66,7 @@ def upload_short_to_youtube(video_path, video_id):
             info_file = p
             break
 
-    title = f"Bài học cuộc sống #shorts | {video_id}"
+    title = f"Bài học cuộc sống | {video_id}"
     description = "Nhìn sâu để sống nhẹ — Nửa Chén Trà #nuachentra #shorts"
     tags = ["Nửa Chén Trà", "nhìn sâu để sống nhẹ", "shorts", "bài học cuộc sống"]
 
@@ -84,6 +85,9 @@ def upload_short_to_youtube(video_path, video_id):
             print(f"⚠️ Lỗi đọc file metadata {info_file}: {e}")
             schedule_str = None
 
+    # QUY CHUẨN: Tuyệt đối KHÔNG thêm #shorts vào tiêu đề video. Nếu tiêu đề có sẵn thì tự động loại bỏ.
+    title = re.sub(r'#shorts', '', title, flags=re.IGNORECASE).strip()
+
     # QUY CHUẨN BẮT BUỘC: Luôn luôn ghi hashtag số tập #<video_id> vào mô tả và thẻ tags
     ep_hashtag = f"#{video_id}"
     if ep_hashtag not in description and video_id not in description:
@@ -96,9 +100,6 @@ def upload_short_to_youtube(video_path, video_id):
         tags = [str(tags)] if tags else []
     if video_id not in tags:
         tags.insert(0, video_id)
-
-    if "#shorts" not in title.lower():
-        title = f"{title} #shorts"
 
     privacy = d.get("privacyStatus") or d.get("privacy") or "private"
     if str(schedule_str).strip().lower() in ["now", "public", "công chiếu ngay", "công chiếu luôn", "immediately"]:
