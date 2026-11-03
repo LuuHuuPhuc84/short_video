@@ -1,0 +1,483 @@
+{
+  "id": "nct_v07",
+  "title": "Giúp mười lần quên, từ chối một lần nhớ mãi",
+  "titleHook": "GIÚP MƯỜI LẦN / TỪ CHỐI MỘT LẦN",
+  "subtitle": "Quy Luật Lòng Tốt Và Ranh Giới",
+  "book": "NỬA CHÉN TRÀ",
+  "author": "Nhìn Sâu Để Sống Nhẹ",
+  "chapter": "Quan hệ",
+  "schedule": "2026-11-04 11:30",
+  "fps": 30,
+  "durationInFrames": 729,
+  "bgm": "Memory Lane",
+  "bgm_file": "memory_lane.mp3",
+  "scenes": [
+    {
+      "scene": 1,
+      "tag": "Hook Vòng lặp",
+      "text": "Giúp mười lần, từ chối một lần, bị trách, vì...",
+      "highlight": "GIÚP MƯỜI LẦN, TỪ CHỐI MỘT LẦN",
+      "image": "nct_v07_scene1.mp4",
+      "video": "nct_v07_scene1.mp4",
+      "startFrame": 0,
+      "durationInFrames": 90,
+      "words": [
+        {
+          "word": "Giúp",
+          "startFrame": 0,
+          "endFrame": 7
+        },
+        {
+          "word": "mười",
+          "startFrame": 7,
+          "endFrame": 13
+        },
+        {
+          "word": "lần,",
+          "startFrame": 13,
+          "endFrame": 21
+        },
+        {
+          "word": "từ",
+          "startFrame": 21,
+          "endFrame": 29
+        },
+        {
+          "word": "chối",
+          "startFrame": 29,
+          "endFrame": 37
+        },
+        {
+          "word": "một",
+          "startFrame": 37,
+          "endFrame": 41
+        },
+        {
+          "word": "lần,",
+          "startFrame": 41,
+          "endFrame": 52
+        },
+        {
+          "word": "bị",
+          "startFrame": 52,
+          "endFrame": 59
+        },
+        {
+          "word": "trách,",
+          "startFrame": 59,
+          "endFrame": 68
+        },
+        {
+          "word": "vì...",
+          "startFrame": 68,
+          "endFrame": 82
+        }
+      ]
+    },
+    {
+      "scene": 2,
+      "tag": "Lòng tốt trao đi",
+      "text": "Anh giúp người quen dọn nhà, cho mượn tiền, đón con hộ, chưa từng một lời than. Lần thứ mười một anh bận, nói không.",
+      "highlight": "CHƯA TỪNG MỘT LỜI THAN",
+      "image": "nct_v07_scene2_art.jpg",
+      "video": "nct_v07_scene2_art.jpg",
+      "startFrame": 90,
+      "durationInFrames": 225,
+      "words": [
+        {
+          "word": "Anh",
+          "startFrame": 16,
+          "endFrame": 19
+        },
+        {
+          "word": "giúp",
+          "startFrame": 19,
+          "endFrame": 26
+        },
+        {
+          "word": "người",
+          "startFrame": 26,
+          "endFrame": 33
+        },
+        {
+          "word": "quen",
+          "startFrame": 33,
+          "endFrame": 39
+        },
+        {
+          "word": "dọn",
+          "startFrame": 39,
+          "endFrame": 49
+        },
+        {
+          "word": "nhà,",
+          "startFrame": 49,
+          "endFrame": 57
+        },
+        {
+          "word": "cho",
+          "startFrame": 57,
+          "endFrame": 67
+        },
+        {
+          "word": "mượn",
+          "startFrame": 67,
+          "endFrame": 76
+        },
+        {
+          "word": "tiền,",
+          "startFrame": 76,
+          "endFrame": 83
+        },
+        {
+          "word": "đón",
+          "startFrame": 83,
+          "endFrame": 96
+        },
+        {
+          "word": "con",
+          "startFrame": 96,
+          "endFrame": 101
+        },
+        {
+          "word": "hộ,",
+          "startFrame": 101,
+          "endFrame": 110
+        },
+        {
+          "word": "chưa",
+          "startFrame": 110,
+          "endFrame": 121
+        },
+        {
+          "word": "từng",
+          "startFrame": 121,
+          "endFrame": 127
+        },
+        {
+          "word": "một",
+          "startFrame": 127,
+          "endFrame": 133
+        },
+        {
+          "word": "lời",
+          "startFrame": 133,
+          "endFrame": 140
+        },
+        {
+          "word": "than.",
+          "startFrame": 140,
+          "endFrame": 149
+        },
+        {
+          "word": "Lần",
+          "startFrame": 161,
+          "endFrame": 164
+        },
+        {
+          "word": "thứ",
+          "startFrame": 164,
+          "endFrame": 169
+        },
+        {
+          "word": "mười",
+          "startFrame": 169,
+          "endFrame": 177
+        },
+        {
+          "word": "một",
+          "startFrame": 177,
+          "endFrame": 187
+        },
+        {
+          "word": "anh",
+          "startFrame": 187,
+          "endFrame": 193
+        },
+        {
+          "word": "bận,",
+          "startFrame": 193,
+          "endFrame": 202
+        },
+        {
+          "word": "nói",
+          "startFrame": 202,
+          "endFrame": 209
+        },
+        {
+          "word": "không.",
+          "startFrame": 230,
+          "endFrame": 234
+        }
+      ]
+    },
+    {
+      "scene": 3,
+      "tag": "Họ trách móc",
+      "text": "Họ bảo: anh đổi rồi. Anh ngồi lặng, không biết mình sai ở đâu.",
+      "highlight": "KHÔNG BIẾT MÌNH SAI Ở ĐÂU",
+      "image": "nct_v07_scene3.mp4",
+      "video": "nct_v07_scene3.mp4",
+      "startFrame": 315,
+      "durationInFrames": 126,
+      "words": [
+        {
+          "word": "Họ",
+          "startFrame": 5,
+          "endFrame": 9
+        },
+        {
+          "word": "bảo:",
+          "startFrame": 9,
+          "endFrame": 18
+        },
+        {
+          "word": "anh",
+          "startFrame": 18,
+          "endFrame": 27
+        },
+        {
+          "word": "đổi",
+          "startFrame": 27,
+          "endFrame": 33
+        },
+        {
+          "word": "rồi.",
+          "startFrame": 33,
+          "endFrame": 41
+        },
+        {
+          "word": "Anh",
+          "startFrame": 56,
+          "endFrame": 59
+        },
+        {
+          "word": "ngồi",
+          "startFrame": 59,
+          "endFrame": 66
+        },
+        {
+          "word": "lặng,",
+          "startFrame": 66,
+          "endFrame": 74
+        },
+        {
+          "word": "không",
+          "startFrame": 74,
+          "endFrame": 80
+        },
+        {
+          "word": "biết",
+          "startFrame": 80,
+          "endFrame": 84
+        },
+        {
+          "word": "mình",
+          "startFrame": 84,
+          "endFrame": 90
+        },
+        {
+          "word": "sai",
+          "startFrame": 90,
+          "endFrame": 98
+        },
+        {
+          "word": "ở",
+          "startFrame": 98,
+          "endFrame": 104
+        },
+        {
+          "word": "đâu.",
+          "startFrame": 104,
+          "endFrame": 111
+        }
+      ]
+    },
+    {
+      "scene": 4,
+      "tag": "Nhận ra sự thật",
+      "text": "Họ không nhớ mười lần anh cho. Họ chỉ nhớ một lần anh không. Từ chối đúng lúc không làm anh kém tử tế.",
+      "highlight": "TỪ CHỐI ĐÚNG LÚC",
+      "image": "nct_v07_scene4_art.jpg",
+      "video": "nct_v07_scene4_art.jpg",
+      "startFrame": 441,
+      "durationInFrames": 216,
+      "words": [
+        {
+          "word": "Họ",
+          "startFrame": 3,
+          "endFrame": 6
+        },
+        {
+          "word": "không",
+          "startFrame": 6,
+          "endFrame": 15
+        },
+        {
+          "word": "nhớ",
+          "startFrame": 15,
+          "endFrame": 20
+        },
+        {
+          "word": "mười",
+          "startFrame": 20,
+          "endFrame": 26
+        },
+        {
+          "word": "lần",
+          "startFrame": 26,
+          "endFrame": 34
+        },
+        {
+          "word": "anh",
+          "startFrame": 34,
+          "endFrame": 41
+        },
+        {
+          "word": "cho.",
+          "startFrame": 41,
+          "endFrame": 48
+        },
+        {
+          "word": "Họ",
+          "startFrame": 63,
+          "endFrame": 66
+        },
+        {
+          "word": "chỉ",
+          "startFrame": 66,
+          "endFrame": 72
+        },
+        {
+          "word": "nhớ",
+          "startFrame": 72,
+          "endFrame": 80
+        },
+        {
+          "word": "một",
+          "startFrame": 80,
+          "endFrame": 84
+        },
+        {
+          "word": "lần",
+          "startFrame": 84,
+          "endFrame": 90
+        },
+        {
+          "word": "anh",
+          "startFrame": 90,
+          "endFrame": 96
+        },
+        {
+          "word": "không.",
+          "startFrame": 96,
+          "endFrame": 105
+        },
+        {
+          "word": "Từ",
+          "startFrame": 105,
+          "endFrame": 120
+        },
+        {
+          "word": "chối",
+          "startFrame": 120,
+          "endFrame": 130
+        },
+        {
+          "word": "đúng",
+          "startFrame": 130,
+          "endFrame": 138
+        },
+        {
+          "word": "lúc",
+          "startFrame": 138,
+          "endFrame": 143
+        },
+        {
+          "word": "không",
+          "startFrame": 143,
+          "endFrame": 149
+        },
+        {
+          "word": "làm",
+          "startFrame": 149,
+          "endFrame": 154
+        },
+        {
+          "word": "anh",
+          "startFrame": 154,
+          "endFrame": 162
+        },
+        {
+          "word": "kém",
+          "startFrame": 162,
+          "endFrame": 170
+        },
+        {
+          "word": "tử",
+          "startFrame": 170,
+          "endFrame": 176
+        },
+        {
+          "word": "tế.",
+          "startFrame": 176,
+          "endFrame": 186
+        }
+      ]
+    },
+    {
+      "scene": 5,
+      "tag": "Ranh giới bổn phận",
+      "text": "...lòng tốt không ranh giới thành bổn phận.",
+      "highlight": "LÒNG TỐT CẦN RANH GIỚI",
+      "image": "nct_v07_scene5.mp4",
+      "video": "nct_v07_scene5.mp4",
+      "startFrame": 657,
+      "durationInFrames": 72,
+      "words": [
+        {
+          "word": "...lòng",
+          "startFrame": 0,
+          "endFrame": 2
+        },
+        {
+          "word": "tốt",
+          "startFrame": 0,
+          "endFrame": 8
+        },
+        {
+          "word": "không",
+          "startFrame": 8,
+          "endFrame": 18
+        },
+        {
+          "word": "ranh",
+          "startFrame": 18,
+          "endFrame": 26
+        },
+        {
+          "word": "giới",
+          "startFrame": 26,
+          "endFrame": 33
+        },
+        {
+          "word": "thành",
+          "startFrame": 33,
+          "endFrame": 40
+        },
+        {
+          "word": "bổn",
+          "startFrame": 40,
+          "endFrame": 48
+        },
+        {
+          "word": "phận.",
+          "startFrame": 48,
+          "endFrame": 56
+        }
+      ]
+    }
+  ],
+  "thumbnailImage": "thumbnail_nct_v07.jpg",
+  "audioFile": "audio_mastered_nct_v07.mp3"
+}
