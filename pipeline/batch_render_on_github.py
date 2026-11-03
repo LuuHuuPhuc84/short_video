@@ -13,6 +13,9 @@ PUBLIC_DIR = BASE_DIR / "remotion-video" / "public"
 OUTPUT_DIR = BASE_DIR / "output"
 PIPELINE_DIR = BASE_DIR / "pipeline"
 
+if str(PIPELINE_DIR) not in sys.path:
+    sys.path.append(str(PIPELINE_DIR))
+
 from render_on_github import (
     run_git,
     check_video_ready_on_drive,
@@ -50,21 +53,14 @@ def batch_render_via_github(video_ids, auto_cleanup=True, download_local=False):
         except Exception as e:
             print(f"⚠️ Pre-render Excel {vid}: {e}")
 
-        # 0.2 QUY CHUẨN MỚI 2: Copy toàn bộ hình ảnh / video B-roll đã cắt vào input/
+        # 0.2 QUY CHUẨN MỚI 2: Copy toàn bộ hình ảnh / video B-roll đã cắt vào input/ (lưu trữ local & commit GitHub)
         try:
             from pack_inputs import pack_video_input
             pack_video_input(vid)
         except Exception as e:
             print(f"⚠️ Pre-render Pack Input {vid}: {e}")
 
-        # 0.3 QUY CHUẨN MỚI 3: Đồng bộ toàn bộ thư mục input/ lên Google Drive
-        try:
-            from sync_input_to_drive import sync_input_to_drive
-            sync_input_to_drive(vid, project="short")
-        except Exception as e:
-            print(f"⚠️ Pre-render Sync Drive Input {vid}: {e}")
-
-        # 0.4 Pre-render archive check
+        # 0.3 Pre-render archive check (đổi tên bản cũ nếu có)
         try:
             from archive_render import archive_previous_renders
             archive_previous_renders(vid, target_filename=f"video_{vid}.mp4")

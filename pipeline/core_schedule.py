@@ -427,8 +427,31 @@ def pull_schedule_from_youtube(target_video_id=None):
         except Exception as e:
             print(f"  ⚠️ Lỗi update master overview: {e}")
         reorder_sheets_by_schedule(excel_wb)
-        excel_wb.save(str(EXCEL_PATH))
-        print("  💾 Đã cập nhật Tab '📋 TỔNG QUAN' và sắp xếp thứ tự các sheet theo lịch phát sóng!")
+        saved = False
+        try:
+            excel_wb.save(str(EXCEL_PATH))
+            saved = True
+        except PermissionError:
+            print(f"  ⚠️ File '{EXCEL_PATH.name}' đang được mở trong ứng dụng Excel.")
+            print("  ⏳ Vui lòng đóng file Excel để hoàn tất lưu (đang chờ tối đa 15s)...")
+            import time
+            for _ in range(15):
+                time.sleep(1)
+                try:
+                    excel_wb.save(str(EXCEL_PATH))
+                    saved = True
+                    break
+                except PermissionError:
+                    continue
+            if not saved:
+                backup_path = EXCEL_PATH.parent / "scripts_short_video_synced.xlsx"
+                try:
+                    excel_wb.save(str(backup_path))
+                    print(f"  ⚠️ Đã lưu dữ liệu đồng bộ vào file phụ: {backup_path.name}")
+                except Exception as e:
+                    print(f"  ❌ Không thể lưu Excel: {e}")
+        if saved:
+            print("  💾 Đã cập nhật Tab '📋 TỔNG QUAN' và sắp xếp thứ tự các sheet theo lịch phát sóng!")
 
     print("\n" + "=" * 56)
     print(f"🎉 TỔNG KẾT ĐỒNG BỘ: Đã khớp {matched_count} video, cập nhật {updated_count} video vào Excel!")

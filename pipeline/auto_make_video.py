@@ -293,8 +293,8 @@ def make_video(
             chosen_track_name = bgm_res["track"]["name"]
             print(f"🎵 Nhạc nền tự động (Mood Match): {chosen_track_name} ({bgm_res['track']['file']})")
         else:
-            selected_bgm_path = PUBLIC_DIR / "background_music.mp3"
-            chosen_track_name = "On A Piano Cloud"
+            selected_bgm_path = BASE_DIR / "assets_hub" / "music" / "peace_of_mind.mp3"
+            chosen_track_name = "Peace of Mind"
             print(f"🎵 Nhạc nền mặc định: {chosen_track_name}")
 
         # Thực hiện hòa âm phòng thu: BGM volume=0.15 (không Sidechain) + EQ Ấm 220Hz/6000Hz + EBU R128 (-14 LUFS)
@@ -427,14 +427,6 @@ def make_video(
         print(f"3. Sau khi duyệt xong, hãy xác nhận để hệ thống tải thư mục input/ lên Google Drive và render!")
         print("="*66 + "\n")
         return
-
-    # ── QUY CHUẨN MỚI 3: Copy toàn bộ thư mục input/ lên Google Drive sau khi duyệt ──
-    print(f"\n☁️ [BƯỚC 3 POST-APPROVAL] Đồng bộ toàn bộ thư mục input/ lên Google Drive...")
-    try:
-        from sync_input_to_drive import sync_input_to_drive
-        sync_input_to_drive(video_id, project="short")
-    except Exception as e:
-        print(f"⚠️ Đồng bộ Drive: {e}")
 
     # ── Chuẩn hóa tiền xử lý: Đổi tên file render cũ trên Local & Drive ───────
     try:

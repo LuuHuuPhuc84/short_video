@@ -86,24 +86,22 @@ def pack_video_input(vid):
     (input_fol / 'script.md').write_text(script_md, encoding='utf-8')
     print(f'  ✓ Đã lưu: script.md')
 
-    # 5. COPY TOÀN BỘ HÌNH ẢNH HOẶC VIDEO ĐÃ CẮT CỦA CÁC CẢNH
+    # 5. COPY TOÀN BỘ HÌNH ẢNH HOẶC VIDEO ĐÃ CẮT CỦA CÁC CẢNH (HỖ TRỢ ON-DEMAND TỪ GOOGLE DRIVE)
+    from asset_resolver import resolve_asset
     scenes = meta.get('scenes', [])
     copied_media = []
     for sc in scenes:
         media_name = sc.get('image') or sc.get('video') or sc.get('backgroundVideo')
         if not media_name:
             continue
-        # Tìm media ở public hoặc assets_hub
-        media_src = PUBLIC_DIR / media_name
-        if not media_src.exists():
-            media_src = ASSETS_HUB / ('videos' if media_name.endswith('.mp4') else 'images') / media_name
         
-        if media_src.exists():
+        # Tìm và kéo On-Demand từ Local hoặc Google Drive
+        media_src = resolve_asset(media_name, target_dest=input_fol, project_type='short', copy_to_public=True)
+        
+        if media_src and media_src.exists():
             dest_media = input_fol / media_name
-            if not dest_media.exists() or dest_media.stat().st_size != media_src.stat().st_size:
-                shutil.copy2(media_src, dest_media)
             copied_media.append(media_name)
-            print(f'  ✓ Đã copy media B-roll: {media_name} ({media_src.stat().st_size / (1024*1024):.1f} MB)')
+            print(f'  ✓ Đã chuẩn bị media B-roll: {media_name} ({media_src.stat().st_size / (1024*1024):.1f} MB)')
         else:
             print(f'  ⚠️ Không tìm thấy media: {media_name}')
 
