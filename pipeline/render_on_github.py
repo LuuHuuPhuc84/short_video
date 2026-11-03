@@ -234,6 +234,32 @@ def render_short_video_via_github(video_id, auto_cleanup=True, download_local=Fa
     # 2. Thu thập danh sách file cần thiết của riêng video này
     files_to_push = [meta_path]
     audio_file = meta_data.get("audioFile", "")
+    
+    # Tự động tìm & gán audioFile nếu chưa có
+    if not audio_file or not (PUBLIC_DIR / audio_file).exists():
+        candidates = [
+            PUBLIC_DIR / f"audio_mastered_{video_id}.mp3",
+            PUBLIC_DIR / f"voiceover_{video_id}.wav",
+            PUBLIC_DIR / "audio_mastered.mp3",
+            PUBLIC_DIR / "voiceover.wav"
+        ]
+        inp_audio = OUTPUT_DIR / video_id / "input" / "audio_mastered.mp3"
+        if inp_audio.exists() and not (PUBLIC_DIR / f"audio_mastered_{video_id}.mp3").exists():
+            shutil.copy2(inp_audio, PUBLIC_DIR / f"audio_mastered_{video_id}.mp3")
+        
+        inp_voice = OUTPUT_DIR / video_id / "input" / "voiceover.wav"
+        if inp_voice.exists() and not (PUBLIC_DIR / f"voiceover_{video_id}.wav").exists():
+            shutil.copy2(inp_voice, PUBLIC_DIR / f"voiceover_{video_id}.wav")
+
+        for c in candidates:
+            if c.exists():
+                audio_file = c.name
+                meta_data["audioFile"] = audio_file
+                with open(meta_path, "w", encoding="utf-8") as f:
+                    json.dump(meta_data, f, ensure_ascii=False, indent=2)
+                print(f"🎵 Tự động gán audioFile: {audio_file}")
+                break
+
     if audio_file:
         audio_path = PUBLIC_DIR / audio_file
         if audio_path.exists():
