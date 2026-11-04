@@ -30,6 +30,7 @@
    - Chạy `pipeline/archive_render.py` để đổi tên file cũ, chống trùng lặp và tránh sinh đuôi `(1)`.
 4. **Bước 4 — Render Cloud GitHub Actions:**
    - Đẩy nhánh tạm `render-{id}` (hoặc batch qua `pipeline/batch_render_on_github.py`). Cloud Runner render độc lập, người dùng có thể tắt máy.
+   - **Chống treo Cloud Runner (Anti-Hang):** Tuân thủ tuyệt đối `docs/guidelines/cloud_worker_rules.md` (khóa `DEBIAN_FRONTEND=noninteractive`, giới hạn `timeout-minutes: 15`, cấm cài `fonts-noto-cjk`, cấu hình APT timeout 20s).
 5. **Bước 5 — One-Shot Cloud Sync & Xuất bản:**
    - Cloud Worker tự động tải trọn gói (Video MP4 + Thumbnail + info.json + input/) lên Drive (`1FUTzv6wXSe6o-0q_7Fuy-al7b9CsZ2qx`), upload YouTube Shorts (Scheduled), và xóa nhánh tạm Zero-Trace.
 
