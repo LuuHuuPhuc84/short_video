@@ -93,21 +93,12 @@ jobs:
           cache-dependency-path: remotion-video/package-lock.json
 
       - name: 📦 Cài đặt thư viện hệ thống cho Chromium & FFmpeg
-        timeout-minutes: 6
+        timeout-minutes: 4
         run: |
-          # 1. Chống treo APT do mirror+file:/etc/apt/apt-mirrors.txt (dùng trực tiếp Azure Ubuntu mirror)
-          sudo sed -i 's|mirror+file:/etc/apt/apt-mirrors.txt|http://azure.archive.ubuntu.com/ubuntu/|g' /etc/apt/sources.list /etc/apt/sources.list.d/*.list 2>/dev/null || true
-          
-          # 2. Cấu hình Timeout và Retry toàn cục cho APT (tránh deadlock mạng)
-          echo 'Acquire::http::Timeout "20";' | sudo tee /etc/apt/apt.conf.d/99timeout
-          echo 'Acquire::https::Timeout "20";' | sudo tee -a /etc/apt/apt.conf.d/99timeout
-          echo 'Acquire::Retries "3";' | sudo tee -a /etc/apt/apt.conf.d/99timeout
-          
-          # 3. Cập nhật và cài đặt thư viện cần thiết (loại bỏ fonts-noto cồng kềnh, chỉ cài font tối ưu)
-          sudo apt-get update
+          sudo apt-get update -o Acquire::Retries=3 -o Acquire::http::Timeout=20
           sudo DEBIAN_FRONTEND=noninteractive apt-get install -y --no-install-recommends \
             ffmpeg libnss3 libatk1.0-0 libatk-bridge2.0-0 libcups2 libdrm2 libxkbcommon0 \
-            libxcomposite1 libxdamage1 libxrandr2 libgbm1 fonts-roboto fonts-dejavu-core fonts-liberation
+            libxcomposite1 libxdamage1 libxrandr2 libgbm1 fonts-noto fonts-roboto fonts-dejavu-core
           sudo DEBIAN_FRONTEND=noninteractive apt-get install -y libasound2 || sudo DEBIAN_FRONTEND=noninteractive apt-get install -y libasound2t64
 
       - name: 📦 Cài đặt Dependencies Remotion
