@@ -93,7 +93,7 @@ jobs:
           cache-dependency-path: remotion-video/package-lock.json
 
       - name: 📦 Cài đặt thư viện hệ thống cho Chromium & FFmpeg
-        timeout-minutes: 4
+        timeout-minutes: 8
         run: |
           sudo apt-get update -o Acquire::Retries=3 -o Acquire::http::Timeout=20
           sudo DEBIAN_FRONTEND=noninteractive apt-get install -y --no-install-recommends \
