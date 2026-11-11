@@ -45,8 +45,8 @@ except ImportError:
     sys.exit(1)
 
 # ── Đường dẫn dự án ──────────────────────────────────────────────────────────
-SHORT_VIDEO_DIR = Path(__file__).parent.parent          # E:\Project\short video
-LONG_VIDEO_DIR  = Path("E:/Project/long video")
+SHORT_VIDEO_DIR = Path(__file__).parent.parent          # D:\Project\short video
+LONG_VIDEO_DIR  = Path("D:/Project/long video")
 
 SHORT_EXCEL_FILE = SHORT_VIDEO_DIR / "scripts_short_video.xlsx"
 LONG_EXCEL_FILE  = LONG_VIDEO_DIR  / "scripts_long_video.xlsx"

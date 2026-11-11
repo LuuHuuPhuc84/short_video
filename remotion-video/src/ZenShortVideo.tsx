@@ -88,8 +88,8 @@ export const ZenShortVideo: React.FC<ZenShortVideoProps> = (props) => {
   const rawTitleHook =
     props.titleHook || props.scenes?.[0]?.highlight || title.split(",")[0] || "";
   const titleHook = rawTitleHook.trim();
-  const shouldShowTitleHook =
-    props.showTitleHook !== false && Boolean(titleHook);
+  // Bỏ hoàn toàn khung tiêu đề thứ 2 (TitleHookHeader) để tránh lặp lại tiêu đề sau khi hết 1s Thumbnail
+  const shouldShowTitleHook = false;
   const audioFile = props.audioFile || "voiceover_ch2.wav";
   const thumbnailImage = props.thumbnailImage || "";
   const rawScenes = props.scenes || [];

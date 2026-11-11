@@ -23,6 +23,9 @@ PUBLIC_DIR = BASE_DIR / 'remotion-video' / 'public'
 PIPELINE_DIR = BASE_DIR / 'pipeline'
 ASSETS_HUB = BASE_DIR / 'assets_hub'
 
+if str(PIPELINE_DIR) not in sys.path:
+    sys.path.insert(0, str(PIPELINE_DIR))
+
 def generate_script_markdown(video_id, meta):
     scenes = meta.get('scenes', [])
     title = meta.get('title', f'Video {video_id}')
