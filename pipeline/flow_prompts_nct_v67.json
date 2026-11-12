@@ -1,0 +1,42 @@
+{
+  "video_id": "nct_v67",
+  "title": "Khoảng Lặng Của Nửa Chén Trà",
+  "title_hook": "VÌ SAO CHỈ RÓT MỘT NỬA?",
+  "scenes": [
+    {
+      "scene_num": 1,
+      "tag": "Hook 3s",
+      "voiceover": "Có người hỏi tôi,, tại sao lại là Nửa Chén Trà,, mà không phải là một chén trà đầy đặn?",
+      "highlight": "VÌ SAO CHỈ RÓT MỘT NỬA?",
+      "flow_prompt": "Vertical 9:16 aspect ratio. Generate exactly 1 image. Cinematic 35mm film still. Macro close up shot of hot amber tea being poured from a clay teapot into a rustic handcrafted ceramic teacup, liquid stopping exactly at the halfway mark. Gentle steam rising in morning sunlight beam, dark wooden table, zen aesthetic, peaceful minimalist atmosphere, shallow depth of field, 4k photorealistic."
+    },
+    {
+      "scene_num": 2,
+      "tag": "Đầy quá sẽ bỏng tay",
+      "voiceover": "Bởi vì một chén trà rót đầy tới mép,, khi cầm lên sẽ làm bỏng tay,, khi bước đi sẽ sóng sánh đổ ra ngoài.",
+      "highlight": "ĐẦY QUÁ SẼ BỎNG TAY",
+      "flow_prompt": "Vertical 9:16 aspect ratio. Generate exactly 1 image. Cinematic 35mm film still. An overflowing ceramic teacup filled to the brim with hot tea spilling over onto a dark textured wooden table, tense and poignant mood, warm tea ripples, dramatic moody lighting, 4k photorealistic."
+    },
+    {
+      "scene_num": 3,
+      "tag": "Tâm trí như chén trà",
+      "voiceover": "Lòng người cũng vậy. Nếu nhồi nhét đủ thứ tham vọng,, hơn thua và oán giận,, thì lấy đâu ra khoảng trống để hương vị bình yên đọng lại?",
+      "highlight": "TÂM TRÍ CŨNG NHƯ CHÉN TRÀ",
+      "flow_prompt": "Vertical 9:16 aspect ratio. Generate exactly 1 image. Cinematic 35mm film still. A contemplative Asian person holding a half-filled rustic ceramic teacup with both hands near a sunlit window, eyes closed gently inhaling the fragrant steam, serene tranquil expression, soft morning golden hour glow, zen peace, 4k photorealistic."
+    },
+    {
+      "scene_num": 4,
+      "tag": "Nửa phần vơi là trí tuệ",
+      "voiceover": "Nửa chén nước là để thưởng thức cuộc đời. Còn nửa phần vơi,, chính là khoảng lặng để ta bao dung cho người,, và tha thứ cho mình.",
+      "highlight": "NỬA PHẦN VƠI LÀ TRÍ TUỆ",
+      "flow_prompt": "Vertical 9:16 aspect ratio. Generate exactly 1 image. Cinematic 35mm film still. A lush green bamboo grove gently swaying in the breeze, soft misty atmosphere, sunlight rays filtering through bamboo leaves, zen garden aesthetic, tranquil and expansive feeling, 4k photorealistic."
+    },
+    {
+      "scene_num": 5,
+      "tag": "Nhìn sâu để sống nhẹ",
+      "voiceover": "Chấp nhận cuộc đời không trọn vẹn,, chính là khởi đầu của sự thảnh thơi. Nhìn sâu để hiểu,, buông bớt để sống nhẹ.",
+      "highlight": "NHÌN SÂU ĐỂ SỐNG NHẸ",
+      "flow_prompt": "Vertical 9:16 aspect ratio. Generate exactly 1 image. Cinematic 35mm film still. A single rustic Japanese wabi-sabi ceramic teacup halfway filled with golden tea, resting on an old wooden table by a misty courtyard window. A solitary autumn leaf resting beside the cup, soft warm morning lighting, deep inner peace, minimalist zen masterwork, 4k photorealistic."
+    }
+  ]
+}

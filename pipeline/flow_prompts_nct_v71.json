@@ -1,0 +1,43 @@
+{
+  "video_id": "nct_v71",
+  "title": "Quy Tắc \"Chậm 3 Giây\" Khi Nóng Giận",
+  "project": "short",
+  "aspect_ratio": "9:16",
+  "scenes": [
+    {
+      "scene_num": 1,
+      "tag": "MỘT LỜI LỠ MIỆNG",
+      "flow_prompt": "Shattered ceramic teacup pieces on a dark wooden floor, dramatic moody lighting, metaphor for spoken angry words, 9:16",
+      "voiceover": "Có những mối quan hệ mất mười năm để vun đắp,, nhưng chỉ mất đúng ba giây nóng giận để phá hủy hoàn toàn.",
+      "filename": "nct_v71_scene1.jpg"
+    },
+    {
+      "scene_num": 2,
+      "tag": "LỜI NÓI NHƯ BÁT NƯỚC HẤT ĐI",
+      "flow_prompt": "Artistic cinematic zen illustration of water splashing slow motion, warm moody lighting, 9:16 vertical aspect ratio",
+      "voiceover": "Khi cơn giận bốc lên đầu,, não bộ luôn xúi giục ta tìm câu nói sắc bén nhất để làm đau người đối diện.",
+      "filename": "nct_v71_scene2.jpg"
+    },
+    {
+      "scene_num": 3,
+      "tag": "NGƯỜI ĐAU NHẤT LÀ TA",
+      "flow_prompt": "A person sitting alone at a table with head in hands looking regretful after an argument, dim warm room, 9:16",
+      "voiceover": "Nhưng hả giận được một phút,, đến khi bình tâm lại,, vết sẹo trong lòng người kia thì còn mãi,, mà nỗi ân hận của ta cũng chẳng nguôi.",
+      "filename": "nct_v71_scene3.jpg"
+    },
+    {
+      "scene_num": 4,
+      "tag": "NUỐT NƯỚC BỌT · ĐẾM ĐẾN 3",
+      "flow_prompt": "Artistic cinematic zen illustration of person closing eyes breathing deeply, warm moody lighting, 9:16 vertical aspect ratio",
+      "voiceover": "Cổ nhân dạy,, trước khi định buông lời nặng nề,, hãy khép miệng lại,, nuốt một ngụm nước bọt và thầm đếm từ một đến ba.",
+      "filename": "nct_v71_scene4.jpg"
+    },
+    {
+      "scene_num": 5,
+      "tag": "BA GIÂY CỨU MỘT MỐI TÌNH",
+      "flow_prompt": "Calm water surface in a ceramic bowl reflecting warm golden light, zen and peaceful aesthetic, 9:16",
+      "voiceover": "Ba giây im lặng ấy không làm bạn yếu thế đi,, mà giúp bạn giữ lại được người mình thương.",
+      "filename": "nct_v71_scene5.jpg"
+    }
+  ]
+}

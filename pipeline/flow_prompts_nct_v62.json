@@ -1,0 +1,38 @@
+{
+  "video_id": "nct_v62",
+  "title": "Một lời xin lỗi không làm cha mẹ nhỏ đi",
+  "aspect_ratio": "9:16",
+  "style": "Cinematic 35mm film still, Asian aesthetic, nostalgic warm tones, emotional documentary realism, soft film grain",
+  "scenes": [
+    {
+      "scene_num": 1,
+      "tag": "Hook 3s",
+      "voiceover": "Bố mẹ có được phép xin lỗi con không?",
+      "flow_prompt": "Vertical 9:16 aspect ratio. Generate exactly 1 image. Cinematic 35mm photograph. An overhead close-up shot of shattered glass pieces of a broken drinking cup scattered on a dark tiled living room floor. Soft domestic evening lamplight catching the sharp glassy edges and spilled water droplets. Quiet tension, domestic intimacy, dramatic moody lighting, 4k photorealistic."
+    },
+    {
+      "scene_num": 2,
+      "tag": "Quát con",
+      "voiceover": "Một buổi tối mệt, bạn quát con vì cái cốc vỡ. Mười phút sau mới biết, không phải lỗi của con.",
+      "flow_prompt": "Vertical 9:16 aspect ratio. Generate exactly 1 image. Cinematic 35mm film still. A tired Asian father sitting at a cluttered wooden dining table under a warm hanging pendant lamp, head resting heavily in his hands, filled with sudden regret and exhaustion. In the background blur, a quiet hallway leads to a closed bedroom door. Deep remorse, emotional weight, warm amber and dark shadow tones, 4k photorealistic."
+    },
+    {
+      "scene_num": 3,
+      "tag": "Lưỡng lự ở cửa",
+      "voiceover": "Bạn đứng ở cửa phòng, lưỡng lự. Sợ mất uy. Sợ con nhờn.",
+      "flow_prompt": "Vertical 9:16 aspect ratio. Generate exactly 1 image. Cinematic 35mm photograph. A close-up side angle of an adult hand resting hesitatingly on a wooden bedroom door handle in a dim hallway. A sliver of warm yellow light escapes from beneath the door frame. Hesitation, parental vulnerability, Wong Kar-wai atmospheric mood, fine film grain, 4k photorealistic."
+    },
+    {
+      "scene_num": 4,
+      "tag": "Con đang nhìn",
+      "voiceover": "Nhưng con đang nhìn bạn đấy. Con học cách nhận lỗi từ chính cách bạn nhận lỗi.",
+      "flow_prompt": "Vertical 9:16 aspect ratio. Generate exactly 1 image. Cinematic 35mm film still. A quiet cozy corner of a family home at night. A simple wooden student desk with a warm glowing desk lamp illuminating an open notebook with childlike colorful crayon drawings. A small wooden stool stands beside the table. Poetic innocence, quiet tender atmosphere, warm golden lamplight, nostalgic family home, fine 35mm film grain, 4k photorealistic."
+    },
+    {
+      "scene_num": 5,
+      "tag": "Bố xin lỗi con",
+      "voiceover": "Và con sẽ hiểu: người lớn cũng có thể sai mà vẫn đáng tin. Bước vào đi. Nói: bố xin lỗi con.",
+      "flow_prompt": "Vertical 9:16 aspect ratio. Generate exactly 1 image. Cinematic 35mm photograph. A tender, heartwarming moment of reconciliation in a warmly lit family living room: an Asian adult father sitting on a wooden bench, holding a cup of warm water with a gentle, humble, loving apologetic smile, looking warmly into the room. Golden domestic lamp lighting, deep emotional warmth, reconciliation, exquisite 35mm film still, 4k photorealistic."
+    }
+  ]
+}

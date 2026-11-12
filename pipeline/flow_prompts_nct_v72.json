@@ -1,0 +1,43 @@
+{
+  "video_id": "nct_v72",
+  "title": "Bữa Cơm Ngon Nhất Không Nằm Ở Món Sơn Hào Hải Vị",
+  "project": "short",
+  "aspect_ratio": "9:16",
+  "scenes": [
+    {
+      "scene_num": 1,
+      "tag": "MÂM CAO CỖ ĐẦY",
+      "flow_prompt": "A luxurious restaurant table full of expensive dishes, but the people sitting around it are all looking at their phones with cold expressions, 9:16",
+      "voiceover": "Tôi từng ngồi ở những nhà hàng sang trọng,, trước mặt là sơn hào hải vị,, nhưng nuốt miếng thức ăn vào cổ lại thấy nghẹn đắng.",
+      "filename": "nct_v72_scene1.jpg"
+    },
+    {
+      "scene_num": 2,
+      "tag": "BỞI VÌ LÒNG KHÔNG VUI",
+      "flow_prompt": "Artistic cinematic zen illustration of eating alone fancy restaurant, warm moody lighting, 9:16 vertical aspect ratio",
+      "voiceover": "Bởi vì trên bàn ăn ấy,, toàn là những toan tính công việc,, những nụ cười xã giao gượng gạo và những ánh mắt dò xét nhau.",
+      "filename": "nct_v72_scene2.jpg"
+    },
+    {
+      "scene_num": 3,
+      "tag": "BÁT CANH RAU MUỐNG LUỘC",
+      "flow_prompt": "A simple rustic Vietnamese meal on a wooden tray with boiled greens, soup, and white rice, warm evening light, 9:16",
+      "voiceover": "Ngược lại,, có những chiều mưa về nhà,, mâm cơm chỉ có đĩa đậu rán và bát canh rau muống vắt chanh,, mà ăn đến tận ba bát vẫn thấy thòm thèm.",
+      "filename": "nct_v72_scene3.jpg"
+    },
+    {
+      "scene_num": 4,
+      "tag": "GIA VỊ LÀ SỰ BÌNH YÊN",
+      "flow_prompt": "Artistic cinematic zen illustration of family laughing eating simple dinner, warm moody lighting, 9:16 vertical aspect ratio",
+      "voiceover": "Hóa ra,, thứ quyết định một bữa cơm ngon chưa bao giờ nằm ở giá tiền của món ăn,, mà nằm ở người ngồi đối diện bạn.",
+      "filename": "nct_v72_scene4.jpg"
+    },
+    {
+      "scene_num": 5,
+      "tag": "TÂM AN THÌ CƠM NGỌT",
+      "flow_prompt": "Two pairs of chopsticks resting on white rice bowls next to a warm teapot, cozy and peaceful home vibe, 9:16",
+      "voiceover": "Chỉ cần trong nhà có tiếng cười,, lòng không mang phiền muộn,, thì rau dưa đạm bạc cũng hóa mỹ vị nhân gian.",
+      "filename": "nct_v72_scene5.jpg"
+    }
+  ]
+}

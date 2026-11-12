@@ -1,0 +1,43 @@
+{
+  "video_id": "nct_v73",
+  "title": "Đừng Mang Cuộc Đời Mình So Với Trang Mạng Của Người Khác",
+  "project": "short",
+  "aspect_ratio": "9:16",
+  "scenes": [
+    {
+      "scene_num": 1,
+      "tag": "AI CŨNG THÀNH ĐẠT TRÊN MẠNG",
+      "flow_prompt": "A young person sitting in a modest small room looking at a glowing phone screen showing luxury travel photos, feeling inadequate, 9:16",
+      "voiceover": "Lướt mạng xã hội mười phút,, bạn thấy bạn học cũ vừa mua xe hơi,, đồng nghiệp vừa đi du lịch châu Âu,, ai cũng rực rỡ và viên mãn.",
+      "filename": "nct_v73_scene1.jpg"
+    },
+    {
+      "scene_num": 2,
+      "tag": "NHÌN LẠI MÌNH THẤY TỦI",
+      "flow_prompt": "Artistic cinematic zen illustration of sighing looking around small room, warm moody lighting, 9:16 vertical aspect ratio",
+      "voiceover": "Rồi bạn nhìn lại căn phòng trọ chật hẹp của mình,, nhìn số dư tài khoản ít ỏi,, bỗng thấy mình sao mà thất bại đến thế.",
+      "filename": "nct_v73_scene2.jpg"
+    },
+    {
+      "scene_num": 3,
+      "tag": "HỌ CHỈ ĐĂNG PHẦN ĐẸP NHẤT",
+      "flow_prompt": "Conceptual image: A person holding a small picture frame showing a sunny beach, while standing in a dark rainy street, 9:16",
+      "voiceover": "Nhưng bạn quên mất một điều: Chẳng ai chụp ảnh lúc họ đang cãi nhau với chồng,, lúc bị sếp mắng,, hay lúc cầm tờ giấy nợ ngân hàng để đăng lên mạng cả.",
+      "filename": "nct_v73_scene3.jpg"
+    },
+    {
+      "scene_num": 4,
+      "tag": "HẬU TRƯỜNG SO VỚI SÂN KHẤU",
+      "flow_prompt": "Artistic cinematic zen illustration of turning off phone screen putting on table, warm moody lighting, 9:16 vertical aspect ratio",
+      "voiceover": "Bạn đang lấy toàn bộ góc khuất trần trụi của đời mình,, để đi so sánh với một khoảnh khắc đã qua chỉnh sửa của người khác.",
+      "filename": "nct_v73_scene4.jpg"
+    },
+    {
+      "scene_num": 5,
+      "tag": "MỖI LOÀI HOA MỘT MÙA NỞ",
+      "flow_prompt": "A small wildflower blooming quietly beside a teacup on a wooden windowsill in soft morning light, 9:16",
+      "voiceover": "Hãy tắt màn hình đi. Hoa đào nở mùa xuân,, hoa cúc nở mùa thu. Cứ đi đúng nhịp bước của mình,, rồi bạn cũng sẽ đến mùa nở hoa.",
+      "filename": "nct_v73_scene5.jpg"
+    }
+  ]
+}

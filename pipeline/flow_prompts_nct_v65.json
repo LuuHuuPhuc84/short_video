@@ -1,0 +1,42 @@
+{
+  "video_id": "nct_v65",
+  "title": "Hai chữ 'không sao' làm nguội hôn nhân",
+  "title_hook": "VÌ SAO NÓI 'KHÔNG SAO'?",
+  "scenes": [
+    {
+      "scene_num": 1,
+      "tag": "Hook 3s",
+      "voiceover": "Mỗi lần giận dỗi, bạn có hay nói hai chữ: 'Không sao'?",
+      "highlight": "VÌ SAO NÓI 'KHÔNG SAO'?",
+      "flow_prompt": "Vertical 9:16 aspect ratio. Generate exactly 1 image. Cinematic 35mm film still. An intimate close-up of a married Asian couple at an evening kitchen dining table. The wife looks away towards a dark window with a composed yet sorrowful face, lips slightly parted as if holding back words. A cooling mug of tea sits between them. Melancholic domestic atmosphere, moody chiaroscuro lighting, shallow depth of field, 4k photorealistic."
+    },
+    {
+      "scene_num": 2,
+      "tag": "Im lặng đến nghẹt thở",
+      "voiceover": "Miệng nói không sao, nhưng mắt không nhìn, cửa đóng mạnh, và bữa cơm trôi qua trong im lặng đến nghẹt thở.",
+      "highlight": "IM LẶNG ĐẾN NGHẸT THỞ",
+      "flow_prompt": "Vertical 9:16 aspect ratio. Generate exactly 1 image. Cinematic 35mm photograph. Wide-angle shot of a dim modern apartment living room at dusk. Two adults sit at opposite ends of a large sofa, staring in different directions into the darkness without looking or speaking to each other. Heavy emotional tension, cold blue twilight mixing with dim indoor amber light, deep psychological distance, 4k photorealistic."
+    },
+    {
+      "scene_num": 3,
+      "tag": "Dấu hiệu bất lực",
+      "voiceover": "Thực ra, 'không sao' không phải là tha thứ. Đó là dấu hiệu của sự bất lực và bắt đầu khép lòng.",
+      "highlight": "BẮT ĐẦU KHÉP LÒNG",
+      "flow_prompt": "Vertical 9:16 aspect ratio. Generate exactly 1 image. Cinematic 35mm film still. A wooden bedroom door slightly ajar, casting a long sharp shadow across the wooden floor. Inside, the silhouette of a person standing quietly by the sheer curtains of a window looking out at the city rain. Metaphor for an emotional wall being built, poetic solitude, subtle grain, moody cinematic tones, 4k photorealistic."
+    },
+    {
+      "scene_num": 4,
+      "tag": "Chết dần vì những ấm ức",
+      "voiceover": "Hôn nhân không chết vì những trận cãi vã to tiếng. Nó chết dần vì những ấm ức bị nuốt ngược vào trong dưới vỏ bọc bình yên.",
+      "highlight": "NUỐT NGƯỢC VÀO TRONG",
+      "flow_prompt": "Vertical 9:16 aspect ratio. Generate exactly 1 image. Cinematic 35mm photograph. A delicate ceramic teacup with a fine hairline crack on a weathered wooden tabletop, beside an unread handwritten letter and a wedding ring. Metaphor for quiet fragile relationships, macro detail, soft melancholic window illumination, muted earthy colors, 4k photorealistic."
+    },
+    {
+      "scene_num": 5,
+      "tag": "Nếu có sao, hãy nói",
+      "voiceover": "Nếu có sao, hãy nói là có sao. Người thương bạn, họ xứng đáng được biết bạn đang tổn thương điều gì.",
+      "highlight": "NÓI LÀ CÓ SAO",
+      "flow_prompt": "Vertical 9:16 aspect ratio. Generate exactly 1 image. Cinematic 35mm film still. Two adult hands meeting gently on a wooden table, one hand holding the other with tenderness, forgiveness, and sincere care. In the warm golden background, soft ambient candlelight. Vulnerability, healing reconciliation in marriage, deeply touching human connection, 4k photorealistic."
+    }
+  ]
+}

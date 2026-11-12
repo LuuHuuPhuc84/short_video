@@ -1,0 +1,42 @@
+{
+  "video_id": "nct_v66",
+  "title": "Bao lâu rồi, không ai hỏi bạn có mệt không?",
+  "title_hook": "AI HỎI BẠN CÓ MỆT KHÔNG?",
+  "scenes": [
+    {
+      "scene_num": 1,
+      "tag": "Hook 3s",
+      "voiceover": "Bao lâu rồi, chưa có ai hỏi bạn một câu: Dạo này có mệt lắm không?",
+      "highlight": "AI HỎI BẠN CÓ MỆT KHÔNG?",
+      "flow_prompt": "Vertical 9:16 aspect ratio. Generate exactly 1 image. Cinematic 35mm film still. A worn ceramic coffee cup and a set of car keys resting on a rainy window sill overlooking blurred city traffic lights at dusk. Water droplets glistening on the glass. Moody contemplative domestic silence, soft ambient street light reflections, 4k photorealistic."
+    },
+    {
+      "scene_num": 2,
+      "tag": "Quen nhìn bạn mạnh mẽ",
+      "voiceover": "Ai cũng quen nhìn bạn mạnh mẽ, tháo vát, lo toan mọi việc chu toàn. Họ nghĩ bạn không biết buồn.",
+      "highlight": "HỌ NGHĨ BẠN KHÔNG BIẾT BUỒN",
+      "flow_prompt": "Vertical 9:16 aspect ratio. Generate exactly 1 image. Cinematic 35mm photograph. An adult Asian professional standing in a quiet office corridor late in the evening, holding a coat over one arm, leaning against the wall for a brief quiet moment with closed eyes. The quiet weight of responsibility, soft dim overhead lighting, film grain, 4k photorealistic."
+    },
+    {
+      "scene_num": 3,
+      "tag": "Năm phút trong bóng tối",
+      "voiceover": "Nhưng bạn cũng là con người. Có những ngày đi làm về, chỉ muốn ngồi lại trên xe năm phút trong bóng tối, thở một hơi dài.",
+      "highlight": "NGỒI LẠI TRÊN XE NĂM PHÚT",
+      "flow_prompt": "Vertical 9:16 aspect ratio. Generate exactly 1 image. Cinematic 35mm film still. Interior of a parked car at night. An Asian driver sitting behind the steering wheel with hands resting tiredly on the wheel, face softly lit by the gentle green glow of the dashboard clock, looking through the windshield at a quiet empty driveway. Quiet emotional decompression, deep solitude, moody atmospheric lighting, 4k photorealistic."
+    },
+    {
+      "scene_num": 4,
+      "tag": "Không cần gồng mình",
+      "voiceover": "Bạn không cần phải lúc nào cũng gồng mình làm chỗ dựa vững chắc cho cả thế giới.",
+      "highlight": "KHÔNG CẦN PHẢI GỒNG MÌNH",
+      "flow_prompt": "Vertical 9:16 aspect ratio. Generate exactly 1 image. Cinematic 35mm photograph. A gentle, poetic close-up of a person taking off their heavy wrist watch and placing it on a wooden nightstand beside a glass of fresh water. Metaphor for laying down the burdens of the day, gentle evening light, quiet relief, shallow depth of field, 4k photorealistic."
+    },
+    {
+      "scene_num": 5,
+      "tag": "Cho phép mình được mệt",
+      "voiceover": "Nếu hôm nay chưa ai hỏi, thì Nửa Chén Trà xin hỏi bạn. Tối nay, cho phép mình được mệt một chút, nhé?",
+      "highlight": "CHO PHÉP MÌNH ĐƯỢC MỆT",
+      "flow_prompt": "Vertical 9:16 aspect ratio. Generate exactly 1 image. Cinematic 35mm film still. A steaming cup of chamomile herbal tea resting on a small wooden tray beside a warm reading lamp and an open book on a comfortable armchair. Warm golden cozy ambiance, peaceful restorative sanctuary at night, soft soothing shadows, 4k photorealistic."
+    }
+  ]
+}

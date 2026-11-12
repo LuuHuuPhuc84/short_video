@@ -1,0 +1,38 @@
+{
+  "video_id": "nct_v06",
+  "title": "Mẹ dặn gì khi con đi xa",
+  "aspect_ratio": "9:16",
+  "style": "Cinematic Vietnamese countryside, photorealistic, 35mm film aesthetic, warm amber tones, emotional lighting",
+  "scenes": [
+    {
+      "scene_num": 1,
+      "tag": "Hook 3s",
+      "voiceover": "Tiễn con đi xa, mẹ không dặn kiếm tiền. Vậy mẹ dặn gì?",
+      "flow_prompt": "Cinematic vertical 9:16 shot. An elderly Vietnamese mother with silver-streaked hair wearing a simple traditional blouse, tenderly looking at her grown child at dawn. Soft morning mist drifting, warm golden rim light on her gentle, weathered face. Slow push in, deep emotional depth, 35mm film grain, 4k photorealistic."
+    },
+    {
+      "scene_num": 2,
+      "tag": "Thực tế",
+      "voiceover": "Mẹ đứng ở bến xe, không dặn thành công, cũng không dặn giàu sang. Vì mẹ biết, ngoài kia đủ người dạy con cách đi lên. Chẳng ai dạy con cách quay về.",
+      "flow_prompt": "Cinematic vertical 9:16 shot. Low angle tracking shot of an elderly mother standing alone quietly beside a rustic rural bus stop. An old bus slowly drives away in the distance, leaving faint dust in the warm morning sunlight. Melancholic atmosphere, realistic countryside road, soft amber colors, hyper-detailed."
+    },
+    {
+      "scene_num": 3,
+      "tag": "Chiêm nghiệm",
+      "voiceover": "Người ta đi xa không sợ lạc đường. Chỉ sợ lạc chính mình, rồi quên có người vẫn đợi ở cổng nhà.",
+      "flow_prompt": "Cinematic vertical 9:16 shot. A young adult seated inside a moving bus, looking out through a rain-streaked window. Raindrops slowly sliding down the glass with faint reflections of passing city lights and memories. Moody, introspective atmosphere, shallow depth of field, cinematic lighting."
+    },
+    {
+      "scene_num": 4,
+      "tag": "Thức tỉnh",
+      "voiceover": "Mẹ chỉ nói, đi đâu cũng được, nhớ đường về.",
+      "flow_prompt": "Cinematic vertical 9:16 extreme close-up. The elderly mother's warm, calloused, wrinkled hands tightly and lovingly holding the child's younger hands before letting go. Soft morning sunlight filtering through, intimate tactile emotion, highly detailed skin texture, slow motion, 35mm film look."
+    },
+    {
+      "scene_num": 5,
+      "tag": "Chốt & Outro",
+      "voiceover": "Nửa Chén Trà, nhìn sâu để sống nhẹ.",
+      "flow_prompt": "Cinematic vertical 9:16 macro shot. A rustic ceramic half-cup of warm tea resting on a weathered dark wooden veranda table, delicate steam curling upward gracefully in slow motion. In the soft blurred background, an ancient wooden gate open to a tranquil Vietnamese garden. Zen peaceful lighting, serene atmosphere."
+    }
+  ]
+}

@@ -1,0 +1,38 @@
+{
+  "video_id": "nct_v70",
+  "title": "Nỗi Sợ Điện Thoại Đổ Chuông Sau Tuổi 35",
+  "project": "short",
+  "aspect_ratio": "9:16",
+  "scenes": [
+    {
+      "scene": 1,
+      "highlight": "ĐIỆN THOẠI KÊU LÚC NỬA ĐÊM",
+      "prompt": "A smartphone vibrating and lighting up on a wooden nightstand in a pitch dark bedroom at 2 AM, tense atmosphere, 9:16",
+      "filename": "nct_v70_scene1.jpg"
+    },
+    {
+      "scene": 2,
+      "highlight": "TIM THót LÊN VÌ SỢ",
+      "prompt": "Artistic cinematic zen illustration of person waking up startled night, warm moody lighting, 9:16 vertical aspect ratio",
+      "filename": "nct_v70_scene2.jpg"
+    },
+    {
+      "scene": 3,
+      "highlight": "KHÔNG MONG TIN ĐỘT NGỘT",
+      "prompt": "A middle-aged person sitting on the edge of the bed holding a phone with both hands, looking relieved after a call, dim warm light, 9:16",
+      "filename": "nct_v70_scene3.jpg"
+    },
+    {
+      "scene": 4,
+      "highlight": "HAI CHỮ \"BÌNH AN\"",
+      "prompt": "Artistic cinematic zen illustration of calm morning sunrise over roofs, warm moody lighting, 9:16 vertical aspect ratio",
+      "filename": "nct_v70_scene4.jpg"
+    },
+    {
+      "scene": 5,
+      "highlight": "SỐNG NHẸ TRONG BÌNH THƯỜNG",
+      "prompt": "A quiet morning scene with a steaming cup of tea by an open window, birds flying in the distance, 9:16",
+      "filename": "nct_v70_scene5.jpg"
+    }
+  ]
+}

@@ -1,0 +1,43 @@
+{
+  "video_id": "nct_v74",
+  "title": "Căn Bệnh \"Đợi Khi Nào...\"",
+  "project": "short",
+  "aspect_ratio": "9:16",
+  "scenes": [
+    {
+      "scene_num": 1,
+      "tag": "CÂU NÓI QUEN THUỘC NHẤT",
+      "flow_prompt": "An hourglass with sand running out on an old wooden desk next to a calendar, warm cinematic lighting, 9:16",
+      "voiceover": "Đợi khi nào kiếm đủ tiền sẽ nghỉ ngơi. Đợi khi nào con lớn sẽ đưa bố mẹ đi du lịch. Đợi khi nào rảnh sẽ ngồi uống trà với bạn cũ.",
+      "filename": "nct_v74_scene1.jpg"
+    },
+    {
+      "scene_num": 2,
+      "tag": "CUỘC ĐỜI KHÔNG BIẾT ĐỢI",
+      "flow_prompt": "Artistic cinematic zen illustration of autumn leaves falling fast time lapse, warm moody lighting, 9:16 vertical aspect ratio",
+      "voiceover": "Chúng ta cứ sống mãi trong hai chữ \"Đợi khi nào\",, như thể thời gian và những người thương yêu sẽ đứng yên một chỗ chờ ta thu xếp xong công việc.",
+      "filename": "nct_v74_scene2.jpg"
+    },
+    {
+      "scene_num": 3,
+      "tag": "KHI RẢNH THÌ CHÂN ĐÃ MỎI",
+      "flow_prompt": "An elderly couple sitting on a porch looking at a distant mountain road, holding walking sticks, nostalgic sunset, 9:16",
+      "voiceover": "Nhưng sự thật tàn nhẫn là: Đến ngày bạn có đủ tiền và thời gian,, thì đầu gối của cha mẹ đã đau không còn đi xa được nữa.",
+      "filename": "nct_v74_scene3.jpg"
+    },
+    {
+      "scene_num": 4,
+      "tag": "KHÔNG CÓ LÚC NÀO HOÀN HẢO",
+      "flow_prompt": "Artistic cinematic zen illustration of holding old hands gently, warm moody lighting, 9:16 vertical aspect ratio",
+      "voiceover": "Trên đời này,, chẳng bao giờ có thời điểm hoàn hảo tuyệt đối. Công việc thì làm cả đời không hết,, còn năm tháng thì một đi không trở lại.",
+      "filename": "nct_v74_scene4.jpg"
+    },
+    {
+      "scene_num": 5,
+      "tag": "THƯƠNG AI HÃY THƯƠNG NGAY",
+      "flow_prompt": "Pouring warm tea for an elderly parent at a sunlit wooden table, warm and loving atmosphere, 9:16",
+      "voiceover": "Đừng hẹn lần sau nữa. Muốn thăm ai hãy đi ngay cuối tuần này. Muốn nói thương ai,, hãy nói ngay khi họ còn nghe thấy.",
+      "filename": "nct_v74_scene5.jpg"
+    }
+  ]
+}

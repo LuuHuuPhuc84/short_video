@@ -1,0 +1,42 @@
+{
+  "video_id": "nct_v64",
+  "title": "Ngồi cạnh con, nhưng tâm trí ở đâu?",
+  "title_hook": "CÓ MẶT HAY CHỈ NGỒI ĐẤY?",
+  "scenes": [
+    {
+      "scene_num": 1,
+      "tag": "Hook 3s",
+      "voiceover": "Bạn có bao giờ ngồi ăn cơm cùng con, nhưng tay vẫn lướt điện thoại?",
+      "highlight": "CÓ MẶT HAY CHỈ NGỒI ĐẤY?",
+      "flow_prompt": "Vertical 9:16 aspect ratio. Generate exactly 1 image. Cinematic 35mm film still. A modern Vietnamese dinner table seen from an intimate low angle. A glowing smartphone screen resting beside a ceramic bowl of rice with chopsticks, displaying blue light in a warm softly-lit dining room. In the soft blurred background, a child's small hands holding a spoon quietly. Emotional disconnect, domestic melancholy, warm golden ambient light, shallow depth of field, 4k photorealistic."
+    },
+    {
+      "scene_num": 2,
+      "tag": "Ngồi cạnh nhưng xa cách",
+      "voiceover": "Con hỏi một câu, ta ậm ừ một câu. Ta tưởng mình đang ở bên con, nhưng thực ra chỉ có cái xác ngồi đó.",
+      "highlight": "CHỈ CÓ CÁI XÁC NGỒI ĐÓ",
+      "flow_prompt": "Vertical 9:16 aspect ratio. Generate exactly 1 image. Cinematic 35mm photograph. An Asian parent sitting on a living room sofa next to a young child. The adult is staring down at a glowing phone screen with an absent, tired expression, while the child looks up with hopeful, questioning eyes holding a storybook. Quiet emotional distance within a loving home, muted tones, soft indoor evening lamplight, 4k photorealistic."
+    },
+    {
+      "scene_num": 3,
+      "tag": "Trẻ con nhạy cảm",
+      "voiceover": "Trẻ con nhạy cảm lắm. Chúng không cần một người lớn bận rộn ngồi bên cạnh giả vờ lắng nghe.",
+      "highlight": "TRẺ CON NHẬY CẢM LẮM",
+      "flow_prompt": "Vertical 9:16 aspect ratio. Generate exactly 1 image. Cinematic 35mm film still. A close-up focus on a child's small hand gently putting down a colorful drawing of a family on a low wooden coffee table. Beside it, toy blocks sit untouched. The gentle melancholic atmosphere of a quiet living room in the late afternoon, soft golden window dust particles, contemplative domestic life, 4k photorealistic."
+    },
+    {
+      "scene_num": 4,
+      "tag": "Ánh mắt trọn vẹn",
+      "voiceover": "Chúng cần ánh mắt của bạn. Cần một lời hỏi han trọn vẹn mười phút, hơn là cả buổi tối ngồi chung phòng nhưng xa cách.",
+      "highlight": "CẦN ÁNH MẮT CỦA BẠN",
+      "flow_prompt": "Vertical 9:16 aspect ratio. Generate exactly 1 image. Cinematic 35mm film still. An Asian parent crouching down to be eye-level with their small child in a sunlit living room, smiling warmly with deep genuine attention and listening intently. The child's face lights up with sheer joy and excitement. Genuine emotional connection, heartwarming parent-child presence, soft morning sunlight, bokeh, 4k photorealistic."
+    },
+    {
+      "scene_num": 5,
+      "tag": "Thực sự có mặt",
+      "voiceover": "Tuổi thơ của con trôi qua rất nhanh. Tối nay, buông điện thoại xuống, và thực sự có mặt.",
+      "highlight": "THỰC SỰ CÓ MẶT",
+      "flow_prompt": "Vertical 9:16 aspect ratio. Generate exactly 1 image. Cinematic 35mm photograph. A smartphone placed face down on a rustic wooden nightstand with screen completely off. In the warm soft background, a loving parent is tucking their child into bed and reading a book together under a warm bedside lamp. Peaceful family bliss, deep mindfulness, serene evening atmosphere, 4k photorealistic."
+    }
+  ]
+}

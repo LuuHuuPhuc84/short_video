@@ -1,0 +1,38 @@
+{
+  "video_id": "nct_v59",
+  "title": "Con chỉ mở lòng khi ta đứng bên cạnh",
+  "aspect_ratio": "9:16",
+  "style": "Cinematic Vietnamese family, photorealistic, 35mm film aesthetic, warm amber tones, emotional lighting",
+  "scenes": [
+    {
+      "scene_num": 1,
+      "tag": "Hook 3s",
+      "voiceover": "Vì sao con tuổi teen cứ im lặng khi bạn hỏi?",
+      "flow_prompt": "Vertical 9:16 aspect ratio. Cinematic 35mm film photograph. An interior hallway in a quiet Asian home at dusk. A wooden bedroom door is slightly cracked open, with warm yellow lamp light slicing across dark polished wooden floorboards. Resting near the doorway on a simple wooden stool is a student canvas backpack. Moody, contemplative stillness, poetic indoor film lighting, shallow depth of field, 4k photorealistic."
+    },
+    {
+      "scene_num": 2,
+      "tag": "Đóng cửa",
+      "voiceover": "Bạn hỏi: hôm nay ở trường thế nào? Con đáp: bình thường. Bạn hỏi thêm, con đóng cửa phòng.",
+      "flow_prompt": "Vertical 9:16 aspect ratio. Cinematic 35mm photograph. Back-view silhouette of an Asian teenager sitting quietly at their desk in a private bedroom, looking out a window at the late afternoon sunset sky. Soft warm desk lamp glows beside open notebooks. Sense of quiet teenage solitude, emotional barrier, gentle film grain, warm amber and indigo palette, Wong Kar-wai mood, 4k photorealistic."
+    },
+    {
+      "scene_num": 3,
+      "tag": "Rửa bát cùng nhau",
+      "voiceover": "Nhưng có một lúc, con lại tự kể không ngừng. Là lúc hai cha con đi xe, hay lúc hai mẹ con đứng rửa bát.",
+      "flow_prompt": "Vertical 9:16 aspect ratio. Cinematic 35mm film still. A cozy warm kitchen at night: an Asian mother and teenage daughter standing side by side at the kitchen sink washing dinner plates together. Both looking down at the soapy ceramic bowls rather than at each other, natural unhurried companionable rhythm, warm ambient kitchen lamp light, tender authentic documentary realism, 4k photorealistic."
+    },
+    {
+      "scene_num": 4,
+      "tag": "Đi xe cùng nhau",
+      "voiceover": "Không ai nhìn thẳng vào ai. Nhiều khi con không im lặng vì không muốn nói. Con chỉ khó nói khi bị nhìn chằm chằm.",
+      "flow_prompt": "Vertical 9:16 aspect ratio. Cinematic 35mm film still. An evening motorbike journey down a quiet suburban street under glowing amber streetlights. An Asian teenager wearing a backpack rides on the pillion seat holding the parent's jacket, evening breeze gently rustling their clothes. Captured from a dynamic side-angle, motion blur in the background, warm intimate feeling of unspoken connection, 4k photorealistic."
+    },
+    {
+      "scene_num": 5,
+      "tag": "Đứng cạnh con",
+      "voiceover": "Con im lặng thì hãy đứng cạnh con, đừng đứng đối diện.",
+      "flow_prompt": "Vertical 9:16 aspect ratio. Cinematic 35mm photograph. Back view silhouette of an Asian parent and teenage child walking slowly side by side along a peaceful tree-lined countryside pathway into the golden twilight glow. Walking together as equals and companions, footsteps side by side, poetic, deeply touching mindful ending, fine 35mm film grain, 4k photorealistic."
+    }
+  ]
+}

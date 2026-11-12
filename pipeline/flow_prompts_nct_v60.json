@@ -1,0 +1,38 @@
+{
+  "video_id": "nct_v60",
+  "title": "Cằn nhằn, một cách thương rất vụng",
+  "aspect_ratio": "9:16",
+  "style": "Cinematic Vietnamese family, photorealistic, 35mm film aesthetic, warm nostalgic amber tones, gentle film grain, emotional storytelling",
+  "scenes": [
+    {
+      "scene_num": 1,
+      "tag": "Hook 3s",
+      "voiceover": "Vì sao bố mẹ càng già càng hay cằn nhằn?",
+      "flow_prompt": "Vertical 9:16 aspect ratio. Generate exactly 1 image. Cinematic 35mm photograph. An old vintage keypad mobile phone resting on a worn rustic dark wooden table in a quiet Vietnamese rural living room. Next to the phone is a ceramic teapot with a faint wisp of steam and an empty ceramic teacup. Late afternoon golden sunlight streaming through a wooden slatted window, creating long moody shadows. Quiet, contemplative, bittersweet nostalgia, poetic film still, 4k photorealistic."
+    },
+    {
+      "scene_num": 2,
+      "tag": "Mẹ gọi",
+      "voiceover": "Mẹ gọi điện, hỏi con ăn chưa, mặc ấm chưa. Con nói con biết rồi, mẹ ơi.",
+      "flow_prompt": "Vertical 9:16 aspect ratio. Generate exactly 1 image. Cinematic 35mm film still. Close-up intimate portrait of an elderly Asian mother's wrinkled, weathered hands holding an old mobile phone close to her ear. Soft warm lamplight illuminating her gentle, concerned expression in profile, dressed in a simple traditional patterned brown blouse. Tender, authentic maternal care, documentary realism, warm amber tones, 4k photorealistic."
+    },
+    {
+      "scene_num": 3,
+      "tag": "Tìm cớ",
+      "voiceover": "Mẹ im một lúc, rồi lại hỏi câu khác. Bạn nghĩ mẹ dài dòng. Nhưng có thể mẹ chỉ đang tìm cớ để nói chuyện thêm.",
+      "flow_prompt": "Vertical 9:16 aspect ratio. Generate exactly 1 image. Cinematic 35mm photograph. Medium shot of an elderly Asian mother sitting alone on a wooden armchair in a quiet veranda at twilight, looking down at the silent phone in her lap, then gazing softly out into the quiet yard. A bittersweet yearning for connection, quiet loneliness of an empty nest, Wong Kar-wai color palette, soft indigo and warm lamp glow, 4k photorealistic."
+    },
+    {
+      "scene_num": 4,
+      "tag": "Nỗi sợ cô đơn",
+      "voiceover": "Có những người già sợ điều khác bệnh tật: sợ ngày điện thoại không còn ai gọi.",
+      "flow_prompt": "Vertical 9:16 aspect ratio. Generate exactly 1 image. Cinematic 35mm film still. A dimly lit cozy rural Asian home at night. An old phone lying quietly on a bedside wooden nightstand, its screen glowing faintly before fading to black. In the soft background blur, an elderly parent rests under a thin floral blanket, gazing thoughtfully into the quiet darkness. Deep emotional poignancy, quiet dignity, fine film grain, 4k photorealistic."
+    },
+    {
+      "scene_num": 5,
+      "tag": "Nghe thêm một phút",
+      "voiceover": "Lần tới bố mẹ cằn nhằn, đừng ngắt lời. Nghe thêm một phút thôi.",
+      "flow_prompt": "Vertical 9:16 aspect ratio. Generate exactly 1 image. Cinematic 35mm photograph. A heartwarming, tender scene on a sunlit brick veranda: an adult Asian child sitting beside their aging elderly mother, leaning their head gently on her shoulder, listening with a serene peaceful smile while holding her hand. Golden morning light bathing the quiet garden in warmth. Healing, filial love, tearful tenderness, exquisite 35mm cinematic film still, 4k photorealistic."
+    }
+  ]
+}

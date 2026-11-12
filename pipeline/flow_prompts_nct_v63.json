@@ -1,0 +1,38 @@
+{
+  "video_id": "nct_v63",
+  "title": "Cả nhà dựa vào một người, là chính bạn",
+  "aspect_ratio": "9:16",
+  "style": "Cinematic 35mm film still, Asian aesthetic, nostalgic warm tones, emotional documentary realism, soft film grain",
+  "scenes": [
+    {
+      "scene_num": 1,
+      "tag": "Hook 3s",
+      "voiceover": "Lần cuối chính bạn đi khám sức khỏe là khi nào?",
+      "flow_prompt": "Vertical 9:16 aspect ratio. Generate exactly 1 image. Cinematic 35mm photograph. An old vintage health checkup paper notebook and a metal ballpoint pen resting on a rustic wooden table beside a pair of reading glasses and a motorcycle key. Soft natural window light highlighting dust motes in the quiet room. Contemplative domestic still life, warm muted tones, 4k photorealistic."
+    },
+    {
+      "scene_num": 2,
+      "tag": "Nhớ lịch cả nhà",
+      "voiceover": "Bạn nhớ lịch tiêm của con. Nhớ ngày tái khám của bố. Nhớ mẹ hết thuốc từ bao giờ. Còn của mình thì sao?",
+      "flow_prompt": "Vertical 9:16 aspect ratio. Generate exactly 1 image. Cinematic 35mm film still. A traditional Vietnamese tear-off wall calendar hanging on a wooden wall, with handwritten dates circled in blue and red ink. Beside it, small ceramic teacups and a family vitamin bottle rest neatly on a shelf. Tender maternal and domestic devotion, authentic daily life texture, soft warm lighting, 4k photorealistic."
+    },
+    {
+      "scene_num": 3,
+      "tag": "Thôi để sau",
+      "voiceover": "Bạn bảo, thôi để sau, đang bận.",
+      "flow_prompt": "Vertical 9:16 aspect ratio. Generate exactly 1 image. Cinematic 35mm photograph. Back-view silhouette of a middle-aged Asian worker sitting at an office desk late in the evening, gently rubbing their tired shoulder and neck with one hand while looking at paperwork under a warm yellow desk lamp. The burden of family breadwinner, quiet weariness, moody chiaroscuro lighting, 4k photorealistic."
+    },
+    {
+      "scene_num": 4,
+      "tag": "Chỗ dựa",
+      "voiceover": "Cả nhà đang dựa vào một người khỏe. Người đó là bạn. Chăm mình không phải ích kỷ.",
+      "flow_prompt": "Vertical 9:16 aspect ratio. Generate exactly 1 image. Cinematic 35mm film still. A heartwarming family dinner scene in a modest Asian home: multiple generations sharing a simple wholesome dinner around a round wooden table, steam rising gently from soup bowls, warm golden lamplight, laughing and passing dishes. Feeling of home, profound gratitude for the family pillar, 4k photorealistic."
+    },
+    {
+      "scene_num": 5,
+      "tag": "Đặt lịch khám",
+      "voiceover": "Đó là giữ lại chỗ dựa cho những người đang cần bạn. Hôm nay, đặt một lịch khám cho chính bạn.",
+      "flow_prompt": "Vertical 9:16 aspect ratio. Generate exactly 1 image. Cinematic 35mm photograph. A gentle, peaceful side portrait of an Asian adult standing by a sunlit breezy balcony in the early morning, holding a phone with a calm relieved smile after making a call, looking out at green tree leaves and soft morning sunlight. Rejuvenation, self-care as love for family, serene closure, 4k photorealistic."
+    }
+  ]
+}

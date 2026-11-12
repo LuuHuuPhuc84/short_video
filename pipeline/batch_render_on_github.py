@@ -128,6 +128,12 @@ def batch_render_via_github(video_ids, auto_cleanup=True, download_local=False):
         if thumb_out.exists():
             files_to_push.add(thumb_out)
 
+        vid_input_dir = OUTPUT_DIR / vid / "input"
+        if vid_input_dir.exists():
+            for ip_file in vid_input_dir.glob("*"):
+                if ip_file.is_file():
+                    files_to_push.add(ip_file)
+
     if not valid_videos:
         print("❌ Không có video hợp lệ nào để render.")
         return False
@@ -147,7 +153,10 @@ def batch_render_via_github(video_ids, auto_cleanup=True, download_local=False):
     print(f"\n📦 Đang đóng gói và đẩy tất cả lên nhánh: {branch_name}...")
     rel_paths = [str(fp.relative_to(BASE_DIR)).replace("\\", "/") for fp in files_to_push]
     run_git(["add", "-f"] + rel_paths)
-    run_git(["commit", "-m", f"batch render: upload assets for {', '.join(valid_videos)}"])
+    try:
+        run_git(["commit", "-m", f"batch render: upload assets for {', '.join(valid_videos)}"])
+    except Exception as e:
+        print(f"ℹ️ Commit notice: {e}")
 
     head_sha = run_git(["rev-parse", "HEAD"])
     print(f"🚀 Đang đẩy toàn bộ lên GitHub (Commit: {head_sha[:7]})...")

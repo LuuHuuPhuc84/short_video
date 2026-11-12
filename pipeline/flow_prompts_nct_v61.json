@@ -1,0 +1,38 @@
+{
+  "video_id": "nct_v61",
+  "title": "Số điện thoại cũ, mà chẳng ai gọi",
+  "aspect_ratio": "9:16",
+  "style": "Cinematic 35mm film still, Asian aesthetic, nostalgic warm tones, emotional documentary realism, soft film grain",
+  "scenes": [
+    {
+      "scene_num": 1,
+      "tag": "Hook 3s",
+      "voiceover": "Bạn có còn ai để gọi lúc buồn không?",
+      "flow_prompt": "Vertical 9:16 aspect ratio. Generate exactly 1 image. Cinematic 35mm photograph. A contemplative Asian adult sitting alone by a rain-streaked cafe window at dusk. In front of them on the small dark wooden table sits a cooling cup of black coffee and a silent smartphone. Looking out at the blurry city streetlights through raindrops. Moody solitude, bittersweet nostalgia, poetic film still, 4k photorealistic."
+    },
+    {
+      "scene_num": 2,
+      "tag": "Hồi hai mươi",
+      "voiceover": "Hồi hai mươi, cả nhóm thức khuya kể chuyện. Giờ mỗi người một thành phố, một gia đình, một nỗi bận.",
+      "flow_prompt": "Vertical 9:16 aspect ratio. Generate exactly 1 image. Cinematic 35mm film still. A faded vintage film photograph of a group of joyful young Vietnamese university friends sitting around a small plastic tea table at night, laughing genuinely under a dim yellow streetlight. The old photo is resting gently on a modern office wooden desk beside an open laptop. Contrast between past youth and adult solitude, tender memory, 4k photorealistic."
+    },
+    {
+      "scene_num": 3,
+      "tag": "Danh bạ cũ",
+      "voiceover": "Điện thoại vẫn còn số cũ, nhưng không ai gọi. Không phải hết thương. Chỉ là ai cũng nghĩ: chắc nó bận.",
+      "flow_prompt": "Vertical 9:16 aspect ratio. Generate exactly 1 image. Cinematic 35mm photograph. Close-up shot of a hand holding a glowing smartphone screen in a dim room at late evening. The phone screen displays an old contact name with a simple portrait thumbnail. The thumb hovers hesitantly over the call button. Intimate, hesitating silence, Wong Kar-wai mood, warm amber and dark cyan palette, 4k photorealistic."
+    },
+    {
+      "scene_num": 4,
+      "tag": "Chờ nhau",
+      "voiceover": "Và thế là mỗi người đều chờ người kia gọi trước. Tình bạn ở tuổi này không tự giữ được.",
+      "flow_prompt": "Vertical 9:16 aspect ratio. Generate exactly 1 image. Cinematic 35mm film still. Two empty wooden chairs facing each other across a round table in the corner of a quiet rustic Vietnamese cafe in late afternoon. Golden dust motes dancing in shafts of sunlight. Sense of absence, passing time, quiet longing for old companions, artistic composition, 4k photorealistic."
+    },
+    {
+      "scene_num": 5,
+      "tag": "Người gọi trước",
+      "voiceover": "Nó cần một người chịu làm kẻ gọi trước. Hôm nay, hãy làm người gọi trước.",
+      "flow_prompt": "Vertical 9:16 aspect ratio. Generate exactly 1 image. Cinematic 35mm photograph. Warm medium shot of an Asian adult standing on a breezy balcony at twilight holding a phone to their ear. A gentle, genuine smile spreads across their face as the call connects, soft city lights glowing warmly behind them. Relief, revived friendship, heartwarming closure, 4k photorealistic."
+    }
+  ]
+}
