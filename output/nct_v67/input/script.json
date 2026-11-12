@@ -1,0 +1,74 @@
+{
+  "id": "nct_v67",
+  "episode": 67,
+  "title": "Khoảng Lặng Của Nửa Chén Trà",
+  "title_hook": "VÌ SAO CHỈ RÓT MỘT NỬA?",
+  "titleHook": "VÌ SAO CHỈ RÓT MỘT NỬA?",
+  "subtitle": "Triết lý Nửa Chén Trà",
+  "book": "NỬA CHÉN TRÀ",
+  "author": "Bài học cuộc sống",
+  "chapter": "Sống nhẹ",
+  "topic": "Ý nghĩa tên kênh Nửa Chén Trà & Khoảng lặng buông bớt",
+  "schedule": "2026-11-17 11:30",
+  "schedule_time": "2026-11-17 11:30",
+  "publishAt": "2026-11-17 11:30",
+  "scheduled_time": "2026-11-17T04:30:00Z",
+  "tags": [
+    "nct_v67",
+    "nuachentra",
+    "nhinsaudesongnhe",
+    "khoanglang",
+    "buongbo",
+    "trietly",
+    "chualanh",
+    "shorts"
+  ],
+  "description": "Có người hỏi tôi, tại sao lại là Nửa Chén Trà, mà không phải là một chén trà đầy đặn? Nửa Chén Trà — Nhìn sâu để sống nhẹ. #nct_v67 #nuachentra #nhinsaudesongnhe #khoanglang #buongbo #shorts",
+  "containsSyntheticMedia": true,
+  "bgm": "Gymnopedie No. 1",
+  "bgm_file": "gymnopedie_no_1.mp3",
+  "bgm_volume": 0.15,
+  "visual_type": "MIXED",
+  "scenes": [
+    {
+      "scene": 1,
+      "tag": "Hook 3s",
+      "text": "Có người hỏi tôi,, tại sao lại là Nửa Chén Trà,, mà không phải là một chén trà đầy đặn?",
+      "highlight": "VÌ SAO CHỈ RÓT MỘT NỬA?",
+      "image": "nct_v67_scene1.jpg",
+      "video": "nct_v67_scene1.jpg"
+    },
+    {
+      "scene": 2,
+      "tag": "Đầy quá sẽ bỏng tay",
+      "text": "Bởi vì một chén trà rót đầy tới mép,, khi cầm lên sẽ làm bỏng tay,, khi bước đi sẽ sóng sánh đổ ra ngoài.",
+      "highlight": "ĐẦY QUÁ SẼ BỎNG TAY",
+      "image": "nct_v67_scene2.jpg",
+      "video": "nct_v67_scene2.jpg"
+    },
+    {
+      "scene": 3,
+      "tag": "Tâm trí như chén trà",
+      "text": "Lòng người cũng vậy. Nếu nhồi nhét đủ thứ tham vọng,, hơn thua và oán giận,, thì lấy đâu ra khoảng trống để hương vị bình yên đọng lại?",
+      "highlight": "TÂM TRÍ CŨNG NHƯ CHÉN TRÀ",
+      "image": "nct_v67_scene3.jpg",
+      "video": "nct_v67_scene3.jpg"
+    },
+    {
+      "scene": 4,
+      "tag": "Nửa phần vơi là trí tuệ",
+      "text": "Nửa chén nước là để thưởng thức cuộc đời. Còn nửa phần vơi,, chính là khoảng lặng để ta bao dung cho người,, và tha thứ cho mình.",
+      "highlight": "NỬA PHẦN VƠI LÀ TRÍ TUỆ",
+      "image": "nct_v67_scene4.jpg",
+      "video": "nct_v67_scene4.jpg"
+    },
+    {
+      "scene": 5,
+      "tag": "Nhìn sâu để sống nhẹ",
+      "text": "Chấp nhận cuộc đời không trọn vẹn,, chính là khởi đầu của sự thảnh thơi. Nhìn sâu để hiểu,, buông bớt để sống nhẹ.",
+      "highlight": "NHÌN SÂU ĐỂ SỐNG NHẸ",
+      "image": "nct_v67_scene5.jpg",
+      "video": "nct_v67_scene5.jpg"
+    }
+  ]
+}

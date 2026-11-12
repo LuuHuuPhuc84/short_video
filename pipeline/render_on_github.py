@@ -10,6 +10,7 @@ import subprocess
 from pathlib import Path
 
 sys.stdout.reconfigure(encoding='utf-8', line_buffering=True)
+os.environ["PATH"] = r"D:\Programs\git\cmd;D:\Programs\nodejs;D:\Programs\ffmpeg\bin;D:\Programs\espeak-ng;" + os.environ.get("PATH", "")
 
 BASE_DIR = Path(__file__).resolve().parent.parent
 REMOTION_DIR = BASE_DIR / "remotion-video"
@@ -23,7 +24,8 @@ REPO_NAME = "short_video"
 API_BASE = f"https://api.github.com/repos/{REPO_OWNER}/{REPO_NAME}"
 
 def run_git(cmd_list, check=True):
-    res = subprocess.run(["git"] + cmd_list, cwd=str(BASE_DIR), capture_output=True, text=True, encoding="utf-8")
+    git_bin = shutil.which("git") or r"D:\Programs\git\cmd\git.exe"
+    res = subprocess.run([git_bin] + cmd_list, cwd=str(BASE_DIR), capture_output=True, text=True, encoding="utf-8")
     if check and res.returncode != 0:
         print(f"❌ Git error: {res.stderr.strip()}")
         raise RuntimeError(res.stderr.strip())
@@ -272,9 +274,13 @@ def render_short_video_via_github(video_id, auto_cleanup=True, download_local=Fa
     for sc in scenes:
         bg = sc.get("image") or sc.get("backgroundVideo") or sc.get("video")
         if bg:
-            bg_path = PUBLIC_DIR / bg
-            if bg_path.exists() and bg_path not in files_to_push:
-                files_to_push.append(bg_path)
+            # Tự động đồng bộ từ output/{video_id}/input nếu public chưa có
+            inp_bg = OUTPUT_DIR / video_id / "input" / bg
+            pub_bg = PUBLIC_DIR / bg
+            if not pub_bg.exists() and inp_bg.exists():
+                shutil.copy2(inp_bg, pub_bg)
+            if pub_bg.exists() and pub_bg not in files_to_push:
+                files_to_push.append(pub_bg)
 
     # Đính kèm info.json nếu đã có sẵn ở local (đảm bảo luôn có hashtag số tập)
     local_info = OUTPUT_DIR / video_id / "info.json"
@@ -335,7 +341,10 @@ def render_short_video_via_github(video_id, auto_cleanup=True, download_local=Fa
     print(f"\n📦 Đang đóng gói nguyên liệu và chuẩn bị đẩy lên nhánh: {branch_name}...")
     rel_paths = [str(fp.relative_to(BASE_DIR)).replace("\\", "/") for fp in files_to_push]
     run_git(["add", "-f"] + rel_paths)
-    run_git(["commit", "-m", f"render: upload assets for {video_id}"])
+    try:
+        run_git(["commit", "-m", f"render: upload assets for {video_id}"])
+    except Exception:
+        pass
 
     head_sha = run_git(["rev-parse", "HEAD"])
     print(f"🚀 Đang đẩy nguyên liệu lên GitHub (Commit: {head_sha[:7]})...")

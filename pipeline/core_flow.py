@@ -254,18 +254,23 @@ def generate_single_image(
         target_page.keyboard.insert_text(final_prompt)
         time.sleep(0.5)
 
-        # Tìm nút bấm 'Bắt đầu tạo' / 'Create'
-        btn = None
-        candidates = target_page.query_selector_all("button")
-        for b in candidates:
-            txt = (b.inner_text() or "").strip()
-            if any(k in txt.lower() for k in ["bắt đầu tạo", "tạo", "generate", "create", "start"]):
-                btn = b
-                break
+        # Tìm nút bấm 'Bắt đầu tạo' / 'Create' (Ưu tiên chính xác để không click nhầm 'Tạo bộ sưu tập')
+        btn = (
+            target_page.query_selector('button[aria-label="Bắt đầu tạo"]') or
+            target_page.query_selector('button[aria-label="Start generating"]') or
+            target_page.query_selector('button[aria-label="Generate"]') or
+            target_page.query_selector('button:has-text("arrow_forward")')
+        )
 
         if not btn:
+            candidates = target_page.query_selector_all("button")
             for b in candidates:
-                if b.get_attribute("aria-label") and any(k in b.get_attribute("aria-label").lower() for k in ["generate", "tạo", "create"]):
+                aria = (b.get_attribute("aria-label") or "").strip().lower()
+                txt = (b.inner_text() or "").strip().lower()
+                if "bắt đầu tạo" in aria or "start generating" in aria:
+                    btn = b
+                    break
+                if "arrow_forward" in txt and not b.is_disabled():
                     btn = b
                     break
 
