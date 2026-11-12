@@ -1,0 +1,626 @@
+{
+  "id": "nct_v66",
+  "episode": 66,
+  "title": "Bao lâu rồi, không ai hỏi bạn có mệt không?",
+  "title_hook": "AI HỎI BẠN CÓ MỆT KHÔNG?",
+  "titleHook": "AI HỎI BẠN CÓ MỆT KHÔNG?",
+  "subtitle": "Chữa lành & Vỗ về",
+  "book": "NỬA CHÉN TRÀ",
+  "author": "Bài học cuộc sống",
+  "chapter": "Chữa lành",
+  "topic": "Chữa lành người trụ cột & Thấu cảm thầm lặng",
+  "schedule": "2026-11-16 11:30",
+  "schedule_time": "2026-11-16 11:30",
+  "publishAt": "2026-11-16 11:30",
+  "scheduled_time": "2026-11-16T04:30:00Z",
+  "tags": [
+    "nct_v66",
+    "nuachentra",
+    "nhinsaudesongnhe",
+    "chualanh",
+    "trucot",
+    "metmoi",
+    "vove",
+    "shorts"
+  ],
+  "description": "Bao lâu rồi, không ai hỏi bạn có mệt không? Bao lâu rồi, chưa có ai hỏi bạn một câu: 'Dạo này có mệt lắm không?' Nửa Chén Trà — Nhìn sâu để sống nhẹ. #nct_v66 #chualanh #trucot #vove #nuachentra #shorts",
+  "containsSyntheticMedia": true,
+  "bgm": "Almost in F",
+  "bgm_file": "almost_in_f.mp3",
+  "bgm_volume": 0.15,
+  "visual_type": "Điện ảnh 35mm hoài niệm Á Đông",
+  "scenes": [
+    {
+      "scene": 1,
+      "tag": "Hook 3s",
+      "text": "Bao lâu rồi, chưa có ai hỏi bạn một câu: Dạo này có mệt lắm không?",
+      "highlight": "AI HỎI BẠN CÓ MỆT KHÔNG?",
+      "image": "nct_v66_scene1.jpg",
+      "video": "nct_v66_scene1.jpg",
+      "startFrame": 0,
+      "durationInFrames": 120,
+      "words": [
+        {
+          "word": "Bao",
+          "startFrame": 0,
+          "endFrame": 5
+        },
+        {
+          "word": "lâu",
+          "startFrame": 5,
+          "endFrame": 12
+        },
+        {
+          "word": "rồi,",
+          "startFrame": 12,
+          "endFrame": 19
+        },
+        {
+          "word": "chưa",
+          "startFrame": 29,
+          "endFrame": 31
+        },
+        {
+          "word": "có",
+          "startFrame": 31,
+          "endFrame": 38
+        },
+        {
+          "word": "ai",
+          "startFrame": 38,
+          "endFrame": 43
+        },
+        {
+          "word": "hỏi",
+          "startFrame": 43,
+          "endFrame": 50
+        },
+        {
+          "word": "bạn",
+          "startFrame": 50,
+          "endFrame": 55
+        },
+        {
+          "word": "một",
+          "startFrame": 55,
+          "endFrame": 61
+        },
+        {
+          "word": "câu:",
+          "startFrame": 61,
+          "endFrame": 73
+        },
+        {
+          "word": "Dạo",
+          "startFrame": 80,
+          "endFrame": 84
+        },
+        {
+          "word": "này",
+          "startFrame": 84,
+          "endFrame": 89
+        },
+        {
+          "word": "có",
+          "startFrame": 89,
+          "endFrame": 94
+        },
+        {
+          "word": "mệt",
+          "startFrame": 94,
+          "endFrame": 101
+        },
+        {
+          "word": "lắm",
+          "startFrame": 101,
+          "endFrame": 106
+        },
+        {
+          "word": "không?",
+          "startFrame": 106,
+          "endFrame": 113
+        }
+      ]
+    },
+    {
+      "scene": 2,
+      "tag": "Quen nhìn bạn mạnh mẽ",
+      "text": "Ai cũng quen nhìn bạn mạnh mẽ, tháo vát, lo toan mọi việc chu toàn. Họ nghĩ bạn không biết buồn.",
+      "highlight": "HỌ NGHĨ BẠN KHÔNG BIẾT BUỒN",
+      "image": "nct_v66_scene2.jpg",
+      "video": "nct_v66_scene2.jpg",
+      "startFrame": 130,
+      "durationInFrames": 174,
+      "words": [
+        {
+          "word": "Ai",
+          "startFrame": 1,
+          "endFrame": 5
+        },
+        {
+          "word": "cũng",
+          "startFrame": 5,
+          "endFrame": 10
+        },
+        {
+          "word": "quen",
+          "startFrame": 10,
+          "endFrame": 17
+        },
+        {
+          "word": "nhìn",
+          "startFrame": 17,
+          "endFrame": 25
+        },
+        {
+          "word": "bạn",
+          "startFrame": 25,
+          "endFrame": 29
+        },
+        {
+          "word": "mạnh",
+          "startFrame": 29,
+          "endFrame": 37
+        },
+        {
+          "word": "mẽ,",
+          "startFrame": 52,
+          "endFrame": 59
+        },
+        {
+          "word": "tháo",
+          "startFrame": 59,
+          "endFrame": 67
+        },
+        {
+          "word": "vát,",
+          "startFrame": 77,
+          "endFrame": 79
+        },
+        {
+          "word": "lo",
+          "startFrame": 78,
+          "endFrame": 88
+        },
+        {
+          "word": "toan",
+          "startFrame": 88,
+          "endFrame": 95
+        },
+        {
+          "word": "mọi",
+          "startFrame": 95,
+          "endFrame": 100
+        },
+        {
+          "word": "việc",
+          "startFrame": 100,
+          "endFrame": 109
+        },
+        {
+          "word": "chu",
+          "startFrame": 109,
+          "endFrame": 117
+        },
+        {
+          "word": "toàn.",
+          "startFrame": 131,
+          "endFrame": 134
+        },
+        {
+          "word": "Họ",
+          "startFrame": 134,
+          "endFrame": 140
+        },
+        {
+          "word": "nghĩ",
+          "startFrame": 140,
+          "endFrame": 146
+        },
+        {
+          "word": "bạn",
+          "startFrame": 146,
+          "endFrame": 152
+        },
+        {
+          "word": "không",
+          "startFrame": 152,
+          "endFrame": 158
+        },
+        {
+          "word": "biết",
+          "startFrame": 158,
+          "endFrame": 169
+        },
+        {
+          "word": "buồn.",
+          "startFrame": 169,
+          "endFrame": 175
+        }
+      ]
+    },
+    {
+      "scene": 3,
+      "tag": "Năm phút trong bóng tối",
+      "text": "Nhưng bạn cũng là con người. Có những ngày đi làm về, chỉ muốn ngồi lại trên xe năm phút trong bóng tối, thở một hơi dài.",
+      "highlight": "NGỒI LẠI TRÊN XE NĂM PHÚT",
+      "image": "nct_v66_scene3.jpg",
+      "video": "nct_v66_scene3.jpg",
+      "startFrame": 315,
+      "durationInFrames": 210,
+      "words": [
+        {
+          "word": "Nhưng",
+          "startFrame": 1,
+          "endFrame": 8
+        },
+        {
+          "word": "bạn",
+          "startFrame": 8,
+          "endFrame": 14
+        },
+        {
+          "word": "cũng",
+          "startFrame": 14,
+          "endFrame": 20
+        },
+        {
+          "word": "là",
+          "startFrame": 20,
+          "endFrame": 26
+        },
+        {
+          "word": "con",
+          "startFrame": 26,
+          "endFrame": 31
+        },
+        {
+          "word": "người.",
+          "startFrame": 31,
+          "endFrame": 38
+        },
+        {
+          "word": "Có",
+          "startFrame": 53,
+          "endFrame": 56
+        },
+        {
+          "word": "những",
+          "startFrame": 56,
+          "endFrame": 61
+        },
+        {
+          "word": "ngày",
+          "startFrame": 61,
+          "endFrame": 68
+        },
+        {
+          "word": "đi",
+          "startFrame": 68,
+          "endFrame": 74
+        },
+        {
+          "word": "làm",
+          "startFrame": 74,
+          "endFrame": 79
+        },
+        {
+          "word": "về,",
+          "startFrame": 79,
+          "endFrame": 87
+        },
+        {
+          "word": "chỉ",
+          "startFrame": 97,
+          "endFrame": 100
+        },
+        {
+          "word": "muốn",
+          "startFrame": 100,
+          "endFrame": 106
+        },
+        {
+          "word": "ngồi",
+          "startFrame": 106,
+          "endFrame": 115
+        },
+        {
+          "word": "lại",
+          "startFrame": 115,
+          "endFrame": 121
+        },
+        {
+          "word": "trên",
+          "startFrame": 121,
+          "endFrame": 127
+        },
+        {
+          "word": "xe",
+          "startFrame": 127,
+          "endFrame": 133
+        },
+        {
+          "word": "năm",
+          "startFrame": 133,
+          "endFrame": 139
+        },
+        {
+          "word": "phút",
+          "startFrame": 139,
+          "endFrame": 148
+        },
+        {
+          "word": "trong",
+          "startFrame": 148,
+          "endFrame": 154
+        },
+        {
+          "word": "bóng",
+          "startFrame": 154,
+          "endFrame": 162
+        },
+        {
+          "word": "tối,",
+          "startFrame": 162,
+          "endFrame": 170
+        },
+        {
+          "word": "thở",
+          "startFrame": 181,
+          "endFrame": 183
+        },
+        {
+          "word": "một",
+          "startFrame": 183,
+          "endFrame": 188
+        },
+        {
+          "word": "hơi",
+          "startFrame": 188,
+          "endFrame": 194
+        },
+        {
+          "word": "dài.",
+          "startFrame": 194,
+          "endFrame": 205
+        }
+      ]
+    },
+    {
+      "scene": 4,
+      "tag": "Không cần gồng mình",
+      "text": "Bạn không cần phải lúc nào cũng gồng mình làm chỗ dựa vững chắc cho cả thế giới.",
+      "highlight": "KHÔNG CẦN PHẢI GỒNG MÌNH",
+      "image": "nct_v66_scene4.jpg",
+      "video": "nct_v66_scene4.jpg",
+      "startFrame": 535,
+      "durationInFrames": 136,
+      "words": [
+        {
+          "word": "Bạn",
+          "startFrame": 0,
+          "endFrame": 4
+        },
+        {
+          "word": "không",
+          "startFrame": 4,
+          "endFrame": 8
+        },
+        {
+          "word": "cần",
+          "startFrame": 8,
+          "endFrame": 15
+        },
+        {
+          "word": "phải",
+          "startFrame": 15,
+          "endFrame": 22
+        },
+        {
+          "word": "lúc",
+          "startFrame": 22,
+          "endFrame": 28
+        },
+        {
+          "word": "nào",
+          "startFrame": 28,
+          "endFrame": 36
+        },
+        {
+          "word": "cũng",
+          "startFrame": 36,
+          "endFrame": 43
+        },
+        {
+          "word": "gồng",
+          "startFrame": 43,
+          "endFrame": 51
+        },
+        {
+          "word": "mình",
+          "startFrame": 51,
+          "endFrame": 59
+        },
+        {
+          "word": "làm",
+          "startFrame": 59,
+          "endFrame": 71
+        },
+        {
+          "word": "chỗ",
+          "startFrame": 71,
+          "endFrame": 80
+        },
+        {
+          "word": "dựa",
+          "startFrame": 80,
+          "endFrame": 87
+        },
+        {
+          "word": "vững",
+          "startFrame": 87,
+          "endFrame": 96
+        },
+        {
+          "word": "chắc",
+          "startFrame": 96,
+          "endFrame": 103
+        },
+        {
+          "word": "cho",
+          "startFrame": 103,
+          "endFrame": 108
+        },
+        {
+          "word": "cả",
+          "startFrame": 108,
+          "endFrame": 114
+        },
+        {
+          "word": "thế",
+          "startFrame": 114,
+          "endFrame": 119
+        },
+        {
+          "word": "giới.",
+          "startFrame": 119,
+          "endFrame": 129
+        }
+      ]
+    },
+    {
+      "scene": 5,
+      "tag": "Cho phép mình được mệt",
+      "text": "Nếu hôm nay chưa ai hỏi, thì Nửa Chén Trà xin hỏi bạn. Tối nay, cho phép mình được mệt một chút, nhé?",
+      "highlight": "CHO PHÉP MÌNH ĐƯỢC MỆT",
+      "image": "nct_v66_scene5.jpg",
+      "video": "nct_v66_scene5.jpg",
+      "startFrame": 682,
+      "durationInFrames": 182,
+      "words": [
+        {
+          "word": "Nếu",
+          "startFrame": 0,
+          "endFrame": 6
+        },
+        {
+          "word": "hôm",
+          "startFrame": 6,
+          "endFrame": 12
+        },
+        {
+          "word": "nay",
+          "startFrame": 12,
+          "endFrame": 17
+        },
+        {
+          "word": "chưa",
+          "startFrame": 17,
+          "endFrame": 23
+        },
+        {
+          "word": "ai",
+          "startFrame": 23,
+          "endFrame": 29
+        },
+        {
+          "word": "hỏi,",
+          "startFrame": 29,
+          "endFrame": 38
+        },
+        {
+          "word": "thì",
+          "startFrame": 49,
+          "endFrame": 51
+        },
+        {
+          "word": "Nửa",
+          "startFrame": 51,
+          "endFrame": 60
+        },
+        {
+          "word": "Chén",
+          "startFrame": 60,
+          "endFrame": 67
+        },
+        {
+          "word": "Trà",
+          "startFrame": 67,
+          "endFrame": 75
+        },
+        {
+          "word": "xin",
+          "startFrame": 75,
+          "endFrame": 81
+        },
+        {
+          "word": "hỏi",
+          "startFrame": 81,
+          "endFrame": 88
+        },
+        {
+          "word": "bạn.",
+          "startFrame": 88,
+          "endFrame": 95
+        },
+        {
+          "word": "Tối",
+          "startFrame": 107,
+          "endFrame": 110
+        },
+        {
+          "word": "nay,",
+          "startFrame": 110,
+          "endFrame": 117
+        },
+        {
+          "word": "cho",
+          "startFrame": 117,
+          "endFrame": 128
+        },
+        {
+          "word": "phép",
+          "startFrame": 128,
+          "endFrame": 134
+        },
+        {
+          "word": "mình",
+          "startFrame": 134,
+          "endFrame": 140
+        },
+        {
+          "word": "được",
+          "startFrame": 140,
+          "endFrame": 146
+        },
+        {
+          "word": "mệt",
+          "startFrame": 146,
+          "endFrame": 155
+        },
+        {
+          "word": "một",
+          "startFrame": 155,
+          "endFrame": 159
+        },
+        {
+          "word": "chút,",
+          "startFrame": 159,
+          "endFrame": 166
+        },
+        {
+          "word": "nhé?",
+          "startFrame": 166,
+          "endFrame": 176
+        }
+      ]
+    }
+  ],
+  "durationInFrames": 875,
+  "fps": 30,
+  "music": "Gymnopedie No. 1",
+  "musicFile": "gymnopedie_no_1.mp3",
+  "musicMood": "meditative",
+  "thumbnailImage": "thumbnail_nct_v66.jpg",
+  "audioFile": "voiceover_nct_v66.wav"
+}

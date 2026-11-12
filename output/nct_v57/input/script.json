@@ -1,0 +1,41 @@
+{
+  "id": "nct_v57",
+  "title": "Mẹ nấu từ sáng, chỉ để nhìn con ăn",
+  "scenes": [
+    {
+      "scene": 1,
+      "tag": "Cảnh 1",
+      "text": "Bạn còn ăn được bao nhiêu bữa cơm với bố mẹ?",
+      "highlight": "CÒN BAO NHIÊU BỮA CƠM?",
+      "image": "nct_v57_scene1.jpg"
+    },
+    {
+      "scene": 2,
+      "tag": "Cảnh 2",
+      "text": "Hồi nhỏ, ngày nào cũng ba bữa chung mâm. Lớn lên, mỗi người một ngả.",
+      "highlight": "BA BỮA CHUNG MÂM",
+      "image": "nct_v57_scene2.jpg"
+    },
+    {
+      "scene": 3,
+      "tag": "Cảnh 3",
+      "text": "Mỗi năm về một vài lần, ngồi chưa ấm chỗ đã vội đi.",
+      "highlight": "VỘI VÃ RỜI ĐI",
+      "image": "nct_v57_scene3.jpg"
+    },
+    {
+      "scene": 4,
+      "tag": "Cảnh 4",
+      "text": "Bố mẹ không đếm tuổi mình. Bố mẹ đếm những bữa cơm có con. Mẹ nấu đủ món con thích từ sáng, rồi ngồi nhìn con ăn.",
+      "highlight": "MẸ NẤU TỪ SÁNG",
+      "image": "nct_v57_scene4.jpg"
+    },
+    {
+      "scene": 5,
+      "tag": "Cảnh 5",
+      "text": "Lần tới về, cất điện thoại đi. Ăn hết bát cơm mẹ gắp, vì không ai biết mình còn bao nhiêu bữa.",
+      "highlight": "CẤT ĐIỆN THOẠI ĐI",
+      "image": "nct_v57_scene5.jpg"
+    }
+  ]
+}

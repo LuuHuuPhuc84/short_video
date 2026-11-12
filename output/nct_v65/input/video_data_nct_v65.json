@@ -1,0 +1,629 @@
+{
+  "id": "nct_v65",
+  "episode": 65,
+  "title": "Hai chữ 'không sao' làm nguội hôn nhân",
+  "title_hook": "VÌ SAO NÓI 'KHÔNG SAO'?",
+  "titleHook": "VÌ SAO NÓI 'KHÔNG SAO'?",
+  "subtitle": "Hôn nhân & Thấu hiểu",
+  "book": "NỬA CHÉN TRÀ",
+  "author": "Bài học cuộc sống",
+  "chapter": "Hôn nhân",
+  "topic": "Giao tiếp trong hôn nhân & Chữa lành tổn thương",
+  "schedule": "2026-11-15 19:30",
+  "schedule_time": "2026-11-15 19:30",
+  "publishAt": "2026-11-15 19:30",
+  "scheduled_time": "2026-11-15T12:30:00Z",
+  "tags": [
+    "nct_v65",
+    "nuachentra",
+    "nhinsaudesongnhe",
+    "honnhan",
+    "vochong",
+    "khongsao",
+    "chualanh",
+    "shorts"
+  ],
+  "description": "Hai chữ 'không sao' làm nguội hôn nhân. Mỗi lần giận dỗi, bạn có hay nói hai chữ: 'Không sao'? Nửa Chén Trà — Nhìn sâu để sống nhẹ. #nct_v65 #honnhan #vochong #chualanh #nuachentra #shorts",
+  "containsSyntheticMedia": true,
+  "bgm": "Heartbreaking",
+  "bgm_file": "heartbreaking.mp3",
+  "bgm_volume": 0.15,
+  "visual_type": "Điện ảnh 35mm hoài niệm Á Đông",
+  "scenes": [
+    {
+      "scene": 1,
+      "tag": "Hook 3s",
+      "text": "Mỗi lần giận dỗi, bạn có hay nói hai chữ: 'Không sao'?",
+      "highlight": "VÌ SAO NÓI 'KHÔNG SAO'?",
+      "image": "nct_v65_scene1.jpg",
+      "video": "nct_v65_scene1.jpg",
+      "startFrame": 0,
+      "durationInFrames": 95,
+      "words": [
+        {
+          "word": "Mỗi",
+          "startFrame": 0,
+          "endFrame": 7
+        },
+        {
+          "word": "lần",
+          "startFrame": 7,
+          "endFrame": 12
+        },
+        {
+          "word": "giận",
+          "startFrame": 12,
+          "endFrame": 19
+        },
+        {
+          "word": "dỗi,",
+          "startFrame": 19,
+          "endFrame": 26
+        },
+        {
+          "word": "bạn",
+          "startFrame": 34,
+          "endFrame": 37
+        },
+        {
+          "word": "có",
+          "startFrame": 37,
+          "endFrame": 44
+        },
+        {
+          "word": "hay",
+          "startFrame": 44,
+          "endFrame": 50
+        },
+        {
+          "word": "nói",
+          "startFrame": 50,
+          "endFrame": 55
+        },
+        {
+          "word": "hai",
+          "startFrame": 55,
+          "endFrame": 65
+        },
+        {
+          "word": "chữ:",
+          "startFrame": 65,
+          "endFrame": 73
+        },
+        {
+          "word": "'Không",
+          "startFrame": 73,
+          "endFrame": 79
+        },
+        {
+          "word": "sao'?",
+          "startFrame": 79,
+          "endFrame": 88
+        }
+      ]
+    },
+    {
+      "scene": 2,
+      "tag": "Im lặng đến nghẹt thở",
+      "text": "Miệng nói không sao, nhưng mắt không nhìn, cửa đóng mạnh, và bữa cơm trôi qua trong im lặng đến nghẹt thở.",
+      "highlight": "IM LẶNG ĐẾN NGHẸT THỞ",
+      "image": "nct_v65_scene2.jpg",
+      "video": "nct_v65_scene2.jpg",
+      "startFrame": 106,
+      "durationInFrames": 169,
+      "words": [
+        {
+          "word": "Miệng",
+          "startFrame": 2,
+          "endFrame": 8
+        },
+        {
+          "word": "nói",
+          "startFrame": 8,
+          "endFrame": 13
+        },
+        {
+          "word": "không",
+          "startFrame": 13,
+          "endFrame": 19
+        },
+        {
+          "word": "sao,",
+          "startFrame": 19,
+          "endFrame": 28
+        },
+        {
+          "word": "nhưng",
+          "startFrame": 36,
+          "endFrame": 38
+        },
+        {
+          "word": "mắt",
+          "startFrame": 38,
+          "endFrame": 44
+        },
+        {
+          "word": "không",
+          "startFrame": 44,
+          "endFrame": 49
+        },
+        {
+          "word": "nhìn,",
+          "startFrame": 49,
+          "endFrame": 59
+        },
+        {
+          "word": "cửa",
+          "startFrame": 65,
+          "endFrame": 70
+        },
+        {
+          "word": "đóng",
+          "startFrame": 70,
+          "endFrame": 76
+        },
+        {
+          "word": "mạnh,",
+          "startFrame": 76,
+          "endFrame": 81
+        },
+        {
+          "word": "và",
+          "startFrame": 81,
+          "endFrame": 91
+        },
+        {
+          "word": "bữa",
+          "startFrame": 91,
+          "endFrame": 97
+        },
+        {
+          "word": "cơm",
+          "startFrame": 97,
+          "endFrame": 105
+        },
+        {
+          "word": "trôi",
+          "startFrame": 105,
+          "endFrame": 111
+        },
+        {
+          "word": "qua",
+          "startFrame": 111,
+          "endFrame": 118
+        },
+        {
+          "word": "trong",
+          "startFrame": 118,
+          "endFrame": 125
+        },
+        {
+          "word": "im",
+          "startFrame": 125,
+          "endFrame": 133
+        },
+        {
+          "word": "lặng",
+          "startFrame": 133,
+          "endFrame": 140
+        },
+        {
+          "word": "đến",
+          "startFrame": 140,
+          "endFrame": 144
+        },
+        {
+          "word": "nghẹt",
+          "startFrame": 144,
+          "endFrame": 156
+        },
+        {
+          "word": "thở.",
+          "startFrame": 156,
+          "endFrame": 162
+        }
+      ]
+    },
+    {
+      "scene": 3,
+      "tag": "Dấu hiệu bất lực",
+      "text": "Thực ra, 'không sao' không phải là tha thứ. Đó là dấu hiệu của sự bất lực và bắt đầu khép lòng.",
+      "highlight": "BẮT ĐẦU KHÉP LÒNG",
+      "image": "nct_v65_scene3.jpg",
+      "video": "nct_v65_scene3.jpg",
+      "startFrame": 285,
+      "durationInFrames": 180,
+      "words": [
+        {
+          "word": "Thực",
+          "startFrame": 1,
+          "endFrame": 5
+        },
+        {
+          "word": "ra,",
+          "startFrame": 5,
+          "endFrame": 11
+        },
+        {
+          "word": "'không",
+          "startFrame": 23,
+          "endFrame": 27
+        },
+        {
+          "word": "sao'",
+          "startFrame": 27,
+          "endFrame": 35
+        },
+        {
+          "word": "không",
+          "startFrame": 35,
+          "endFrame": 41
+        },
+        {
+          "word": "phải",
+          "startFrame": 41,
+          "endFrame": 47
+        },
+        {
+          "word": "là",
+          "startFrame": 47,
+          "endFrame": 53
+        },
+        {
+          "word": "tha",
+          "startFrame": 53,
+          "endFrame": 62
+        },
+        {
+          "word": "thứ.",
+          "startFrame": 62,
+          "endFrame": 69
+        },
+        {
+          "word": "Đó",
+          "startFrame": 85,
+          "endFrame": 88
+        },
+        {
+          "word": "là",
+          "startFrame": 88,
+          "endFrame": 95
+        },
+        {
+          "word": "dấu",
+          "startFrame": 95,
+          "endFrame": 103
+        },
+        {
+          "word": "hiệu",
+          "startFrame": 103,
+          "endFrame": 109
+        },
+        {
+          "word": "của",
+          "startFrame": 109,
+          "endFrame": 115
+        },
+        {
+          "word": "sự",
+          "startFrame": 115,
+          "endFrame": 120
+        },
+        {
+          "word": "bất",
+          "startFrame": 120,
+          "endFrame": 127
+        },
+        {
+          "word": "lực",
+          "startFrame": 127,
+          "endFrame": 135
+        },
+        {
+          "word": "và",
+          "startFrame": 135,
+          "endFrame": 142
+        },
+        {
+          "word": "bắt",
+          "startFrame": 142,
+          "endFrame": 150
+        },
+        {
+          "word": "đầu",
+          "startFrame": 150,
+          "endFrame": 155
+        },
+        {
+          "word": "khép",
+          "startFrame": 155,
+          "endFrame": 164
+        },
+        {
+          "word": "lòng.",
+          "startFrame": 164,
+          "endFrame": 173
+        }
+      ]
+    },
+    {
+      "scene": 4,
+      "tag": "Chết dần vì những ấm ức",
+      "text": "Hôn nhân không chết vì những trận cãi vã to tiếng. Nó chết dần vì những ấm ức bị nuốt ngược vào trong dưới vỏ bọc bình yên.",
+      "highlight": "NUỐT NGƯỢC VÀO TRONG",
+      "image": "nct_v65_scene4.jpg",
+      "video": "nct_v65_scene4.jpg",
+      "startFrame": 475,
+      "durationInFrames": 215,
+      "words": [
+        {
+          "word": "Hôn",
+          "startFrame": 2,
+          "endFrame": 5
+        },
+        {
+          "word": "nhân",
+          "startFrame": 5,
+          "endFrame": 9
+        },
+        {
+          "word": "không",
+          "startFrame": 9,
+          "endFrame": 17
+        },
+        {
+          "word": "chết",
+          "startFrame": 17,
+          "endFrame": 27
+        },
+        {
+          "word": "vì",
+          "startFrame": 34,
+          "endFrame": 36
+        },
+        {
+          "word": "những",
+          "startFrame": 36,
+          "endFrame": 42
+        },
+        {
+          "word": "trận",
+          "startFrame": 42,
+          "endFrame": 48
+        },
+        {
+          "word": "cãi",
+          "startFrame": 48,
+          "endFrame": 58
+        },
+        {
+          "word": "vã",
+          "startFrame": 58,
+          "endFrame": 62
+        },
+        {
+          "word": "to",
+          "startFrame": 62,
+          "endFrame": 70
+        },
+        {
+          "word": "tiếng.",
+          "startFrame": 70,
+          "endFrame": 83
+        },
+        {
+          "word": "Nó",
+          "startFrame": 92,
+          "endFrame": 99
+        },
+        {
+          "word": "chết",
+          "startFrame": 99,
+          "endFrame": 107
+        },
+        {
+          "word": "dần",
+          "startFrame": 107,
+          "endFrame": 114
+        },
+        {
+          "word": "vì",
+          "startFrame": 114,
+          "endFrame": 121
+        },
+        {
+          "word": "những",
+          "startFrame": 121,
+          "endFrame": 128
+        },
+        {
+          "word": "ấm",
+          "startFrame": 128,
+          "endFrame": 133
+        },
+        {
+          "word": "ức",
+          "startFrame": 133,
+          "endFrame": 140
+        },
+        {
+          "word": "bị",
+          "startFrame": 140,
+          "endFrame": 146
+        },
+        {
+          "word": "nuốt",
+          "startFrame": 146,
+          "endFrame": 154
+        },
+        {
+          "word": "ngược",
+          "startFrame": 154,
+          "endFrame": 161
+        },
+        {
+          "word": "vào",
+          "startFrame": 161,
+          "endFrame": 166
+        },
+        {
+          "word": "trong",
+          "startFrame": 166,
+          "endFrame": 173
+        },
+        {
+          "word": "dưới",
+          "startFrame": 173,
+          "endFrame": 182
+        },
+        {
+          "word": "vỏ",
+          "startFrame": 182,
+          "endFrame": 190
+        },
+        {
+          "word": "bọc",
+          "startFrame": 190,
+          "endFrame": 195
+        },
+        {
+          "word": "bình",
+          "startFrame": 195,
+          "endFrame": 200
+        },
+        {
+          "word": "yên.",
+          "startFrame": 200,
+          "endFrame": 209
+        }
+      ]
+    },
+    {
+      "scene": 5,
+      "tag": "Nếu có sao, hãy nói",
+      "text": "Nếu có sao, hãy nói là có sao. Người thương bạn, họ xứng đáng được biết bạn đang tổn thương điều gì.",
+      "highlight": "NÓI LÀ CÓ SAO",
+      "image": "nct_v65_scene5.jpg",
+      "video": "nct_v65_scene5.jpg",
+      "startFrame": 701,
+      "durationInFrames": 180,
+      "words": [
+        {
+          "word": "Nếu",
+          "startFrame": 0,
+          "endFrame": 8
+        },
+        {
+          "word": "có",
+          "startFrame": 8,
+          "endFrame": 15
+        },
+        {
+          "word": "sao,",
+          "startFrame": 15,
+          "endFrame": 23
+        },
+        {
+          "word": "hãy",
+          "startFrame": 31,
+          "endFrame": 34
+        },
+        {
+          "word": "nói",
+          "startFrame": 34,
+          "endFrame": 41
+        },
+        {
+          "word": "là",
+          "startFrame": 41,
+          "endFrame": 48
+        },
+        {
+          "word": "có",
+          "startFrame": 48,
+          "endFrame": 54
+        },
+        {
+          "word": "sao.",
+          "startFrame": 54,
+          "endFrame": 63
+        },
+        {
+          "word": "Người",
+          "startFrame": 78,
+          "endFrame": 81
+        },
+        {
+          "word": "thương",
+          "startFrame": 81,
+          "endFrame": 87
+        },
+        {
+          "word": "bạn,",
+          "startFrame": 87,
+          "endFrame": 91
+        },
+        {
+          "word": "họ",
+          "startFrame": 91,
+          "endFrame": 100
+        },
+        {
+          "word": "xứng",
+          "startFrame": 100,
+          "endFrame": 111
+        },
+        {
+          "word": "đáng",
+          "startFrame": 111,
+          "endFrame": 118
+        },
+        {
+          "word": "được",
+          "startFrame": 118,
+          "endFrame": 123
+        },
+        {
+          "word": "biết",
+          "startFrame": 123,
+          "endFrame": 130
+        },
+        {
+          "word": "bạn",
+          "startFrame": 130,
+          "endFrame": 138
+        },
+        {
+          "word": "đang",
+          "startFrame": 138,
+          "endFrame": 143
+        },
+        {
+          "word": "tổn",
+          "startFrame": 143,
+          "endFrame": 151
+        },
+        {
+          "word": "thương",
+          "startFrame": 151,
+          "endFrame": 158
+        },
+        {
+          "word": "điều",
+          "startFrame": 158,
+          "endFrame": 163
+        },
+        {
+          "word": "gì.",
+          "startFrame": 163,
+          "endFrame": 172
+        }
+      ]
+    }
+  ],
+  "durationInFrames": 891,
+  "fps": 30,
+  "music": "Wounded",
+  "musicFile": "wounded.mp3",
+  "musicMood": "sad"
+}

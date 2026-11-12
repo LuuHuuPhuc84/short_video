@@ -1,0 +1,716 @@
+{
+  "id": "nct_v71",
+  "episode": 71,
+  "title": "Quy Tắc \"Chậm 3 Giây\" Khi Nóng Giận",
+  "title_hook": "MỘT LỜI LỠ MIỆNG",
+  "titleHook": "MỘT LỜI LỠ MIỆNG",
+  "subtitle": "Triết lý Nửa Chén Trà",
+  "book": "NỬA CHÉN TRÀ",
+  "author": "Bài học cuộc sống",
+  "chapter": "Sống nhẹ",
+  "topic": "Quy Tắc \"Chậm 3 Giây\" Khi Nóng Giận",
+  "schedule": "2026-11-19 11:30",
+  "schedule_time": "2026-11-19 11:30",
+  "publishAt": "2026-11-19 11:30",
+  "scheduled_time": "2026-11-19T04:30:00Z",
+  "tags": [
+    "nct_v71",
+    "nuachentra",
+    "nhinsaudesongnhe",
+    "khoanglang",
+    "buongbo",
+    "trietly",
+    "chualanh",
+    "shorts"
+  ],
+  "description": "Có những mối quan hệ mất mười năm để vun đắp,, nhưng chỉ mất đúng ba giây nóng giận để phá hủy hoàn toàn. Nửa Chén Trà — Nhìn sâu để sống nhẹ. #nct_v71 #nuachentra #nhinsaudesongnhe #shorts",
+  "containsSyntheticMedia": true,
+  "bgm": "Touching Moments",
+  "bgm_file": "touching_moments.mp3",
+  "bgm_volume": 0.15,
+  "visual_type": "MIXED",
+  "scenes": [
+    {
+      "scene": 1,
+      "tag": "MỘT LỜI LỠ MIỆNG",
+      "text": "Có những mối quan hệ mất mười năm để vun đắp,, nhưng chỉ mất đúng ba giây nóng giận để phá hủy hoàn toàn.",
+      "highlight": "MỘT LỜI LỠ MIỆNG",
+      "image": "nct_v71_scene1.jpg",
+      "video": "nct_v71_scene1.jpg",
+      "startFrame": 0,
+      "durationInFrames": 183,
+      "words": [
+        {
+          "word": "Có",
+          "startFrame": 0,
+          "endFrame": 4
+        },
+        {
+          "word": "những",
+          "startFrame": 4,
+          "endFrame": 8
+        },
+        {
+          "word": "mối",
+          "startFrame": 8,
+          "endFrame": 16
+        },
+        {
+          "word": "quan",
+          "startFrame": 16,
+          "endFrame": 20
+        },
+        {
+          "word": "hệ",
+          "startFrame": 20,
+          "endFrame": 26
+        },
+        {
+          "word": "mất",
+          "startFrame": 26,
+          "endFrame": 32
+        },
+        {
+          "word": "mười",
+          "startFrame": 32,
+          "endFrame": 37
+        },
+        {
+          "word": "năm",
+          "startFrame": 37,
+          "endFrame": 46
+        },
+        {
+          "word": "để",
+          "startFrame": 46,
+          "endFrame": 55
+        },
+        {
+          "word": "vun",
+          "startFrame": 55,
+          "endFrame": 62
+        },
+        {
+          "word": "đắp,,",
+          "startFrame": 62,
+          "endFrame": 68
+        },
+        {
+          "word": "nhưng",
+          "startFrame": 83,
+          "endFrame": 91
+        },
+        {
+          "word": "chỉ",
+          "startFrame": 91,
+          "endFrame": 100
+        },
+        {
+          "word": "mất",
+          "startFrame": 100,
+          "endFrame": 106
+        },
+        {
+          "word": "đúng",
+          "startFrame": 106,
+          "endFrame": 111
+        },
+        {
+          "word": "ba",
+          "startFrame": 111,
+          "endFrame": 117
+        },
+        {
+          "word": "giây",
+          "startFrame": 117,
+          "endFrame": 125
+        },
+        {
+          "word": "nóng",
+          "startFrame": 125,
+          "endFrame": 130
+        },
+        {
+          "word": "giận",
+          "startFrame": 130,
+          "endFrame": 134
+        },
+        {
+          "word": "để",
+          "startFrame": 134,
+          "endFrame": 145
+        },
+        {
+          "word": "phá",
+          "startFrame": 145,
+          "endFrame": 152
+        },
+        {
+          "word": "hủy",
+          "startFrame": 152,
+          "endFrame": 157
+        },
+        {
+          "word": "hoàn",
+          "startFrame": 157,
+          "endFrame": 164
+        },
+        {
+          "word": "toàn.",
+          "startFrame": 164,
+          "endFrame": 172
+        }
+      ]
+    },
+    {
+      "scene": 2,
+      "tag": "LỜI NÓI NHƯ BÁT NƯỚC HẤT ĐI",
+      "text": "Khi cơn giận bốc lên đầu,, não bộ luôn xúi giục ta tìm câu nói sắc bén nhất để làm đau người đối diện.",
+      "highlight": "LỜI NÓI NHƯ BÁT NƯỚC HẤT ĐI",
+      "image": "nct_v71_scene2.jpg",
+      "video": "nct_v71_scene2.jpg",
+      "startFrame": 193,
+      "durationInFrames": 179,
+      "words": [
+        {
+          "word": "Khi",
+          "startFrame": 0,
+          "endFrame": 5
+        },
+        {
+          "word": "cơn",
+          "startFrame": 5,
+          "endFrame": 12
+        },
+        {
+          "word": "giận",
+          "startFrame": 12,
+          "endFrame": 18
+        },
+        {
+          "word": "bốc",
+          "startFrame": 18,
+          "endFrame": 23
+        },
+        {
+          "word": "lên",
+          "startFrame": 23,
+          "endFrame": 27
+        },
+        {
+          "word": "đầu,,",
+          "startFrame": 27,
+          "endFrame": 35
+        },
+        {
+          "word": "não",
+          "startFrame": 50,
+          "endFrame": 52
+        },
+        {
+          "word": "bộ",
+          "startFrame": 52,
+          "endFrame": 57
+        },
+        {
+          "word": "luôn",
+          "startFrame": 57,
+          "endFrame": 63
+        },
+        {
+          "word": "xúi",
+          "startFrame": 63,
+          "endFrame": 73
+        },
+        {
+          "word": "giục",
+          "startFrame": 73,
+          "endFrame": 78
+        },
+        {
+          "word": "ta",
+          "startFrame": 78,
+          "endFrame": 89
+        },
+        {
+          "word": "tìm",
+          "startFrame": 89,
+          "endFrame": 98
+        },
+        {
+          "word": "câu",
+          "startFrame": 98,
+          "endFrame": 106
+        },
+        {
+          "word": "nói",
+          "startFrame": 106,
+          "endFrame": 109
+        },
+        {
+          "word": "sắc",
+          "startFrame": 109,
+          "endFrame": 116
+        },
+        {
+          "word": "bén",
+          "startFrame": 116,
+          "endFrame": 121
+        },
+        {
+          "word": "nhất",
+          "startFrame": 121,
+          "endFrame": 126
+        },
+        {
+          "word": "để",
+          "startFrame": 126,
+          "endFrame": 136
+        },
+        {
+          "word": "làm",
+          "startFrame": 136,
+          "endFrame": 142
+        },
+        {
+          "word": "đau",
+          "startFrame": 142,
+          "endFrame": 148
+        },
+        {
+          "word": "người",
+          "startFrame": 148,
+          "endFrame": 154
+        },
+        {
+          "word": "đối",
+          "startFrame": 154,
+          "endFrame": 160
+        },
+        {
+          "word": "diện.",
+          "startFrame": 160,
+          "endFrame": 166
+        }
+      ]
+    },
+    {
+      "scene": 3,
+      "tag": "NGƯỜI ĐAU NHẤT LÀ TA",
+      "text": "Nhưng hả giận được một phút,, đến khi bình tâm lại,, vết sẹo trong lòng người kia thì còn mãi,, mà nỗi ân hận của ta cũng chẳng nguôi.",
+      "highlight": "NGƯỜI ĐAU NHẤT LÀ TA",
+      "image": "nct_v71_scene3.jpg",
+      "video": "nct_v71_scene3.jpg",
+      "startFrame": 382,
+      "durationInFrames": 225,
+      "words": [
+        {
+          "word": "Nhưng",
+          "startFrame": 0,
+          "endFrame": 8
+        },
+        {
+          "word": "hả",
+          "startFrame": 8,
+          "endFrame": 14
+        },
+        {
+          "word": "giận",
+          "startFrame": 14,
+          "endFrame": 20
+        },
+        {
+          "word": "được",
+          "startFrame": 20,
+          "endFrame": 24
+        },
+        {
+          "word": "một",
+          "startFrame": 24,
+          "endFrame": 31
+        },
+        {
+          "word": "phút,,",
+          "startFrame": 31,
+          "endFrame": 39
+        },
+        {
+          "word": "đến",
+          "startFrame": 39,
+          "endFrame": 56
+        },
+        {
+          "word": "khi",
+          "startFrame": 56,
+          "endFrame": 64
+        },
+        {
+          "word": "bình",
+          "startFrame": 64,
+          "endFrame": 71
+        },
+        {
+          "word": "tâm",
+          "startFrame": 71,
+          "endFrame": 76
+        },
+        {
+          "word": "lại,,",
+          "startFrame": 76,
+          "endFrame": 82
+        },
+        {
+          "word": "vết",
+          "startFrame": 96,
+          "endFrame": 100
+        },
+        {
+          "word": "sẹo",
+          "startFrame": 100,
+          "endFrame": 106
+        },
+        {
+          "word": "trong",
+          "startFrame": 106,
+          "endFrame": 110
+        },
+        {
+          "word": "lòng",
+          "startFrame": 110,
+          "endFrame": 118
+        },
+        {
+          "word": "người",
+          "startFrame": 118,
+          "endFrame": 122
+        },
+        {
+          "word": "kia",
+          "startFrame": 122,
+          "endFrame": 130
+        },
+        {
+          "word": "thì",
+          "startFrame": 130,
+          "endFrame": 134
+        },
+        {
+          "word": "còn",
+          "startFrame": 134,
+          "endFrame": 140
+        },
+        {
+          "word": "mãi,,",
+          "startFrame": 140,
+          "endFrame": 151
+        },
+        {
+          "word": "mà",
+          "startFrame": 158,
+          "endFrame": 164
+        },
+        {
+          "word": "nỗi",
+          "startFrame": 164,
+          "endFrame": 171
+        },
+        {
+          "word": "ân",
+          "startFrame": 171,
+          "endFrame": 176
+        },
+        {
+          "word": "hận",
+          "startFrame": 176,
+          "endFrame": 181
+        },
+        {
+          "word": "của",
+          "startFrame": 181,
+          "endFrame": 187
+        },
+        {
+          "word": "ta",
+          "startFrame": 187,
+          "endFrame": 194
+        },
+        {
+          "word": "cũng",
+          "startFrame": 194,
+          "endFrame": 199
+        },
+        {
+          "word": "chẳng",
+          "startFrame": 199,
+          "endFrame": 205
+        },
+        {
+          "word": "nguôi.",
+          "startFrame": 205,
+          "endFrame": 214
+        }
+      ]
+    },
+    {
+      "scene": 4,
+      "tag": "NUỐT NƯỚC BỌT · ĐẾM ĐẾN 3",
+      "text": "Cổ nhân dạy,, trước khi định buông lời nặng nề,, hãy khép miệng lại,, nuốt một ngụm nước bọt và thầm đếm từ một đến ba.",
+      "highlight": "NUỐT NƯỚC BỌT · ĐẾM ĐẾN 3",
+      "image": "nct_v71_scene4.jpg",
+      "video": "nct_v71_scene4.jpg",
+      "startFrame": 618,
+      "durationInFrames": 190,
+      "words": [
+        {
+          "word": "Cổ",
+          "startFrame": 0,
+          "endFrame": 6
+        },
+        {
+          "word": "nhân",
+          "startFrame": 6,
+          "endFrame": 9
+        },
+        {
+          "word": "dạy,,",
+          "startFrame": 9,
+          "endFrame": 19
+        },
+        {
+          "word": "trước",
+          "startFrame": 28,
+          "endFrame": 32
+        },
+        {
+          "word": "khi",
+          "startFrame": 32,
+          "endFrame": 37
+        },
+        {
+          "word": "định",
+          "startFrame": 37,
+          "endFrame": 44
+        },
+        {
+          "word": "buông",
+          "startFrame": 44,
+          "endFrame": 50
+        },
+        {
+          "word": "lời",
+          "startFrame": 50,
+          "endFrame": 56
+        },
+        {
+          "word": "nặng",
+          "startFrame": 56,
+          "endFrame": 63
+        },
+        {
+          "word": "nề,,",
+          "startFrame": 63,
+          "endFrame": 68
+        },
+        {
+          "word": "hãy",
+          "startFrame": 81,
+          "endFrame": 83
+        },
+        {
+          "word": "khép",
+          "startFrame": 83,
+          "endFrame": 89
+        },
+        {
+          "word": "miệng",
+          "startFrame": 89,
+          "endFrame": 95
+        },
+        {
+          "word": "lại,,",
+          "startFrame": 95,
+          "endFrame": 103
+        },
+        {
+          "word": "nuốt",
+          "startFrame": 116,
+          "endFrame": 118
+        },
+        {
+          "word": "một",
+          "startFrame": 117,
+          "endFrame": 123
+        },
+        {
+          "word": "ngụm",
+          "startFrame": 123,
+          "endFrame": 128
+        },
+        {
+          "word": "nước",
+          "startFrame": 128,
+          "endFrame": 133
+        },
+        {
+          "word": "bọt",
+          "startFrame": 133,
+          "endFrame": 142
+        },
+        {
+          "word": "và",
+          "startFrame": 142,
+          "endFrame": 146
+        },
+        {
+          "word": "thầm",
+          "startFrame": 146,
+          "endFrame": 152
+        },
+        {
+          "word": "đếm",
+          "startFrame": 152,
+          "endFrame": 155
+        },
+        {
+          "word": "từ",
+          "startFrame": 155,
+          "endFrame": 162
+        },
+        {
+          "word": "một",
+          "startFrame": 162,
+          "endFrame": 167
+        },
+        {
+          "word": "đến",
+          "startFrame": 167,
+          "endFrame": 179
+        },
+        {
+          "word": "ba.",
+          "startFrame": 179,
+          "endFrame": 185
+        }
+      ]
+    },
+    {
+      "scene": 5,
+      "tag": "BA GIÂY CỨU MỘT MỐI TÌNH",
+      "text": "Ba giây im lặng ấy không làm bạn yếu thế đi,, mà giúp bạn giữ lại được người mình thương.",
+      "highlight": "BA GIÂY CỨU MỘT MỐI TÌNH",
+      "image": "nct_v71_scene5.jpg",
+      "video": "nct_v71_scene5.jpg",
+      "startFrame": 818,
+      "durationInFrames": 142,
+      "words": [
+        {
+          "word": "Ba",
+          "startFrame": 0,
+          "endFrame": 7
+        },
+        {
+          "word": "giây",
+          "startFrame": 7,
+          "endFrame": 13
+        },
+        {
+          "word": "im",
+          "startFrame": 13,
+          "endFrame": 17
+        },
+        {
+          "word": "lặng",
+          "startFrame": 17,
+          "endFrame": 25
+        },
+        {
+          "word": "ấy",
+          "startFrame": 25,
+          "endFrame": 28
+        },
+        {
+          "word": "không",
+          "startFrame": 28,
+          "endFrame": 35
+        },
+        {
+          "word": "làm",
+          "startFrame": 35,
+          "endFrame": 41
+        },
+        {
+          "word": "bạn",
+          "startFrame": 41,
+          "endFrame": 48
+        },
+        {
+          "word": "yếu",
+          "startFrame": 48,
+          "endFrame": 56
+        },
+        {
+          "word": "thế",
+          "startFrame": 56,
+          "endFrame": 60
+        },
+        {
+          "word": "đi,,",
+          "startFrame": 60,
+          "endFrame": 67
+        },
+        {
+          "word": "mà",
+          "startFrame": 79,
+          "endFrame": 85
+        },
+        {
+          "word": "giúp",
+          "startFrame": 85,
+          "endFrame": 91
+        },
+        {
+          "word": "bạn",
+          "startFrame": 91,
+          "endFrame": 95
+        },
+        {
+          "word": "giữ",
+          "startFrame": 95,
+          "endFrame": 102
+        },
+        {
+          "word": "lại",
+          "startFrame": 102,
+          "endFrame": 106
+        },
+        {
+          "word": "được",
+          "startFrame": 106,
+          "endFrame": 111
+        },
+        {
+          "word": "người",
+          "startFrame": 111,
+          "endFrame": 117
+        },
+        {
+          "word": "mình",
+          "startFrame": 117,
+          "endFrame": 121
+        },
+        {
+          "word": "thương.",
+          "startFrame": 121,
+          "endFrame": 130
+        }
+      ]
+    }
+  ],
+  "durationInFrames": 971,
+  "fps": 30,
+  "music": "Touching Moments",
+  "musicFile": "touching_moments.mp3",
+  "musicMood": "peaceful",
+  "thumbnailImage": "thumbnail_nct_v71.jpg",
+  "audioFile": "voiceover_nct_v71.wav"
+}

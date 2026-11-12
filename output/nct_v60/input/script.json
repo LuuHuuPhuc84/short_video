@@ -1,0 +1,74 @@
+{
+  "id": "nct_v60",
+  "episode": 60,
+  "title": "Cằn nhằn, một cách thương rất vụng",
+  "title_hook": "VÌ SAO BỐ MẸ CẰN NHẰN?",
+  "titleHook": "VÌ SAO BỐ MẸ CẰN NHẰN?",
+  "subtitle": "Gia đình & Chữa lành",
+  "book": "NỬA CHÉN TRÀ",
+  "author": "Bài học cuộc sống",
+  "chapter": "Gia đình",
+  "topic": "Tâm lý gia đình & Tình thương cha mẹ",
+  "schedule": "2026-11-13 11:30",
+  "schedule_time": "2026-11-13 11:30",
+  "publishAt": "2026-11-13 11:30",
+  "scheduled_time": "2026-11-13T04:30:00Z",
+  "tags": [
+    "nct_v60",
+    "nuachentra",
+    "nhinsaudesongnhe",
+    "giadinh",
+    "chualanh",
+    "bome",
+    "tamly",
+    "shorts"
+  ],
+  "description": "Cằn nhằn, một cách thương rất vụng. Vì sao bố mẹ càng già càng hay cằn nhằn? Nửa Chén Trà — Nhìn sâu để sống nhẹ. #nct_v60 #giadinh #chualanh #nuachentra #shorts",
+  "containsSyntheticMedia": true,
+  "bgm": "Heartbreaking",
+  "bgm_file": "heartbreaking.mp3",
+  "bgm_volume": 0.15,
+  "visual_type": "Điện ảnh 35mm hoài niệm Á Đông",
+  "scenes": [
+    {
+      "scene": 1,
+      "tag": "Hook 3s",
+      "text": "Vì sao bố mẹ càng già càng hay cằn nhằn?",
+      "highlight": "VÌ SAO BỐ MẸ CẰN NHẰN?",
+      "image": "nct_v60_scene1.jpg",
+      "video": "nct_v60_scene1.jpg"
+    },
+    {
+      "scene": 2,
+      "tag": "Mẹ gọi",
+      "text": "Mẹ gọi điện, hỏi con ăn chưa, mặc ấm chưa. Con nói con biết rồi, mẹ ơi.",
+      "highlight": "MẸ GỌI ĐIỆN",
+      "image": "nct_v60_scene2.jpg",
+      "video": "nct_v60_scene2.jpg"
+    },
+    {
+      "scene": 3,
+      "tag": "Tìm cớ",
+      "text": "Mẹ im một lúc, rồi lại hỏi câu khác. Bạn nghĩ mẹ dài dòng. Nhưng có thể mẹ chỉ đang tìm cớ để nói chuyện thêm.",
+      "highlight": "TÌM CỚ NÓI CHUYỆN THÊM",
+      "image": "nct_v60_scene3.jpg",
+      "video": "nct_v60_scene3.jpg"
+    },
+    {
+      "scene": 4,
+      "tag": "Nỗi sợ cô đơn",
+      "text": "Có những người già sợ điều khác bệnh tật: sợ ngày điện thoại không còn ai gọi.",
+      "highlight": "SỢ KHÔNG CÒN AI GỌI",
+      "image": "nct_v60_scene4.jpg",
+      "video": "nct_v60_scene4.jpg"
+    },
+    {
+      "scene": 5,
+      "tag": "Nghe thêm một phút",
+      "text": "Lần tới bố mẹ cằn nhằn, đừng ngắt lời. Nghe thêm một phút thôi.",
+      "highlight": "NGHE THÊM MỘT PHÚT THÔI",
+      "image": "nct_v60_scene5.jpg",
+      "video": "nct_v60_scene5.jpg"
+    }
+  ]
+}

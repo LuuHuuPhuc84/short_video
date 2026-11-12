@@ -1,0 +1,731 @@
+{
+  "id": "nct_v67",
+  "episode": 67,
+  "title": "Khoảng Lặng Của Nửa Chén Trà",
+  "title_hook": "VÌ SAO CHỈ RÓT MỘT NỬA?",
+  "titleHook": "VÌ SAO CHỈ RÓT MỘT NỬA?",
+  "subtitle": "Triết lý Nửa Chén Trà",
+  "book": "NỬA CHÉN TRÀ",
+  "author": "Bài học cuộc sống",
+  "chapter": "Sống nhẹ",
+  "topic": "Ý nghĩa tên kênh Nửa Chén Trà & Khoảng lặng buông bớt",
+  "schedule": "2026-11-17 11:30",
+  "schedule_time": "2026-11-17 11:30",
+  "publishAt": "2026-11-17 11:30",
+  "scheduled_time": "2026-11-17T04:30:00Z",
+  "tags": [
+    "nct_v67",
+    "nuachentra",
+    "nhinsaudesongnhe",
+    "khoanglang",
+    "buongbo",
+    "trietly",
+    "chualanh",
+    "shorts"
+  ],
+  "description": "Có người hỏi tôi, tại sao lại là Nửa Chén Trà, mà không phải là một chén trà đầy đặn? Nửa Chén Trà — Nhìn sâu để sống nhẹ. #nct_v67 #nuachentra #nhinsaudesongnhe #khoanglang #buongbo #shorts",
+  "containsSyntheticMedia": true,
+  "bgm": "Gymnopedie No. 1",
+  "bgm_file": "gymnopedie_no_1.mp3",
+  "bgm_volume": 0.15,
+  "visual_type": "MIXED",
+  "scenes": [
+    {
+      "scene": 1,
+      "tag": "Hook 3s",
+      "text": "Có người hỏi tôi,, tại sao lại là Nửa Chén Trà,, mà không phải là một chén trà đầy đặn?",
+      "highlight": "VÌ SAO CHỈ RÓT MỘT NỬA?",
+      "image": "nct_v67_scene1.jpg",
+      "video": "nct_v67_scene1.jpg",
+      "startFrame": 0,
+      "durationInFrames": 152,
+      "words": [
+        {
+          "word": "Có",
+          "startFrame": 0,
+          "endFrame": 4
+        },
+        {
+          "word": "người",
+          "startFrame": 4,
+          "endFrame": 8
+        },
+        {
+          "word": "hỏi",
+          "startFrame": 8,
+          "endFrame": 16
+        },
+        {
+          "word": "tôi,,",
+          "startFrame": 16,
+          "endFrame": 24
+        },
+        {
+          "word": "tại",
+          "startFrame": 36,
+          "endFrame": 38
+        },
+        {
+          "word": "sao",
+          "startFrame": 38,
+          "endFrame": 46
+        },
+        {
+          "word": "lại",
+          "startFrame": 46,
+          "endFrame": 53
+        },
+        {
+          "word": "là",
+          "startFrame": 53,
+          "endFrame": 58
+        },
+        {
+          "word": "Nửa",
+          "startFrame": 58,
+          "endFrame": 64
+        },
+        {
+          "word": "Chén",
+          "startFrame": 64,
+          "endFrame": 69
+        },
+        {
+          "word": "Trà,,",
+          "startFrame": 69,
+          "endFrame": 79
+        },
+        {
+          "word": "mà",
+          "startFrame": 79,
+          "endFrame": 93
+        },
+        {
+          "word": "không",
+          "startFrame": 93,
+          "endFrame": 100
+        },
+        {
+          "word": "phải",
+          "startFrame": 100,
+          "endFrame": 107
+        },
+        {
+          "word": "là",
+          "startFrame": 107,
+          "endFrame": 112
+        },
+        {
+          "word": "một",
+          "startFrame": 112,
+          "endFrame": 116
+        },
+        {
+          "word": "chén",
+          "startFrame": 116,
+          "endFrame": 124
+        },
+        {
+          "word": "trà",
+          "startFrame": 124,
+          "endFrame": 132
+        },
+        {
+          "word": "đầy",
+          "startFrame": 132,
+          "endFrame": 138
+        },
+        {
+          "word": "đặn?",
+          "startFrame": 138,
+          "endFrame": 143
+        }
+      ]
+    },
+    {
+      "scene": 2,
+      "tag": "Đầy quá sẽ bỏng tay",
+      "text": "Bởi vì một chén trà rót đầy tới mép,, khi cầm lên sẽ làm bỏng tay,, khi bước đi sẽ sóng sánh đổ ra ngoài.",
+      "highlight": "ĐẦY QUÁ SẼ BỎNG TAY",
+      "image": "nct_v67_scene2.jpg",
+      "video": "nct_v67_scene2.jpg",
+      "startFrame": 162,
+      "durationInFrames": 194,
+      "words": [
+        {
+          "word": "Bởi",
+          "startFrame": 0,
+          "endFrame": 4
+        },
+        {
+          "word": "vì",
+          "startFrame": 4,
+          "endFrame": 10
+        },
+        {
+          "word": "một",
+          "startFrame": 10,
+          "endFrame": 16
+        },
+        {
+          "word": "chén",
+          "startFrame": 16,
+          "endFrame": 22
+        },
+        {
+          "word": "trà",
+          "startFrame": 22,
+          "endFrame": 30
+        },
+        {
+          "word": "rót",
+          "startFrame": 30,
+          "endFrame": 35
+        },
+        {
+          "word": "đầy",
+          "startFrame": 35,
+          "endFrame": 49
+        },
+        {
+          "word": "tới",
+          "startFrame": 49,
+          "endFrame": 53
+        },
+        {
+          "word": "mép,,",
+          "startFrame": 53,
+          "endFrame": 59
+        },
+        {
+          "word": "khi",
+          "startFrame": 75,
+          "endFrame": 79
+        },
+        {
+          "word": "cầm",
+          "startFrame": 79,
+          "endFrame": 88
+        },
+        {
+          "word": "lên",
+          "startFrame": 88,
+          "endFrame": 92
+        },
+        {
+          "word": "sẽ",
+          "startFrame": 92,
+          "endFrame": 100
+        },
+        {
+          "word": "làm",
+          "startFrame": 100,
+          "endFrame": 105
+        },
+        {
+          "word": "bỏng",
+          "startFrame": 105,
+          "endFrame": 112
+        },
+        {
+          "word": "tay,,",
+          "startFrame": 112,
+          "endFrame": 116
+        },
+        {
+          "word": "khi",
+          "startFrame": 131,
+          "endFrame": 133
+        },
+        {
+          "word": "bước",
+          "startFrame": 133,
+          "endFrame": 141
+        },
+        {
+          "word": "đi",
+          "startFrame": 141,
+          "endFrame": 145
+        },
+        {
+          "word": "sẽ",
+          "startFrame": 145,
+          "endFrame": 152
+        },
+        {
+          "word": "sóng",
+          "startFrame": 152,
+          "endFrame": 158
+        },
+        {
+          "word": "sánh",
+          "startFrame": 158,
+          "endFrame": 165
+        },
+        {
+          "word": "đổ",
+          "startFrame": 165,
+          "endFrame": 172
+        },
+        {
+          "word": "ra",
+          "startFrame": 172,
+          "endFrame": 175
+        },
+        {
+          "word": "ngoài.",
+          "startFrame": 175,
+          "endFrame": 184
+        }
+      ]
+    },
+    {
+      "scene": 3,
+      "tag": "Tâm trí như chén trà",
+      "text": "Lòng người cũng vậy. Nếu nhồi nhét đủ thứ tham vọng,, hơn thua và oán giận,, thì lấy đâu ra khoảng trống để hương vị bình yên đọng lại?",
+      "highlight": "TÂM TRÍ CŨNG NHƯ CHÉN TRÀ",
+      "image": "nct_v67_scene3.jpg",
+      "video": "nct_v67_scene3.jpg",
+      "startFrame": 367,
+      "durationInFrames": 208,
+      "words": [
+        {
+          "word": "Lòng",
+          "startFrame": 1,
+          "endFrame": 8
+        },
+        {
+          "word": "người",
+          "startFrame": 8,
+          "endFrame": 14
+        },
+        {
+          "word": "cũng",
+          "startFrame": 14,
+          "endFrame": 19
+        },
+        {
+          "word": "vậy.",
+          "startFrame": 19,
+          "endFrame": 25
+        },
+        {
+          "word": "Nếu",
+          "startFrame": 40,
+          "endFrame": 44
+        },
+        {
+          "word": "nhồi",
+          "startFrame": 44,
+          "endFrame": 52
+        },
+        {
+          "word": "nhét",
+          "startFrame": 52,
+          "endFrame": 58
+        },
+        {
+          "word": "đủ",
+          "startFrame": 64,
+          "endFrame": 66
+        },
+        {
+          "word": "thứ",
+          "startFrame": 64,
+          "endFrame": 70
+        },
+        {
+          "word": "tham",
+          "startFrame": 70,
+          "endFrame": 77
+        },
+        {
+          "word": "vọng,,",
+          "startFrame": 77,
+          "endFrame": 85
+        },
+        {
+          "word": "hơn",
+          "startFrame": 92,
+          "endFrame": 94
+        },
+        {
+          "word": "thua",
+          "startFrame": 94,
+          "endFrame": 102
+        },
+        {
+          "word": "và",
+          "startFrame": 102,
+          "endFrame": 107
+        },
+        {
+          "word": "oán",
+          "startFrame": 107,
+          "endFrame": 112
+        },
+        {
+          "word": "giận,,",
+          "startFrame": 112,
+          "endFrame": 119
+        },
+        {
+          "word": "thì",
+          "startFrame": 119,
+          "endFrame": 131
+        },
+        {
+          "word": "lấy",
+          "startFrame": 131,
+          "endFrame": 136
+        },
+        {
+          "word": "đâu",
+          "startFrame": 136,
+          "endFrame": 141
+        },
+        {
+          "word": "ra",
+          "startFrame": 141,
+          "endFrame": 146
+        },
+        {
+          "word": "khoảng",
+          "startFrame": 146,
+          "endFrame": 153
+        },
+        {
+          "word": "trống",
+          "startFrame": 153,
+          "endFrame": 160
+        },
+        {
+          "word": "để",
+          "startFrame": 160,
+          "endFrame": 164
+        },
+        {
+          "word": "hương",
+          "startFrame": 164,
+          "endFrame": 169
+        },
+        {
+          "word": "vị",
+          "startFrame": 169,
+          "endFrame": 175
+        },
+        {
+          "word": "bình",
+          "startFrame": 175,
+          "endFrame": 181
+        },
+        {
+          "word": "yên",
+          "startFrame": 181,
+          "endFrame": 187
+        },
+        {
+          "word": "đọng",
+          "startFrame": 187,
+          "endFrame": 191
+        },
+        {
+          "word": "lại?",
+          "startFrame": 191,
+          "endFrame": 197
+        }
+      ]
+    },
+    {
+      "scene": 4,
+      "tag": "Nửa phần vơi là trí tuệ",
+      "text": "Nửa chén nước là để thưởng thức cuộc đời. Còn nửa phần vơi,, chính là khoảng lặng để ta bao dung cho người,, và tha thứ cho mình.",
+      "highlight": "NỬA PHẦN VƠI LÀ TRÍ TUỆ",
+      "image": "nct_v67_scene4.jpg",
+      "video": "nct_v67_scene4.jpg",
+      "startFrame": 585,
+      "durationInFrames": 229,
+      "words": [
+        {
+          "word": "Nửa",
+          "startFrame": 0,
+          "endFrame": 9
+        },
+        {
+          "word": "chén",
+          "startFrame": 9,
+          "endFrame": 14
+        },
+        {
+          "word": "nước",
+          "startFrame": 14,
+          "endFrame": 20
+        },
+        {
+          "word": "là",
+          "startFrame": 20,
+          "endFrame": 31
+        },
+        {
+          "word": "để",
+          "startFrame": 31,
+          "endFrame": 35
+        },
+        {
+          "word": "thưởng",
+          "startFrame": 35,
+          "endFrame": 41
+        },
+        {
+          "word": "thức",
+          "startFrame": 41,
+          "endFrame": 50
+        },
+        {
+          "word": "cuộc",
+          "startFrame": 50,
+          "endFrame": 54
+        },
+        {
+          "word": "đời.",
+          "startFrame": 54,
+          "endFrame": 62
+        },
+        {
+          "word": "Còn",
+          "startFrame": 81,
+          "endFrame": 88
+        },
+        {
+          "word": "nửa",
+          "startFrame": 88,
+          "endFrame": 96
+        },
+        {
+          "word": "phần",
+          "startFrame": 96,
+          "endFrame": 101
+        },
+        {
+          "word": "vơi,,",
+          "startFrame": 101,
+          "endFrame": 108
+        },
+        {
+          "word": "chính",
+          "startFrame": 120,
+          "endFrame": 123
+        },
+        {
+          "word": "là",
+          "startFrame": 123,
+          "endFrame": 131
+        },
+        {
+          "word": "khoảng",
+          "startFrame": 131,
+          "endFrame": 138
+        },
+        {
+          "word": "lặng",
+          "startFrame": 138,
+          "endFrame": 146
+        },
+        {
+          "word": "để",
+          "startFrame": 146,
+          "endFrame": 150
+        },
+        {
+          "word": "ta",
+          "startFrame": 150,
+          "endFrame": 156
+        },
+        {
+          "word": "bao",
+          "startFrame": 156,
+          "endFrame": 161
+        },
+        {
+          "word": "dung",
+          "startFrame": 161,
+          "endFrame": 167
+        },
+        {
+          "word": "cho",
+          "startFrame": 167,
+          "endFrame": 171
+        },
+        {
+          "word": "người,,",
+          "startFrame": 171,
+          "endFrame": 178
+        },
+        {
+          "word": "và",
+          "startFrame": 178,
+          "endFrame": 192
+        },
+        {
+          "word": "tha",
+          "startFrame": 192,
+          "endFrame": 200
+        },
+        {
+          "word": "thứ",
+          "startFrame": 200,
+          "endFrame": 204
+        },
+        {
+          "word": "cho",
+          "startFrame": 204,
+          "endFrame": 211
+        },
+        {
+          "word": "mình.",
+          "startFrame": 211,
+          "endFrame": 216
+        }
+      ]
+    },
+    {
+      "scene": 5,
+      "tag": "Nhìn sâu để sống nhẹ",
+      "text": "Chấp nhận cuộc đời không trọn vẹn,, chính là khởi đầu của sự thảnh thơi. Nhìn sâu để hiểu,, buông bớt để sống nhẹ.",
+      "highlight": "NHÌN SÂU ĐỂ SỐNG NHẸ",
+      "image": "nct_v67_scene5.jpg",
+      "video": "nct_v67_scene5.jpg",
+      "startFrame": 824,
+      "durationInFrames": 190,
+      "words": [
+        {
+          "word": "Chấp",
+          "startFrame": 0,
+          "endFrame": 6
+        },
+        {
+          "word": "nhận",
+          "startFrame": 6,
+          "endFrame": 12
+        },
+        {
+          "word": "cuộc",
+          "startFrame": 12,
+          "endFrame": 17
+        },
+        {
+          "word": "đời",
+          "startFrame": 17,
+          "endFrame": 26
+        },
+        {
+          "word": "không",
+          "startFrame": 26,
+          "endFrame": 32
+        },
+        {
+          "word": "trọn",
+          "startFrame": 32,
+          "endFrame": 39
+        },
+        {
+          "word": "vẹn,,",
+          "startFrame": 39,
+          "endFrame": 50
+        },
+        {
+          "word": "chính",
+          "startFrame": 58,
+          "endFrame": 61
+        },
+        {
+          "word": "là",
+          "startFrame": 61,
+          "endFrame": 67
+        },
+        {
+          "word": "khởi",
+          "startFrame": 67,
+          "endFrame": 74
+        },
+        {
+          "word": "đầu",
+          "startFrame": 74,
+          "endFrame": 78
+        },
+        {
+          "word": "của",
+          "startFrame": 78,
+          "endFrame": 85
+        },
+        {
+          "word": "sự",
+          "startFrame": 85,
+          "endFrame": 89
+        },
+        {
+          "word": "thảnh",
+          "startFrame": 89,
+          "endFrame": 95
+        },
+        {
+          "word": "thơi.",
+          "startFrame": 95,
+          "endFrame": 107
+        },
+        {
+          "word": "Nhìn",
+          "startFrame": 118,
+          "endFrame": 120
+        },
+        {
+          "word": "sâu",
+          "startFrame": 120,
+          "endFrame": 128
+        },
+        {
+          "word": "để",
+          "startFrame": 128,
+          "endFrame": 134
+        },
+        {
+          "word": "hiểu,,",
+          "startFrame": 134,
+          "endFrame": 140
+        },
+        {
+          "word": "buông",
+          "startFrame": 152,
+          "endFrame": 156
+        },
+        {
+          "word": "bớt",
+          "startFrame": 156,
+          "endFrame": 162
+        },
+        {
+          "word": "để",
+          "startFrame": 162,
+          "endFrame": 167
+        },
+        {
+          "word": "sống",
+          "startFrame": 167,
+          "endFrame": 173
+        },
+        {
+          "word": "nhẹ.",
+          "startFrame": 173,
+          "endFrame": 181
+        }
+      ]
+    }
+  ],
+  "durationInFrames": 1025,
+  "fps": 30,
+  "music": "Gymnopedie No. 1",
+  "musicFile": "gymnopedie_no_1.mp3",
+  "musicMood": "meditative",
+  "thumbnailImage": "thumbnail_nct_v67.jpg",
+  "audioFile": "voiceover_nct_v67.wav"
+}

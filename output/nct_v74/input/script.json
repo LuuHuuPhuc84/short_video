@@ -1,0 +1,74 @@
+{
+  "id": "nct_v74",
+  "episode": 74,
+  "title": "Căn Bệnh \"Đợi Khi Nào...\"",
+  "title_hook": "CÂU NÓI QUEN THUỘC NHẤT",
+  "titleHook": "CÂU NÓI QUEN THUỘC NHẤT",
+  "subtitle": "Triết lý Nửa Chén Trà",
+  "book": "NỬA CHÉN TRÀ",
+  "author": "Bài học cuộc sống",
+  "chapter": "Sống nhẹ",
+  "topic": "Căn Bệnh \"Đợi Khi Nào...\"",
+  "schedule": "2026-11-20 19:30",
+  "schedule_time": "2026-11-20 19:30",
+  "publishAt": "2026-11-20 19:30",
+  "scheduled_time": "2026-11-20T12:30:00Z",
+  "tags": [
+    "nct_v74",
+    "nuachentra",
+    "nhinsaudesongnhe",
+    "khoanglang",
+    "buongbo",
+    "trietly",
+    "chualanh",
+    "shorts"
+  ],
+  "description": "Đợi khi nào kiếm đủ tiền sẽ nghỉ ngơi. Đợi khi nào con lớn sẽ đưa bố mẹ đi du lịch. Đợi khi nào rảnh sẽ ngồi uống trà với bạn cũ. Nửa Chén Trà — Nhìn sâu để sống nhẹ. #nct_v74 #nuachentra #nhinsaudesongnhe #shorts",
+  "containsSyntheticMedia": true,
+  "bgm": "Gymnopedie No. 1",
+  "bgm_file": "gymnopedie_no_1.mp3",
+  "bgm_volume": 0.15,
+  "visual_type": "MIXED",
+  "scenes": [
+    {
+      "scene": 1,
+      "tag": "CÂU NÓI QUEN THUỘC NHẤT",
+      "text": "Đợi khi nào kiếm đủ tiền sẽ nghỉ ngơi. Đợi khi nào con lớn sẽ đưa bố mẹ đi du lịch. Đợi khi nào rảnh sẽ ngồi uống trà với bạn cũ.",
+      "highlight": "CÂU NÓI QUEN THUỘC NHẤT",
+      "image": "nct_v74_scene1.jpg",
+      "video": "nct_v74_scene1.jpg"
+    },
+    {
+      "scene": 2,
+      "tag": "CUỘC ĐỜI KHÔNG BIẾT ĐỢI",
+      "text": "Chúng ta cứ sống mãi trong hai chữ \"Đợi khi nào\",, như thể thời gian và những người thương yêu sẽ đứng yên một chỗ chờ ta thu xếp xong công việc.",
+      "highlight": "CUỘC ĐỜI KHÔNG BIẾT ĐỢI",
+      "image": "nct_v74_scene2.jpg",
+      "video": "nct_v74_scene2.jpg"
+    },
+    {
+      "scene": 3,
+      "tag": "KHI RẢNH THÌ CHÂN ĐÃ MỎI",
+      "text": "Nhưng sự thật tàn nhẫn là: Đến ngày bạn có đủ tiền và thời gian,, thì đầu gối của cha mẹ đã đau không còn đi xa được nữa.",
+      "highlight": "KHI RẢNH THÌ CHÂN ĐÃ MỎI",
+      "image": "nct_v74_scene3.jpg",
+      "video": "nct_v74_scene3.jpg"
+    },
+    {
+      "scene": 4,
+      "tag": "KHÔNG CÓ LÚC NÀO HOÀN HẢO",
+      "text": "Trên đời này,, chẳng bao giờ có thời điểm hoàn hảo tuyệt đối. Công việc thì làm cả đời không hết,, còn năm tháng thì một đi không trở lại.",
+      "highlight": "KHÔNG CÓ LÚC NÀO HOÀN HẢO",
+      "image": "nct_v74_scene4.jpg",
+      "video": "nct_v74_scene4.jpg"
+    },
+    {
+      "scene": 5,
+      "tag": "THƯƠNG AI HÃY THƯƠNG NGAY",
+      "text": "Đừng hẹn lần sau nữa. Muốn thăm ai hãy đi ngay cuối tuần này. Muốn nói thương ai,, hãy nói ngay khi họ còn nghe thấy.",
+      "highlight": "THƯƠNG AI HÃY THƯƠNG NGAY",
+      "image": "nct_v74_scene5.jpg",
+      "video": "nct_v74_scene5.jpg"
+    }
+  ]
+}

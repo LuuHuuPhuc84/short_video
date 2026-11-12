@@ -1,0 +1,74 @@
+{
+  "id": "nct_v71",
+  "episode": 71,
+  "title": "Quy Tắc \"Chậm 3 Giây\" Khi Nóng Giận",
+  "title_hook": "MỘT LỜI LỠ MIỆNG",
+  "titleHook": "MỘT LỜI LỠ MIỆNG",
+  "subtitle": "Triết lý Nửa Chén Trà",
+  "book": "NỬA CHÉN TRÀ",
+  "author": "Bài học cuộc sống",
+  "chapter": "Sống nhẹ",
+  "topic": "Quy Tắc \"Chậm 3 Giây\" Khi Nóng Giận",
+  "schedule": "2026-11-19 11:30",
+  "schedule_time": "2026-11-19 11:30",
+  "publishAt": "2026-11-19 11:30",
+  "scheduled_time": "2026-11-19T04:30:00Z",
+  "tags": [
+    "nct_v71",
+    "nuachentra",
+    "nhinsaudesongnhe",
+    "khoanglang",
+    "buongbo",
+    "trietly",
+    "chualanh",
+    "shorts"
+  ],
+  "description": "Có những mối quan hệ mất mười năm để vun đắp,, nhưng chỉ mất đúng ba giây nóng giận để phá hủy hoàn toàn. Nửa Chén Trà — Nhìn sâu để sống nhẹ. #nct_v71 #nuachentra #nhinsaudesongnhe #shorts",
+  "containsSyntheticMedia": true,
+  "bgm": "Gymnopedie No. 1",
+  "bgm_file": "gymnopedie_no_1.mp3",
+  "bgm_volume": 0.15,
+  "visual_type": "MIXED",
+  "scenes": [
+    {
+      "scene": 1,
+      "tag": "MỘT LỜI LỠ MIỆNG",
+      "text": "Có những mối quan hệ mất mười năm để vun đắp,, nhưng chỉ mất đúng ba giây nóng giận để phá hủy hoàn toàn.",
+      "highlight": "MỘT LỜI LỠ MIỆNG",
+      "image": "nct_v71_scene1.jpg",
+      "video": "nct_v71_scene1.jpg"
+    },
+    {
+      "scene": 2,
+      "tag": "LỜI NÓI NHƯ BÁT NƯỚC HẤT ĐI",
+      "text": "Khi cơn giận bốc lên đầu,, não bộ luôn xúi giục ta tìm câu nói sắc bén nhất để làm đau người đối diện.",
+      "highlight": "LỜI NÓI NHƯ BÁT NƯỚC HẤT ĐI",
+      "image": "nct_v71_scene2.jpg",
+      "video": "nct_v71_scene2.jpg"
+    },
+    {
+      "scene": 3,
+      "tag": "NGƯỜI ĐAU NHẤT LÀ TA",
+      "text": "Nhưng hả giận được một phút,, đến khi bình tâm lại,, vết sẹo trong lòng người kia thì còn mãi,, mà nỗi ân hận của ta cũng chẳng nguôi.",
+      "highlight": "NGƯỜI ĐAU NHẤT LÀ TA",
+      "image": "nct_v71_scene3.jpg",
+      "video": "nct_v71_scene3.jpg"
+    },
+    {
+      "scene": 4,
+      "tag": "NUỐT NƯỚC BỌT · ĐẾM ĐẾN 3",
+      "text": "Cổ nhân dạy,, trước khi định buông lời nặng nề,, hãy khép miệng lại,, nuốt một ngụm nước bọt và thầm đếm từ một đến ba.",
+      "highlight": "NUỐT NƯỚC BỌT · ĐẾM ĐẾN 3",
+      "image": "nct_v71_scene4.jpg",
+      "video": "nct_v71_scene4.jpg"
+    },
+    {
+      "scene": 5,
+      "tag": "BA GIÂY CỨU MỘT MỐI TÌNH",
+      "text": "Ba giây im lặng ấy không làm bạn yếu thế đi,, mà giúp bạn giữ lại được người mình thương.",
+      "highlight": "BA GIÂY CỨU MỘT MỐI TÌNH",
+      "image": "nct_v71_scene5.jpg",
+      "video": "nct_v71_scene5.jpg"
+    }
+  ]
+}

@@ -1,0 +1,626 @@
+{
+  "id": "nct_v64",
+  "episode": 64,
+  "title": "Ngồi cạnh con, nhưng tâm trí ở đâu?",
+  "title_hook": "CÓ MẶT HAY CHỈ NGỒI ĐẤY?",
+  "titleHook": "CÓ MẶT HAY CHỈ NGỒI ĐẤY?",
+  "subtitle": "Gia đình & Thấu hiểu",
+  "book": "NỬA CHÉN TRÀ",
+  "author": "Bài học cuộc sống",
+  "chapter": "Gia đình",
+  "topic": "Sự hiện diện đích thực & Tình cảm gia đình",
+  "schedule": "2026-11-15 11:30",
+  "schedule_time": "2026-11-15 11:30",
+  "publishAt": "2026-11-15 11:30",
+  "scheduled_time": "2026-11-15T04:30:00Z",
+  "tags": [
+    "nct_v64",
+    "nuachentra",
+    "nhinsaudesongnhe",
+    "comat",
+    "daycon",
+    "giadinh",
+    "thauhieu",
+    "shorts"
+  ],
+  "description": "Ngồi cạnh con, nhưng tâm trí ở đâu? Bạn có bao giờ ngồi ăn cơm cùng con, nhưng tay vẫn lướt điện thoại? Nửa Chén Trà — Nhìn sâu để sống nhẹ. #nct_v64 #giadinh #daycon #thauhieu #nuachentra #shorts",
+  "containsSyntheticMedia": true,
+  "bgm": "Touching Story",
+  "bgm_file": "touching_story.mp3",
+  "bgm_volume": 0.15,
+  "visual_type": "Điện ảnh 35mm hoài niệm Á Đông",
+  "scenes": [
+    {
+      "scene": 1,
+      "tag": "Hook 3s",
+      "text": "Bạn có bao giờ ngồi ăn cơm cùng con, nhưng tay vẫn lướt điện thoại?",
+      "highlight": "CÓ MẶT HAY CHỈ NGỒI ĐẤY?",
+      "image": "nct_v64_scene1.jpg",
+      "video": "nct_v64_scene1.jpg",
+      "startFrame": 0,
+      "durationInFrames": 114,
+      "words": [
+        {
+          "word": "Bạn",
+          "startFrame": 0,
+          "endFrame": 4
+        },
+        {
+          "word": "có",
+          "startFrame": 4,
+          "endFrame": 8
+        },
+        {
+          "word": "bao",
+          "startFrame": 8,
+          "endFrame": 13
+        },
+        {
+          "word": "giờ",
+          "startFrame": 13,
+          "endFrame": 18
+        },
+        {
+          "word": "ngồi",
+          "startFrame": 18,
+          "endFrame": 27
+        },
+        {
+          "word": "ăn",
+          "startFrame": 27,
+          "endFrame": 32
+        },
+        {
+          "word": "cơm",
+          "startFrame": 32,
+          "endFrame": 42
+        },
+        {
+          "word": "cùng",
+          "startFrame": 42,
+          "endFrame": 47
+        },
+        {
+          "word": "con,",
+          "startFrame": 47,
+          "endFrame": 56
+        },
+        {
+          "word": "nhưng",
+          "startFrame": 71,
+          "endFrame": 74
+        },
+        {
+          "word": "tay",
+          "startFrame": 74,
+          "endFrame": 82
+        },
+        {
+          "word": "vẫn",
+          "startFrame": 82,
+          "endFrame": 87
+        },
+        {
+          "word": "lướt",
+          "startFrame": 87,
+          "endFrame": 96
+        },
+        {
+          "word": "điện",
+          "startFrame": 96,
+          "endFrame": 102
+        },
+        {
+          "word": "thoại?",
+          "startFrame": 102,
+          "endFrame": 110
+        }
+      ]
+    },
+    {
+      "scene": 2,
+      "tag": "Ngồi cạnh nhưng xa cách",
+      "text": "Con hỏi một câu, ta ậm ừ một câu. Ta tưởng mình đang ở bên con, nhưng thực ra chỉ có cái xác ngồi đó.",
+      "highlight": "CHỈ CÓ CÁI XÁC NGỒI ĐÓ",
+      "image": "nct_v64_scene2.jpg",
+      "video": "nct_v64_scene2.jpg",
+      "startFrame": 125,
+      "durationInFrames": 193,
+      "words": [
+        {
+          "word": "Con",
+          "startFrame": 1,
+          "endFrame": 4
+        },
+        {
+          "word": "hỏi",
+          "startFrame": 4,
+          "endFrame": 11
+        },
+        {
+          "word": "một",
+          "startFrame": 11,
+          "endFrame": 18
+        },
+        {
+          "word": "câu,",
+          "startFrame": 18,
+          "endFrame": 28
+        },
+        {
+          "word": "ta",
+          "startFrame": 35,
+          "endFrame": 41
+        },
+        {
+          "word": "ậm",
+          "startFrame": 41,
+          "endFrame": 51
+        },
+        {
+          "word": "ừ",
+          "startFrame": 51,
+          "endFrame": 56
+        },
+        {
+          "word": "một",
+          "startFrame": 56,
+          "endFrame": 69
+        },
+        {
+          "word": "câu.",
+          "startFrame": 77,
+          "endFrame": 79
+        },
+        {
+          "word": "Ta",
+          "startFrame": 79,
+          "endFrame": 86
+        },
+        {
+          "word": "tưởng",
+          "startFrame": 86,
+          "endFrame": 91
+        },
+        {
+          "word": "mình",
+          "startFrame": 91,
+          "endFrame": 99
+        },
+        {
+          "word": "đang",
+          "startFrame": 99,
+          "endFrame": 105
+        },
+        {
+          "word": "ở",
+          "startFrame": 105,
+          "endFrame": 110
+        },
+        {
+          "word": "bên",
+          "startFrame": 110,
+          "endFrame": 118
+        },
+        {
+          "word": "con,",
+          "startFrame": 127,
+          "endFrame": 129
+        },
+        {
+          "word": "nhưng",
+          "startFrame": 129,
+          "endFrame": 135
+        },
+        {
+          "word": "thực",
+          "startFrame": 135,
+          "endFrame": 142
+        },
+        {
+          "word": "ra",
+          "startFrame": 142,
+          "endFrame": 151
+        },
+        {
+          "word": "chỉ",
+          "startFrame": 151,
+          "endFrame": 157
+        },
+        {
+          "word": "có",
+          "startFrame": 157,
+          "endFrame": 163
+        },
+        {
+          "word": "cái",
+          "startFrame": 163,
+          "endFrame": 169
+        },
+        {
+          "word": "xác",
+          "startFrame": 169,
+          "endFrame": 178
+        },
+        {
+          "word": "ngồi",
+          "startFrame": 178,
+          "endFrame": 184
+        },
+        {
+          "word": "đó.",
+          "startFrame": 184,
+          "endFrame": 190
+        }
+      ]
+    },
+    {
+      "scene": 3,
+      "tag": "Trẻ con nhạy cảm",
+      "text": "Trẻ con nhạy cảm lắm. Chúng không cần một người lớn bận rộn ngồi bên cạnh giả vờ lắng nghe.",
+      "highlight": "TRẺ CON NHẬY CẢM LẮM",
+      "image": "nct_v64_scene3.jpg",
+      "video": "nct_v64_scene3.jpg",
+      "startFrame": 328,
+      "durationInFrames": 158,
+      "words": [
+        {
+          "word": "Trẻ",
+          "startFrame": 1,
+          "endFrame": 6
+        },
+        {
+          "word": "con",
+          "startFrame": 6,
+          "endFrame": 12
+        },
+        {
+          "word": "nhạy",
+          "startFrame": 12,
+          "endFrame": 19
+        },
+        {
+          "word": "cảm",
+          "startFrame": 19,
+          "endFrame": 26
+        },
+        {
+          "word": "lắm.",
+          "startFrame": 26,
+          "endFrame": 36
+        },
+        {
+          "word": "Chúng",
+          "startFrame": 50,
+          "endFrame": 54
+        },
+        {
+          "word": "không",
+          "startFrame": 54,
+          "endFrame": 60
+        },
+        {
+          "word": "cần",
+          "startFrame": 60,
+          "endFrame": 65
+        },
+        {
+          "word": "một",
+          "startFrame": 65,
+          "endFrame": 72
+        },
+        {
+          "word": "người",
+          "startFrame": 72,
+          "endFrame": 77
+        },
+        {
+          "word": "lớn",
+          "startFrame": 77,
+          "endFrame": 86
+        },
+        {
+          "word": "bận",
+          "startFrame": 86,
+          "endFrame": 93
+        },
+        {
+          "word": "rộn",
+          "startFrame": 93,
+          "endFrame": 101
+        },
+        {
+          "word": "ngồi",
+          "startFrame": 101,
+          "endFrame": 108
+        },
+        {
+          "word": "bên",
+          "startFrame": 108,
+          "endFrame": 113
+        },
+        {
+          "word": "cạnh",
+          "startFrame": 113,
+          "endFrame": 119
+        },
+        {
+          "word": "giả",
+          "startFrame": 119,
+          "endFrame": 128
+        },
+        {
+          "word": "vờ",
+          "startFrame": 128,
+          "endFrame": 135
+        },
+        {
+          "word": "lắng",
+          "startFrame": 135,
+          "endFrame": 142
+        },
+        {
+          "word": "nghe.",
+          "startFrame": 142,
+          "endFrame": 150
+        }
+      ]
+    },
+    {
+      "scene": 4,
+      "tag": "Ánh mắt trọn vẹn",
+      "text": "Chúng cần ánh mắt của bạn. Cần một lời hỏi han trọn vẹn mười phút, hơn là cả buổi tối ngồi chung phòng nhưng xa cách.",
+      "highlight": "CẦN ÁNH MẮT CỦA BẠN",
+      "image": "nct_v64_scene4.jpg",
+      "video": "nct_v64_scene4.jpg",
+      "startFrame": 497,
+      "durationInFrames": 196,
+      "words": [
+        {
+          "word": "Chúng",
+          "startFrame": 1,
+          "endFrame": 6
+        },
+        {
+          "word": "cần",
+          "startFrame": 6,
+          "endFrame": 11
+        },
+        {
+          "word": "ánh",
+          "startFrame": 11,
+          "endFrame": 19
+        },
+        {
+          "word": "mắt",
+          "startFrame": 19,
+          "endFrame": 23
+        },
+        {
+          "word": "của",
+          "startFrame": 23,
+          "endFrame": 29
+        },
+        {
+          "word": "bạn.",
+          "startFrame": 29,
+          "endFrame": 37
+        },
+        {
+          "word": "Cần",
+          "startFrame": 50,
+          "endFrame": 54
+        },
+        {
+          "word": "một",
+          "startFrame": 54,
+          "endFrame": 59
+        },
+        {
+          "word": "lời",
+          "startFrame": 59,
+          "endFrame": 65
+        },
+        {
+          "word": "hỏi",
+          "startFrame": 65,
+          "endFrame": 74
+        },
+        {
+          "word": "han",
+          "startFrame": 74,
+          "endFrame": 82
+        },
+        {
+          "word": "trọn",
+          "startFrame": 82,
+          "endFrame": 87
+        },
+        {
+          "word": "vẹn",
+          "startFrame": 87,
+          "endFrame": 97
+        },
+        {
+          "word": "mười",
+          "startFrame": 97,
+          "endFrame": 103
+        },
+        {
+          "word": "phút,",
+          "startFrame": 103,
+          "endFrame": 112
+        },
+        {
+          "word": "hơn",
+          "startFrame": 112,
+          "endFrame": 122
+        },
+        {
+          "word": "là",
+          "startFrame": 122,
+          "endFrame": 128
+        },
+        {
+          "word": "cả",
+          "startFrame": 128,
+          "endFrame": 133
+        },
+        {
+          "word": "buổi",
+          "startFrame": 133,
+          "endFrame": 139
+        },
+        {
+          "word": "tối",
+          "startFrame": 139,
+          "endFrame": 147
+        },
+        {
+          "word": "ngồi",
+          "startFrame": 147,
+          "endFrame": 154
+        },
+        {
+          "word": "chung",
+          "startFrame": 154,
+          "endFrame": 160
+        },
+        {
+          "word": "phòng",
+          "startFrame": 160,
+          "endFrame": 168
+        },
+        {
+          "word": "nhưng",
+          "startFrame": 174,
+          "endFrame": 177
+        },
+        {
+          "word": "xa",
+          "startFrame": 177,
+          "endFrame": 185
+        },
+        {
+          "word": "cách.",
+          "startFrame": 185,
+          "endFrame": 190
+        }
+      ]
+    },
+    {
+      "scene": 5,
+      "tag": "Thực sự có mặt",
+      "text": "Tuổi thơ của con trôi qua rất nhanh. Tối nay, buông điện thoại xuống, và thực sự có mặt.",
+      "highlight": "THỰC SỰ CÓ MẶT",
+      "image": "nct_v64_scene5.jpg",
+      "video": "nct_v64_scene5.jpg",
+      "startFrame": 703,
+      "durationInFrames": 161,
+      "words": [
+        {
+          "word": "Tuổi",
+          "startFrame": 0,
+          "endFrame": 5
+        },
+        {
+          "word": "thơ",
+          "startFrame": 5,
+          "endFrame": 12
+        },
+        {
+          "word": "của",
+          "startFrame": 12,
+          "endFrame": 17
+        },
+        {
+          "word": "con",
+          "startFrame": 17,
+          "endFrame": 23
+        },
+        {
+          "word": "trôi",
+          "startFrame": 23,
+          "endFrame": 30
+        },
+        {
+          "word": "qua",
+          "startFrame": 30,
+          "endFrame": 37
+        },
+        {
+          "word": "rất",
+          "startFrame": 37,
+          "endFrame": 44
+        },
+        {
+          "word": "nhanh.",
+          "startFrame": 44,
+          "endFrame": 56
+        },
+        {
+          "word": "Tối",
+          "startFrame": 69,
+          "endFrame": 72
+        },
+        {
+          "word": "nay,",
+          "startFrame": 72,
+          "endFrame": 81
+        },
+        {
+          "word": "buông",
+          "startFrame": 81,
+          "endFrame": 95
+        },
+        {
+          "word": "điện",
+          "startFrame": 95,
+          "endFrame": 101
+        },
+        {
+          "word": "thoại",
+          "startFrame": 101,
+          "endFrame": 108
+        },
+        {
+          "word": "xuống,",
+          "startFrame": 108,
+          "endFrame": 119
+        },
+        {
+          "word": "và",
+          "startFrame": 119,
+          "endFrame": 131
+        },
+        {
+          "word": "thực",
+          "startFrame": 131,
+          "endFrame": 137
+        },
+        {
+          "word": "sự",
+          "startFrame": 137,
+          "endFrame": 143
+        },
+        {
+          "word": "có",
+          "startFrame": 143,
+          "endFrame": 150
+        },
+        {
+          "word": "mặt.",
+          "startFrame": 150,
+          "endFrame": 156
+        }
+      ]
+    }
+  ],
+  "durationInFrames": 875,
+  "fps": 30,
+  "music": "Sad Trio",
+  "musicFile": "sad_trio.mp3",
+  "musicMood": "sad",
+  "thumbnailImage": "thumbnail_nct_v64.jpg",
+  "audioFile": "voiceover_nct_v64.wav"
+}

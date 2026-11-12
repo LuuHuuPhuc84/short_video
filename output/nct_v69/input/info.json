@@ -1,0 +1,77 @@
+{
+  "id": "nct_v69",
+  "episode": 69,
+  "title": "Chiếc Áo Đẹp Cất Trong Tủ",
+  "title_hook": "ĐỢI DỊP ĐẶC BIỆT",
+  "titleHook": "ĐỢI DỊP ĐẶC BIỆT",
+  "subtitle": "Triết lý Nửa Chén Trà",
+  "book": "NỬA CHÉN TRÀ",
+  "author": "Bài học cuộc sống",
+  "chapter": "Sống nhẹ",
+  "topic": "Chiếc Áo Đẹp Cất Trong Tủ",
+  "schedule": "2026-11-18 11:30",
+  "schedule_time": "2026-11-18 11:30",
+  "publishAt": "2026-11-18 11:30",
+  "scheduled_time": "2026-11-18T04:30:00Z",
+  "tags": [
+    "nct_v69",
+    "nuachentra",
+    "nhinsaudesongnhe",
+    "khoanglang",
+    "buongbo",
+    "trietly",
+    "chualanh",
+    "shorts"
+  ],
+  "description": "Trong tủ đồ của mẹ tôi,, có một chiếc áo lụa rất đẹp còn nguyên mác. Mẹ cứ cất mãi,, bảo để dành đến dịp đặc biệt mới mặc. Nửa Chén Trà — Nhìn sâu để sống nhẹ. #nct_v69 #nuachentra #nhinsaudesongnhe #shorts",
+  "containsSyntheticMedia": true,
+  "bgm": "Gymnopedie No. 1",
+  "bgm_file": "gymnopedie_no_1.mp3",
+  "bgm_volume": 0.15,
+  "visual_type": "MIXED",
+  "scenes": [
+    {
+      "scene": 1,
+      "tag": "ĐỢI DỊP ĐẶC BIỆT",
+      "text": "Trong tủ đồ của mẹ tôi,, có một chiếc áo lụa rất đẹp còn nguyên mác. Mẹ cứ cất mãi,, bảo để dành đến dịp đặc biệt mới mặc.",
+      "highlight": "ĐỢI DỊP ĐẶC BIỆT",
+      "image": "nct_v69_scene1.jpg",
+      "video": "nct_v69_scene1.jpg"
+    },
+    {
+      "scene": 2,
+      "tag": "CẤT ĐẾN KHI LỖI MỐT",
+      "text": "Năm năm trôi qua,, khi lấy chiếc áo ra,, vải đã ố vàng theo thời gian,, còn dáng người mẹ cũng chẳng còn vừa vặn nữa.",
+      "highlight": "CẤT ĐẾN KHI LỖI MỐT",
+      "image": "nct_v69_scene2.jpg",
+      "video": "nct_v69_scene2.jpg"
+    },
+    {
+      "scene": 3,
+      "tag": "CẢ ĐỜI ĐỂ DÀNH",
+      "text": "Chúng ta cũng thế. Bộ ấm chén đẹp cất tủ đợi khách quý,, lời yêu thương để dành đợi dịp kỷ niệm,, niềm vui cất lại đợi khi nào rảnh rỗi.",
+      "highlight": "CẢ ĐỜI ĐỂ DÀNH",
+      "image": "nct_v69_scene3.jpg",
+      "video": "nct_v69_scene3.jpg"
+    },
+    {
+      "scene": 4,
+      "tag": "HÔM NAY LÀ ĐẶC BIỆT NHẤT",
+      "text": "Ta quên mất rằng,, mỗi ngày còn được mở mắt thức dậy bình an,, đã là dịp đặc biệt nhất của cuộc đời rồi.",
+      "highlight": "HÔM NAY LÀ ĐẶC BIỆT NHẤT",
+      "image": "nct_v69_scene4.jpg",
+      "video": "nct_v69_scene4.jpg"
+    },
+    {
+      "scene": 5,
+      "tag": "ĐỪNG ĐỢI ĐẾN NGÀY MAI",
+      "text": "Chiếc áo đẹp hãy mặc ngay hôm nay. Chén trà ngon hãy pha cho chính mình uống. Đừng đợi đến khi mọi thứ đã quá muộn.",
+      "highlight": "ĐỪNG ĐỢI ĐẾN NGÀY MAI",
+      "image": "nct_v69_scene5.jpg",
+      "video": "nct_v69_scene5.jpg"
+    }
+  ],
+  "music": "Touching Moments Two - Higher",
+  "musicFile": "touching_moments.mp3",
+  "musicMood": "nostalgic"
+}

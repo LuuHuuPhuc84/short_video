@@ -79,6 +79,12 @@ def batch_render_via_github(video_ids, auto_cleanup=True, download_local=False):
             if ap.exists():
                 files_to_push.add(ap)
 
+        music_file = data.get("musicFile") or data.get("bgm_file")
+        if music_file:
+            mp = PUBLIC_DIR / music_file
+            if mp.exists():
+                files_to_push.add(mp)
+
         for sc in data.get("scenes", []):
             bg = sc.get("image") or sc.get("backgroundVideo") or sc.get("video")
             if bg:

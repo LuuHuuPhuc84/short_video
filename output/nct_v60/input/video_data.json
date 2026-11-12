@@ -1,0 +1,521 @@
+{
+  "id": "nct_v60",
+  "episode": 60,
+  "title": "Cằn nhằn, một cách thương rất vụng",
+  "title_hook": "VÌ SAO BỐ MẸ CẰN NHẰN?",
+  "titleHook": "VÌ SAO BỐ MẸ CẰN NHẰN?",
+  "subtitle": "Gia đình & Chữa lành",
+  "book": "NỬA CHÉN TRÀ",
+  "author": "Bài học cuộc sống",
+  "chapter": "Gia đình",
+  "topic": "Tâm lý gia đình & Tình thương cha mẹ",
+  "schedule": "2026-11-13 11:30",
+  "schedule_time": "2026-11-13 11:30",
+  "publishAt": "2026-11-13 11:30",
+  "scheduled_time": "2026-11-13T04:30:00Z",
+  "tags": [
+    "nct_v60",
+    "nuachentra",
+    "nhinsaudesongnhe",
+    "giadinh",
+    "chualanh",
+    "bome",
+    "tamly",
+    "shorts"
+  ],
+  "description": "Cằn nhằn, một cách thương rất vụng. Vì sao bố mẹ càng già càng hay cằn nhằn? Nửa Chén Trà — Nhìn sâu để sống nhẹ. #nct_v60 #giadinh #chualanh #nuachentra #shorts",
+  "containsSyntheticMedia": true,
+  "bgm": "Heartbreaking",
+  "bgm_file": "heartbreaking.mp3",
+  "bgm_volume": 0.15,
+  "visual_type": "Điện ảnh 35mm hoài niệm Á Đông",
+  "scenes": [
+    {
+      "scene": 1,
+      "tag": "Hook 3s",
+      "text": "Vì sao bố mẹ càng già càng hay cằn nhằn?",
+      "highlight": "VÌ SAO BỐ MẸ CẰN NHẰN?",
+      "image": "nct_v60_scene1.jpg",
+      "video": "nct_v60_scene1.jpg",
+      "startFrame": 0,
+      "durationInFrames": 81,
+      "words": [
+        {
+          "word": "Vì",
+          "startFrame": 0,
+          "endFrame": 6
+        },
+        {
+          "word": "sao",
+          "startFrame": 6,
+          "endFrame": 11
+        },
+        {
+          "word": "bố",
+          "startFrame": 11,
+          "endFrame": 18
+        },
+        {
+          "word": "mẹ",
+          "startFrame": 18,
+          "endFrame": 24
+        },
+        {
+          "word": "càng",
+          "startFrame": 24,
+          "endFrame": 33
+        },
+        {
+          "word": "già",
+          "startFrame": 33,
+          "endFrame": 41
+        },
+        {
+          "word": "càng",
+          "startFrame": 41,
+          "endFrame": 49
+        },
+        {
+          "word": "hay",
+          "startFrame": 49,
+          "endFrame": 54
+        },
+        {
+          "word": "cằn",
+          "startFrame": 54,
+          "endFrame": 63
+        },
+        {
+          "word": "nhằn?",
+          "startFrame": 63,
+          "endFrame": 70
+        }
+      ]
+    },
+    {
+      "scene": 2,
+      "tag": "Mẹ gọi",
+      "text": "Mẹ gọi điện, hỏi con ăn chưa, mặc ấm chưa. Con nói con biết rồi, mẹ ơi.",
+      "highlight": "MẸ GỌI ĐIỆN",
+      "image": "nct_v60_scene2.jpg",
+      "video": "nct_v60_scene2.jpg",
+      "startFrame": 92,
+      "durationInFrames": 147,
+      "words": [
+        {
+          "word": "Mẹ",
+          "startFrame": 0,
+          "endFrame": 2
+        },
+        {
+          "word": "gọi",
+          "startFrame": 2,
+          "endFrame": 8
+        },
+        {
+          "word": "điện,",
+          "startFrame": 8,
+          "endFrame": 17
+        },
+        {
+          "word": "hỏi",
+          "startFrame": 17,
+          "endFrame": 27
+        },
+        {
+          "word": "con",
+          "startFrame": 27,
+          "endFrame": 32
+        },
+        {
+          "word": "ăn",
+          "startFrame": 32,
+          "endFrame": 38
+        },
+        {
+          "word": "chưa,",
+          "startFrame": 38,
+          "endFrame": 49
+        },
+        {
+          "word": "mặc",
+          "startFrame": 59,
+          "endFrame": 62
+        },
+        {
+          "word": "ấm",
+          "startFrame": 62,
+          "endFrame": 70
+        },
+        {
+          "word": "chưa.",
+          "startFrame": 70,
+          "endFrame": 81
+        },
+        {
+          "word": "Con",
+          "startFrame": 93,
+          "endFrame": 95
+        },
+        {
+          "word": "nói",
+          "startFrame": 95,
+          "endFrame": 101
+        },
+        {
+          "word": "con",
+          "startFrame": 101,
+          "endFrame": 107
+        },
+        {
+          "word": "biết",
+          "startFrame": 107,
+          "endFrame": 113
+        },
+        {
+          "word": "rồi,",
+          "startFrame": 113,
+          "endFrame": 120
+        },
+        {
+          "word": "mẹ",
+          "startFrame": 120,
+          "endFrame": 130
+        },
+        {
+          "word": "ơi.",
+          "startFrame": 130,
+          "endFrame": 139
+        }
+      ]
+    },
+    {
+      "scene": 3,
+      "tag": "Tìm cớ",
+      "text": "Mẹ im một lúc, rồi lại hỏi câu khác. Bạn nghĩ mẹ dài dòng. Nhưng có thể mẹ chỉ đang tìm cớ để nói chuyện thêm.",
+      "highlight": "TÌM CỚ NÓI CHUYỆN THÊM",
+      "image": "nct_v60_scene3.jpg",
+      "video": "nct_v60_scene3.jpg",
+      "startFrame": 249,
+      "durationInFrames": 207,
+      "words": [
+        {
+          "word": "Mẹ",
+          "startFrame": 1,
+          "endFrame": 6
+        },
+        {
+          "word": "im",
+          "startFrame": 6,
+          "endFrame": 11
+        },
+        {
+          "word": "một",
+          "startFrame": 11,
+          "endFrame": 18
+        },
+        {
+          "word": "lúc,",
+          "startFrame": 18,
+          "endFrame": 25
+        },
+        {
+          "word": "rồi",
+          "startFrame": 33,
+          "endFrame": 39
+        },
+        {
+          "word": "lại",
+          "startFrame": 39,
+          "endFrame": 44
+        },
+        {
+          "word": "hỏi",
+          "startFrame": 44,
+          "endFrame": 51
+        },
+        {
+          "word": "câu",
+          "startFrame": 51,
+          "endFrame": 58
+        },
+        {
+          "word": "khác.",
+          "startFrame": 58,
+          "endFrame": 63
+        },
+        {
+          "word": "Bạn",
+          "startFrame": 77,
+          "endFrame": 80
+        },
+        {
+          "word": "nghĩ",
+          "startFrame": 80,
+          "endFrame": 87
+        },
+        {
+          "word": "mẹ",
+          "startFrame": 87,
+          "endFrame": 97
+        },
+        {
+          "word": "dài",
+          "startFrame": 97,
+          "endFrame": 105
+        },
+        {
+          "word": "dòng.",
+          "startFrame": 105,
+          "endFrame": 112
+        },
+        {
+          "word": "Nhưng",
+          "startFrame": 112,
+          "endFrame": 123
+        },
+        {
+          "word": "có",
+          "startFrame": 123,
+          "endFrame": 129
+        },
+        {
+          "word": "thể",
+          "startFrame": 129,
+          "endFrame": 133
+        },
+        {
+          "word": "mẹ",
+          "startFrame": 133,
+          "endFrame": 141
+        },
+        {
+          "word": "chỉ",
+          "startFrame": 141,
+          "endFrame": 147
+        },
+        {
+          "word": "đang",
+          "startFrame": 147,
+          "endFrame": 152
+        },
+        {
+          "word": "tìm",
+          "startFrame": 152,
+          "endFrame": 161
+        },
+        {
+          "word": "cớ",
+          "startFrame": 161,
+          "endFrame": 169
+        },
+        {
+          "word": "để",
+          "startFrame": 169,
+          "endFrame": 175
+        },
+        {
+          "word": "nói",
+          "startFrame": 175,
+          "endFrame": 181
+        },
+        {
+          "word": "chuyện",
+          "startFrame": 181,
+          "endFrame": 189
+        },
+        {
+          "word": "thêm.",
+          "startFrame": 189,
+          "endFrame": 198
+        }
+      ]
+    },
+    {
+      "scene": 4,
+      "tag": "Nỗi sợ cô đơn",
+      "text": "Có những người già sợ điều khác bệnh tật: sợ ngày điện thoại không còn ai gọi.",
+      "highlight": "SỢ KHÔNG CÒN AI GỌI",
+      "image": "nct_v60_scene4.jpg",
+      "video": "nct_v60_scene4.jpg",
+      "startFrame": 467,
+      "durationInFrames": 131,
+      "words": [
+        {
+          "word": "Có",
+          "startFrame": 0,
+          "endFrame": 3
+        },
+        {
+          "word": "những",
+          "startFrame": 3,
+          "endFrame": 7
+        },
+        {
+          "word": "người",
+          "startFrame": 7,
+          "endFrame": 14
+        },
+        {
+          "word": "già",
+          "startFrame": 14,
+          "endFrame": 20
+        },
+        {
+          "word": "sợ",
+          "startFrame": 20,
+          "endFrame": 28
+        },
+        {
+          "word": "điều",
+          "startFrame": 28,
+          "endFrame": 32
+        },
+        {
+          "word": "khác",
+          "startFrame": 32,
+          "endFrame": 39
+        },
+        {
+          "word": "bệnh",
+          "startFrame": 39,
+          "endFrame": 49
+        },
+        {
+          "word": "tật:",
+          "startFrame": 49,
+          "endFrame": 55
+        },
+        {
+          "word": "sợ",
+          "startFrame": 70,
+          "endFrame": 73
+        },
+        {
+          "word": "ngày",
+          "startFrame": 73,
+          "endFrame": 79
+        },
+        {
+          "word": "điện",
+          "startFrame": 79,
+          "endFrame": 85
+        },
+        {
+          "word": "thoại",
+          "startFrame": 85,
+          "endFrame": 92
+        },
+        {
+          "word": "không",
+          "startFrame": 92,
+          "endFrame": 100
+        },
+        {
+          "word": "còn",
+          "startFrame": 100,
+          "endFrame": 107
+        },
+        {
+          "word": "ai",
+          "startFrame": 107,
+          "endFrame": 116
+        },
+        {
+          "word": "gọi.",
+          "startFrame": 116,
+          "endFrame": 125
+        }
+      ]
+    },
+    {
+      "scene": 5,
+      "tag": "Nghe thêm một phút",
+      "text": "Lần tới bố mẹ cằn nhằn, đừng ngắt lời. Nghe thêm một phút thôi.",
+      "highlight": "NGHE THÊM MỘT PHÚT THÔI",
+      "image": "nct_v60_scene5.jpg",
+      "video": "nct_v60_scene5.jpg",
+      "startFrame": 608,
+      "durationInFrames": 114,
+      "words": [
+        {
+          "word": "Lần",
+          "startFrame": 4,
+          "endFrame": 8
+        },
+        {
+          "word": "tới",
+          "startFrame": 8,
+          "endFrame": 13
+        },
+        {
+          "word": "bố",
+          "startFrame": 13,
+          "endFrame": 19
+        },
+        {
+          "word": "mẹ",
+          "startFrame": 19,
+          "endFrame": 26
+        },
+        {
+          "word": "cằn",
+          "startFrame": 26,
+          "endFrame": 33
+        },
+        {
+          "word": "nhằn,",
+          "startFrame": 33,
+          "endFrame": 42
+        },
+        {
+          "word": "đừng",
+          "startFrame": 52,
+          "endFrame": 55
+        },
+        {
+          "word": "ngắt",
+          "startFrame": 55,
+          "endFrame": 62
+        },
+        {
+          "word": "lời.",
+          "startFrame": 62,
+          "endFrame": 71
+        },
+        {
+          "word": "Nghe",
+          "startFrame": 71,
+          "endFrame": 83
+        },
+        {
+          "word": "thêm",
+          "startFrame": 83,
+          "endFrame": 89
+        },
+        {
+          "word": "một",
+          "startFrame": 89,
+          "endFrame": 94
+        },
+        {
+          "word": "phút",
+          "startFrame": 94,
+          "endFrame": 101
+        },
+        {
+          "word": "thôi.",
+          "startFrame": 101,
+          "endFrame": 109
+        }
+      ]
+    }
+  ],
+  "durationInFrames": 732,
+  "fps": 30,
+  "music": "Heartbreaking",
+  "musicFile": "heartbreaking.mp3",
+  "musicMood": "sad",
+  "thumbnailImage": "thumbnail_nct_v60.jpg",
+  "audioFile": "voiceover_nct_v60.wav"
+}

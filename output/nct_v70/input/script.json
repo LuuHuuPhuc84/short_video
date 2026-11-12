@@ -1,0 +1,74 @@
+{
+  "id": "nct_v70",
+  "episode": 70,
+  "title": "Nỗi Sợ Điện Thoại Đổ Chuông Sau Tuổi 35",
+  "title_hook": "ĐIỆN THOẠI KÊU LÚC NỬA ĐÊM",
+  "titleHook": "ĐIỆN THOẠI KÊU LÚC NỬA ĐÊM",
+  "subtitle": "Triết lý Nửa Chén Trà",
+  "book": "NỬA CHÉN TRÀ",
+  "author": "Bài học cuộc sống",
+  "chapter": "Sống nhẹ",
+  "topic": "Nỗi Sợ Điện Thoại Đổ Chuông Sau Tuổi 35",
+  "schedule": "2026-11-18 19:30",
+  "schedule_time": "2026-11-18 19:30",
+  "publishAt": "2026-11-18 19:30",
+  "scheduled_time": "2026-11-18T12:30:00Z",
+  "tags": [
+    "nct_v70",
+    "nuachentra",
+    "nhinsaudesongnhe",
+    "khoanglang",
+    "buongbo",
+    "trietly",
+    "chualanh",
+    "shorts"
+  ],
+  "description": "Hồi hai mươi tuổi,, nghe tiếng điện thoại đổ chuông lúc nửa đêm là háo hức bắt máy,, vì biết đó là lời rủ rê đi chơi của bạn bè. Nửa Chén Trà — Nhìn sâu để sống nhẹ. #nct_v70 #nuachentra #nhinsaudesongnhe #shorts",
+  "containsSyntheticMedia": true,
+  "bgm": "Gymnopedie No. 1",
+  "bgm_file": "gymnopedie_no_1.mp3",
+  "bgm_volume": 0.15,
+  "visual_type": "MIXED",
+  "scenes": [
+    {
+      "scene": 1,
+      "tag": "ĐIỆN THOẠI KÊU LÚC NỬA ĐÊM",
+      "text": "Hồi hai mươi tuổi,, nghe tiếng điện thoại đổ chuông lúc nửa đêm là háo hức bắt máy,, vì biết đó là lời rủ rê đi chơi của bạn bè.",
+      "highlight": "ĐIỆN THOẠI KÊU LÚC NỬA ĐÊM",
+      "image": "nct_v70_scene1.jpg",
+      "video": "nct_v70_scene1.jpg"
+    },
+    {
+      "scene": 2,
+      "tag": "TIM THót LÊN VÌ SỢ",
+      "text": "Nhưng bước qua tuổi ba mươi lăm,, một cuộc gọi nhỡ từ quê nhà lúc mười một giờ đêm,, cũng đủ làm tim ta thắt lại vì hoảng sợ.",
+      "highlight": "TIM THót LÊN VÌ SỢ",
+      "image": "nct_v70_scene2.jpg",
+      "video": "nct_v70_scene2.jpg"
+    },
+    {
+      "scene": 3,
+      "tag": "KHÔNG MONG TIN ĐỘT NGỘT",
+      "text": "Ở cái tuổi trên có cha mẹ già như chuối chín cây,, dưới có con thơ,, ta chẳng còn mong những điều bất ngờ kịch tính nữa.",
+      "highlight": "KHÔNG MONG TIN ĐỘT NGỘT",
+      "image": "nct_v70_scene3.jpg",
+      "video": "nct_v70_scene3.jpg"
+    },
+    {
+      "scene": 4,
+      "tag": "HAI CHỮ \"BÌNH AN\"",
+      "text": "Ta mới thấm thía rằng,, hai chữ \"Không có chuyện gì xảy ra\" chính là phước phần lớn nhất của một đời người.",
+      "highlight": "HAI CHỮ \"BÌNH AN\"",
+      "image": "nct_v70_scene4.jpg",
+      "video": "nct_v70_scene4.jpg"
+    },
+    {
+      "scene": 5,
+      "tag": "SỐNG NHẸ TRONG BÌNH THƯỜNG",
+      "text": "Đừng chê một ngày trôi qua nhạt nhẽo. Ngày nào gia đình còn khỏe mạnh,, điện thoại còn bình yên,, ngày đó đã là một ngày hạnh phúc.",
+      "highlight": "SỐNG NHẸ TRONG BÌNH THƯỜNG",
+      "image": "nct_v70_scene5.jpg",
+      "video": "nct_v70_scene5.jpg"
+    }
+  ]
+}

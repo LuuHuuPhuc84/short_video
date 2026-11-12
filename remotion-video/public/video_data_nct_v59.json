@@ -1,0 +1,547 @@
+{
+  "episode": 59,
+  "title": "Con chỉ mở lòng khi ta đứng bên cạnh",
+  "titleHook": "CON IM LẶNG VÌ ĐÂU?",
+  "title_hook": "CON IM LẶNG VÌ ĐÂU?",
+  "showTitleHook": true,
+  "subtitle": "Làm cha mẹ & Nuôi dạy con",
+  "book": "NỬA CHÉN TRÀ",
+  "author": "Bài học cuộc sống",
+  "chapter": "Nuôi dạy con",
+  "showHeroHeader": false,
+  "fps": 30,
+  "width": 1080,
+  "height": 1920,
+  "audioFile": "voiceover_nct_v59.wav",
+  "thumbnailImage": "thumbnail_nct_v59.jpg",
+  "music": "Heartbreaking",
+  "musicFile": "heartbreaking.mp3",
+  "scenes": [
+    {
+      "scene": 1,
+      "tag": "Cảnh 1",
+      "text": "Vì sao con tuổi teen cứ im lặng khi bạn hỏi?",
+      "highlight": "CON IM LẶNG VÌ ĐÂU?",
+      "image": "nct_v59_scene1.jpg",
+      "video": "nct_v59_scene1.jpg",
+      "startFrame": 0,
+      "durationInFrames": 84,
+      "words": [
+        {
+          "word": "Vì",
+          "startFrame": 0,
+          "endFrame": 4
+        },
+        {
+          "word": "sao",
+          "startFrame": 4,
+          "endFrame": 9
+        },
+        {
+          "word": "con",
+          "startFrame": 9,
+          "endFrame": 14
+        },
+        {
+          "word": "tuổi",
+          "startFrame": 14,
+          "endFrame": 24
+        },
+        {
+          "word": "teen",
+          "startFrame": 24,
+          "endFrame": 34
+        },
+        {
+          "word": "cứ",
+          "startFrame": 34,
+          "endFrame": 41
+        },
+        {
+          "word": "im",
+          "startFrame": 41,
+          "endFrame": 50
+        },
+        {
+          "word": "lặng",
+          "startFrame": 50,
+          "endFrame": 58
+        },
+        {
+          "word": "khi",
+          "startFrame": 58,
+          "endFrame": 63
+        },
+        {
+          "word": "bạn",
+          "startFrame": 63,
+          "endFrame": 68
+        },
+        {
+          "word": "hỏi?",
+          "startFrame": 68,
+          "endFrame": 77
+        }
+      ]
+    },
+    {
+      "scene": 2,
+      "tag": "Cảnh 2",
+      "text": "Bạn hỏi, hôm nay ở trường thế nào? Con đáp, bình thường. Bạn hỏi thêm, con đóng cửa phòng.",
+      "highlight": "BÌNH THƯỜNG / ĐÓNG CỬA",
+      "image": "nct_v59_scene2.jpg",
+      "video": "nct_v59_scene2.jpg",
+      "startFrame": 95,
+      "durationInFrames": 161,
+      "words": [
+        {
+          "word": "Bạn",
+          "startFrame": 1,
+          "endFrame": 5
+        },
+        {
+          "word": "hỏi,",
+          "startFrame": 5,
+          "endFrame": 13
+        },
+        {
+          "word": "hôm",
+          "startFrame": 13,
+          "endFrame": 22
+        },
+        {
+          "word": "nay",
+          "startFrame": 22,
+          "endFrame": 27
+        },
+        {
+          "word": "ở",
+          "startFrame": 27,
+          "endFrame": 32
+        },
+        {
+          "word": "trường",
+          "startFrame": 32,
+          "endFrame": 39
+        },
+        {
+          "word": "thế",
+          "startFrame": 39,
+          "endFrame": 44
+        },
+        {
+          "word": "nào?",
+          "startFrame": 44,
+          "endFrame": 52
+        },
+        {
+          "word": "Con",
+          "startFrame": 62,
+          "endFrame": 64
+        },
+        {
+          "word": "đáp,",
+          "startFrame": 64,
+          "endFrame": 73
+        },
+        {
+          "word": "bình",
+          "startFrame": 82,
+          "endFrame": 84
+        },
+        {
+          "word": "thường.",
+          "startFrame": 83,
+          "endFrame": 94
+        },
+        {
+          "word": "Bạn",
+          "startFrame": 103,
+          "endFrame": 106
+        },
+        {
+          "word": "hỏi",
+          "startFrame": 106,
+          "endFrame": 113
+        },
+        {
+          "word": "thêm,",
+          "startFrame": 113,
+          "endFrame": 122
+        },
+        {
+          "word": "con",
+          "startFrame": 127,
+          "endFrame": 130
+        },
+        {
+          "word": "đóng",
+          "startFrame": 130,
+          "endFrame": 136
+        },
+        {
+          "word": "cửa",
+          "startFrame": 136,
+          "endFrame": 146
+        },
+        {
+          "word": "phòng.",
+          "startFrame": 146,
+          "endFrame": 152
+        }
+      ]
+    },
+    {
+      "scene": 3,
+      "tag": "Cảnh 3",
+      "text": "Nhưng có một lúc, con lại tự kể không ngừng. Là lúc hai cha con đi xe, hay lúc hai mẹ con đứng rửa bát.",
+      "highlight": "TỰ KỂ KHÔNG NGỪNG",
+      "image": "nct_v59_scene3.jpg",
+      "video": "nct_v59_scene3.jpg",
+      "startFrame": 266,
+      "durationInFrames": 191,
+      "words": [
+        {
+          "word": "Nhưng",
+          "startFrame": 0,
+          "endFrame": 8
+        },
+        {
+          "word": "có",
+          "startFrame": 8,
+          "endFrame": 13
+        },
+        {
+          "word": "một",
+          "startFrame": 13,
+          "endFrame": 20
+        },
+        {
+          "word": "lúc,",
+          "startFrame": 20,
+          "endFrame": 26
+        },
+        {
+          "word": "con",
+          "startFrame": 35,
+          "endFrame": 38
+        },
+        {
+          "word": "lại",
+          "startFrame": 38,
+          "endFrame": 44
+        },
+        {
+          "word": "tự",
+          "startFrame": 44,
+          "endFrame": 51
+        },
+        {
+          "word": "kể",
+          "startFrame": 51,
+          "endFrame": 60
+        },
+        {
+          "word": "không",
+          "startFrame": 60,
+          "endFrame": 66
+        },
+        {
+          "word": "ngừng.",
+          "startFrame": 66,
+          "endFrame": 75
+        },
+        {
+          "word": "Là",
+          "startFrame": 75,
+          "endFrame": 86
+        },
+        {
+          "word": "lúc",
+          "startFrame": 86,
+          "endFrame": 93
+        },
+        {
+          "word": "hai",
+          "startFrame": 93,
+          "endFrame": 99
+        },
+        {
+          "word": "cha",
+          "startFrame": 99,
+          "endFrame": 104
+        },
+        {
+          "word": "con",
+          "startFrame": 104,
+          "endFrame": 110
+        },
+        {
+          "word": "đi",
+          "startFrame": 110,
+          "endFrame": 116
+        },
+        {
+          "word": "xe,",
+          "startFrame": 116,
+          "endFrame": 127
+        },
+        {
+          "word": "hay",
+          "startFrame": 134,
+          "endFrame": 136
+        },
+        {
+          "word": "lúc",
+          "startFrame": 136,
+          "endFrame": 144
+        },
+        {
+          "word": "hai",
+          "startFrame": 144,
+          "endFrame": 149
+        },
+        {
+          "word": "mẹ",
+          "startFrame": 149,
+          "endFrame": 156
+        },
+        {
+          "word": "con",
+          "startFrame": 156,
+          "endFrame": 161
+        },
+        {
+          "word": "đứng",
+          "startFrame": 161,
+          "endFrame": 170
+        },
+        {
+          "word": "rửa",
+          "startFrame": 170,
+          "endFrame": 177
+        },
+        {
+          "word": "bát.",
+          "startFrame": 177,
+          "endFrame": 184
+        }
+      ]
+    },
+    {
+      "scene": 4,
+      "tag": "Cảnh 4",
+      "text": "Không ai nhìn thẳng vào ai. Nhiều khi con không im lặng vì không muốn nói. Con chỉ khó nói khi bị nhìn chằm chằm.",
+      "highlight": "KHÓ NÓI KHI BỊ NHÌN",
+      "image": "nct_v59_scene4.jpg",
+      "video": "nct_v59_scene4.jpg",
+      "startFrame": 467,
+      "durationInFrames": 202,
+      "words": [
+        {
+          "word": "Không",
+          "startFrame": 0,
+          "endFrame": 5
+        },
+        {
+          "word": "ai",
+          "startFrame": 5,
+          "endFrame": 11
+        },
+        {
+          "word": "nhìn",
+          "startFrame": 11,
+          "endFrame": 18
+        },
+        {
+          "word": "thẳng",
+          "startFrame": 18,
+          "endFrame": 26
+        },
+        {
+          "word": "vào",
+          "startFrame": 26,
+          "endFrame": 31
+        },
+        {
+          "word": "ai.",
+          "startFrame": 31,
+          "endFrame": 39
+        },
+        {
+          "word": "Nhiều",
+          "startFrame": 53,
+          "endFrame": 59
+        },
+        {
+          "word": "khi",
+          "startFrame": 59,
+          "endFrame": 64
+        },
+        {
+          "word": "con",
+          "startFrame": 64,
+          "endFrame": 70
+        },
+        {
+          "word": "không",
+          "startFrame": 70,
+          "endFrame": 77
+        },
+        {
+          "word": "im",
+          "startFrame": 77,
+          "endFrame": 86
+        },
+        {
+          "word": "lặng",
+          "startFrame": 86,
+          "endFrame": 93
+        },
+        {
+          "word": "vì",
+          "startFrame": 93,
+          "endFrame": 98
+        },
+        {
+          "word": "không",
+          "startFrame": 98,
+          "endFrame": 105
+        },
+        {
+          "word": "muốn",
+          "startFrame": 105,
+          "endFrame": 110
+        },
+        {
+          "word": "nói.",
+          "startFrame": 110,
+          "endFrame": 118
+        },
+        {
+          "word": "Con",
+          "startFrame": 131,
+          "endFrame": 134
+        },
+        {
+          "word": "chỉ",
+          "startFrame": 134,
+          "endFrame": 140
+        },
+        {
+          "word": "khó",
+          "startFrame": 140,
+          "endFrame": 146
+        },
+        {
+          "word": "nói",
+          "startFrame": 146,
+          "endFrame": 154
+        },
+        {
+          "word": "khi",
+          "startFrame": 154,
+          "endFrame": 162
+        },
+        {
+          "word": "bị",
+          "startFrame": 162,
+          "endFrame": 167
+        },
+        {
+          "word": "nhìn",
+          "startFrame": 167,
+          "endFrame": 176
+        },
+        {
+          "word": "chằm",
+          "startFrame": 176,
+          "endFrame": 184
+        },
+        {
+          "word": "chằm.",
+          "startFrame": 184,
+          "endFrame": 192
+        }
+      ]
+    },
+    {
+      "scene": 5,
+      "tag": "Cảnh 5",
+      "text": "Con im lặng thì hãy đứng cạnh con, đừng đứng đối diện.",
+      "highlight": "ĐỨNG CẠNH CON",
+      "image": "nct_v59_scene5.jpg",
+      "video": "nct_v59_scene5.jpg",
+      "startFrame": 679,
+      "durationInFrames": 95,
+      "words": [
+        {
+          "word": "Con",
+          "startFrame": 0,
+          "endFrame": 3
+        },
+        {
+          "word": "im",
+          "startFrame": 3,
+          "endFrame": 13
+        },
+        {
+          "word": "lặng",
+          "startFrame": 13,
+          "endFrame": 22
+        },
+        {
+          "word": "thì",
+          "startFrame": 22,
+          "endFrame": 26
+        },
+        {
+          "word": "hãy",
+          "startFrame": 26,
+          "endFrame": 32
+        },
+        {
+          "word": "đứng",
+          "startFrame": 32,
+          "endFrame": 38
+        },
+        {
+          "word": "cạnh",
+          "startFrame": 38,
+          "endFrame": 45
+        },
+        {
+          "word": "con,",
+          "startFrame": 45,
+          "endFrame": 51
+        },
+        {
+          "word": "đừng",
+          "startFrame": 66,
+          "endFrame": 69
+        },
+        {
+          "word": "đứng",
+          "startFrame": 69,
+          "endFrame": 78
+        },
+        {
+          "word": "đối",
+          "startFrame": 78,
+          "endFrame": 83
+        },
+        {
+          "word": "diện.",
+          "startFrame": 83,
+          "endFrame": 91
+        }
+      ]
+    }
+  ],
+  "durationInFrames": 785,
+  "musicMood": "sad",
+  "schedule": "2026-11-12 19:30",
+  "schedule_time": "2026-11-12 19:30",
+  "publishAt": "2026-11-12 19:30",
+  "scheduled_time": "2026-11-12T12:30:00Z"
+}

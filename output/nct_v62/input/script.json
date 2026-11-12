@@ -1,0 +1,74 @@
+{
+  "id": "nct_v62",
+  "episode": 62,
+  "title": "Một lời xin lỗi không làm cha mẹ nhỏ đi",
+  "title_hook": "BỐ MẸ CÓ ĐƯỢC SAI?",
+  "titleHook": "BỐ MẸ CÓ ĐƯỢC SAI?",
+  "subtitle": "Làm cha mẹ & Chữa lành",
+  "book": "NỬA CHÉN TRÀ",
+  "author": "Bài học cuộc sống",
+  "chapter": "Làm cha mẹ",
+  "topic": "Nuôi dạy con & Lời xin lỗi của cha mẹ",
+  "schedule": "2026-11-14 11:30",
+  "schedule_time": "2026-11-14 11:30",
+  "publishAt": "2026-11-14 11:30",
+  "scheduled_time": "2026-11-14T04:30:00Z",
+  "tags": [
+    "nct_v62",
+    "nuachentra",
+    "nhinsaudesongnhe",
+    "lamcha",
+    "nuoidaycon",
+    "xinloicon",
+    "chualanh",
+    "shorts"
+  ],
+  "description": "Một lời xin lỗi không làm cha mẹ nhỏ đi. Bố mẹ có được phép xin lỗi con không? Nửa Chén Trà — Nhìn sâu để sống nhẹ. #nct_v62 #lamcha #nuoidaycon #chualanh #nuachentra #shorts",
+  "containsSyntheticMedia": true,
+  "bgm": "Sad Trio",
+  "bgm_file": "sad_trio.mp3",
+  "bgm_volume": 0.15,
+  "visual_type": "Điện ảnh 35mm hoài niệm Á Đông",
+  "scenes": [
+    {
+      "scene": 1,
+      "tag": "Hook 3s",
+      "text": "Bố mẹ có được phép xin lỗi con không?",
+      "highlight": "BỐ MẸ CÓ ĐƯỢC SAI?",
+      "image": "nct_v62_scene1.jpg",
+      "video": "nct_v62_scene1.jpg"
+    },
+    {
+      "scene": 2,
+      "tag": "Quát con",
+      "text": "Một buổi tối mệt, bạn quát con vì cái cốc vỡ. Mười phút sau mới biết, không phải lỗi của con.",
+      "highlight": "QUÁT VÌ CỐC VỠ",
+      "image": "nct_v62_scene2.jpg",
+      "video": "nct_v62_scene2.jpg"
+    },
+    {
+      "scene": 3,
+      "tag": "Lưỡng lự ở cửa",
+      "text": "Bạn đứng ở cửa phòng, lưỡng lự. Sợ mất uy. Sợ con nhờn.",
+      "highlight": "LƯỠNG LỰ Ở CỬA PHÒNG",
+      "image": "nct_v62_scene3.jpg",
+      "video": "nct_v62_scene3.jpg"
+    },
+    {
+      "scene": 4,
+      "tag": "Con đang nhìn",
+      "text": "Nhưng con đang nhìn bạn đấy. Con học cách nhận lỗi từ chính cách bạn nhận lỗi.",
+      "highlight": "CON HỌC TỪ CÁCH BẠN NHẬN LỖI",
+      "image": "nct_v62_scene4.jpg",
+      "video": "nct_v62_scene4.jpg"
+    },
+    {
+      "scene": 5,
+      "tag": "Bố xin lỗi con",
+      "text": "Và con sẽ hiểu: người lớn cũng có thể sai mà vẫn đáng tin. Bước vào đi. Nói: bố xin lỗi con.",
+      "highlight": "BỐ XIN LỖI CON",
+      "image": "nct_v62_scene5.jpg",
+      "video": "nct_v62_scene5.jpg"
+    }
+  ]
+}

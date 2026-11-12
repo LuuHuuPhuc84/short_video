@@ -1,0 +1,511 @@
+{
+  "id": "nct_v62",
+  "episode": 62,
+  "title": "Một lời xin lỗi không làm cha mẹ nhỏ đi",
+  "title_hook": "BỐ MẸ CÓ ĐƯỢC SAI?",
+  "titleHook": "BỐ MẸ CÓ ĐƯỢC SAI?",
+  "subtitle": "Làm cha mẹ & Chữa lành",
+  "book": "NỬA CHÉN TRÀ",
+  "author": "Bài học cuộc sống",
+  "chapter": "Làm cha mẹ",
+  "topic": "Nuôi dạy con & Lời xin lỗi của cha mẹ",
+  "schedule": "2026-11-14 11:30",
+  "schedule_time": "2026-11-14 11:30",
+  "publishAt": "2026-11-14 11:30",
+  "scheduled_time": "2026-11-14T04:30:00Z",
+  "tags": [
+    "nct_v62",
+    "nuachentra",
+    "nhinsaudesongnhe",
+    "lamcha",
+    "nuoidaycon",
+    "xinloicon",
+    "chualanh",
+    "shorts"
+  ],
+  "description": "Một lời xin lỗi không làm cha mẹ nhỏ đi. Bố mẹ có được phép xin lỗi con không? Nửa Chén Trà — Nhìn sâu để sống nhẹ. #nct_v62 #lamcha #nuoidaycon #chualanh #nuachentra #shorts",
+  "containsSyntheticMedia": true,
+  "bgm": "Sad Trio",
+  "bgm_file": "sad_trio.mp3",
+  "bgm_volume": 0.15,
+  "visual_type": "Điện ảnh 35mm hoài niệm Á Đông",
+  "scenes": [
+    {
+      "scene": 1,
+      "tag": "Hook 3s",
+      "text": "Bố mẹ có được phép xin lỗi con không?",
+      "highlight": "BỐ MẸ CÓ ĐƯỢC SAI?",
+      "image": "nct_v62_scene1.jpg",
+      "video": "nct_v62_scene1.jpg",
+      "startFrame": 0,
+      "durationInFrames": 71,
+      "words": [
+        {
+          "word": "Bố",
+          "startFrame": 0,
+          "endFrame": 6
+        },
+        {
+          "word": "mẹ",
+          "startFrame": 6,
+          "endFrame": 14
+        },
+        {
+          "word": "có",
+          "startFrame": 14,
+          "endFrame": 22
+        },
+        {
+          "word": "được",
+          "startFrame": 22,
+          "endFrame": 25
+        },
+        {
+          "word": "phép",
+          "startFrame": 25,
+          "endFrame": 34
+        },
+        {
+          "word": "xin",
+          "startFrame": 34,
+          "endFrame": 44
+        },
+        {
+          "word": "lỗi",
+          "startFrame": 44,
+          "endFrame": 50
+        },
+        {
+          "word": "con",
+          "startFrame": 50,
+          "endFrame": 54
+        },
+        {
+          "word": "không?",
+          "startFrame": 54,
+          "endFrame": 63
+        }
+      ]
+    },
+    {
+      "scene": 2,
+      "tag": "Quát con",
+      "text": "Một buổi tối mệt, bạn quát con vì cái cốc vỡ. Mười phút sau mới biết, không phải lỗi của con.",
+      "highlight": "QUÁT VÌ CỐC VỠ",
+      "image": "nct_v62_scene2.jpg",
+      "video": "nct_v62_scene2.jpg",
+      "startFrame": 81,
+      "durationInFrames": 171,
+      "words": [
+        {
+          "word": "Một",
+          "startFrame": 2,
+          "endFrame": 7
+        },
+        {
+          "word": "buổi",
+          "startFrame": 7,
+          "endFrame": 13
+        },
+        {
+          "word": "tối",
+          "startFrame": 13,
+          "endFrame": 20
+        },
+        {
+          "word": "mệt,",
+          "startFrame": 20,
+          "endFrame": 26
+        },
+        {
+          "word": "bạn",
+          "startFrame": 26,
+          "endFrame": 35
+        },
+        {
+          "word": "quát",
+          "startFrame": 35,
+          "endFrame": 44
+        },
+        {
+          "word": "con",
+          "startFrame": 44,
+          "endFrame": 50
+        },
+        {
+          "word": "vì",
+          "startFrame": 50,
+          "endFrame": 59
+        },
+        {
+          "word": "cái",
+          "startFrame": 59,
+          "endFrame": 65
+        },
+        {
+          "word": "cốc",
+          "startFrame": 65,
+          "endFrame": 72
+        },
+        {
+          "word": "vỡ.",
+          "startFrame": 72,
+          "endFrame": 78
+        },
+        {
+          "word": "Mười",
+          "startFrame": 78,
+          "endFrame": 92
+        },
+        {
+          "word": "phút",
+          "startFrame": 92,
+          "endFrame": 102
+        },
+        {
+          "word": "sau",
+          "startFrame": 102,
+          "endFrame": 108
+        },
+        {
+          "word": "mới",
+          "startFrame": 108,
+          "endFrame": 114
+        },
+        {
+          "word": "biết,",
+          "startFrame": 114,
+          "endFrame": 120
+        },
+        {
+          "word": "không",
+          "startFrame": 120,
+          "endFrame": 130
+        },
+        {
+          "word": "phải",
+          "startFrame": 130,
+          "endFrame": 136
+        },
+        {
+          "word": "lỗi",
+          "startFrame": 136,
+          "endFrame": 144
+        },
+        {
+          "word": "của",
+          "startFrame": 144,
+          "endFrame": 149
+        },
+        {
+          "word": "con.",
+          "startFrame": 149,
+          "endFrame": 158
+        }
+      ]
+    },
+    {
+      "scene": 3,
+      "tag": "Lưỡng lự ở cửa",
+      "text": "Bạn đứng ở cửa phòng, lưỡng lự. Sợ mất uy. Sợ con nhờn.",
+      "highlight": "LƯỠNG LỰ Ở CỬA PHÒNG",
+      "image": "nct_v62_scene3.jpg",
+      "video": "nct_v62_scene3.jpg",
+      "startFrame": 263,
+      "durationInFrames": 111,
+      "words": [
+        {
+          "word": "Bạn",
+          "startFrame": 0,
+          "endFrame": 6
+        },
+        {
+          "word": "đứng",
+          "startFrame": 6,
+          "endFrame": 13
+        },
+        {
+          "word": "ở",
+          "startFrame": 13,
+          "endFrame": 17
+        },
+        {
+          "word": "cửa",
+          "startFrame": 17,
+          "endFrame": 25
+        },
+        {
+          "word": "phòng,",
+          "startFrame": 25,
+          "endFrame": 31
+        },
+        {
+          "word": "lưỡng",
+          "startFrame": 31,
+          "endFrame": 41
+        },
+        {
+          "word": "lự.",
+          "startFrame": 41,
+          "endFrame": 56
+        },
+        {
+          "word": "Sợ",
+          "startFrame": 56,
+          "endFrame": 62
+        },
+        {
+          "word": "mất",
+          "startFrame": 62,
+          "endFrame": 68
+        },
+        {
+          "word": "uy.",
+          "startFrame": 68,
+          "endFrame": 74
+        },
+        {
+          "word": "Sợ",
+          "startFrame": 74,
+          "endFrame": 89
+        },
+        {
+          "word": "con",
+          "startFrame": 89,
+          "endFrame": 95
+        },
+        {
+          "word": "nhờn.",
+          "startFrame": 95,
+          "endFrame": 105
+        }
+      ]
+    },
+    {
+      "scene": 4,
+      "tag": "Con đang nhìn",
+      "text": "Nhưng con đang nhìn bạn đấy. Con học cách nhận lỗi từ chính cách bạn nhận lỗi.",
+      "highlight": "CON HỌC TỪ CÁCH BẠN NHẬN LỖI",
+      "image": "nct_v62_scene4.jpg",
+      "video": "nct_v62_scene4.jpg",
+      "startFrame": 385,
+      "durationInFrames": 131,
+      "words": [
+        {
+          "word": "Nhưng",
+          "startFrame": 0,
+          "endFrame": 2
+        },
+        {
+          "word": "con",
+          "startFrame": 2,
+          "endFrame": 7
+        },
+        {
+          "word": "đang",
+          "startFrame": 7,
+          "endFrame": 13
+        },
+        {
+          "word": "nhìn",
+          "startFrame": 13,
+          "endFrame": 19
+        },
+        {
+          "word": "bạn",
+          "startFrame": 19,
+          "endFrame": 25
+        },
+        {
+          "word": "đấy.",
+          "startFrame": 25,
+          "endFrame": 32
+        },
+        {
+          "word": "Con",
+          "startFrame": 49,
+          "endFrame": 52
+        },
+        {
+          "word": "học",
+          "startFrame": 52,
+          "endFrame": 58
+        },
+        {
+          "word": "cách",
+          "startFrame": 58,
+          "endFrame": 65
+        },
+        {
+          "word": "nhận",
+          "startFrame": 65,
+          "endFrame": 74
+        },
+        {
+          "word": "lỗi",
+          "startFrame": 74,
+          "endFrame": 81
+        },
+        {
+          "word": "từ",
+          "startFrame": 81,
+          "endFrame": 87
+        },
+        {
+          "word": "chính",
+          "startFrame": 87,
+          "endFrame": 95
+        },
+        {
+          "word": "cách",
+          "startFrame": 95,
+          "endFrame": 100
+        },
+        {
+          "word": "bạn",
+          "startFrame": 100,
+          "endFrame": 107
+        },
+        {
+          "word": "nhận",
+          "startFrame": 107,
+          "endFrame": 115
+        },
+        {
+          "word": "lỗi.",
+          "startFrame": 115,
+          "endFrame": 123
+        }
+      ]
+    },
+    {
+      "scene": 5,
+      "tag": "Bố xin lỗi con",
+      "text": "Và con sẽ hiểu: người lớn cũng có thể sai mà vẫn đáng tin. Bước vào đi. Nói: bố xin lỗi con.",
+      "highlight": "BỐ XIN LỖI CON",
+      "image": "nct_v62_scene5.jpg",
+      "video": "nct_v62_scene5.jpg",
+      "startFrame": 526,
+      "durationInFrames": 185,
+      "words": [
+        {
+          "word": "Và",
+          "startFrame": 0,
+          "endFrame": 4
+        },
+        {
+          "word": "con",
+          "startFrame": 4,
+          "endFrame": 11
+        },
+        {
+          "word": "sẽ",
+          "startFrame": 11,
+          "endFrame": 17
+        },
+        {
+          "word": "hiểu:",
+          "startFrame": 17,
+          "endFrame": 27
+        },
+        {
+          "word": "người",
+          "startFrame": 27,
+          "endFrame": 36
+        },
+        {
+          "word": "lớn",
+          "startFrame": 36,
+          "endFrame": 47
+        },
+        {
+          "word": "cũng",
+          "startFrame": 47,
+          "endFrame": 50
+        },
+        {
+          "word": "có",
+          "startFrame": 50,
+          "endFrame": 56
+        },
+        {
+          "word": "thể",
+          "startFrame": 56,
+          "endFrame": 61
+        },
+        {
+          "word": "sai",
+          "startFrame": 61,
+          "endFrame": 71
+        },
+        {
+          "word": "mà",
+          "startFrame": 71,
+          "endFrame": 79
+        },
+        {
+          "word": "vẫn",
+          "startFrame": 79,
+          "endFrame": 84
+        },
+        {
+          "word": "đáng",
+          "startFrame": 84,
+          "endFrame": 93
+        },
+        {
+          "word": "tin.",
+          "startFrame": 93,
+          "endFrame": 104
+        },
+        {
+          "word": "Bước",
+          "startFrame": 113,
+          "endFrame": 116
+        },
+        {
+          "word": "vào",
+          "startFrame": 116,
+          "endFrame": 120
+        },
+        {
+          "word": "đi.",
+          "startFrame": 120,
+          "endFrame": 128
+        },
+        {
+          "word": "Nói:",
+          "startFrame": 141,
+          "endFrame": 144
+        },
+        {
+          "word": "bố",
+          "startFrame": 144,
+          "endFrame": 156
+        },
+        {
+          "word": "xin",
+          "startFrame": 156,
+          "endFrame": 165
+        },
+        {
+          "word": "lỗi",
+          "startFrame": 165,
+          "endFrame": 171
+        },
+        {
+          "word": "con.",
+          "startFrame": 171,
+          "endFrame": 176
+        }
+      ]
+    }
+  ],
+  "durationInFrames": 722,
+  "fps": 30,
+  "music": "Heartbreaking",
+  "musicFile": "heartbreaking.mp3",
+  "musicMood": "sad",
+  "thumbnailImage": "thumbnail_nct_v62.jpg",
+  "audioFile": "voiceover_nct_v62.wav"
+}

@@ -1,0 +1,74 @@
+{
+  "id": "nct_v63",
+  "episode": 63,
+  "title": "Cả nhà dựa vào một người, là chính bạn",
+  "title_hook": "LẦN CUỐI TỰ ĐI KHÁM?",
+  "titleHook": "LẦN CUỐI TỰ ĐI KHÁM?",
+  "subtitle": "Sức khỏe & Chữa lành",
+  "book": "NỬA CHÉN TRÀ",
+  "author": "Bài học cuộc sống",
+  "chapter": "Sức khỏe",
+  "topic": "Sức khỏe người trụ cột & Yêu thương bản thân",
+  "schedule": "2026-11-14 19:30",
+  "schedule_time": "2026-11-14 19:30",
+  "publishAt": "2026-11-14 19:30",
+  "scheduled_time": "2026-11-14T12:30:00Z",
+  "tags": [
+    "nct_v63",
+    "nuachentra",
+    "nhinsaudesongnhe",
+    "suckhoe",
+    "trucot",
+    "chualanh",
+    "giadinh",
+    "shorts"
+  ],
+  "description": "Cả nhà dựa vào một người, là chính bạn. Lần cuối chính bạn đi khám sức khỏe là khi nào? Nửa Chén Trà — Nhìn sâu để sống nhẹ. #nct_v63 #suckhoe #trucot #chualanh #nuachentra #shorts",
+  "containsSyntheticMedia": true,
+  "bgm": "Sad Trio",
+  "bgm_file": "sad_trio.mp3",
+  "bgm_volume": 0.15,
+  "visual_type": "Điện ảnh 35mm hoài niệm Á Đông",
+  "scenes": [
+    {
+      "scene": 1,
+      "tag": "Hook 3s",
+      "text": "Lần cuối chính bạn đi khám sức khỏe là khi nào?",
+      "highlight": "LẦN CUỐI TỰ ĐI KHÁM?",
+      "image": "nct_v63_scene1.jpg",
+      "video": "nct_v63_scene1.jpg"
+    },
+    {
+      "scene": 2,
+      "tag": "Nhớ lịch cả nhà",
+      "text": "Bạn nhớ lịch tiêm của con. Nhớ ngày tái khám của bố. Nhớ mẹ hết thuốc từ bao giờ. Còn của mình thì sao?",
+      "highlight": "CÒN CỦA MÌNH THÌ SAO?",
+      "image": "nct_v63_scene2.jpg",
+      "video": "nct_v63_scene2.jpg"
+    },
+    {
+      "scene": 3,
+      "tag": "Thôi để sau",
+      "text": "Bạn bảo, thôi để sau, đang bận.",
+      "highlight": "THÔI ĐỂ SAU, ĐANG BẬN",
+      "image": "nct_v63_scene3.jpg",
+      "video": "nct_v63_scene3.jpg"
+    },
+    {
+      "scene": 4,
+      "tag": "Chỗ dựa",
+      "text": "Cả nhà đang dựa vào một người khỏe. Người đó là bạn. Chăm mình không phải ích kỷ.",
+      "highlight": "CHĂM MÌNH KHÔNG PHẢI ÍCH KỶ",
+      "image": "nct_v63_scene4.jpg",
+      "video": "nct_v63_scene4.jpg"
+    },
+    {
+      "scene": 5,
+      "tag": "Đặt lịch khám",
+      "text": "Đó là giữ lại chỗ dựa cho những người đang cần bạn. Hôm nay, đặt một lịch khám cho chính bạn.",
+      "highlight": "ĐẶT MỘT LỊCH KHÁM CHO CHÍNH BẠN",
+      "image": "nct_v63_scene5.jpg",
+      "video": "nct_v63_scene5.jpg"
+    }
+  ]
+}

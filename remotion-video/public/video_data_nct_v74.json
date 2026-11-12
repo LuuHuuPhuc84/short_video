@@ -1,0 +1,846 @@
+{
+  "id": "nct_v74",
+  "episode": 74,
+  "title": "Căn Bệnh \"Đợi Khi Nào...\"",
+  "title_hook": "CÂU NÓI QUEN THUỘC NHẤT",
+  "titleHook": "CÂU NÓI QUEN THUỘC NHẤT",
+  "subtitle": "Triết lý Nửa Chén Trà",
+  "book": "NỬA CHÉN TRÀ",
+  "author": "Bài học cuộc sống",
+  "chapter": "Sống nhẹ",
+  "topic": "Căn Bệnh \"Đợi Khi Nào...\"",
+  "schedule": "2026-11-20 19:30",
+  "schedule_time": "2026-11-20 19:30",
+  "publishAt": "2026-11-20 19:30",
+  "scheduled_time": "2026-11-20T12:30:00Z",
+  "tags": [
+    "nct_v74",
+    "nuachentra",
+    "nhinsaudesongnhe",
+    "khoanglang",
+    "buongbo",
+    "trietly",
+    "chualanh",
+    "shorts"
+  ],
+  "description": "Đợi khi nào kiếm đủ tiền sẽ nghỉ ngơi. Đợi khi nào con lớn sẽ đưa bố mẹ đi du lịch. Đợi khi nào rảnh sẽ ngồi uống trà với bạn cũ. Nửa Chén Trà — Nhìn sâu để sống nhẹ. #nct_v74 #nuachentra #nhinsaudesongnhe #shorts",
+  "containsSyntheticMedia": true,
+  "bgm": "Heartbreaking",
+  "bgm_file": "heartbreaking.mp3",
+  "bgm_volume": 0.15,
+  "visual_type": "MIXED",
+  "scenes": [
+    {
+      "scene": 1,
+      "tag": "CÂU NÓI QUEN THUỘC NHẤT",
+      "text": "Đợi khi nào kiếm đủ tiền sẽ nghỉ ngơi. Đợi khi nào con lớn sẽ đưa bố mẹ đi du lịch. Đợi khi nào rảnh sẽ ngồi uống trà với bạn cũ.",
+      "highlight": "CÂU NÓI QUEN THUỘC NHẤT",
+      "image": "nct_v74_scene1.jpg",
+      "video": "nct_v74_scene1.jpg",
+      "startFrame": 0,
+      "durationInFrames": 257,
+      "words": [
+        {
+          "word": "Đợi",
+          "startFrame": 0,
+          "endFrame": 4
+        },
+        {
+          "word": "khi",
+          "startFrame": 4,
+          "endFrame": 10
+        },
+        {
+          "word": "nào",
+          "startFrame": 10,
+          "endFrame": 17
+        },
+        {
+          "word": "kiếm",
+          "startFrame": 29,
+          "endFrame": 35
+        },
+        {
+          "word": "đủ",
+          "startFrame": 35,
+          "endFrame": 41
+        },
+        {
+          "word": "tiền",
+          "startFrame": 41,
+          "endFrame": 47
+        },
+        {
+          "word": "sẽ",
+          "startFrame": 47,
+          "endFrame": 56
+        },
+        {
+          "word": "nghỉ",
+          "startFrame": 56,
+          "endFrame": 64
+        },
+        {
+          "word": "ngơi.",
+          "startFrame": 64,
+          "endFrame": 70
+        },
+        {
+          "word": "Đợi",
+          "startFrame": 88,
+          "endFrame": 92
+        },
+        {
+          "word": "khi",
+          "startFrame": 92,
+          "endFrame": 96
+        },
+        {
+          "word": "nào",
+          "startFrame": 96,
+          "endFrame": 104
+        },
+        {
+          "word": "con",
+          "startFrame": 112,
+          "endFrame": 116
+        },
+        {
+          "word": "lớn",
+          "startFrame": 116,
+          "endFrame": 124
+        },
+        {
+          "word": "sẽ",
+          "startFrame": 124,
+          "endFrame": 130
+        },
+        {
+          "word": "đưa",
+          "startFrame": 130,
+          "endFrame": 136
+        },
+        {
+          "word": "bố",
+          "startFrame": 136,
+          "endFrame": 140
+        },
+        {
+          "word": "mẹ",
+          "startFrame": 140,
+          "endFrame": 146
+        },
+        {
+          "word": "đi",
+          "startFrame": 146,
+          "endFrame": 151
+        },
+        {
+          "word": "du",
+          "startFrame": 151,
+          "endFrame": 155
+        },
+        {
+          "word": "lịch.",
+          "startFrame": 155,
+          "endFrame": 161
+        },
+        {
+          "word": "Đợi",
+          "startFrame": 181,
+          "endFrame": 183
+        },
+        {
+          "word": "khi",
+          "startFrame": 182,
+          "endFrame": 187
+        },
+        {
+          "word": "nào",
+          "startFrame": 187,
+          "endFrame": 193
+        },
+        {
+          "word": "rảnh",
+          "startFrame": 193,
+          "endFrame": 201
+        },
+        {
+          "word": "sẽ",
+          "startFrame": 201,
+          "endFrame": 208
+        },
+        {
+          "word": "ngồi",
+          "startFrame": 208,
+          "endFrame": 214
+        },
+        {
+          "word": "uống",
+          "startFrame": 214,
+          "endFrame": 220
+        },
+        {
+          "word": "trà",
+          "startFrame": 220,
+          "endFrame": 226
+        },
+        {
+          "word": "với",
+          "startFrame": 226,
+          "endFrame": 232
+        },
+        {
+          "word": "bạn",
+          "startFrame": 232,
+          "endFrame": 237
+        },
+        {
+          "word": "cũ.",
+          "startFrame": 237,
+          "endFrame": 244
+        }
+      ]
+    },
+    {
+      "scene": 2,
+      "tag": "CUỘC ĐỜI KHÔNG BIẾT ĐỢI",
+      "text": "Chúng ta cứ sống mãi trong hai chữ \"Đợi khi nào\",, như thể thời gian và những người thương yêu sẽ đứng yên một chỗ chờ ta thu xếp xong công việc.",
+      "highlight": "CUỘC ĐỜI KHÔNG BIẾT ĐỢI",
+      "image": "nct_v74_scene2.jpg",
+      "video": "nct_v74_scene2.jpg",
+      "startFrame": 268,
+      "durationInFrames": 242,
+      "words": [
+        {
+          "word": "Chúng",
+          "startFrame": 0,
+          "endFrame": 5
+        },
+        {
+          "word": "ta",
+          "startFrame": 5,
+          "endFrame": 11
+        },
+        {
+          "word": "cứ",
+          "startFrame": 11,
+          "endFrame": 16
+        },
+        {
+          "word": "sống",
+          "startFrame": 16,
+          "endFrame": 21
+        },
+        {
+          "word": "mãi",
+          "startFrame": 21,
+          "endFrame": 30
+        },
+        {
+          "word": "trong",
+          "startFrame": 30,
+          "endFrame": 33
+        },
+        {
+          "word": "hai",
+          "startFrame": 33,
+          "endFrame": 41
+        },
+        {
+          "word": "chữ",
+          "startFrame": 41,
+          "endFrame": 48
+        },
+        {
+          "word": "\"Đợi",
+          "startFrame": 48,
+          "endFrame": 55
+        },
+        {
+          "word": "khi",
+          "startFrame": 55,
+          "endFrame": 64
+        },
+        {
+          "word": "nào\",,",
+          "startFrame": 64,
+          "endFrame": 70
+        },
+        {
+          "word": "như",
+          "startFrame": 90,
+          "endFrame": 94
+        },
+        {
+          "word": "thể",
+          "startFrame": 94,
+          "endFrame": 99
+        },
+        {
+          "word": "thời",
+          "startFrame": 99,
+          "endFrame": 104
+        },
+        {
+          "word": "gian",
+          "startFrame": 104,
+          "endFrame": 111
+        },
+        {
+          "word": "và",
+          "startFrame": 111,
+          "endFrame": 124
+        },
+        {
+          "word": "những",
+          "startFrame": 124,
+          "endFrame": 130
+        },
+        {
+          "word": "người",
+          "startFrame": 130,
+          "endFrame": 138
+        },
+        {
+          "word": "thương",
+          "startFrame": 138,
+          "endFrame": 144
+        },
+        {
+          "word": "yêu",
+          "startFrame": 144,
+          "endFrame": 149
+        },
+        {
+          "word": "sẽ",
+          "startFrame": 149,
+          "endFrame": 164
+        },
+        {
+          "word": "đứng",
+          "startFrame": 164,
+          "endFrame": 172
+        },
+        {
+          "word": "yên",
+          "startFrame": 172,
+          "endFrame": 177
+        },
+        {
+          "word": "một",
+          "startFrame": 177,
+          "endFrame": 182
+        },
+        {
+          "word": "chỗ",
+          "startFrame": 182,
+          "endFrame": 186
+        },
+        {
+          "word": "chờ",
+          "startFrame": 186,
+          "endFrame": 195
+        },
+        {
+          "word": "ta",
+          "startFrame": 195,
+          "endFrame": 201
+        },
+        {
+          "word": "thu",
+          "startFrame": 201,
+          "endFrame": 207
+        },
+        {
+          "word": "xếp",
+          "startFrame": 207,
+          "endFrame": 214
+        },
+        {
+          "word": "xong",
+          "startFrame": 214,
+          "endFrame": 219
+        },
+        {
+          "word": "công",
+          "startFrame": 219,
+          "endFrame": 225
+        },
+        {
+          "word": "việc.",
+          "startFrame": 225,
+          "endFrame": 230
+        }
+      ]
+    },
+    {
+      "scene": 3,
+      "tag": "KHI RẢNH THÌ CHÂN ĐÃ MỎI",
+      "text": "Nhưng sự thật tàn nhẫn là: Đến ngày bạn có đủ tiền và thời gian,, thì đầu gối của cha mẹ đã đau không còn đi xa được nữa.",
+      "highlight": "KHI RẢNH THÌ CHÂN ĐÃ MỎI",
+      "image": "nct_v74_scene3.jpg",
+      "video": "nct_v74_scene3.jpg",
+      "startFrame": 520,
+      "durationInFrames": 208,
+      "words": [
+        {
+          "word": "Nhưng",
+          "startFrame": 0,
+          "endFrame": 7
+        },
+        {
+          "word": "sự",
+          "startFrame": 7,
+          "endFrame": 12
+        },
+        {
+          "word": "thật",
+          "startFrame": 12,
+          "endFrame": 18
+        },
+        {
+          "word": "tàn",
+          "startFrame": 18,
+          "endFrame": 23
+        },
+        {
+          "word": "nhẫn",
+          "startFrame": 23,
+          "endFrame": 29
+        },
+        {
+          "word": "là:",
+          "startFrame": 29,
+          "endFrame": 37
+        },
+        {
+          "word": "Đến",
+          "startFrame": 37,
+          "endFrame": 51
+        },
+        {
+          "word": "ngày",
+          "startFrame": 51,
+          "endFrame": 57
+        },
+        {
+          "word": "bạn",
+          "startFrame": 57,
+          "endFrame": 64
+        },
+        {
+          "word": "có",
+          "startFrame": 64,
+          "endFrame": 70
+        },
+        {
+          "word": "đủ",
+          "startFrame": 70,
+          "endFrame": 75
+        },
+        {
+          "word": "tiền",
+          "startFrame": 75,
+          "endFrame": 83
+        },
+        {
+          "word": "và",
+          "startFrame": 83,
+          "endFrame": 88
+        },
+        {
+          "word": "thời",
+          "startFrame": 88,
+          "endFrame": 94
+        },
+        {
+          "word": "gian,,",
+          "startFrame": 94,
+          "endFrame": 103
+        },
+        {
+          "word": "thì",
+          "startFrame": 103,
+          "endFrame": 118
+        },
+        {
+          "word": "đầu",
+          "startFrame": 118,
+          "endFrame": 123
+        },
+        {
+          "word": "gối",
+          "startFrame": 123,
+          "endFrame": 130
+        },
+        {
+          "word": "của",
+          "startFrame": 130,
+          "endFrame": 135
+        },
+        {
+          "word": "cha",
+          "startFrame": 135,
+          "endFrame": 141
+        },
+        {
+          "word": "mẹ",
+          "startFrame": 141,
+          "endFrame": 148
+        },
+        {
+          "word": "đã",
+          "startFrame": 148,
+          "endFrame": 153
+        },
+        {
+          "word": "đau",
+          "startFrame": 153,
+          "endFrame": 159
+        },
+        {
+          "word": "không",
+          "startFrame": 159,
+          "endFrame": 166
+        },
+        {
+          "word": "còn",
+          "startFrame": 166,
+          "endFrame": 172
+        },
+        {
+          "word": "đi",
+          "startFrame": 172,
+          "endFrame": 176
+        },
+        {
+          "word": "xa",
+          "startFrame": 176,
+          "endFrame": 184
+        },
+        {
+          "word": "được",
+          "startFrame": 184,
+          "endFrame": 187
+        },
+        {
+          "word": "nữa.",
+          "startFrame": 187,
+          "endFrame": 194
+        }
+      ]
+    },
+    {
+      "scene": 4,
+      "tag": "KHÔNG CÓ LÚC NÀO HOÀN HẢO",
+      "text": "Trên đời này,, chẳng bao giờ có thời điểm hoàn hảo tuyệt đối. Công việc thì làm cả đời không hết,, còn năm tháng thì một đi không trở lại.",
+      "highlight": "KHÔNG CÓ LÚC NÀO HOÀN HẢO",
+      "image": "nct_v74_scene4.jpg",
+      "video": "nct_v74_scene4.jpg",
+      "startFrame": 739,
+      "durationInFrames": 233,
+      "words": [
+        {
+          "word": "Trên",
+          "startFrame": 0,
+          "endFrame": 5
+        },
+        {
+          "word": "đời",
+          "startFrame": 5,
+          "endFrame": 11
+        },
+        {
+          "word": "này,,",
+          "startFrame": 11,
+          "endFrame": 18
+        },
+        {
+          "word": "chẳng",
+          "startFrame": 31,
+          "endFrame": 37
+        },
+        {
+          "word": "bao",
+          "startFrame": 37,
+          "endFrame": 41
+        },
+        {
+          "word": "giờ",
+          "startFrame": 41,
+          "endFrame": 46
+        },
+        {
+          "word": "có",
+          "startFrame": 46,
+          "endFrame": 53
+        },
+        {
+          "word": "thời",
+          "startFrame": 53,
+          "endFrame": 58
+        },
+        {
+          "word": "điểm",
+          "startFrame": 58,
+          "endFrame": 64
+        },
+        {
+          "word": "hoàn",
+          "startFrame": 64,
+          "endFrame": 71
+        },
+        {
+          "word": "hảo",
+          "startFrame": 71,
+          "endFrame": 76
+        },
+        {
+          "word": "tuyệt",
+          "startFrame": 76,
+          "endFrame": 82
+        },
+        {
+          "word": "đối.",
+          "startFrame": 82,
+          "endFrame": 89
+        },
+        {
+          "word": "Công",
+          "startFrame": 107,
+          "endFrame": 119
+        },
+        {
+          "word": "việc",
+          "startFrame": 119,
+          "endFrame": 124
+        },
+        {
+          "word": "thì",
+          "startFrame": 124,
+          "endFrame": 130
+        },
+        {
+          "word": "làm",
+          "startFrame": 130,
+          "endFrame": 134
+        },
+        {
+          "word": "cả",
+          "startFrame": 134,
+          "endFrame": 140
+        },
+        {
+          "word": "đời",
+          "startFrame": 140,
+          "endFrame": 148
+        },
+        {
+          "word": "không",
+          "startFrame": 148,
+          "endFrame": 152
+        },
+        {
+          "word": "hết,,",
+          "startFrame": 152,
+          "endFrame": 158
+        },
+        {
+          "word": "còn",
+          "startFrame": 166,
+          "endFrame": 171
+        },
+        {
+          "word": "năm",
+          "startFrame": 171,
+          "endFrame": 175
+        },
+        {
+          "word": "tháng",
+          "startFrame": 175,
+          "endFrame": 185
+        },
+        {
+          "word": "thì",
+          "startFrame": 185,
+          "endFrame": 192
+        },
+        {
+          "word": "một",
+          "startFrame": 192,
+          "endFrame": 197
+        },
+        {
+          "word": "đi",
+          "startFrame": 197,
+          "endFrame": 202
+        },
+        {
+          "word": "không",
+          "startFrame": 202,
+          "endFrame": 209
+        },
+        {
+          "word": "trở",
+          "startFrame": 209,
+          "endFrame": 215
+        },
+        {
+          "word": "lại.",
+          "startFrame": 215,
+          "endFrame": 222
+        }
+      ]
+    },
+    {
+      "scene": 5,
+      "tag": "THƯƠNG AI HÃY THƯƠNG NGAY",
+      "text": "Đừng hẹn lần sau nữa. Muốn thăm ai hãy đi ngay cuối tuần này. Muốn nói thương ai,, hãy nói ngay khi họ còn nghe thấy.",
+      "highlight": "THƯƠNG AI HÃY THƯƠNG NGAY",
+      "image": "nct_v74_scene5.jpg",
+      "video": "nct_v74_scene5.jpg",
+      "startFrame": 982,
+      "durationInFrames": 207,
+      "words": [
+        {
+          "word": "Đừng",
+          "startFrame": 0,
+          "endFrame": 7
+        },
+        {
+          "word": "hẹn",
+          "startFrame": 7,
+          "endFrame": 14
+        },
+        {
+          "word": "lần",
+          "startFrame": 14,
+          "endFrame": 17
+        },
+        {
+          "word": "sau",
+          "startFrame": 17,
+          "endFrame": 23
+        },
+        {
+          "word": "nữa.",
+          "startFrame": 23,
+          "endFrame": 29
+        },
+        {
+          "word": "Muốn",
+          "startFrame": 46,
+          "endFrame": 50
+        },
+        {
+          "word": "thăm",
+          "startFrame": 50,
+          "endFrame": 57
+        },
+        {
+          "word": "ai",
+          "startFrame": 57,
+          "endFrame": 61
+        },
+        {
+          "word": "hãy",
+          "startFrame": 61,
+          "endFrame": 67
+        },
+        {
+          "word": "đi",
+          "startFrame": 67,
+          "endFrame": 71
+        },
+        {
+          "word": "ngay",
+          "startFrame": 71,
+          "endFrame": 79
+        },
+        {
+          "word": "cuối",
+          "startFrame": 79,
+          "endFrame": 85
+        },
+        {
+          "word": "tuần",
+          "startFrame": 85,
+          "endFrame": 91
+        },
+        {
+          "word": "này.",
+          "startFrame": 91,
+          "endFrame": 96
+        },
+        {
+          "word": "Muốn",
+          "startFrame": 115,
+          "endFrame": 121
+        },
+        {
+          "word": "nói",
+          "startFrame": 121,
+          "endFrame": 124
+        },
+        {
+          "word": "thương",
+          "startFrame": 124,
+          "endFrame": 131
+        },
+        {
+          "word": "ai,,",
+          "startFrame": 131,
+          "endFrame": 138
+        },
+        {
+          "word": "hãy",
+          "startFrame": 138,
+          "endFrame": 151
+        },
+        {
+          "word": "nói",
+          "startFrame": 151,
+          "endFrame": 155
+        },
+        {
+          "word": "ngay",
+          "startFrame": 155,
+          "endFrame": 164
+        },
+        {
+          "word": "khi",
+          "startFrame": 164,
+          "endFrame": 170
+        },
+        {
+          "word": "họ",
+          "startFrame": 170,
+          "endFrame": 176
+        },
+        {
+          "word": "còn",
+          "startFrame": 176,
+          "endFrame": 183
+        },
+        {
+          "word": "nghe",
+          "startFrame": 183,
+          "endFrame": 190
+        },
+        {
+          "word": "thấy.",
+          "startFrame": 190,
+          "endFrame": 195
+        }
+      ]
+    }
+  ],
+  "durationInFrames": 1199,
+  "fps": 30,
+  "music": "Heartbreaking",
+  "musicFile": "heartbreaking.mp3",
+  "musicMood": "sad",
+  "thumbnailImage": "thumbnail_nct_v74.jpg",
+  "audioFile": "voiceover_nct_v74.wav"
+}

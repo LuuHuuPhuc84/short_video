@@ -1,0 +1,41 @@
+{
+  "id": "nct_v59",
+  "title": "Con chỉ mở lòng khi ta đứng bên cạnh",
+  "scenes": [
+    {
+      "scene": 1,
+      "tag": "Cảnh 1",
+      "text": "Vì sao con tuổi teen cứ im lặng khi bạn hỏi?",
+      "highlight": "CON IM LẶNG VÌ ĐÂU?",
+      "image": "nct_v59_scene1.jpg"
+    },
+    {
+      "scene": 2,
+      "tag": "Cảnh 2",
+      "text": "Bạn hỏi, hôm nay ở trường thế nào? Con đáp, bình thường. Bạn hỏi thêm, con đóng cửa phòng.",
+      "highlight": "BÌNH THƯỜNG / ĐÓNG CỬA",
+      "image": "nct_v59_scene2.jpg"
+    },
+    {
+      "scene": 3,
+      "tag": "Cảnh 3",
+      "text": "Nhưng có một lúc, con lại tự kể không ngừng. Là lúc hai cha con đi xe, hay lúc hai mẹ con đứng rửa bát.",
+      "highlight": "TỰ KỂ KHÔNG NGỪNG",
+      "image": "nct_v59_scene3.jpg"
+    },
+    {
+      "scene": 4,
+      "tag": "Cảnh 4",
+      "text": "Không ai nhìn thẳng vào ai. Nhiều khi con không im lặng vì không muốn nói. Con chỉ khó nói khi bị nhìn chằm chằm.",
+      "highlight": "KHÓ NÓI KHI BỊ NHÌN",
+      "image": "nct_v59_scene4.jpg"
+    },
+    {
+      "scene": 5,
+      "tag": "Cảnh 5",
+      "text": "Con im lặng thì hãy đứng cạnh con, đừng đứng đối diện.",
+      "highlight": "ĐỨNG CẠNH CON",
+      "image": "nct_v59_scene5.jpg"
+    }
+  ]
+}

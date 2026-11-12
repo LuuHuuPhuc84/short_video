@@ -1,0 +1,841 @@
+{
+  "id": "nct_v73",
+  "episode": 73,
+  "title": "Đừng Mang Cuộc Đời Mình So Với Trang Mạng Của Người Khác",
+  "title_hook": "AI CŨNG THÀNH ĐẠT TRÊN MẠNG",
+  "titleHook": "AI CŨNG THÀNH ĐẠT TRÊN MẠNG",
+  "subtitle": "Triết lý Nửa Chén Trà",
+  "book": "NỬA CHÉN TRÀ",
+  "author": "Bài học cuộc sống",
+  "chapter": "Sống nhẹ",
+  "topic": "Đừng Mang Cuộc Đời Mình So Với Trang Mạng Của Người Khác",
+  "schedule": "2026-11-20 11:30",
+  "schedule_time": "2026-11-20 11:30",
+  "publishAt": "2026-11-20 11:30",
+  "scheduled_time": "2026-11-20T04:30:00Z",
+  "tags": [
+    "nct_v73",
+    "nuachentra",
+    "nhinsaudesongnhe",
+    "khoanglang",
+    "buongbo",
+    "trietly",
+    "chualanh",
+    "shorts"
+  ],
+  "description": "Lướt mạng xã hội mười phút,, bạn thấy bạn học cũ vừa mua xe hơi,, đồng nghiệp vừa đi du lịch châu Âu,, ai cũng rực rỡ và viên mãn. Nửa Chén Trà — Nhìn sâu để sống nhẹ. #nct_v73 #nuachentra #nhinsaudesongnhe #shorts",
+  "containsSyntheticMedia": true,
+  "bgm": "Almost in F",
+  "bgm_file": "almost_in_f.mp3",
+  "bgm_volume": 0.15,
+  "visual_type": "MIXED",
+  "scenes": [
+    {
+      "scene": 1,
+      "tag": "AI CŨNG THÀNH ĐẠT TRÊN MẠNG",
+      "text": "Lướt mạng xã hội mười phút,, bạn thấy bạn học cũ vừa mua xe hơi,, đồng nghiệp vừa đi du lịch châu Âu,, ai cũng rực rỡ và viên mãn.",
+      "highlight": "AI CŨNG THÀNH ĐẠT TRÊN MẠNG",
+      "image": "nct_v73_scene1.jpg",
+      "video": "nct_v73_scene1.jpg",
+      "startFrame": 0,
+      "durationInFrames": 217,
+      "words": [
+        {
+          "word": "Lướt",
+          "startFrame": 0,
+          "endFrame": 8
+        },
+        {
+          "word": "mạng",
+          "startFrame": 8,
+          "endFrame": 14
+        },
+        {
+          "word": "xã",
+          "startFrame": 14,
+          "endFrame": 19
+        },
+        {
+          "word": "hội",
+          "startFrame": 19,
+          "endFrame": 23
+        },
+        {
+          "word": "mười",
+          "startFrame": 23,
+          "endFrame": 29
+        },
+        {
+          "word": "phút,,",
+          "startFrame": 29,
+          "endFrame": 37
+        },
+        {
+          "word": "bạn",
+          "startFrame": 37,
+          "endFrame": 49
+        },
+        {
+          "word": "thấy",
+          "startFrame": 49,
+          "endFrame": 55
+        },
+        {
+          "word": "bạn",
+          "startFrame": 55,
+          "endFrame": 60
+        },
+        {
+          "word": "học",
+          "startFrame": 60,
+          "endFrame": 65
+        },
+        {
+          "word": "cũ",
+          "startFrame": 65,
+          "endFrame": 74
+        },
+        {
+          "word": "vừa",
+          "startFrame": 74,
+          "endFrame": 80
+        },
+        {
+          "word": "mua",
+          "startFrame": 80,
+          "endFrame": 85
+        },
+        {
+          "word": "xe",
+          "startFrame": 85,
+          "endFrame": 91
+        },
+        {
+          "word": "hơi,,",
+          "startFrame": 91,
+          "endFrame": 98
+        },
+        {
+          "word": "đồng",
+          "startFrame": 111,
+          "endFrame": 114
+        },
+        {
+          "word": "nghiệp",
+          "startFrame": 114,
+          "endFrame": 119
+        },
+        {
+          "word": "vừa",
+          "startFrame": 119,
+          "endFrame": 126
+        },
+        {
+          "word": "đi",
+          "startFrame": 126,
+          "endFrame": 129
+        },
+        {
+          "word": "du",
+          "startFrame": 129,
+          "endFrame": 134
+        },
+        {
+          "word": "lịch",
+          "startFrame": 134,
+          "endFrame": 138
+        },
+        {
+          "word": "châu",
+          "startFrame": 138,
+          "endFrame": 143
+        },
+        {
+          "word": "Âu,,",
+          "startFrame": 143,
+          "endFrame": 154
+        },
+        {
+          "word": "ai",
+          "startFrame": 164,
+          "endFrame": 169
+        },
+        {
+          "word": "cũng",
+          "startFrame": 169,
+          "endFrame": 173
+        },
+        {
+          "word": "rực",
+          "startFrame": 173,
+          "endFrame": 182
+        },
+        {
+          "word": "rỡ",
+          "startFrame": 182,
+          "endFrame": 188
+        },
+        {
+          "word": "và",
+          "startFrame": 188,
+          "endFrame": 194
+        },
+        {
+          "word": "viên",
+          "startFrame": 194,
+          "endFrame": 200
+        },
+        {
+          "word": "mãn.",
+          "startFrame": 200,
+          "endFrame": 209
+        }
+      ]
+    },
+    {
+      "scene": 2,
+      "tag": "NHÌN LẠI MÌNH THẤY TỦI",
+      "text": "Rồi bạn nhìn lại căn phòng trọ chật hẹp của mình,, nhìn số dư tài khoản ít ỏi,, bỗng thấy mình sao mà thất bại đến thế.",
+      "highlight": "NHÌN LẠI MÌNH THẤY TỦI",
+      "image": "nct_v73_scene2.jpg",
+      "video": "nct_v73_scene2.jpg",
+      "startFrame": 228,
+      "durationInFrames": 223,
+      "words": [
+        {
+          "word": "Rồi",
+          "startFrame": 0,
+          "endFrame": 8
+        },
+        {
+          "word": "bạn",
+          "startFrame": 8,
+          "endFrame": 14
+        },
+        {
+          "word": "nhìn",
+          "startFrame": 14,
+          "endFrame": 20
+        },
+        {
+          "word": "lại",
+          "startFrame": 20,
+          "endFrame": 26
+        },
+        {
+          "word": "căn",
+          "startFrame": 26,
+          "endFrame": 33
+        },
+        {
+          "word": "phòng",
+          "startFrame": 33,
+          "endFrame": 41
+        },
+        {
+          "word": "trọ",
+          "startFrame": 41,
+          "endFrame": 55
+        },
+        {
+          "word": "chật",
+          "startFrame": 55,
+          "endFrame": 62
+        },
+        {
+          "word": "hẹp",
+          "startFrame": 62,
+          "endFrame": 68
+        },
+        {
+          "word": "của",
+          "startFrame": 68,
+          "endFrame": 71
+        },
+        {
+          "word": "mình,,",
+          "startFrame": 71,
+          "endFrame": 76
+        },
+        {
+          "word": "nhìn",
+          "startFrame": 102,
+          "endFrame": 107
+        },
+        {
+          "word": "số",
+          "startFrame": 107,
+          "endFrame": 112
+        },
+        {
+          "word": "dư",
+          "startFrame": 112,
+          "endFrame": 119
+        },
+        {
+          "word": "tài",
+          "startFrame": 119,
+          "endFrame": 123
+        },
+        {
+          "word": "khoản",
+          "startFrame": 123,
+          "endFrame": 131
+        },
+        {
+          "word": "ít",
+          "startFrame": 131,
+          "endFrame": 138
+        },
+        {
+          "word": "ỏi,,",
+          "startFrame": 138,
+          "endFrame": 146
+        },
+        {
+          "word": "bỗng",
+          "startFrame": 146,
+          "endFrame": 163
+        },
+        {
+          "word": "thấy",
+          "startFrame": 163,
+          "endFrame": 166
+        },
+        {
+          "word": "mình",
+          "startFrame": 166,
+          "endFrame": 171
+        },
+        {
+          "word": "sao",
+          "startFrame": 171,
+          "endFrame": 181
+        },
+        {
+          "word": "mà",
+          "startFrame": 181,
+          "endFrame": 186
+        },
+        {
+          "word": "thất",
+          "startFrame": 186,
+          "endFrame": 194
+        },
+        {
+          "word": "bại",
+          "startFrame": 194,
+          "endFrame": 200
+        },
+        {
+          "word": "đến",
+          "startFrame": 200,
+          "endFrame": 202
+        },
+        {
+          "word": "thế.",
+          "startFrame": 202,
+          "endFrame": 210
+        }
+      ]
+    },
+    {
+      "scene": 3,
+      "tag": "HỌ CHỈ ĐĂNG PHẦN ĐẸP NHẤT",
+      "text": "Nhưng bạn quên mất một điều: Chẳng ai chụp ảnh lúc họ đang cãi nhau với chồng,, lúc bị sếp mắng,, hay lúc cầm tờ giấy nợ ngân hàng để đăng lên mạng cả.",
+      "highlight": "HỌ CHỈ ĐĂNG PHẦN ĐẸP NHẤT",
+      "image": "nct_v73_scene3.jpg",
+      "video": "nct_v73_scene3.jpg",
+      "startFrame": 461,
+      "durationInFrames": 250,
+      "words": [
+        {
+          "word": "Nhưng",
+          "startFrame": 0,
+          "endFrame": 6
+        },
+        {
+          "word": "bạn",
+          "startFrame": 6,
+          "endFrame": 10
+        },
+        {
+          "word": "quên",
+          "startFrame": 10,
+          "endFrame": 17
+        },
+        {
+          "word": "mất",
+          "startFrame": 17,
+          "endFrame": 23
+        },
+        {
+          "word": "một",
+          "startFrame": 23,
+          "endFrame": 26
+        },
+        {
+          "word": "điều:",
+          "startFrame": 26,
+          "endFrame": 31
+        },
+        {
+          "word": "Chẳng",
+          "startFrame": 45,
+          "endFrame": 50
+        },
+        {
+          "word": "ai",
+          "startFrame": 50,
+          "endFrame": 53
+        },
+        {
+          "word": "chụp",
+          "startFrame": 53,
+          "endFrame": 59
+        },
+        {
+          "word": "ảnh",
+          "startFrame": 59,
+          "endFrame": 64
+        },
+        {
+          "word": "lúc",
+          "startFrame": 64,
+          "endFrame": 72
+        },
+        {
+          "word": "họ",
+          "startFrame": 72,
+          "endFrame": 76
+        },
+        {
+          "word": "đang",
+          "startFrame": 76,
+          "endFrame": 81
+        },
+        {
+          "word": "cãi",
+          "startFrame": 81,
+          "endFrame": 89
+        },
+        {
+          "word": "nhau",
+          "startFrame": 89,
+          "endFrame": 93
+        },
+        {
+          "word": "với",
+          "startFrame": 93,
+          "endFrame": 98
+        },
+        {
+          "word": "chồng,,",
+          "startFrame": 98,
+          "endFrame": 105
+        },
+        {
+          "word": "lúc",
+          "startFrame": 125,
+          "endFrame": 128
+        },
+        {
+          "word": "bị",
+          "startFrame": 128,
+          "endFrame": 132
+        },
+        {
+          "word": "sếp",
+          "startFrame": 132,
+          "endFrame": 139
+        },
+        {
+          "word": "mắng,,",
+          "startFrame": 139,
+          "endFrame": 146
+        },
+        {
+          "word": "hay",
+          "startFrame": 146,
+          "endFrame": 156
+        },
+        {
+          "word": "lúc",
+          "startFrame": 156,
+          "endFrame": 163
+        },
+        {
+          "word": "cầm",
+          "startFrame": 163,
+          "endFrame": 170
+        },
+        {
+          "word": "tờ",
+          "startFrame": 170,
+          "endFrame": 176
+        },
+        {
+          "word": "giấy",
+          "startFrame": 176,
+          "endFrame": 185
+        },
+        {
+          "word": "nợ",
+          "startFrame": 185,
+          "endFrame": 189
+        },
+        {
+          "word": "ngân",
+          "startFrame": 189,
+          "endFrame": 196
+        },
+        {
+          "word": "hàng",
+          "startFrame": 196,
+          "endFrame": 201
+        },
+        {
+          "word": "để",
+          "startFrame": 201,
+          "endFrame": 215
+        },
+        {
+          "word": "đăng",
+          "startFrame": 215,
+          "endFrame": 222
+        },
+        {
+          "word": "lên",
+          "startFrame": 222,
+          "endFrame": 226
+        },
+        {
+          "word": "mạng",
+          "startFrame": 226,
+          "endFrame": 234
+        },
+        {
+          "word": "cả.",
+          "startFrame": 234,
+          "endFrame": 239
+        }
+      ]
+    },
+    {
+      "scene": 4,
+      "tag": "HẬU TRƯỜNG SO VỚI SÂN KHẤU",
+      "text": "Bạn đang lấy toàn bộ góc khuất trần trụi của đời mình,, để đi so sánh với một khoảnh khắc đã qua chỉnh sửa của người khác.",
+      "highlight": "HẬU TRƯỜNG SO VỚI SÂN KHẤU",
+      "image": "nct_v73_scene4.jpg",
+      "video": "nct_v73_scene4.jpg",
+      "startFrame": 721,
+      "durationInFrames": 198,
+      "words": [
+        {
+          "word": "Bạn",
+          "startFrame": 0,
+          "endFrame": 7
+        },
+        {
+          "word": "đang",
+          "startFrame": 7,
+          "endFrame": 12
+        },
+        {
+          "word": "lấy",
+          "startFrame": 12,
+          "endFrame": 17
+        },
+        {
+          "word": "toàn",
+          "startFrame": 17,
+          "endFrame": 25
+        },
+        {
+          "word": "bộ",
+          "startFrame": 25,
+          "endFrame": 29
+        },
+        {
+          "word": "góc",
+          "startFrame": 29,
+          "endFrame": 37
+        },
+        {
+          "word": "khuất",
+          "startFrame": 37,
+          "endFrame": 41
+        },
+        {
+          "word": "trần",
+          "startFrame": 41,
+          "endFrame": 48
+        },
+        {
+          "word": "trụi",
+          "startFrame": 48,
+          "endFrame": 56
+        },
+        {
+          "word": "của",
+          "startFrame": 56,
+          "endFrame": 61
+        },
+        {
+          "word": "đời",
+          "startFrame": 61,
+          "endFrame": 64
+        },
+        {
+          "word": "mình,,",
+          "startFrame": 64,
+          "endFrame": 68
+        },
+        {
+          "word": "để",
+          "startFrame": 68,
+          "endFrame": 89
+        },
+        {
+          "word": "đi",
+          "startFrame": 89,
+          "endFrame": 94
+        },
+        {
+          "word": "so",
+          "startFrame": 94,
+          "endFrame": 100
+        },
+        {
+          "word": "sánh",
+          "startFrame": 100,
+          "endFrame": 107
+        },
+        {
+          "word": "với",
+          "startFrame": 107,
+          "endFrame": 112
+        },
+        {
+          "word": "một",
+          "startFrame": 112,
+          "endFrame": 118
+        },
+        {
+          "word": "khoảnh",
+          "startFrame": 118,
+          "endFrame": 125
+        },
+        {
+          "word": "khắc",
+          "startFrame": 125,
+          "endFrame": 133
+        },
+        {
+          "word": "đã",
+          "startFrame": 133,
+          "endFrame": 146
+        },
+        {
+          "word": "qua",
+          "startFrame": 146,
+          "endFrame": 153
+        },
+        {
+          "word": "chỉnh",
+          "startFrame": 153,
+          "endFrame": 161
+        },
+        {
+          "word": "sửa",
+          "startFrame": 161,
+          "endFrame": 171
+        },
+        {
+          "word": "của",
+          "startFrame": 171,
+          "endFrame": 175
+        },
+        {
+          "word": "người",
+          "startFrame": 175,
+          "endFrame": 180
+        },
+        {
+          "word": "khác.",
+          "startFrame": 180,
+          "endFrame": 187
+        }
+      ]
+    },
+    {
+      "scene": 5,
+      "tag": "MỖI LOÀI HOA MỘT MÙA NỞ",
+      "text": "Hãy tắt màn hình đi. Hoa đào nở mùa xuân,, hoa cúc nở mùa thu. Cứ đi đúng nhịp bước của mình,, rồi bạn cũng sẽ đến mùa nở hoa.",
+      "highlight": "MỖI LOÀI HOA MỘT MÙA NỞ",
+      "image": "nct_v73_scene5.jpg",
+      "video": "nct_v73_scene5.jpg",
+      "startFrame": 930,
+      "durationInFrames": 227,
+      "words": [
+        {
+          "word": "Hãy",
+          "startFrame": 0,
+          "endFrame": 6
+        },
+        {
+          "word": "tắt",
+          "startFrame": 6,
+          "endFrame": 12
+        },
+        {
+          "word": "màn",
+          "startFrame": 12,
+          "endFrame": 17
+        },
+        {
+          "word": "hình",
+          "startFrame": 17,
+          "endFrame": 24
+        },
+        {
+          "word": "đi.",
+          "startFrame": 24,
+          "endFrame": 30
+        },
+        {
+          "word": "Hoa",
+          "startFrame": 46,
+          "endFrame": 51
+        },
+        {
+          "word": "đào",
+          "startFrame": 51,
+          "endFrame": 55
+        },
+        {
+          "word": "nở",
+          "startFrame": 55,
+          "endFrame": 62
+        },
+        {
+          "word": "mùa",
+          "startFrame": 62,
+          "endFrame": 67
+        },
+        {
+          "word": "xuân,,",
+          "startFrame": 67,
+          "endFrame": 74
+        },
+        {
+          "word": "hoa",
+          "startFrame": 85,
+          "endFrame": 87
+        },
+        {
+          "word": "cúc",
+          "startFrame": 86,
+          "endFrame": 90
+        },
+        {
+          "word": "nở",
+          "startFrame": 90,
+          "endFrame": 98
+        },
+        {
+          "word": "mùa",
+          "startFrame": 98,
+          "endFrame": 103
+        },
+        {
+          "word": "thu.",
+          "startFrame": 103,
+          "endFrame": 107
+        },
+        {
+          "word": "Cứ",
+          "startFrame": 123,
+          "endFrame": 130
+        },
+        {
+          "word": "đi",
+          "startFrame": 130,
+          "endFrame": 134
+        },
+        {
+          "word": "đúng",
+          "startFrame": 134,
+          "endFrame": 140
+        },
+        {
+          "word": "nhịp",
+          "startFrame": 140,
+          "endFrame": 146
+        },
+        {
+          "word": "bước",
+          "startFrame": 146,
+          "endFrame": 150
+        },
+        {
+          "word": "của",
+          "startFrame": 150,
+          "endFrame": 154
+        },
+        {
+          "word": "mình,,",
+          "startFrame": 154,
+          "endFrame": 159
+        },
+        {
+          "word": "rồi",
+          "startFrame": 159,
+          "endFrame": 176
+        },
+        {
+          "word": "bạn",
+          "startFrame": 176,
+          "endFrame": 180
+        },
+        {
+          "word": "cũng",
+          "startFrame": 180,
+          "endFrame": 186
+        },
+        {
+          "word": "sẽ",
+          "startFrame": 186,
+          "endFrame": 191
+        },
+        {
+          "word": "đến",
+          "startFrame": 191,
+          "endFrame": 195
+        },
+        {
+          "word": "mùa",
+          "startFrame": 195,
+          "endFrame": 202
+        },
+        {
+          "word": "nở",
+          "startFrame": 202,
+          "endFrame": 208
+        },
+        {
+          "word": "hoa.",
+          "startFrame": 208,
+          "endFrame": 216
+        }
+      ]
+    }
+  ],
+  "durationInFrames": 1167,
+  "fps": 30,
+  "music": "Almost in F",
+  "musicFile": "almost_in_f.mp3",
+  "musicMood": "deep",
+  "thumbnailImage": "thumbnail_nct_v73.jpg",
+  "audioFile": "voiceover_nct_v73.wav"
+}

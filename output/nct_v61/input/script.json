@@ -1,0 +1,74 @@
+{
+  "id": "nct_v61",
+  "episode": 61,
+  "title": "Số điện thoại cũ, mà chẳng ai gọi",
+  "title_hook": "AI ĐỂ GỌI LÚC BUỒN?",
+  "titleHook": "AI ĐỂ GỌI LÚC BUỒN?",
+  "subtitle": "Tình bạn & Trưởng thành",
+  "book": "NỬA CHÉN TRÀ",
+  "author": "Bài học cuộc sống",
+  "chapter": "Tình bạn",
+  "topic": "Tình bạn tuổi trưởng thành & Kết nối",
+  "schedule": "2026-11-13 19:30",
+  "schedule_time": "2026-11-13 19:30",
+  "publishAt": "2026-11-13 19:30",
+  "scheduled_time": "2026-11-13T12:30:00Z",
+  "tags": [
+    "nct_v61",
+    "nuachentra",
+    "nhinsaudesongnhe",
+    "tinhban",
+    "truongthanh",
+    "tamly",
+    "chualanh",
+    "shorts"
+  ],
+  "description": "Số điện thoại cũ, mà chẳng ai gọi. Bạn có còn ai để gọi lúc buồn không? Nửa Chén Trà — Nhìn sâu để sống nhẹ. #nct_v61 #tinhban #truongthanh #nuachentra #shorts",
+  "containsSyntheticMedia": true,
+  "bgm": "Sad Trio",
+  "bgm_file": "sad_trio.mp3",
+  "bgm_volume": 0.15,
+  "visual_type": "Điện ảnh 35mm hoài niệm Á Đông",
+  "scenes": [
+    {
+      "scene": 1,
+      "tag": "Hook 3s",
+      "text": "Bạn có còn ai để gọi lúc buồn không?",
+      "highlight": "AI ĐỂ GỌI LÚC BUỒN?",
+      "image": "nct_v61_scene1.jpg",
+      "video": "nct_v61_scene1.jpg"
+    },
+    {
+      "scene": 2,
+      "tag": "Hồi hai mươi",
+      "text": "Hồi hai mươi, cả nhóm thức khuya kể chuyện. Giờ mỗi người một thành phố, một gia đình, một nỗi bận.",
+      "highlight": "MỖI NGƯỜI MỘT NỖI BẬN",
+      "image": "nct_v61_scene2.jpg",
+      "video": "nct_v61_scene2.jpg"
+    },
+    {
+      "scene": 3,
+      "tag": "Danh bạ cũ",
+      "text": "Điện thoại vẫn còn số cũ, nhưng không ai gọi. Không phải hết thương. Chỉ là ai cũng nghĩ: chắc nó bận.",
+      "highlight": "SỐ CŨ KHÔNG AI GỌI",
+      "image": "nct_v61_scene3.jpg",
+      "video": "nct_v61_scene3.jpg"
+    },
+    {
+      "scene": 4,
+      "tag": "Chờ nhau",
+      "text": "Và thế là mỗi người đều chờ người kia gọi trước. Tình bạn ở tuổi này không tự giữ được.",
+      "highlight": "CHỜ NHAU GỌI TRƯỚC",
+      "image": "nct_v61_scene4.jpg",
+      "video": "nct_v61_scene4.jpg"
+    },
+    {
+      "scene": 5,
+      "tag": "Người gọi trước",
+      "text": "Nó cần một người chịu làm kẻ gọi trước. Hôm nay, hãy làm người gọi trước.",
+      "highlight": "HÃY LÀ NGƯỜI GỌI TRƯỚC",
+      "image": "nct_v61_scene5.jpg",
+      "video": "nct_v61_scene5.jpg"
+    }
+  ]
+}

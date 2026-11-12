@@ -1,0 +1,522 @@
+{
+  "episode": 51,
+  "title": "Mẹ nấu từ sáng, chỉ để nhìn con ăn",
+  "titleHook": "CÒN BAO NHIÊU BỮA CƠM?",
+  "title_hook": "CÒN BAO NHIÊU BỮA CƠM?",
+  "showTitleHook": true,
+  "subtitle": "Gia đình & Tình mẹ",
+  "book": "NỬA CHÉN TRÀ",
+  "author": "Bài học cuộc sống",
+  "chapter": "Gia đình",
+  "showHeroHeader": false,
+  "fps": 30,
+  "width": 1080,
+  "height": 1920,
+  "audioFile": "voiceover_nct_v51.wav",
+  "thumbnailImage": "thumbnail_nct_v51.jpg",
+  "music": "Heartbreaking",
+  "musicFile": "heartbreaking.mp3",
+  "scenes": [
+    {
+      "scene": 1,
+      "tag": "Cảnh 1",
+      "text": "Bạn còn ăn được bao nhiêu bữa cơm với bố mẹ?",
+      "highlight": "CÒN BAO NHIÊU BỮA CƠM?",
+      "image": "nct_v51_scene1.jpg",
+      "video": "nct_v51_scene1.jpg",
+      "startFrame": 0,
+      "durationInFrames": 79,
+      "words": [
+        {
+          "word": "Bạn",
+          "startFrame": 0,
+          "endFrame": 7
+        },
+        {
+          "word": "còn",
+          "startFrame": 7,
+          "endFrame": 13
+        },
+        {
+          "word": "ăn",
+          "startFrame": 13,
+          "endFrame": 19
+        },
+        {
+          "word": "được",
+          "startFrame": 19,
+          "endFrame": 24
+        },
+        {
+          "word": "bao",
+          "startFrame": 24,
+          "endFrame": 31
+        },
+        {
+          "word": "nhiêu",
+          "startFrame": 31,
+          "endFrame": 40
+        },
+        {
+          "word": "bữa",
+          "startFrame": 40,
+          "endFrame": 44
+        },
+        {
+          "word": "cơm",
+          "startFrame": 44,
+          "endFrame": 53
+        },
+        {
+          "word": "với",
+          "startFrame": 53,
+          "endFrame": 58
+        },
+        {
+          "word": "bố",
+          "startFrame": 58,
+          "endFrame": 65
+        },
+        {
+          "word": "mẹ?",
+          "startFrame": 65,
+          "endFrame": 73
+        }
+      ]
+    },
+    {
+      "scene": 2,
+      "tag": "Cảnh 2",
+      "text": "Hồi nhỏ, ngày nào cũng ba bữa chung mâm. Lớn lên, mỗi người một ngả.",
+      "highlight": "BA BỮA CHUNG MÂM",
+      "image": "nct_v51_scene2.jpg",
+      "video": "nct_v51_scene2.jpg",
+      "startFrame": 89,
+      "durationInFrames": 122,
+      "words": [
+        {
+          "word": "Hồi",
+          "startFrame": 1,
+          "endFrame": 6
+        },
+        {
+          "word": "nhỏ,",
+          "startFrame": 6,
+          "endFrame": 15
+        },
+        {
+          "word": "ngày",
+          "startFrame": 15,
+          "endFrame": 23
+        },
+        {
+          "word": "nào",
+          "startFrame": 23,
+          "endFrame": 29
+        },
+        {
+          "word": "cũng",
+          "startFrame": 29,
+          "endFrame": 34
+        },
+        {
+          "word": "ba",
+          "startFrame": 34,
+          "endFrame": 42
+        },
+        {
+          "word": "bữa",
+          "startFrame": 42,
+          "endFrame": 48
+        },
+        {
+          "word": "chung",
+          "startFrame": 48,
+          "endFrame": 55
+        },
+        {
+          "word": "mâm.",
+          "startFrame": 55,
+          "endFrame": 60
+        },
+        {
+          "word": "Lớn",
+          "startFrame": 60,
+          "endFrame": 74
+        },
+        {
+          "word": "lên,",
+          "startFrame": 74,
+          "endFrame": 79
+        },
+        {
+          "word": "mỗi",
+          "startFrame": 79,
+          "endFrame": 93
+        },
+        {
+          "word": "người",
+          "startFrame": 93,
+          "endFrame": 98
+        },
+        {
+          "word": "một",
+          "startFrame": 98,
+          "endFrame": 104
+        },
+        {
+          "word": "ngả.",
+          "startFrame": 104,
+          "endFrame": 113
+        }
+      ]
+    },
+    {
+      "scene": 3,
+      "tag": "Cảnh 3",
+      "text": "Mỗi năm về một vài lần, ngồi chưa ấm chỗ đã vội đi.",
+      "highlight": "VỘI VÃ RỜI ĐI",
+      "image": "nct_v51_scene3.jpg",
+      "video": "nct_v51_scene3.jpg",
+      "startFrame": 222,
+      "durationInFrames": 98,
+      "words": [
+        {
+          "word": "Mỗi",
+          "startFrame": 0,
+          "endFrame": 3
+        },
+        {
+          "word": "năm",
+          "startFrame": 3,
+          "endFrame": 9
+        },
+        {
+          "word": "về",
+          "startFrame": 9,
+          "endFrame": 17
+        },
+        {
+          "word": "một",
+          "startFrame": 17,
+          "endFrame": 21
+        },
+        {
+          "word": "vài",
+          "startFrame": 21,
+          "endFrame": 29
+        },
+        {
+          "word": "lần,",
+          "startFrame": 29,
+          "endFrame": 36
+        },
+        {
+          "word": "ngồi",
+          "startFrame": 46,
+          "endFrame": 51
+        },
+        {
+          "word": "chưa",
+          "startFrame": 51,
+          "endFrame": 58
+        },
+        {
+          "word": "ấm",
+          "startFrame": 58,
+          "endFrame": 63
+        },
+        {
+          "word": "chỗ",
+          "startFrame": 63,
+          "endFrame": 70
+        },
+        {
+          "word": "đã",
+          "startFrame": 70,
+          "endFrame": 76
+        },
+        {
+          "word": "vội",
+          "startFrame": 76,
+          "endFrame": 83
+        },
+        {
+          "word": "đi.",
+          "startFrame": 83,
+          "endFrame": 88
+        }
+      ]
+    },
+    {
+      "scene": 4,
+      "tag": "Cảnh 4",
+      "text": "Bố mẹ không đếm tuổi mình. Bố mẹ đếm những bữa cơm có con. Mẹ nấu đủ món con thích từ sáng, rồi ngồi nhìn con ăn.",
+      "highlight": "MẸ NẤU TỪ SÁNG",
+      "image": "nct_v51_scene4.jpg",
+      "video": "nct_v51_scene4.jpg",
+      "startFrame": 330,
+      "durationInFrames": 221,
+      "words": [
+        {
+          "word": "Bố",
+          "startFrame": 1,
+          "endFrame": 6
+        },
+        {
+          "word": "mẹ",
+          "startFrame": 6,
+          "endFrame": 12
+        },
+        {
+          "word": "không",
+          "startFrame": 12,
+          "endFrame": 17
+        },
+        {
+          "word": "đếm",
+          "startFrame": 17,
+          "endFrame": 23
+        },
+        {
+          "word": "tuổi",
+          "startFrame": 23,
+          "endFrame": 32
+        },
+        {
+          "word": "mình.",
+          "startFrame": 32,
+          "endFrame": 37
+        },
+        {
+          "word": "Bố",
+          "startFrame": 53,
+          "endFrame": 56
+        },
+        {
+          "word": "mẹ",
+          "startFrame": 56,
+          "endFrame": 63
+        },
+        {
+          "word": "đếm",
+          "startFrame": 63,
+          "endFrame": 69
+        },
+        {
+          "word": "những",
+          "startFrame": 69,
+          "endFrame": 75
+        },
+        {
+          "word": "bữa",
+          "startFrame": 75,
+          "endFrame": 82
+        },
+        {
+          "word": "cơm",
+          "startFrame": 82,
+          "endFrame": 91
+        },
+        {
+          "word": "có",
+          "startFrame": 91,
+          "endFrame": 96
+        },
+        {
+          "word": "con.",
+          "startFrame": 96,
+          "endFrame": 104
+        },
+        {
+          "word": "Mẹ",
+          "startFrame": 119,
+          "endFrame": 123
+        },
+        {
+          "word": "nấu",
+          "startFrame": 123,
+          "endFrame": 133
+        },
+        {
+          "word": "đủ",
+          "startFrame": 133,
+          "endFrame": 140
+        },
+        {
+          "word": "món",
+          "startFrame": 140,
+          "endFrame": 146
+        },
+        {
+          "word": "con",
+          "startFrame": 146,
+          "endFrame": 152
+        },
+        {
+          "word": "thích",
+          "startFrame": 152,
+          "endFrame": 158
+        },
+        {
+          "word": "từ",
+          "startFrame": 158,
+          "endFrame": 165
+        },
+        {
+          "word": "sáng,",
+          "startFrame": 165,
+          "endFrame": 175
+        },
+        {
+          "word": "rồi",
+          "startFrame": 175,
+          "endFrame": 186
+        },
+        {
+          "word": "ngồi",
+          "startFrame": 186,
+          "endFrame": 194
+        },
+        {
+          "word": "nhìn",
+          "startFrame": 194,
+          "endFrame": 200
+        },
+        {
+          "word": "con",
+          "startFrame": 200,
+          "endFrame": 206
+        },
+        {
+          "word": "ăn.",
+          "startFrame": 206,
+          "endFrame": 214
+        }
+      ]
+    },
+    {
+      "scene": 5,
+      "tag": "Cảnh 5",
+      "text": "Lần tới về, cất điện thoại đi. Ăn hết bát cơm mẹ gắp, vì không ai biết mình còn bao nhiêu bữa.",
+      "highlight": "CẤT ĐIỆN THOẠI ĐI",
+      "image": "nct_v51_scene5.jpg",
+      "video": "nct_v51_scene5.jpg",
+      "startFrame": 561,
+      "durationInFrames": 177,
+      "words": [
+        {
+          "word": "Lần",
+          "startFrame": 4,
+          "endFrame": 8
+        },
+        {
+          "word": "tới",
+          "startFrame": 8,
+          "endFrame": 13
+        },
+        {
+          "word": "về,",
+          "startFrame": 13,
+          "endFrame": 22
+        },
+        {
+          "word": "cất",
+          "startFrame": 22,
+          "endFrame": 33
+        },
+        {
+          "word": "điện",
+          "startFrame": 33,
+          "endFrame": 39
+        },
+        {
+          "word": "thoại",
+          "startFrame": 39,
+          "endFrame": 45
+        },
+        {
+          "word": "đi.",
+          "startFrame": 45,
+          "endFrame": 52
+        },
+        {
+          "word": "Ăn",
+          "startFrame": 64,
+          "endFrame": 67
+        },
+        {
+          "word": "hết",
+          "startFrame": 67,
+          "endFrame": 72
+        },
+        {
+          "word": "bát",
+          "startFrame": 72,
+          "endFrame": 79
+        },
+        {
+          "word": "cơm",
+          "startFrame": 79,
+          "endFrame": 87
+        },
+        {
+          "word": "mẹ",
+          "startFrame": 87,
+          "endFrame": 93
+        },
+        {
+          "word": "gắp,",
+          "startFrame": 93,
+          "endFrame": 100
+        },
+        {
+          "word": "vì",
+          "startFrame": 111,
+          "endFrame": 113
+        },
+        {
+          "word": "không",
+          "startFrame": 113,
+          "endFrame": 120
+        },
+        {
+          "word": "ai",
+          "startFrame": 120,
+          "endFrame": 126
+        },
+        {
+          "word": "biết",
+          "startFrame": 126,
+          "endFrame": 130
+        },
+        {
+          "word": "mình",
+          "startFrame": 130,
+          "endFrame": 138
+        },
+        {
+          "word": "còn",
+          "startFrame": 138,
+          "endFrame": 145
+        },
+        {
+          "word": "bao",
+          "startFrame": 145,
+          "endFrame": 153
+        },
+        {
+          "word": "nhiêu",
+          "startFrame": 153,
+          "endFrame": 162
+        },
+        {
+          "word": "bữa.",
+          "startFrame": 162,
+          "endFrame": 169
+        }
+      ]
+    }
+  ],
+  "durationInFrames": 749
+}

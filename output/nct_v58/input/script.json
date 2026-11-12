@@ -1,0 +1,41 @@
+{
+  "id": "nct_v58",
+  "title": "Hôn nhân nguội đi khi thôi tò mò nhau",
+  "scenes": [
+    {
+      "scene": 1,
+      "tag": "Cảnh 1",
+      "text": "Lần cuối vợ chồng bạn nói chuyện mà không nhắc tới con?",
+      "highlight": "LẦN CUỐI KHÔNG NHẮC CON?",
+      "image": "nct_v58_scene1.jpg"
+    },
+    {
+      "scene": 2,
+      "tag": "Cảnh 2",
+      "text": "Mười năm, hai người thành đồng đội. Một người lo tiền học, một người lo bữa cơm.",
+      "highlight": "MƯỜI NĂM THÀNH ĐỒNG ĐỘI",
+      "image": "nct_v58_scene2.jpg"
+    },
+    {
+      "scene": 3,
+      "tag": "Cảnh 3",
+      "text": "Tối nào cũng bàn lịch của con, hóa đơn của tháng. Họ làm rất tốt.",
+      "highlight": "HÓA ĐƠN VÀ LỊCH CỦA CON",
+      "image": "nct_v58_scene3.jpg"
+    },
+    {
+      "scene": 4,
+      "tag": "Cảnh 4",
+      "text": "Nhưng có một câu đã lâu không ai hỏi: dạo này anh thích gì, em đang lo điều gì? Hôn nhân không lạnh đi vì cãi nhau. Nó lạnh đi vì thôi tò mò về nhau.",
+      "highlight": "THÔI TÒ MÒ VỀ NHAU",
+      "image": "nct_v58_scene4.jpg"
+    },
+    {
+      "scene": 5,
+      "tag": "Cảnh 5",
+      "text": "Tối nay, thử nói chuyện mà không nhắc tới con.",
+      "highlight": "NÓI CHUYỆN KHÔNG NHẮC CON",
+      "image": "nct_v58_scene5.jpg"
+    }
+  ]
+}

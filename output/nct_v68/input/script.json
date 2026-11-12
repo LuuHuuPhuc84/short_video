@@ -1,0 +1,74 @@
+{
+  "id": "nct_v68",
+  "episode": 68,
+  "title": "10 Phút Trong Xe Trước Khi Vào Nhà",
+  "title_hook": "10 PHÚT TRƯỚC KHI VÀO NHÀ",
+  "titleHook": "10 PHÚT TRƯỚC KHI VÀO NHÀ",
+  "subtitle": "Triết lý Nửa Chén Trà",
+  "book": "NỬA CHÉN TRÀ",
+  "author": "Bài học cuộc sống",
+  "chapter": "Sống nhẹ",
+  "topic": "10 Phút Trong Xe Trước Khi Vào Nhà",
+  "schedule": "2026-11-17 19:30",
+  "schedule_time": "2026-11-17 19:30",
+  "publishAt": "2026-11-17 19:30",
+  "scheduled_time": "2026-11-17T12:30:00Z",
+  "tags": [
+    "nct_v68",
+    "nuachentra",
+    "nhinsaudesongnhe",
+    "khoanglang",
+    "buongbo",
+    "trietly",
+    "chualanh",
+    "shorts"
+  ],
+  "description": "Đã bao giờ bạn thấy một người đàn ông,, tắt máy xe,, nhưng ngồi im trong bóng tối mười phút mới bước vào nhà chưa? Nửa Chén Trà — Nhìn sâu để sống nhẹ. #nct_v68 #nuachentra #nhinsaudesongnhe #shorts",
+  "containsSyntheticMedia": true,
+  "bgm": "Gymnopedie No. 1",
+  "bgm_file": "gymnopedie_no_1.mp3",
+  "bgm_volume": 0.15,
+  "visual_type": "MIXED",
+  "scenes": [
+    {
+      "scene": 1,
+      "tag": "10 PHÚT TRƯỚC KHI VÀO NHÀ",
+      "text": "Đã bao giờ bạn thấy một người đàn ông,, tắt máy xe,, nhưng ngồi im trong bóng tối mười phút mới bước vào nhà chưa?",
+      "highlight": "10 PHÚT TRƯỚC KHI VÀO NHÀ",
+      "image": "nct_v68_scene1.jpg",
+      "video": "nct_v68_scene1.jpg"
+    },
+    {
+      "scene": 2,
+      "tag": "KHÔNG PHẢI VÌ HẾT YÊU",
+      "text": "Không phải vì anh ấy chán gia đình,, cũng không phải vì có ai khác. Mà vì đôi vai ấy,, vừa trải qua một ngày làm điểm tựa cho quá nhiều người.",
+      "highlight": "KHÔNG PHẢI VÌ HẾT YÊU",
+      "image": "nct_v68_scene2.jpg",
+      "video": "nct_v68_scene2.jpg"
+    },
+    {
+      "scene": 3,
+      "tag": "NƠI DUY NHẤT ĐƯỢC MỆT",
+      "text": "Ở công ty phải cứng cỏi trước sếp,, về nhà phải vững vàng trước vợ con. Chỉ có mười phút một mình ấy,, anh ấy mới được phép tháo mặt nạ xuống và thở dài.",
+      "highlight": "NƠI DUY NHẤT ĐƯỢC MỆT",
+      "image": "nct_v68_scene3.jpg",
+      "video": "nct_v68_scene3.jpg"
+    },
+    {
+      "scene": 4,
+      "tag": "ĐỪNG HỎI SAO VỀ MUỘN",
+      "text": "Nếu thấy chồng mình như vậy,, đừng vội tra hỏi sao anh vào nhà muộn thế.",
+      "highlight": "ĐỪNG HỎI SAO VỀ MUỘN",
+      "image": "nct_v68_scene4.jpg",
+      "video": "nct_v68_scene4.jpg"
+    },
+    {
+      "scene": 5,
+      "tag": "MỘT CỐC NƯỚC ẤM",
+      "text": "Hãy lặng lẽ rót cho anh ấy một cốc nước ấm. Đôi khi,, sự thấu hiểu không cần phát ra tiếng.",
+      "highlight": "MỘT CỐC NƯỚC ẤM",
+      "image": "nct_v68_scene5.jpg",
+      "video": "nct_v68_scene5.jpg"
+    }
+  ]
+}

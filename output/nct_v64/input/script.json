@@ -1,0 +1,74 @@
+{
+  "id": "nct_v64",
+  "episode": 64,
+  "title": "Ngồi cạnh con, nhưng tâm trí ở đâu?",
+  "title_hook": "CÓ MẶT HAY CHỈ NGỒI ĐẤY?",
+  "titleHook": "CÓ MẶT HAY CHỈ NGỒI ĐẤY?",
+  "subtitle": "Gia đình & Thấu hiểu",
+  "book": "NỬA CHÉN TRÀ",
+  "author": "Bài học cuộc sống",
+  "chapter": "Gia đình",
+  "topic": "Sự hiện diện đích thực & Tình cảm gia đình",
+  "schedule": "2026-11-15 11:30",
+  "schedule_time": "2026-11-15 11:30",
+  "publishAt": "2026-11-15 11:30",
+  "scheduled_time": "2026-11-15T04:30:00Z",
+  "tags": [
+    "nct_v64",
+    "nuachentra",
+    "nhinsaudesongnhe",
+    "comat",
+    "daycon",
+    "giadinh",
+    "thauhieu",
+    "shorts"
+  ],
+  "description": "Ngồi cạnh con, nhưng tâm trí ở đâu? Bạn có bao giờ ngồi ăn cơm cùng con, nhưng tay vẫn lướt điện thoại? Nửa Chén Trà — Nhìn sâu để sống nhẹ. #nct_v64 #giadinh #daycon #thauhieu #nuachentra #shorts",
+  "containsSyntheticMedia": true,
+  "bgm": "Touching Story",
+  "bgm_file": "touching_story.mp3",
+  "bgm_volume": 0.15,
+  "visual_type": "Điện ảnh 35mm hoài niệm Á Đông",
+  "scenes": [
+    {
+      "scene": 1,
+      "tag": "Hook 3s",
+      "text": "Bạn có bao giờ ngồi ăn cơm cùng con, nhưng tay vẫn lướt điện thoại?",
+      "highlight": "CÓ MẶT HAY CHỈ NGỒI ĐẤY?",
+      "image": "nct_v64_scene1.jpg",
+      "video": "nct_v64_scene1.jpg"
+    },
+    {
+      "scene": 2,
+      "tag": "Ngồi cạnh nhưng xa cách",
+      "text": "Con hỏi một câu, ta ậm ừ một câu. Ta tưởng mình đang ở bên con, nhưng thực ra chỉ có cái xác ngồi đó.",
+      "highlight": "CHỈ CÓ CÁI XÁC NGỒI ĐÓ",
+      "image": "nct_v64_scene2.jpg",
+      "video": "nct_v64_scene2.jpg"
+    },
+    {
+      "scene": 3,
+      "tag": "Trẻ con nhạy cảm",
+      "text": "Trẻ con nhạy cảm lắm. Chúng không cần một người lớn bận rộn ngồi bên cạnh giả vờ lắng nghe.",
+      "highlight": "TRẺ CON NHẬY CẢM LẮM",
+      "image": "nct_v64_scene3.jpg",
+      "video": "nct_v64_scene3.jpg"
+    },
+    {
+      "scene": 4,
+      "tag": "Ánh mắt trọn vẹn",
+      "text": "Chúng cần ánh mắt của bạn. Cần một lời hỏi han trọn vẹn mười phút, hơn là cả buổi tối ngồi chung phòng nhưng xa cách.",
+      "highlight": "CẦN ÁNH MẮT CỦA BẠN",
+      "image": "nct_v64_scene4.jpg",
+      "video": "nct_v64_scene4.jpg"
+    },
+    {
+      "scene": 5,
+      "tag": "Thực sự có mặt",
+      "text": "Tuổi thơ của con trôi qua rất nhanh. Tối nay, buông điện thoại xuống, và thực sự có mặt.",
+      "highlight": "THỰC SỰ CÓ MẶT",
+      "image": "nct_v64_scene5.jpg",
+      "video": "nct_v64_scene5.jpg"
+    }
+  ]
+}

@@ -1,0 +1,74 @@
+{
+  "id": "nct_v72",
+  "episode": 72,
+  "title": "Bữa Cơm Ngon Nhất Không Nằm Ở Món Sơn Hào Hải Vị",
+  "title_hook": "MÂM CAO CỖ ĐẦY",
+  "titleHook": "MÂM CAO CỖ ĐẦY",
+  "subtitle": "Triết lý Nửa Chén Trà",
+  "book": "NỬA CHÉN TRÀ",
+  "author": "Bài học cuộc sống",
+  "chapter": "Sống nhẹ",
+  "topic": "Bữa Cơm Ngon Nhất Không Nằm Ở Món Sơn Hào Hải Vị",
+  "schedule": "2026-11-19 19:30",
+  "schedule_time": "2026-11-19 19:30",
+  "publishAt": "2026-11-19 19:30",
+  "scheduled_time": "2026-11-19T12:30:00Z",
+  "tags": [
+    "nct_v72",
+    "nuachentra",
+    "nhinsaudesongnhe",
+    "khoanglang",
+    "buongbo",
+    "trietly",
+    "chualanh",
+    "shorts"
+  ],
+  "description": "Tôi từng ngồi ở những nhà hàng sang trọng,, trước mặt là sơn hào hải vị,, nhưng nuốt miếng thức ăn vào cổ lại thấy nghẹn đắng. Nửa Chén Trà — Nhìn sâu để sống nhẹ. #nct_v72 #nuachentra #nhinsaudesongnhe #shorts",
+  "containsSyntheticMedia": true,
+  "bgm": "Gymnopedie No. 1",
+  "bgm_file": "gymnopedie_no_1.mp3",
+  "bgm_volume": 0.15,
+  "visual_type": "MIXED",
+  "scenes": [
+    {
+      "scene": 1,
+      "tag": "MÂM CAO CỖ ĐẦY",
+      "text": "Tôi từng ngồi ở những nhà hàng sang trọng,, trước mặt là sơn hào hải vị,, nhưng nuốt miếng thức ăn vào cổ lại thấy nghẹn đắng.",
+      "highlight": "MÂM CAO CỖ ĐẦY",
+      "image": "nct_v72_scene1.jpg",
+      "video": "nct_v72_scene1.jpg"
+    },
+    {
+      "scene": 2,
+      "tag": "BỞI VÌ LÒNG KHÔNG VUI",
+      "text": "Bởi vì trên bàn ăn ấy,, toàn là những toan tính công việc,, những nụ cười xã giao gượng gạo và những ánh mắt dò xét nhau.",
+      "highlight": "BỞI VÌ LÒNG KHÔNG VUI",
+      "image": "nct_v72_scene2.jpg",
+      "video": "nct_v72_scene2.jpg"
+    },
+    {
+      "scene": 3,
+      "tag": "BÁT CANH RAU MUỐNG LUỘC",
+      "text": "Ngược lại,, có những chiều mưa về nhà,, mâm cơm chỉ có đĩa đậu rán và bát canh rau muống vắt chanh,, mà ăn đến tận ba bát vẫn thấy thòm thèm.",
+      "highlight": "BÁT CANH RAU MUỐNG LUỘC",
+      "image": "nct_v72_scene3.jpg",
+      "video": "nct_v72_scene3.jpg"
+    },
+    {
+      "scene": 4,
+      "tag": "GIA VỊ LÀ SỰ BÌNH YÊN",
+      "text": "Hóa ra,, thứ quyết định một bữa cơm ngon chưa bao giờ nằm ở giá tiền của món ăn,, mà nằm ở người ngồi đối diện bạn.",
+      "highlight": "GIA VỊ LÀ SỰ BÌNH YÊN",
+      "image": "nct_v72_scene4.jpg",
+      "video": "nct_v72_scene4.jpg"
+    },
+    {
+      "scene": 5,
+      "tag": "TÂM AN THÌ CƠM NGỌT",
+      "text": "Chỉ cần trong nhà có tiếng cười,, lòng không mang phiền muộn,, thì rau dưa đạm bạc cũng hóa mỹ vị nhân gian.",
+      "highlight": "TÂM AN THÌ CƠM NGỌT",
+      "image": "nct_v72_scene5.jpg",
+      "video": "nct_v72_scene5.jpg"
+    }
+  ]
+}

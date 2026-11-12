@@ -1,0 +1,80 @@
+{
+  "id": "nct_v66",
+  "episode": 66,
+  "title": "Bao lâu rồi, không ai hỏi bạn có mệt không?",
+  "title_hook": "AI HỎI BẠN CÓ MỆT KHÔNG?",
+  "titleHook": "AI HỎI BẠN CÓ MỆT KHÔNG?",
+  "subtitle": "Chữa lành & Vỗ về",
+  "book": "NỬA CHÉN TRÀ",
+  "author": "Bài học cuộc sống",
+  "chapter": "Chữa lành",
+  "topic": "Chữa lành người trụ cột & Thấu cảm thầm lặng",
+  "schedule": "2026-11-16 11:30",
+  "schedule_time": "2026-11-16 11:30",
+  "publishAt": "2026-11-16 11:30",
+  "scheduled_time": "2026-11-16T04:30:00Z",
+  "tags": [
+    "nct_v66",
+    "nuachentra",
+    "nhinsaudesongnhe",
+    "chualanh",
+    "trucot",
+    "metmoi",
+    "vove",
+    "shorts"
+  ],
+  "description": "Bao lâu rồi, không ai hỏi bạn có mệt không? Bao lâu rồi, chưa có ai hỏi bạn một câu: 'Dạo này có mệt lắm không?' Nửa Chén Trà — Nhìn sâu để sống nhẹ. #nct_v66 #chualanh #trucot #vove #nuachentra #shorts",
+  "containsSyntheticMedia": true,
+  "bgm": "Almost in F",
+  "bgm_file": "almost_in_f.mp3",
+  "bgm_volume": 0.15,
+  "visual_type": "Điện ảnh 35mm hoài niệm Á Đông",
+  "scenes": [
+    {
+      "scene": 1,
+      "tag": "Hook 3s",
+      "text": "Bao lâu rồi, chưa có ai hỏi bạn một câu: Dạo này có mệt lắm không?",
+      "highlight": "AI HỎI BẠN CÓ MỆT KHÔNG?",
+      "image": "nct_v66_scene1.jpg",
+      "video": "nct_v66_scene1.jpg"
+    },
+    {
+      "scene": 2,
+      "tag": "Quen nhìn bạn mạnh mẽ",
+      "text": "Ai cũng quen nhìn bạn mạnh mẽ, tháo vát, lo toan mọi việc chu toàn. Họ nghĩ bạn không biết buồn.",
+      "highlight": "HỌ NGHĨ BẠN KHÔNG BIẾT BUỒN",
+      "image": "nct_v66_scene2.jpg",
+      "video": "nct_v66_scene2.jpg"
+    },
+    {
+      "scene": 3,
+      "tag": "Năm phút trong bóng tối",
+      "text": "Nhưng bạn cũng là con người. Có những ngày đi làm về, chỉ muốn ngồi lại trên xe năm phút trong bóng tối, thở một hơi dài.",
+      "highlight": "NGỒI LẠI TRÊN XE NĂM PHÚT",
+      "image": "nct_v66_scene3.jpg",
+      "video": "nct_v66_scene3.jpg"
+    },
+    {
+      "scene": 4,
+      "tag": "Không cần gồng mình",
+      "text": "Bạn không cần phải lúc nào cũng gồng mình làm chỗ dựa vững chắc cho cả thế giới.",
+      "highlight": "KHÔNG CẦN PHẢI GỒNG MÌNH",
+      "image": "nct_v66_scene4.jpg",
+      "video": "nct_v66_scene4.jpg"
+    },
+    {
+      "scene": 5,
+      "tag": "Cho phép mình được mệt",
+      "text": "Nếu hôm nay chưa ai hỏi, thì Nửa Chén Trà xin hỏi bạn. Tối nay, cho phép mình được mệt một chút, nhé?",
+      "highlight": "CHO PHÉP MÌNH ĐƯỢC MỆT",
+      "image": "nct_v66_scene5.jpg",
+      "video": "nct_v66_scene5.jpg"
+    }
+  ],
+  "music": "Gymnopedie No. 1",
+  "musicFile": "gymnopedie_no_1.mp3",
+  "musicMood": "meditative",
+  "youtube_id": "8_2Wf5pPJQ4",
+  "youtube_url": "https://youtu.be/8_2Wf5pPJQ4",
+  "privacyStatus": "private"
+}

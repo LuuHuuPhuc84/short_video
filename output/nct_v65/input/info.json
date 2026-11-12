@@ -1,0 +1,80 @@
+{
+  "id": "nct_v65",
+  "episode": 65,
+  "title": "Hai chữ 'không sao' làm nguội hôn nhân",
+  "title_hook": "VÌ SAO NÓI 'KHÔNG SAO'?",
+  "titleHook": "VÌ SAO NÓI 'KHÔNG SAO'?",
+  "subtitle": "Hôn nhân & Thấu hiểu",
+  "book": "NỬA CHÉN TRÀ",
+  "author": "Bài học cuộc sống",
+  "chapter": "Hôn nhân",
+  "topic": "Giao tiếp trong hôn nhân & Chữa lành tổn thương",
+  "schedule": "2026-11-15 19:30",
+  "schedule_time": "2026-11-15 19:30",
+  "publishAt": "2026-11-15 19:30",
+  "scheduled_time": "2026-11-15T12:30:00Z",
+  "tags": [
+    "nct_v65",
+    "nuachentra",
+    "nhinsaudesongnhe",
+    "honnhan",
+    "vochong",
+    "khongsao",
+    "chualanh",
+    "shorts"
+  ],
+  "description": "Hai chữ 'không sao' làm nguội hôn nhân. Mỗi lần giận dỗi, bạn có hay nói hai chữ: 'Không sao'? Nửa Chén Trà — Nhìn sâu để sống nhẹ. #nct_v65 #honnhan #vochong #chualanh #nuachentra #shorts",
+  "containsSyntheticMedia": true,
+  "bgm": "Heartbreaking",
+  "bgm_file": "heartbreaking.mp3",
+  "bgm_volume": 0.15,
+  "visual_type": "Điện ảnh 35mm hoài niệm Á Đông",
+  "scenes": [
+    {
+      "scene": 1,
+      "tag": "Hook 3s",
+      "text": "Mỗi lần giận dỗi, bạn có hay nói hai chữ: 'Không sao'?",
+      "highlight": "VÌ SAO NÓI 'KHÔNG SAO'?",
+      "image": "nct_v65_scene1.jpg",
+      "video": "nct_v65_scene1.jpg"
+    },
+    {
+      "scene": 2,
+      "tag": "Im lặng đến nghẹt thở",
+      "text": "Miệng nói không sao, nhưng mắt không nhìn, cửa đóng mạnh, và bữa cơm trôi qua trong im lặng đến nghẹt thở.",
+      "highlight": "IM LẶNG ĐẾN NGHẸT THỞ",
+      "image": "nct_v65_scene2.jpg",
+      "video": "nct_v65_scene2.jpg"
+    },
+    {
+      "scene": 3,
+      "tag": "Dấu hiệu bất lực",
+      "text": "Thực ra, 'không sao' không phải là tha thứ. Đó là dấu hiệu của sự bất lực và bắt đầu khép lòng.",
+      "highlight": "BẮT ĐẦU KHÉP LÒNG",
+      "image": "nct_v65_scene3.jpg",
+      "video": "nct_v65_scene3.jpg"
+    },
+    {
+      "scene": 4,
+      "tag": "Chết dần vì những ấm ức",
+      "text": "Hôn nhân không chết vì những trận cãi vã to tiếng. Nó chết dần vì những ấm ức bị nuốt ngược vào trong dưới vỏ bọc bình yên.",
+      "highlight": "NUỐT NGƯỢC VÀO TRONG",
+      "image": "nct_v65_scene4.jpg",
+      "video": "nct_v65_scene4.jpg"
+    },
+    {
+      "scene": 5,
+      "tag": "Nếu có sao, hãy nói",
+      "text": "Nếu có sao, hãy nói là có sao. Người thương bạn, họ xứng đáng được biết bạn đang tổn thương điều gì.",
+      "highlight": "NÓI LÀ CÓ SAO",
+      "image": "nct_v65_scene5.jpg",
+      "video": "nct_v65_scene5.jpg"
+    }
+  ],
+  "music": "Wounded",
+  "musicFile": "wounded.mp3",
+  "musicMood": "sad",
+  "youtube_id": "yiPZNVsgCgY",
+  "youtube_url": "https://youtu.be/yiPZNVsgCgY",
+  "privacyStatus": "private"
+}

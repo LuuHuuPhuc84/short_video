@@ -1,0 +1,533 @@
+{
+  "episode": 58,
+  "title": "Hôn nhân nguội đi khi thôi tò mò nhau",
+  "titleHook": "LẦN CUỐI KHÔNG NHẮC TỚI CON?",
+  "title_hook": "LẦN CUỐI KHÔNG NHẮC TỚI CON?",
+  "showTitleHook": true,
+  "subtitle": "Hôn nhân & Gia đình",
+  "book": "NỬA CHÉN TRÀ",
+  "author": "Bài học cuộc sống",
+  "chapter": "Hôn nhân",
+  "showHeroHeader": false,
+  "fps": 30,
+  "width": 1080,
+  "height": 1920,
+  "audioFile": "voiceover_nct_v58.wav",
+  "thumbnailImage": "thumbnail_nct_v58.jpg",
+  "music": "Sad Trio",
+  "musicFile": "sad_trio.mp3",
+  "scenes": [
+    {
+      "scene": 1,
+      "tag": "Cảnh 1",
+      "text": "Lần cuối vợ chồng bạn nói chuyện mà không nhắc tới con?",
+      "highlight": "LẦN CUỐI KHÔNG NHẮC CON?",
+      "image": "nct_v58_scene1.jpg",
+      "video": "nct_v58_scene1.jpg",
+      "startFrame": 0,
+      "durationInFrames": 101,
+      "words": [
+        {
+          "word": "Lần",
+          "startFrame": 0,
+          "endFrame": 8
+        },
+        {
+          "word": "cuối",
+          "startFrame": 8,
+          "endFrame": 17
+        },
+        {
+          "word": "vợ",
+          "startFrame": 17,
+          "endFrame": 23
+        },
+        {
+          "word": "chồng",
+          "startFrame": 23,
+          "endFrame": 31
+        },
+        {
+          "word": "bạn",
+          "startFrame": 31,
+          "endFrame": 38
+        },
+        {
+          "word": "nói",
+          "startFrame": 38,
+          "endFrame": 42
+        },
+        {
+          "word": "chuyện",
+          "startFrame": 42,
+          "endFrame": 51
+        },
+        {
+          "word": "mà",
+          "startFrame": 51,
+          "endFrame": 61
+        },
+        {
+          "word": "không",
+          "startFrame": 61,
+          "endFrame": 67
+        },
+        {
+          "word": "nhắc",
+          "startFrame": 67,
+          "endFrame": 74
+        },
+        {
+          "word": "tới",
+          "startFrame": 74,
+          "endFrame": 81
+        },
+        {
+          "word": "con?",
+          "startFrame": 81,
+          "endFrame": 88
+        }
+      ]
+    },
+    {
+      "scene": 2,
+      "tag": "Cảnh 2",
+      "text": "Mười năm, hai người thành đồng đội. Một người lo tiền học, một người lo bữa cơm.",
+      "highlight": "MƯỜI NĂM THÀNH ĐỒNG ĐỘI",
+      "image": "nct_v58_scene2.jpg",
+      "video": "nct_v58_scene2.jpg",
+      "startFrame": 111,
+      "durationInFrames": 147,
+      "words": [
+        {
+          "word": "Mười",
+          "startFrame": 0,
+          "endFrame": 9
+        },
+        {
+          "word": "năm,",
+          "startFrame": 9,
+          "endFrame": 17
+        },
+        {
+          "word": "hai",
+          "startFrame": 27,
+          "endFrame": 30
+        },
+        {
+          "word": "người",
+          "startFrame": 30,
+          "endFrame": 36
+        },
+        {
+          "word": "thành",
+          "startFrame": 36,
+          "endFrame": 42
+        },
+        {
+          "word": "đồng",
+          "startFrame": 42,
+          "endFrame": 50
+        },
+        {
+          "word": "đội.",
+          "startFrame": 50,
+          "endFrame": 59
+        },
+        {
+          "word": "Một",
+          "startFrame": 70,
+          "endFrame": 73
+        },
+        {
+          "word": "người",
+          "startFrame": 73,
+          "endFrame": 81
+        },
+        {
+          "word": "lo",
+          "startFrame": 81,
+          "endFrame": 85
+        },
+        {
+          "word": "tiền",
+          "startFrame": 85,
+          "endFrame": 93
+        },
+        {
+          "word": "học,",
+          "startFrame": 93,
+          "endFrame": 98
+        },
+        {
+          "word": "một",
+          "startFrame": 105,
+          "endFrame": 108
+        },
+        {
+          "word": "người",
+          "startFrame": 108,
+          "endFrame": 115
+        },
+        {
+          "word": "lo",
+          "startFrame": 115,
+          "endFrame": 121
+        },
+        {
+          "word": "bữa",
+          "startFrame": 121,
+          "endFrame": 130
+        },
+        {
+          "word": "cơm.",
+          "startFrame": 130,
+          "endFrame": 139
+        }
+      ]
+    },
+    {
+      "scene": 3,
+      "tag": "Cảnh 3",
+      "text": "Tối nào cũng bàn lịch của con, hóa đơn của tháng. Họ làm rất tốt.",
+      "highlight": "HÓA ĐƠN VÀ LỊCH CỦA CON",
+      "image": "nct_v58_scene3.jpg",
+      "video": "nct_v58_scene3.jpg",
+      "startFrame": 269,
+      "durationInFrames": 117,
+      "words": [
+        {
+          "word": "Tối",
+          "startFrame": 0,
+          "endFrame": 5
+        },
+        {
+          "word": "nào",
+          "startFrame": 5,
+          "endFrame": 11
+        },
+        {
+          "word": "cũng",
+          "startFrame": 11,
+          "endFrame": 17
+        },
+        {
+          "word": "bàn",
+          "startFrame": 17,
+          "endFrame": 25
+        },
+        {
+          "word": "lịch",
+          "startFrame": 25,
+          "endFrame": 30
+        },
+        {
+          "word": "của",
+          "startFrame": 30,
+          "endFrame": 35
+        },
+        {
+          "word": "con,",
+          "startFrame": 35,
+          "endFrame": 43
+        },
+        {
+          "word": "hóa",
+          "startFrame": 43,
+          "endFrame": 56
+        },
+        {
+          "word": "đơn",
+          "startFrame": 56,
+          "endFrame": 62
+        },
+        {
+          "word": "của",
+          "startFrame": 62,
+          "endFrame": 68
+        },
+        {
+          "word": "tháng.",
+          "startFrame": 68,
+          "endFrame": 78
+        },
+        {
+          "word": "Họ",
+          "startFrame": 88,
+          "endFrame": 92
+        },
+        {
+          "word": "làm",
+          "startFrame": 92,
+          "endFrame": 99
+        },
+        {
+          "word": "rất",
+          "startFrame": 99,
+          "endFrame": 105
+        },
+        {
+          "word": "tốt.",
+          "startFrame": 105,
+          "endFrame": 113
+        }
+      ]
+    },
+    {
+      "scene": 4,
+      "tag": "Cảnh 4",
+      "text": "Nhưng có một câu đã lâu không ai hỏi: dạo này anh thích gì, em đang lo điều gì? Hôn nhân không lạnh đi vì cãi nhau. Nó lạnh đi vì thôi tò mò về nhau.",
+      "highlight": "THÔI TÒ MÒ VỀ NHAU",
+      "image": "nct_v58_scene4.jpg",
+      "video": "nct_v58_scene4.jpg",
+      "startFrame": 396,
+      "durationInFrames": 278,
+      "words": [
+        {
+          "word": "Nhưng",
+          "startFrame": 0,
+          "endFrame": 7
+        },
+        {
+          "word": "có",
+          "startFrame": 7,
+          "endFrame": 12
+        },
+        {
+          "word": "một",
+          "startFrame": 12,
+          "endFrame": 18
+        },
+        {
+          "word": "câu",
+          "startFrame": 18,
+          "endFrame": 26
+        },
+        {
+          "word": "đã",
+          "startFrame": 26,
+          "endFrame": 29
+        },
+        {
+          "word": "lâu",
+          "startFrame": 29,
+          "endFrame": 35
+        },
+        {
+          "word": "không",
+          "startFrame": 35,
+          "endFrame": 40
+        },
+        {
+          "word": "ai",
+          "startFrame": 40,
+          "endFrame": 47
+        },
+        {
+          "word": "hỏi:",
+          "startFrame": 47,
+          "endFrame": 55
+        },
+        {
+          "word": "dạo",
+          "startFrame": 67,
+          "endFrame": 71
+        },
+        {
+          "word": "này",
+          "startFrame": 71,
+          "endFrame": 76
+        },
+        {
+          "word": "anh",
+          "startFrame": 76,
+          "endFrame": 82
+        },
+        {
+          "word": "thích",
+          "startFrame": 82,
+          "endFrame": 89
+        },
+        {
+          "word": "gì,",
+          "startFrame": 89,
+          "endFrame": 95
+        },
+        {
+          "word": "em",
+          "startFrame": 108,
+          "endFrame": 111
+        },
+        {
+          "word": "đang",
+          "startFrame": 111,
+          "endFrame": 115
+        },
+        {
+          "word": "lo",
+          "startFrame": 115,
+          "endFrame": 121
+        },
+        {
+          "word": "điều",
+          "startFrame": 121,
+          "endFrame": 127
+        },
+        {
+          "word": "gì?",
+          "startFrame": 127,
+          "endFrame": 136
+        },
+        {
+          "word": "Hôn",
+          "startFrame": 152,
+          "endFrame": 158
+        },
+        {
+          "word": "nhân",
+          "startFrame": 158,
+          "endFrame": 161
+        },
+        {
+          "word": "không",
+          "startFrame": 161,
+          "endFrame": 169
+        },
+        {
+          "word": "lạnh",
+          "startFrame": 169,
+          "endFrame": 176
+        },
+        {
+          "word": "đi",
+          "startFrame": 176,
+          "endFrame": 182
+        },
+        {
+          "word": "vì",
+          "startFrame": 182,
+          "endFrame": 188
+        },
+        {
+          "word": "cãi",
+          "startFrame": 188,
+          "endFrame": 199
+        },
+        {
+          "word": "nhau.",
+          "startFrame": 199,
+          "endFrame": 206
+        },
+        {
+          "word": "Nó",
+          "startFrame": 216,
+          "endFrame": 218
+        },
+        {
+          "word": "lạnh",
+          "startFrame": 218,
+          "endFrame": 224
+        },
+        {
+          "word": "đi",
+          "startFrame": 224,
+          "endFrame": 230
+        },
+        {
+          "word": "vì",
+          "startFrame": 230,
+          "endFrame": 236
+        },
+        {
+          "word": "thôi",
+          "startFrame": 236,
+          "endFrame": 242
+        },
+        {
+          "word": "tò",
+          "startFrame": 242,
+          "endFrame": 250
+        },
+        {
+          "word": "mò",
+          "startFrame": 250,
+          "endFrame": 257
+        },
+        {
+          "word": "về",
+          "startFrame": 257,
+          "endFrame": 263
+        },
+        {
+          "word": "nhau.",
+          "startFrame": 263,
+          "endFrame": 272
+        }
+      ]
+    },
+    {
+      "scene": 5,
+      "tag": "Cảnh 5",
+      "text": "Tối nay, thử nói chuyện mà không nhắc tới con.",
+      "highlight": "NÓI CHUYỆN KHÔNG NHẮC CON",
+      "image": "nct_v58_scene5.jpg",
+      "video": "nct_v58_scene5.jpg",
+      "startFrame": 685,
+      "durationInFrames": 90,
+      "words": [
+        {
+          "word": "Tối",
+          "startFrame": 0,
+          "endFrame": 8
+        },
+        {
+          "word": "nay,",
+          "startFrame": 8,
+          "endFrame": 17
+        },
+        {
+          "word": "thử",
+          "startFrame": 26,
+          "endFrame": 30
+        },
+        {
+          "word": "nói",
+          "startFrame": 30,
+          "endFrame": 35
+        },
+        {
+          "word": "chuyện",
+          "startFrame": 35,
+          "endFrame": 46
+        },
+        {
+          "word": "mà",
+          "startFrame": 46,
+          "endFrame": 52
+        },
+        {
+          "word": "không",
+          "startFrame": 52,
+          "endFrame": 58
+        },
+        {
+          "word": "nhắc",
+          "startFrame": 58,
+          "endFrame": 65
+        },
+        {
+          "word": "tới",
+          "startFrame": 65,
+          "endFrame": 71
+        },
+        {
+          "word": "con.",
+          "startFrame": 71,
+          "endFrame": 79
+        }
+      ]
+    }
+  ],
+  "durationInFrames": 785,
+  "musicMood": "sad"
+}

@@ -1,0 +1,506 @@
+{
+  "id": "nct_v63",
+  "episode": 63,
+  "title": "Cả nhà dựa vào một người, là chính bạn",
+  "title_hook": "LẦN CUỐI TỰ ĐI KHÁM?",
+  "titleHook": "LẦN CUỐI TỰ ĐI KHÁM?",
+  "subtitle": "Sức khỏe & Chữa lành",
+  "book": "NỬA CHÉN TRÀ",
+  "author": "Bài học cuộc sống",
+  "chapter": "Sức khỏe",
+  "topic": "Sức khỏe người trụ cột & Yêu thương bản thân",
+  "schedule": "2026-11-14 19:30",
+  "schedule_time": "2026-11-14 19:30",
+  "publishAt": "2026-11-14 19:30",
+  "scheduled_time": "2026-11-14T12:30:00Z",
+  "tags": [
+    "nct_v63",
+    "nuachentra",
+    "nhinsaudesongnhe",
+    "suckhoe",
+    "trucot",
+    "chualanh",
+    "giadinh",
+    "shorts"
+  ],
+  "description": "Cả nhà dựa vào một người, là chính bạn. Lần cuối chính bạn đi khám sức khỏe là khi nào? Nửa Chén Trà — Nhìn sâu để sống nhẹ. #nct_v63 #suckhoe #trucot #chualanh #nuachentra #shorts",
+  "containsSyntheticMedia": true,
+  "bgm": "Sad Trio",
+  "bgm_file": "sad_trio.mp3",
+  "bgm_volume": 0.15,
+  "visual_type": "Điện ảnh 35mm hoài niệm Á Đông",
+  "scenes": [
+    {
+      "scene": 1,
+      "tag": "Hook 3s",
+      "text": "Lần cuối chính bạn đi khám sức khỏe là khi nào?",
+      "highlight": "LẦN CUỐI TỰ ĐI KHÁM?",
+      "image": "nct_v63_scene1.jpg",
+      "video": "nct_v63_scene1.jpg",
+      "startFrame": 0,
+      "durationInFrames": 89,
+      "words": [
+        {
+          "word": "Lần",
+          "startFrame": 0,
+          "endFrame": 8
+        },
+        {
+          "word": "cuối",
+          "startFrame": 8,
+          "endFrame": 16
+        },
+        {
+          "word": "chính",
+          "startFrame": 16,
+          "endFrame": 21
+        },
+        {
+          "word": "bạn",
+          "startFrame": 21,
+          "endFrame": 28
+        },
+        {
+          "word": "đi",
+          "startFrame": 28,
+          "endFrame": 35
+        },
+        {
+          "word": "khám",
+          "startFrame": 35,
+          "endFrame": 43
+        },
+        {
+          "word": "sức",
+          "startFrame": 43,
+          "endFrame": 50
+        },
+        {
+          "word": "khỏe",
+          "startFrame": 50,
+          "endFrame": 58
+        },
+        {
+          "word": "là",
+          "startFrame": 58,
+          "endFrame": 64
+        },
+        {
+          "word": "khi",
+          "startFrame": 64,
+          "endFrame": 69
+        },
+        {
+          "word": "nào?",
+          "startFrame": 69,
+          "endFrame": 77
+        }
+      ]
+    },
+    {
+      "scene": 2,
+      "tag": "Nhớ lịch cả nhà",
+      "text": "Bạn nhớ lịch tiêm của con. Nhớ ngày tái khám của bố. Nhớ mẹ hết thuốc từ bao giờ. Còn của mình thì sao?",
+      "highlight": "CÒN CỦA MÌNH THÌ SAO?",
+      "image": "nct_v63_scene2.jpg",
+      "video": "nct_v63_scene2.jpg",
+      "startFrame": 100,
+      "durationInFrames": 191,
+      "words": [
+        {
+          "word": "Bạn",
+          "startFrame": 2,
+          "endFrame": 7
+        },
+        {
+          "word": "nhớ",
+          "startFrame": 7,
+          "endFrame": 15
+        },
+        {
+          "word": "lịch",
+          "startFrame": 15,
+          "endFrame": 22
+        },
+        {
+          "word": "tiêm",
+          "startFrame": 22,
+          "endFrame": 28
+        },
+        {
+          "word": "của",
+          "startFrame": 28,
+          "endFrame": 35
+        },
+        {
+          "word": "con.",
+          "startFrame": 35,
+          "endFrame": 45
+        },
+        {
+          "word": "Nhớ",
+          "startFrame": 58,
+          "endFrame": 61
+        },
+        {
+          "word": "ngày",
+          "startFrame": 61,
+          "endFrame": 65
+        },
+        {
+          "word": "tái",
+          "startFrame": 65,
+          "endFrame": 73
+        },
+        {
+          "word": "khám",
+          "startFrame": 73,
+          "endFrame": 80
+        },
+        {
+          "word": "của",
+          "startFrame": 80,
+          "endFrame": 87
+        },
+        {
+          "word": "bố.",
+          "startFrame": 87,
+          "endFrame": 95
+        },
+        {
+          "word": "Nhớ",
+          "startFrame": 106,
+          "endFrame": 109
+        },
+        {
+          "word": "mẹ",
+          "startFrame": 109,
+          "endFrame": 115
+        },
+        {
+          "word": "hết",
+          "startFrame": 115,
+          "endFrame": 121
+        },
+        {
+          "word": "thuốc",
+          "startFrame": 121,
+          "endFrame": 129
+        },
+        {
+          "word": "từ",
+          "startFrame": 129,
+          "endFrame": 134
+        },
+        {
+          "word": "bao",
+          "startFrame": 134,
+          "endFrame": 139
+        },
+        {
+          "word": "giờ.",
+          "startFrame": 139,
+          "endFrame": 146
+        },
+        {
+          "word": "Còn",
+          "startFrame": 155,
+          "endFrame": 158
+        },
+        {
+          "word": "của",
+          "startFrame": 158,
+          "endFrame": 163
+        },
+        {
+          "word": "mình",
+          "startFrame": 163,
+          "endFrame": 169
+        },
+        {
+          "word": "thì",
+          "startFrame": 169,
+          "endFrame": 175
+        },
+        {
+          "word": "sao?",
+          "startFrame": 175,
+          "endFrame": 184
+        }
+      ]
+    },
+    {
+      "scene": 3,
+      "tag": "Thôi để sau",
+      "text": "Bạn bảo, thôi để sau, đang bận.",
+      "highlight": "THÔI ĐỂ SAU, ĐANG BẬN",
+      "image": "nct_v63_scene3.jpg",
+      "video": "nct_v63_scene3.jpg",
+      "startFrame": 301,
+      "durationInFrames": 62,
+      "words": [
+        {
+          "word": "Bạn",
+          "startFrame": 2,
+          "endFrame": 8
+        },
+        {
+          "word": "bảo,",
+          "startFrame": 8,
+          "endFrame": 17
+        },
+        {
+          "word": "thôi",
+          "startFrame": 17,
+          "endFrame": 23
+        },
+        {
+          "word": "để",
+          "startFrame": 23,
+          "endFrame": 29
+        },
+        {
+          "word": "sau,",
+          "startFrame": 29,
+          "endFrame": 38
+        },
+        {
+          "word": "đang",
+          "startFrame": 38,
+          "endFrame": 48
+        },
+        {
+          "word": "bận.",
+          "startFrame": 48,
+          "endFrame": 58
+        }
+      ]
+    },
+    {
+      "scene": 4,
+      "tag": "Chỗ dựa",
+      "text": "Cả nhà đang dựa vào một người khỏe. Người đó là bạn. Chăm mình không phải ích kỷ.",
+      "highlight": "CHĂM MÌNH KHÔNG PHẢI ÍCH KỶ",
+      "image": "nct_v63_scene4.jpg",
+      "video": "nct_v63_scene4.jpg",
+      "startFrame": 374,
+      "durationInFrames": 131,
+      "words": [
+        {
+          "word": "Cả",
+          "startFrame": 0,
+          "endFrame": 6
+        },
+        {
+          "word": "nhà",
+          "startFrame": 6,
+          "endFrame": 12
+        },
+        {
+          "word": "đang",
+          "startFrame": 12,
+          "endFrame": 21
+        },
+        {
+          "word": "dựa",
+          "startFrame": 21,
+          "endFrame": 27
+        },
+        {
+          "word": "vào",
+          "startFrame": 27,
+          "endFrame": 31
+        },
+        {
+          "word": "một",
+          "startFrame": 31,
+          "endFrame": 36
+        },
+        {
+          "word": "người",
+          "startFrame": 36,
+          "endFrame": 42
+        },
+        {
+          "word": "khỏe.",
+          "startFrame": 42,
+          "endFrame": 53
+        },
+        {
+          "word": "Người",
+          "startFrame": 62,
+          "endFrame": 65
+        },
+        {
+          "word": "đó",
+          "startFrame": 65,
+          "endFrame": 71
+        },
+        {
+          "word": "là",
+          "startFrame": 71,
+          "endFrame": 77
+        },
+        {
+          "word": "bạn.",
+          "startFrame": 77,
+          "endFrame": 84
+        },
+        {
+          "word": "Chăm",
+          "startFrame": 84,
+          "endFrame": 93
+        },
+        {
+          "word": "mình",
+          "startFrame": 93,
+          "endFrame": 98
+        },
+        {
+          "word": "không",
+          "startFrame": 98,
+          "endFrame": 105
+        },
+        {
+          "word": "phải",
+          "startFrame": 105,
+          "endFrame": 112
+        },
+        {
+          "word": "ích",
+          "startFrame": 112,
+          "endFrame": 120
+        },
+        {
+          "word": "kỷ.",
+          "startFrame": 120,
+          "endFrame": 125
+        }
+      ]
+    },
+    {
+      "scene": 5,
+      "tag": "Đặt lịch khám",
+      "text": "Đó là giữ lại chỗ dựa cho những người đang cần bạn. Hôm nay, đặt một lịch khám cho chính bạn.",
+      "highlight": "ĐẶT MỘT LỊCH KHÁM CHO CHÍNH BẠN",
+      "image": "nct_v63_scene5.jpg",
+      "video": "nct_v63_scene5.jpg",
+      "startFrame": 515,
+      "durationInFrames": 158,
+      "words": [
+        {
+          "word": "Đó",
+          "startFrame": 0,
+          "endFrame": 7
+        },
+        {
+          "word": "là",
+          "startFrame": 7,
+          "endFrame": 12
+        },
+        {
+          "word": "giữ",
+          "startFrame": 12,
+          "endFrame": 19
+        },
+        {
+          "word": "lại",
+          "startFrame": 19,
+          "endFrame": 24
+        },
+        {
+          "word": "chỗ",
+          "startFrame": 24,
+          "endFrame": 33
+        },
+        {
+          "word": "dựa",
+          "startFrame": 33,
+          "endFrame": 40
+        },
+        {
+          "word": "cho",
+          "startFrame": 40,
+          "endFrame": 45
+        },
+        {
+          "word": "những",
+          "startFrame": 45,
+          "endFrame": 49
+        },
+        {
+          "word": "người",
+          "startFrame": 49,
+          "endFrame": 59
+        },
+        {
+          "word": "đang",
+          "startFrame": 59,
+          "endFrame": 66
+        },
+        {
+          "word": "cần",
+          "startFrame": 66,
+          "endFrame": 70
+        },
+        {
+          "word": "bạn.",
+          "startFrame": 70,
+          "endFrame": 79
+        },
+        {
+          "word": "Hôm",
+          "startFrame": 88,
+          "endFrame": 91
+        },
+        {
+          "word": "nay,",
+          "startFrame": 91,
+          "endFrame": 98
+        },
+        {
+          "word": "đặt",
+          "startFrame": 98,
+          "endFrame": 113
+        },
+        {
+          "word": "một",
+          "startFrame": 113,
+          "endFrame": 118
+        },
+        {
+          "word": "lịch",
+          "startFrame": 118,
+          "endFrame": 125
+        },
+        {
+          "word": "khám",
+          "startFrame": 125,
+          "endFrame": 132
+        },
+        {
+          "word": "cho",
+          "startFrame": 132,
+          "endFrame": 139
+        },
+        {
+          "word": "chính",
+          "startFrame": 139,
+          "endFrame": 145
+        },
+        {
+          "word": "bạn.",
+          "startFrame": 145,
+          "endFrame": 153
+        }
+      ]
+    }
+  ],
+  "durationInFrames": 684,
+  "fps": 30,
+  "music": "Heartbreaking",
+  "musicFile": "heartbreaking.mp3",
+  "musicMood": "sad",
+  "thumbnailImage": "thumbnail_nct_v63.jpg",
+  "audioFile": "voiceover_nct_v63.wav"
+}

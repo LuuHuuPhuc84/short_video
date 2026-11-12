@@ -1,0 +1,539 @@
+{
+  "id": "nct_v61",
+  "episode": 61,
+  "title": "Số điện thoại cũ, mà chẳng ai gọi",
+  "title_hook": "AI ĐỂ GỌI LÚC BUỒN?",
+  "titleHook": "AI ĐỂ GỌI LÚC BUỒN?",
+  "subtitle": "Tình bạn & Trưởng thành",
+  "book": "NỬA CHÉN TRÀ",
+  "author": "Bài học cuộc sống",
+  "chapter": "Tình bạn",
+  "topic": "Tình bạn tuổi trưởng thành & Kết nối",
+  "schedule": "2026-11-13 19:30",
+  "schedule_time": "2026-11-13 19:30",
+  "publishAt": "2026-11-13 19:30",
+  "scheduled_time": "2026-11-13T12:30:00Z",
+  "tags": [
+    "nct_v61",
+    "nuachentra",
+    "nhinsaudesongnhe",
+    "tinhban",
+    "truongthanh",
+    "tamly",
+    "chualanh",
+    "shorts"
+  ],
+  "description": "Số điện thoại cũ, mà chẳng ai gọi. Bạn có còn ai để gọi lúc buồn không? Nửa Chén Trà — Nhìn sâu để sống nhẹ. #nct_v61 #tinhban #truongthanh #nuachentra #shorts",
+  "containsSyntheticMedia": true,
+  "bgm": "Sad Trio",
+  "bgm_file": "sad_trio.mp3",
+  "bgm_volume": 0.15,
+  "visual_type": "Điện ảnh 35mm hoài niệm Á Đông",
+  "scenes": [
+    {
+      "scene": 1,
+      "tag": "Hook 3s",
+      "text": "Bạn có còn ai để gọi lúc buồn không?",
+      "highlight": "AI ĐỂ GỌI LÚC BUỒN?",
+      "image": "nct_v61_scene1.jpg",
+      "video": "nct_v61_scene1.jpg",
+      "startFrame": 0,
+      "durationInFrames": 73,
+      "words": [
+        {
+          "word": "Bạn",
+          "startFrame": 0,
+          "endFrame": 3
+        },
+        {
+          "word": "có",
+          "startFrame": 3,
+          "endFrame": 10
+        },
+        {
+          "word": "còn",
+          "startFrame": 10,
+          "endFrame": 18
+        },
+        {
+          "word": "ai",
+          "startFrame": 18,
+          "endFrame": 24
+        },
+        {
+          "word": "để",
+          "startFrame": 24,
+          "endFrame": 30
+        },
+        {
+          "word": "gọi",
+          "startFrame": 30,
+          "endFrame": 36
+        },
+        {
+          "word": "lúc",
+          "startFrame": 36,
+          "endFrame": 44
+        },
+        {
+          "word": "buồn",
+          "startFrame": 44,
+          "endFrame": 52
+        },
+        {
+          "word": "không?",
+          "startFrame": 52,
+          "endFrame": 58
+        }
+      ]
+    },
+    {
+      "scene": 2,
+      "tag": "Hồi hai mươi",
+      "text": "Hồi hai mươi, cả nhóm thức khuya kể chuyện. Giờ mỗi người một thành phố, một gia đình, một nỗi bận.",
+      "highlight": "MỖI NGƯỜI MỘT NỖI BẬN",
+      "image": "nct_v61_scene2.jpg",
+      "video": "nct_v61_scene2.jpg",
+      "startFrame": 84,
+      "durationInFrames": 163,
+      "words": [
+        {
+          "word": "Hồi",
+          "startFrame": 0,
+          "endFrame": 6
+        },
+        {
+          "word": "hai",
+          "startFrame": 6,
+          "endFrame": 17
+        },
+        {
+          "word": "mươi,",
+          "startFrame": 17,
+          "endFrame": 34
+        },
+        {
+          "word": "cả",
+          "startFrame": 34,
+          "endFrame": 40
+        },
+        {
+          "word": "nhóm",
+          "startFrame": 40,
+          "endFrame": 46
+        },
+        {
+          "word": "thức",
+          "startFrame": 46,
+          "endFrame": 53
+        },
+        {
+          "word": "khuya",
+          "startFrame": 53,
+          "endFrame": 61
+        },
+        {
+          "word": "kể",
+          "startFrame": 61,
+          "endFrame": 69
+        },
+        {
+          "word": "chuyện.",
+          "startFrame": 69,
+          "endFrame": 85
+        },
+        {
+          "word": "Giờ",
+          "startFrame": 85,
+          "endFrame": 91
+        },
+        {
+          "word": "mỗi",
+          "startFrame": 91,
+          "endFrame": 95
+        },
+        {
+          "word": "người",
+          "startFrame": 95,
+          "endFrame": 100
+        },
+        {
+          "word": "một",
+          "startFrame": 100,
+          "endFrame": 104
+        },
+        {
+          "word": "thành",
+          "startFrame": 104,
+          "endFrame": 114
+        },
+        {
+          "word": "phố,",
+          "startFrame": 121,
+          "endFrame": 123
+        },
+        {
+          "word": "một",
+          "startFrame": 123,
+          "endFrame": 128
+        },
+        {
+          "word": "gia",
+          "startFrame": 128,
+          "endFrame": 136
+        },
+        {
+          "word": "đình,",
+          "startFrame": 143,
+          "endFrame": 148
+        },
+        {
+          "word": "một",
+          "startFrame": 148,
+          "endFrame": 153
+        },
+        {
+          "word": "nỗi",
+          "startFrame": 153,
+          "endFrame": 160
+        },
+        {
+          "word": "bận.",
+          "startFrame": 160,
+          "endFrame": 166
+        }
+      ]
+    },
+    {
+      "scene": 3,
+      "tag": "Danh bạ cũ",
+      "text": "Điện thoại vẫn còn số cũ, nhưng không ai gọi. Không phải hết thương. Chỉ là ai cũng nghĩ: chắc nó bận.",
+      "highlight": "SỐ CŨ KHÔNG AI GỌI",
+      "image": "nct_v61_scene3.jpg",
+      "video": "nct_v61_scene3.jpg",
+      "startFrame": 257,
+      "durationInFrames": 177,
+      "words": [
+        {
+          "word": "Điện",
+          "startFrame": 5,
+          "endFrame": 8
+        },
+        {
+          "word": "thoại",
+          "startFrame": 8,
+          "endFrame": 16
+        },
+        {
+          "word": "vẫn",
+          "startFrame": 16,
+          "endFrame": 22
+        },
+        {
+          "word": "còn",
+          "startFrame": 22,
+          "endFrame": 28
+        },
+        {
+          "word": "số",
+          "startFrame": 28,
+          "endFrame": 36
+        },
+        {
+          "word": "cũ,",
+          "startFrame": 36,
+          "endFrame": 48
+        },
+        {
+          "word": "nhưng",
+          "startFrame": 52,
+          "endFrame": 55
+        },
+        {
+          "word": "không",
+          "startFrame": 55,
+          "endFrame": 62
+        },
+        {
+          "word": "ai",
+          "startFrame": 62,
+          "endFrame": 70
+        },
+        {
+          "word": "gọi.",
+          "startFrame": 70,
+          "endFrame": 77
+        },
+        {
+          "word": "Không",
+          "startFrame": 88,
+          "endFrame": 92
+        },
+        {
+          "word": "phải",
+          "startFrame": 92,
+          "endFrame": 98
+        },
+        {
+          "word": "hết",
+          "startFrame": 98,
+          "endFrame": 104
+        },
+        {
+          "word": "thương.",
+          "startFrame": 104,
+          "endFrame": 113
+        },
+        {
+          "word": "Chỉ",
+          "startFrame": 119,
+          "endFrame": 122
+        },
+        {
+          "word": "là",
+          "startFrame": 122,
+          "endFrame": 128
+        },
+        {
+          "word": "ai",
+          "startFrame": 128,
+          "endFrame": 134
+        },
+        {
+          "word": "cũng",
+          "startFrame": 134,
+          "endFrame": 140
+        },
+        {
+          "word": "nghĩ:",
+          "startFrame": 140,
+          "endFrame": 148
+        },
+        {
+          "word": "chắc",
+          "startFrame": 148,
+          "endFrame": 159
+        },
+        {
+          "word": "nó",
+          "startFrame": 159,
+          "endFrame": 164
+        },
+        {
+          "word": "bận.",
+          "startFrame": 164,
+          "endFrame": 173
+        }
+      ]
+    },
+    {
+      "scene": 4,
+      "tag": "Chờ nhau",
+      "text": "Và thế là mỗi người đều chờ người kia gọi trước. Tình bạn ở tuổi này không tự giữ được.",
+      "highlight": "CHỜ NHAU GỌI TRƯỚC",
+      "image": "nct_v61_scene4.jpg",
+      "video": "nct_v61_scene4.jpg",
+      "startFrame": 445,
+      "durationInFrames": 150,
+      "words": [
+        {
+          "word": "Và",
+          "startFrame": 3,
+          "endFrame": 5
+        },
+        {
+          "word": "thế",
+          "startFrame": 5,
+          "endFrame": 11
+        },
+        {
+          "word": "là",
+          "startFrame": 11,
+          "endFrame": 17
+        },
+        {
+          "word": "mỗi",
+          "startFrame": 17,
+          "endFrame": 24
+        },
+        {
+          "word": "người",
+          "startFrame": 24,
+          "endFrame": 32
+        },
+        {
+          "word": "đều",
+          "startFrame": 32,
+          "endFrame": 39
+        },
+        {
+          "word": "chờ",
+          "startFrame": 39,
+          "endFrame": 47
+        },
+        {
+          "word": "người",
+          "startFrame": 47,
+          "endFrame": 52
+        },
+        {
+          "word": "kia",
+          "startFrame": 52,
+          "endFrame": 59
+        },
+        {
+          "word": "gọi",
+          "startFrame": 59,
+          "endFrame": 65
+        },
+        {
+          "word": "trước.",
+          "startFrame": 65,
+          "endFrame": 72
+        },
+        {
+          "word": "Tình",
+          "startFrame": 89,
+          "endFrame": 95
+        },
+        {
+          "word": "bạn",
+          "startFrame": 95,
+          "endFrame": 99
+        },
+        {
+          "word": "ở",
+          "startFrame": 99,
+          "endFrame": 104
+        },
+        {
+          "word": "tuổi",
+          "startFrame": 104,
+          "endFrame": 111
+        },
+        {
+          "word": "này",
+          "startFrame": 111,
+          "endFrame": 116
+        },
+        {
+          "word": "không",
+          "startFrame": 116,
+          "endFrame": 125
+        },
+        {
+          "word": "tự",
+          "startFrame": 125,
+          "endFrame": 132
+        },
+        {
+          "word": "giữ",
+          "startFrame": 132,
+          "endFrame": 140
+        },
+        {
+          "word": "được.",
+          "startFrame": 140,
+          "endFrame": 144
+        }
+      ]
+    },
+    {
+      "scene": 5,
+      "tag": "Người gọi trước",
+      "text": "Nó cần một người chịu làm kẻ gọi trước. Hôm nay, hãy làm người gọi trước.",
+      "highlight": "HÃY LÀ NGƯỜI GỌI TRƯỚC",
+      "image": "nct_v61_scene5.jpg",
+      "video": "nct_v61_scene5.jpg",
+      "startFrame": 605,
+      "durationInFrames": 128,
+      "words": [
+        {
+          "word": "Nó",
+          "startFrame": 2,
+          "endFrame": 7
+        },
+        {
+          "word": "cần",
+          "startFrame": 7,
+          "endFrame": 12
+        },
+        {
+          "word": "một",
+          "startFrame": 12,
+          "endFrame": 18
+        },
+        {
+          "word": "người",
+          "startFrame": 18,
+          "endFrame": 23
+        },
+        {
+          "word": "chịu",
+          "startFrame": 23,
+          "endFrame": 33
+        },
+        {
+          "word": "làm",
+          "startFrame": 33,
+          "endFrame": 37
+        },
+        {
+          "word": "kẻ",
+          "startFrame": 37,
+          "endFrame": 45
+        },
+        {
+          "word": "gọi",
+          "startFrame": 45,
+          "endFrame": 51
+        },
+        {
+          "word": "trước.",
+          "startFrame": 51,
+          "endFrame": 59
+        },
+        {
+          "word": "Hôm",
+          "startFrame": 73,
+          "endFrame": 77
+        },
+        {
+          "word": "nay,",
+          "startFrame": 77,
+          "endFrame": 84
+        },
+        {
+          "word": "hãy",
+          "startFrame": 84,
+          "endFrame": 95
+        },
+        {
+          "word": "làm",
+          "startFrame": 95,
+          "endFrame": 99
+        },
+        {
+          "word": "người",
+          "startFrame": 99,
+          "endFrame": 107
+        },
+        {
+          "word": "gọi",
+          "startFrame": 107,
+          "endFrame": 114
+        },
+        {
+          "word": "trước.",
+          "startFrame": 114,
+          "endFrame": 122
+        }
+      ]
+    }
+  ],
+  "durationInFrames": 743,
+  "fps": 30,
+  "music": "Touching Moments Two - Higher",
+  "musicFile": "touching_moments.mp3",
+  "musicMood": "nostalgic"
+}
