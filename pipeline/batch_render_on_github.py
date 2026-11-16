@@ -207,8 +207,11 @@ def batch_render_via_github(video_ids, auto_cleanup=True, download_local=False):
             status = latest_run.get("status")
             conclusion = latest_run.get("conclusion")
             if status == "completed":
-                print(f"\n✨ [{elapsed}s] 🚀 Workflow Batch Render trên GitHub Actions đã hoàn tất ({conclusion})!")
-                completed_videos.update(valid_videos)
+                if conclusion == "success":
+                    print(f"\n✨ [{elapsed}s] 🚀 Workflow Batch Render trên GitHub Actions đã hoàn tất ({conclusion})!")
+                    completed_videos.update(valid_videos)
+                else:
+                    print(f"\n⚠️ [{elapsed}s] ❌ Workflow kết thúc với trạng thái: {conclusion} (không phải success)!")
                 break
             else:
                 print(f"   [{elapsed}s] Trạng thái GitHub Actions: {status}...")
