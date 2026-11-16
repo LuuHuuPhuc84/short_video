@@ -1,9 +1,9 @@
 {
   "id": "nct_v73",
   "episode": 73,
-  "title": "Đừng Mang Cuộc Đời Mình So Với Trang Mạng Của Người Khác",
-  "title_hook": "AI CŨNG THÀNH ĐẠT TRÊN MẠNG",
-  "titleHook": "AI CŨNG THÀNH ĐẠT TRÊN MẠNG",
+  "title": "Đừng so cuộc đời mình với mạng xã hội",
+  "title_hook": "SAO CỨ THẤY MÌNH THẤT BẠI?",
+  "titleHook": "SAO CỨ THẤY MÌNH THẤT BẠI?",
   "subtitle": "Triết lý Nửa Chén Trà",
   "book": "NỬA CHÉN TRÀ",
   "author": "Bài học cuộc sống",
@@ -23,7 +23,7 @@
     "chualanh",
     "shorts"
   ],
-  "description": "Lướt mạng xã hội mười phút,, bạn thấy bạn học cũ vừa mua xe hơi,, đồng nghiệp vừa đi du lịch châu Âu,, ai cũng rực rỡ và viên mãn. Nửa Chén Trà — Nhìn sâu để sống nhẹ. #nct_v73 #nuachentra #nhinsaudesongnhe #shorts",
+  "description": "Đừng so cuộc đời mình với mạng xã hội. Lướt mạng mười phút thấy ai cũng giàu sang, rực rỡ và thành đạt. Nhưng đừng lấy hậu trường đầy vất vả của mình đi so với sân khấu lộng lẫy được chọn lọc của người khác.\n\nNửa Chén Trà — Nhìn sâu để sống nhẹ.\n#nct_v73 #nuachentra #nhinsaudesongnhe #shorts",
   "containsSyntheticMedia": true,
   "bgm": "Almost in F",
   "bgm_file": "almost_in_f.mp3",
@@ -34,7 +34,7 @@
       "scene": 1,
       "tag": "AI CŨNG THÀNH ĐẠT TRÊN MẠNG",
       "text": "Lướt mạng xã hội mười phút,, bạn thấy bạn học cũ vừa mua xe hơi,, đồng nghiệp vừa đi du lịch châu Âu,, ai cũng rực rỡ và viên mãn.",
-      "highlight": "AI CŨNG THÀNH ĐẠT TRÊN MẠNG",
+      "highlight": "SAO CỨ THẤY MÌNH THẤT BẠI?",
       "image": "nct_v73_scene1.jpg",
       "video": "nct_v73_scene1.jpg",
       "startFrame": 0,
@@ -837,5 +837,8 @@
   "musicFile": "almost_in_f.mp3",
   "musicMood": "deep",
   "thumbnailImage": "thumbnail_nct_v73.jpg",
-  "audioFile": "voiceover_nct_v73.wav"
+  "audioFile": "voiceover_nct_v73.wav",
+  "video_id": "nct_v73",
+  "replace_youtube_id": "tto4Kjthobc",
+  "old_youtube_id": "tto4Kjthobc"
 }

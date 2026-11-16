@@ -23,10 +23,10 @@ import soundfile as sf
 from pathlib import Path
 
 # Cấu hình môi trường Espeak & FFmpeg
-os.environ["PHONEMIZER_ESPEAK_PATH"] = r"E:\Programs\espeak-ng"
-os.environ["PHONEMIZER_ESPEAK_LIBRARY"] = r"E:\Programs\espeak-ng\libespeak-ng.dll"
-os.environ["ESPEAK_DATA_PATH"] = r"E:\Programs\espeak-ng\espeak-ng-data"
-os.environ["PATH"] = r"E:\Programs\nodejs;E:\Programs\ffmpeg\bin;E:\Programs\espeak-ng;" + os.environ.get("PATH", "")
+os.environ["PHONEMIZER_ESPEAK_PATH"] = r"D:\Programs\espeak-ng"
+os.environ["PHONEMIZER_ESPEAK_LIBRARY"] = r"D:\Programs\espeak-ng\libespeak-ng.dll"
+os.environ["ESPEAK_DATA_PATH"] = r"D:\Programs\espeak-ng\espeak-ng-data"
+os.environ["PATH"] = r"D:\Programs\nodejs;D:\Programs\ffmpeg\bin;D:\Programs\espeak-ng;" + os.environ.get("PATH", "")
 
 if hasattr(sys.stdout, 'reconfigure'):
     sys.stdout.reconfigure(encoding="utf-8", line_buffering=True)
@@ -83,7 +83,7 @@ def apply_atempo(wav, sample_rate, speed=1.0):
         bio_in = io.BytesIO()
         sf.write(bio_in, wav, sample_rate, format='WAV')
         cmd = [
-            r"E:\Programs\ffmpeg\bin\ffmpeg.exe",
+            r"D:\Programs\ffmpeg\bin\ffmpeg.exe",
             "-y",
             "-f", "wav",
             "-i", "pipe:0",
@@ -111,7 +111,7 @@ def master_audio_with_bgm(voice_path, output_path, total_duration_sec, bgm_path=
     temp_mastered = voice_path.parent / f"temp_{voice_path.stem}_mastered.wav"
     
     cmd = [
-        r"E:\Programs\ffmpeg\bin\ffmpeg.exe",
+        r"D:\Programs\ffmpeg\bin\ffmpeg.exe",
         "-y",
         "-i", str(voice_path),
         "-stream_loop", "-1",

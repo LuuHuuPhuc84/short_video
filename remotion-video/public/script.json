@@ -1,0 +1,77 @@
+{
+  "id": "nct_v94",
+  "episode": 94,
+  "title": "Hận Một Người, Là Tự Cầm Than Nóng Bỏng Tay",
+  "title_hook": "NHỚ MÃI MỘT LỜI LÀM ĐAU LÒNG",
+  "titleHook": "NHỚ MÃI MỘT LỜI LÀM ĐAU LÒNG",
+  "subtitle": "Triết lý Nửa Chén Trà",
+  "book": "NỬA CHÉN TRÀ",
+  "author": "Bài học cuộc sống",
+  "chapter": "Buông bỏ & Nhìn sâu",
+  "topic": "Hận Một Người, Là Tự Cầm Than Nóng Bỏng Tay",
+  "schedule": "2026-11-30 11:30",
+  "schedule_time": "2026-11-30 11:30",
+  "publishAt": "2026-11-30 11:30",
+  "scheduled_time": "2026-11-30T04:30:00Z",
+  "tags": [
+    "nct_v94",
+    "nuachentra",
+    "nhinsaudesongnhe",
+    "trietly",
+    "chualanh",
+    "shorts"
+  ],
+  "description": "Hận Một Người, Là Tự Cầm Than Nóng Bỏng Tay Có một câu nói ác ý của người khác từ nhiều năm trước, nhưng mỗi lần vô tình nhớ lại, ngực bạn vẫn nhói lên như mới hôm qua. Điều trớ trêu nhất là, kẻ làm tổn thương bạn năm ấy giờ này có lẽ đang ăn ngon ngủ yên và chẳng còn nhớ mình đã nói gì.\n\nNửa Chén Trà — Nhìn sâu để sống nhẹ.\n#nct_v94 #nuachentra #nhinsaudesongnhe #shorts",
+  "containsSyntheticMedia": true,
+  "bgm": "On A Piano Cloud",
+  "bgm_file": "on_a_piano_cloud.mp3",
+  "bgm_volume": 0.15,
+  "visual_type": "MIXED",
+  "scenes": [
+    {
+      "scene": 1,
+      "tag": "NHỚ MÃI MỘT LỜI LÀM ĐAU LÒNG",
+      "text": "Có một câu nói ác ý của người khác từ nhiều năm trước,, nhưng mỗi lần vô tình nhớ lại,, ngực bạn vẫn nhói lên như mới hôm qua.",
+      "highlight": "NHỚ MÃI MỘT LỜI LÀM ĐAU LÒNG",
+      "image": "nct_v94_scene1.jpg",
+      "video": "nct_v94_scene1.jpg",
+      "visual_prompt": "A person standing alone looking at dark ripples on a quiet lake at dusk, melancholic and contemplative, 9:16"
+    },
+    {
+      "scene": 2,
+      "tag": "NGƯỜI NÓI ĐÃ NGỦ NGON TỪ LÂU",
+      "text": "Điều trớ trêu nhất là,, kẻ làm tổn thương bạn năm ấy giờ này có lẽ đang ăn ngon ngủ yên và chẳng còn nhớ mình đã nói gì.",
+      "highlight": "NGƯỜI NÓI ĐÃ NGỦ NGON TỪ LÂU",
+      "image": "nct_v94_scene2.jpg",
+      "video": "nct_v94_scene2.jpg",
+      "visual_prompt": "shadow walking away sunset"
+    },
+    {
+      "scene": 3,
+      "tag": "CẦM THAN NÓNG TRONG TAY",
+      "text": "Ôm mãi sự oán giận trong lòng,, giống như việc bạn tự cầm một hòn than đỏ rực muốn ném vào người khác,, nhưng người bị bỏng đầu tiên lại là chính bạn.",
+      "highlight": "CẦM THAN NÓNG TRONG TAY",
+      "image": "nct_v94_scene3.jpg",
+      "video": "nct_v94_scene3.jpg",
+      "visual_prompt": "Close up of a hand gripping a rough thorny branch tightly, metaphor for holding onto pain, muted dramatic lighting, 9:16"
+    },
+    {
+      "scene": 4,
+      "tag": "BUÔNG BỎ VÌ BẠN XỨNG ĐÁNG BÌNH YÊN",
+      "text": "Học cách buông xuống,, không phải vì người kia xứng đáng được tha thứ. Mà vì trái tim bạn xứng đáng được nghỉ ngơi.",
+      "highlight": "BUÔNG BỎ VÌ BẠN XỨNG ĐÁNG BÌNH YÊN",
+      "image": "nct_v94_scene4.jpg",
+      "video": "nct_v94_scene4.jpg",
+      "visual_prompt": "open hand letting dry leaves blow away in wind"
+    },
+    {
+      "scene": 5,
+      "tag": "ĐỔ BỚT NƯỚC ĐỤC TRONG CHÉN",
+      "text": "Hãy đổ bớt phần nước đục của ngày hôm qua đi. Tâm trí bạn quý giá lắm,, chỉ nên dùng để chứa những điều làm bạn mỉm cười.",
+      "highlight": "ĐỔ BỚT NƯỚC ĐỤC TRONG CHÉN",
+      "image": "nct_v94_scene5.jpg",
+      "video": "nct_v94_scene5.jpg",
+      "visual_prompt": "Clear warm amber tea being poured into a clean ceramic cup on a wooden table in morning light, peaceful steam, 9:16"
+    }
+  ]
+}

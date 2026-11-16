@@ -1,9 +1,9 @@
 {
   "id": "nct_v69",
   "episode": 69,
-  "title": "Chiếc Áo Đẹp Cất Trong Tủ",
-  "title_hook": "ĐỢI DỊP ĐẶC BIỆT",
-  "titleHook": "ĐỢI DỊP ĐẶC BIỆT",
+  "title": "Đừng đợi đến \"dịp đặc biệt\" mới dám sống",
+  "title_hook": "CẤT DÀNH ĐẾN KHI NÀO?",
+  "titleHook": "CẤT DÀNH ĐẾN KHI NÀO?",
   "subtitle": "Triết lý Nửa Chén Trà",
   "book": "NỬA CHÉN TRÀ",
   "author": "Bài học cuộc sống",
@@ -15,15 +15,15 @@
   "scheduled_time": "2026-11-18T04:30:00Z",
   "tags": [
     "nct_v69",
+    "Nửa Chén Trà",
+    "nhìn sâu để sống nhẹ",
+    "shorts",
+    "bài học cuộc sống",
+    "triết lý sống",
     "nuachentra",
-    "nhinsaudesongnhe",
-    "khoanglang",
-    "buongbo",
-    "trietly",
-    "chualanh",
-    "shorts"
+    "nhinsaudesongnhe"
   ],
-  "description": "Trong tủ đồ của mẹ tôi,, có một chiếc áo lụa rất đẹp còn nguyên mác. Mẹ cứ cất mãi,, bảo để dành đến dịp đặc biệt mới mặc. Nửa Chén Trà — Nhìn sâu để sống nhẹ. #nct_v69 #nuachentra #nhinsaudesongnhe #shorts",
+  "description": "Đừng đợi đến \"dịp đặc biệt\" mới dám sống. Chiếc áo đẹp mẹ cất trong tủ năm năm đến khi ố vàng, mẹ cũng chẳng còn vừa nữa. Đừng để dành những điều tốt đẹp cho tương lai bất định, ngày hôm nay chính là dịp đặc biệt nhất.\n\nNửa Chén Trà — Nhìn sâu để sống nhẹ.\n#nct_v69 #nuachentra #nhinsaudesongnhe #shorts",
   "containsSyntheticMedia": true,
   "bgm": "Gymnopedie No. 1",
   "bgm_file": "gymnopedie_no_1.mp3",
@@ -777,5 +777,9 @@
   "musicFile": "gymnopedie_no_1.mp3",
   "musicMood": "meditative",
   "thumbnailImage": "thumbnail_nct_v69.jpg",
-  "audioFile": "voiceover_nct_v69.wav"
+  "audioFile": "voiceover_nct_v69.wav",
+  "video_id": "nct_v69",
+  "replace_youtube_id": "iR-cYHhuL7A",
+  "old_youtube_id": "iR-cYHhuL7A",
+  "privacyStatus": "private"
 }

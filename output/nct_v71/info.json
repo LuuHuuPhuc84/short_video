@@ -1,9 +1,9 @@
 {
   "id": "nct_v71",
   "episode": 71,
-  "title": "Quy Tắc \"Chậm 3 Giây\" Khi Nóng Giận",
-  "title_hook": "MỘT LỜI LỠ MIỆNG",
-  "titleHook": "MỘT LỜI LỠ MIỆNG",
+  "title": "3 giây nóng giận, đánh đổi cả đời ân hận",
+  "title_hook": "Quy Tắc \"Chậm 3 Giây\" Khi Nóng Giận",
+  "titleHook": "Quy Tắc \"Chậm 3 Giây\" Khi Nóng Giận",
   "subtitle": "Triết lý Nửa Chén Trà",
   "book": "NỬA CHÉN TRÀ",
   "author": "Bài học cuộc sống",
@@ -15,15 +15,15 @@
   "scheduled_time": "2026-11-19T04:30:00Z",
   "tags": [
     "nct_v71",
+    "Nửa Chén Trà",
+    "nhìn sâu để sống nhẹ",
+    "shorts",
+    "bài học cuộc sống",
+    "triết lý sống",
     "nuachentra",
-    "nhinsaudesongnhe",
-    "khoanglang",
-    "buongbo",
-    "trietly",
-    "chualanh",
-    "shorts"
+    "nhinsaudesongnhe"
   ],
-  "description": "Có những mối quan hệ mất mười năm để vun đắp,, nhưng chỉ mất đúng ba giây nóng giận để phá hủy hoàn toàn. Nửa Chén Trà — Nhìn sâu để sống nhẹ. #nct_v71 #nuachentra #nhinsaudesongnhe #shorts",
+  "description": "3 giây nóng giận, đánh đổi cả đời ân hận. Mất mười năm vun đắp một mối quan hệ, nhưng chỉ cần đúng ba giây nóng giận để phá hủy hoàn toàn. Học cách chậm lại ba giây trước khi mở lời, để không bao giờ phải nói lời ân hận.\n\nNửa Chén Trà — Nhìn sâu để sống nhẹ.\n#nct_v71 #nuachentra #nhinsaudesongnhe #shorts",
   "containsSyntheticMedia": true,
   "bgm": "Touching Moments",
   "bgm_file": "touching_moments.mp3",
@@ -712,5 +712,9 @@
   "musicFile": "touching_moments.mp3",
   "musicMood": "peaceful",
   "thumbnailImage": "thumbnail_nct_v71.jpg",
-  "audioFile": "voiceover_nct_v71.wav"
+  "audioFile": "voiceover_nct_v71.wav",
+  "video_id": "nct_v71",
+  "replace_youtube_id": "oUjqGr3ebA4",
+  "old_youtube_id": "oUjqGr3ebA4",
+  "privacyStatus": "private"
 }

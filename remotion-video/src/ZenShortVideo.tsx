@@ -512,7 +512,7 @@ const KaraokeWordBounce: React.FC<{
           : 0;
 
       return wordTimings.map((wt) => ({
-        word: wt.word,
+        word: wt.word.replace(/,,+/g, ","),
         start: Math.max(0, wt.startFrame - baseOffset),
         end: Math.max(1, wt.endFrame - baseOffset),
       }));

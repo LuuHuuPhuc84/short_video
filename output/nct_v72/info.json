@@ -1,9 +1,9 @@
 {
   "id": "nct_v72",
   "episode": 72,
-  "title": "Bữa Cơm Ngon Nhất Không Nằm Ở Món Sơn Hào Hải Vị",
-  "title_hook": "MÂM CAO CỖ ĐẦY",
-  "titleHook": "MÂM CAO CỖ ĐẦY",
+  "title": "Bữa cơm ngon không nằm ở đĩa thức ăn",
+  "title_hook": "MÂM CAO CỖ ĐẦY BẠN CÓ VUI?",
+  "titleHook": "MÂM CAO CỖ ĐẦY BẠN CÓ VUI?",
   "subtitle": "Triết lý Nửa Chén Trà",
   "book": "NỬA CHÉN TRÀ",
   "author": "Bài học cuộc sống",
@@ -15,15 +15,15 @@
   "scheduled_time": "2026-11-19T12:30:00Z",
   "tags": [
     "nct_v72",
+    "Nửa Chén Trà",
+    "nhìn sâu để sống nhẹ",
+    "shorts",
+    "bài học cuộc sống",
+    "triết lý sống",
     "nuachentra",
-    "nhinsaudesongnhe",
-    "khoanglang",
-    "buongbo",
-    "trietly",
-    "chualanh",
-    "shorts"
+    "nhinsaudesongnhe"
   ],
-  "description": "Tôi từng ngồi ở những nhà hàng sang trọng,, trước mặt là sơn hào hải vị,, nhưng nuốt miếng thức ăn vào cổ lại thấy nghẹn đắng. Nửa Chén Trà — Nhìn sâu để sống nhẹ. #nct_v72 #nuachentra #nhinsaudesongnhe #shorts",
+  "description": "Bữa cơm ngon không nằm ở đĩa thức ăn. Ngồi trước mâm cao cỗ đầy nhưng toàn toan tính xã giao thì nuốt miếng nào cũng nghẹn. Bát canh rau muống đạm bạc bên người thương yêu mới là bữa cơm ngon nhất trần đời.\n\nNửa Chén Trà — Nhìn sâu để sống nhẹ.\n#nct_v72 #nuachentra #nhinsaudesongnhe #shorts",
   "containsSyntheticMedia": true,
   "bgm": "Garden Music",
   "bgm_file": "garden_music.mp3",
@@ -777,5 +777,9 @@
   "musicFile": "garden_music.mp3",
   "musicMood": "warm",
   "thumbnailImage": "thumbnail_nct_v72.jpg",
-  "audioFile": "voiceover_nct_v72.wav"
+  "audioFile": "voiceover_nct_v72.wav",
+  "video_id": "nct_v72",
+  "replace_youtube_id": "kvjGycusX_8",
+  "old_youtube_id": "kvjGycusX_8",
+  "privacyStatus": "private"
 }

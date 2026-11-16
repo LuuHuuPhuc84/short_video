@@ -1,9 +1,9 @@
 {
   "id": "nct_v70",
   "episode": 70,
-  "title": "Nỗi Sợ Điện Thoại Đổ Chuông Sau Tuổi 35",
-  "title_hook": "ĐIỆN THOẠI KÊU LÚC NỬA ĐÊM",
-  "titleHook": "ĐIỆN THOẠI KÊU LÚC NỬA ĐÊM",
+  "title": "Cuộc gọi từ quê lúc nửa đêm làm tim thắt lại",
+  "title_hook": "SỢ CUỘC GỌI NỬA ĐÊM?",
+  "titleHook": "SỢ CUỘC GỌI NỬA ĐÊM?",
   "subtitle": "Triết lý Nửa Chén Trà",
   "book": "NỬA CHÉN TRÀ",
   "author": "Bài học cuộc sống",
@@ -23,7 +23,7 @@
     "chualanh",
     "shorts"
   ],
-  "description": "Hồi hai mươi tuổi,, nghe tiếng điện thoại đổ chuông lúc nửa đêm là háo hức bắt máy,, vì biết đó là lời rủ rê đi chơi của bạn bè. Nửa Chén Trà — Nhìn sâu để sống nhẹ. #nct_v70 #nuachentra #nhinsaudesongnhe #shorts",
+  "description": "Cuộc gọi từ quê lúc nửa đêm làm tim thắt lại. Bước qua tuổi ba mươi lăm, tiếng chuông điện thoại lúc nửa đêm không còn là lời rủ rê bè bạn, mà là nỗi sợ thầm kín về sự già yếu của cha mẹ nơi quê nhà.\n\nNửa Chén Trà — Nhìn sâu để sống nhẹ.\n#nct_v70 #nuachentra #nhinsaudesongnhe #shorts",
   "containsSyntheticMedia": true,
   "bgm": "Sad Trio",
   "bgm_file": "sad_trio.mp3",
@@ -34,7 +34,7 @@
       "scene": 1,
       "tag": "ĐIỆN THOẠI KÊU LÚC NỬA ĐÊM",
       "text": "Hồi hai mươi tuổi,, nghe tiếng điện thoại đổ chuông lúc nửa đêm là háo hức bắt máy,, vì biết đó là lời rủ rê đi chơi của bạn bè.",
-      "highlight": "ĐIỆN THOẠI KÊU LÚC NỬA ĐÊM",
+      "highlight": "SỢ CUỘC GỌI NỬA ĐÊM?",
       "image": "nct_v70_scene1.jpg",
       "video": "nct_v70_scene1.jpg",
       "startFrame": 0,
@@ -782,5 +782,8 @@
   "musicFile": "sad_trio.mp3",
   "musicMood": "sad",
   "thumbnailImage": "thumbnail_nct_v70.jpg",
-  "audioFile": "voiceover_nct_v70.wav"
+  "audioFile": "voiceover_nct_v70.wav",
+  "video_id": "nct_v70",
+  "replace_youtube_id": "ywxJuNI9VpE",
+  "old_youtube_id": "ywxJuNI9VpE"
 }

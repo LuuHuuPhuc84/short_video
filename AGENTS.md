@@ -3,6 +3,7 @@
 > File này được tải vào System Prompt của Agent đầu mỗi phiên. Chỉ chứa các quy tắc bất biến, quy trình kiểm soát và định tuyến tài liệu chuyên sâu.
 
 ## 1. QUY TẮC BẤT BIẾN (STRICT POLICIES)
+- **trả lời ngắn gọn; không cần lịch sự thừa thãi; nếu tôi sai hãy chỉ ra thẳng.
 - **100% CLOUD RENDER & CLOUD UPLOAD (GITHUB ACTIONS):**
   - Toàn bộ Render MP4 (Studio Quality CRF 16, 320k audio) và Upload YouTube Shorts (kèm thumbnail, lịch Scheduled, tick `containsSyntheticMedia: True`) BẮT BUỘC 100% do GitHub Actions Cloud Worker thực hiện (`python pipeline/cli.py {render|cloud}`).
   - Tuyệt đối KHÔNG render local (trừ khi có cờ `--local` tường minh) và KHÔNG upload YouTube/Drive từ máy local.
@@ -24,7 +25,7 @@
 | :--- | :--- |
 | *"Tiêu đề thêm `#shorts` cho dễ lên xu hướng"* | **CẤM TUYỆT ĐỐI.** Tiêu đề phải trang nhã, đậm chất thiền, <55 ký tự. `#shorts` chỉ được nằm trong Description và Tags. |
 | *"Kịch bản thêm chút drama / giật gân cho cuốn"* | **SAI TÔN CHỈ KÊNH.** Slogan là *"Nhìn sâu để sống nhẹ"*. Không drama, không giật tít rẻ tiền, không bịa đặt trích dẫn thiền/Phật pháp. |
-| *"Script 50s–60s cũng là Shorts, dài thêm chút không sao"* | **VI PHẠM THỜI LƯỢNG VÀNG.** Shorts kênh chuẩn cứng **38s – 42s (90–100 từ)**. Dài hơn sẽ rớt Retention, ngắn hơn sẽ hụt cảm xúc. |
+| *"Video ngắn dài quá 60s vẫn tính là Shorts"* | **SAI FORMAT NỀN TẢNG.** YouTube Shorts giới hạn tối đa <60 giây. Độ dài kịch bản linh hoạt theo nội dung, miễn đảm bảo gãy gọn, dứt khoát và dưới 60 giây. |
 | *"Lấy nhạc tập trước dùng lại hoặc lấy nhạc trend mạng"* | **CẤM TỰ Ý.** Nhạc mạng dính Content ID là chết kênh. Bắt buộc gọi `music_selector` chọn từ kho 36 bản CC0/Kevin MacLeod sạch tại `assets_hub/music/`. |
 | *"Thiếu ảnh/video thì lấy B-roll tập cũ đắp vào chữa cháy"* | **CẤM TỰ Ý CHỮA CHÁY.** Kênh yêu cầu B-roll độc bản. Nếu thiếu tài nguyên/hết quota API, **BẮT BUỘC DỪNG LẠI BÁO CÁO** để Người dùng quyết định. |
 | *"Máy local đang rảnh, render luôn cho nhanh"* | **SAI NGUYÊN TẮC.** 100% render và upload phải do GitHub Actions Cloud Worker xử lý để đảm bảo Studio Quality (CRF 16) và giải phóng máy người dùng. |
@@ -50,9 +51,9 @@
    - Cloud Worker tự động tải trọn gói (Video MP4 + Thumbnail + info.json + input/) lên Drive (`1FUTzv6wXSe6o-0q_7Fuy-al7b9CsZ2qx`), upload YouTube Shorts (Scheduled), và xóa nhánh tạm Zero-Trace.
 
 ## 4. THÔNG SỐ KỸ THUẬT CỐT LÕI
-- **Kích thước & Thời lượng:** 9:16 (`1080x1920 Full HD`), thời lượng **38s – 42s** (khoảng **90 – 100 từ**), Hook 3s đầu tại `00:00`.
-- **Giọng đọc & Karaoke:** VieNeu-TTS v3 Turbo 48kHz giọng `Thiện Minh` (tốc độ 0.88, ngắt 0.35s). Karaoke dùng Whisper Forced Alignment + Text Lock (100% chữ từ kịch bản gốc).
-- **Âm thanh & Visual:** EBU R128 (-14 LUFS, BGM volume=0.15). Tối thiểu 60% – 80% thời lượng là B-roll chuyển động thực tế (quản lý qua `assets_hub/broll_segment_tracker.json`), 1 – 2 cảnh Tranh AI nghệ thuật.
+- **Kích thước & Thời lượng:** 9:16 (`1080x1920 Full HD`), thời lượng linh hoạt theo nội dung (<60 giây chuẩn Shorts), Hook 3s đầu tại `00:00`.
+- **Giọng đọc & Karaoke (Semantic Pacing v2 Shorts):** VieNeu-TTS v3 Turbo 48kHz giọng `Thiện Minh` (tốc độ tự nhiên 1.0x chuẩn mộc, không dùng atempo kéo dãn làm méo tiếng; ngắt cảnh dồn dập 0.18s để triệt tiêu dead air và giữ retention). Micro-Pacing đa tầng từng câu đơn: Hook 3s đầu `speed=1.05`, `temp=1.05`; câu hỏi `?` `speed=0.98`, `temp=1.05`, ngắt 0.25s; câu chuyển ý `pre_pause=0.12s`; câu ngắn dồn dập (<=6 từ) `speed=1.08`, ngắt cực ngắn 0.12s; đoạn kết/buông lỏng `speed=0.95`, ngắt 0.35s. Karaoke dùng Whisper Forced Alignment + Text Lock (100% chữ từ kịch bản gốc, lọc sạch rác `,,`).
+- **Âm thanh & Visual:** EBU R128 (-14 LUFS, BGM volume=0.20, Warmth EQ 220Hz + De-Esser 6kHz chống vỡ/chói loa điện thoại). Tối thiểu 60% – 80% thời lượng là B-roll chuyển động thực tế (quản lý qua `assets_hub/broll_segment_tracker.json`), 1 – 2 cảnh Tranh AI nghệ thuật.
 - **Cover Frame Trick:** Frame 0–30 (1s đầu) hiển thị Thumbnail hoàn chỉnh để dễ chọn ảnh bìa khi đăng trên mobile.
 
 ## 5. ĐIỀU PHỐI HỆ THỐNG & ĐƯỜNG DẪN

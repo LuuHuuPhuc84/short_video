@@ -68,8 +68,8 @@ def main():
     p_voice.add_argument("action", choices=["gen", "align"], help="Hành động (gen, align)")
     p_voice.add_argument("video_id", help="Mã video")
     p_voice.add_argument("--voice", default="Thiện Minh", help="Tên giọng đọc")
-    p_voice.add_argument("--speed", type=float, default=0.88, help="Tốc độ đọc (0.88)")
-    p_voice.add_argument("--pause", type=float, default=0.35, help="Khoảng thở (0.35s)")
+    p_voice.add_argument("--speed", type=float, default=1.0, help="Tốc độ đọc (1.0 tự nhiên)")
+    p_voice.add_argument("--pause", type=float, default=0.18, help="Khoảng thở (0.18s dồn dập)")
 
     # 7. B-roll (Thẩm định, Fast Scene Swap & Safe Tracker)
     p_broll = subparsers.add_parser("broll", help="Thẩm định B-roll, Đổi cảnh siêu tốc 1s & Sổ cái phân đoạn an toàn")

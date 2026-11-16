@@ -177,28 +177,36 @@ def update_youtube_schedule(video_id, schedule_str):
         from core_youtube import get_youtube_service
         yt = get_youtube_service()
 
-        # Đọc title để tìm đúng video trên kênh
+        # Đọc title & youtube_id để tìm đúng video trên kênh
         info_path = OUTPUT_DIR / video_id / "info.json"
         video_title = None
+        yt_video_id = None
         if info_path.exists():
             data = json.loads(info_path.read_text(encoding="utf-8"))
             video_title = data.get("title")
+            yt_video_id = data.get("youtube_id")
 
-        # Tìm video ID trên kênh bằng Search API hoặc List API
-        yt_video_id = None
-        req = yt.search().list(part="snippet", forMine=True, type="video", maxResults=25, order="date")
-        res = req.execute()
+        if not yt_video_id:
+            pub_info = PUBLIC_DIR / f"info_{video_id}.json"
+            if pub_info.exists():
+                pdata = json.loads(pub_info.read_text(encoding="utf-8"))
+                yt_video_id = pdata.get("youtube_id")
 
-        for item in res.get("items", []):
-            snippet = item.get("snippet", {})
-            title = snippet.get("title", "")
-            # So khớp theo title hoặc mã video
-            if video_title and (title.strip().lower() == video_title.strip().lower() or video_title[:25].lower() in title.lower()):
-                yt_video_id = item["id"]["videoId"]
-                break
-            elif f"| {video_id}" in title or video_id in title:
-                yt_video_id = item["id"]["videoId"]
-                break
+        if not yt_video_id:
+            # Fallback tìm video ID trên kênh bằng Search API
+            req = yt.search().list(part="snippet", forMine=True, type="video", maxResults=25, order="date")
+            res = req.execute()
+
+            for item in res.get("items", []):
+                snippet = item.get("snippet", {})
+                title = snippet.get("title", "")
+                # So khớp theo title hoặc mã video
+                if video_title and (title.strip().lower() == video_title.strip().lower() or video_title[:25].lower() in title.lower()):
+                    yt_video_id = item["id"]["videoId"]
+                    break
+                elif f"| {video_id}" in title or video_id in title:
+                    yt_video_id = item["id"]["videoId"]
+                    break
 
         if not yt_video_id:
             print(f"  ℹ️ Không tìm thấy video '{video_id}' đã xuất bản trên YouTube (có thể chưa đăng).")

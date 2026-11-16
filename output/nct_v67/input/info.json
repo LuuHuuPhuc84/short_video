@@ -1,9 +1,9 @@
 {
   "id": "nct_v67",
   "episode": 67,
-  "title": "Khoảng Lặng Của Nửa Chén Trà",
-  "title_hook": "VÌ SAO CHỈ RÓT MỘT NỬA?",
-  "titleHook": "VÌ SAO CHỈ RÓT MỘT NỬA?",
+  "title": "Vì sao trà chỉ nên rót một nửa chén?",
+  "title_hook": "VÌ SAO TRÀ CHỈ RÓT NỬA CHÉN?",
+  "titleHook": "VÌ SAO TRÀ CHỈ RÓT NỬA CHÉN?",
   "subtitle": "Triết lý Nửa Chén Trà",
   "book": "NỬA CHÉN TRÀ",
   "author": "Bài học cuộc sống",
@@ -17,15 +17,15 @@
   "youtube_url": "https://youtube.com/shorts/AQ3BMaRLPdc",
   "tags": [
     "nct_v67",
+    "Nửa Chén Trà",
+    "nhìn sâu để sống nhẹ",
+    "shorts",
+    "bài học cuộc sống",
+    "triết lý sống",
     "nuachentra",
-    "nhinsaudesongnhe",
-    "khoanglang",
-    "buongbo",
-    "trietly",
-    "chualanh",
-    "shorts"
+    "nhinsaudesongnhe"
   ],
-  "description": "Có người hỏi tôi, tại sao lại là Nửa Chén Trà, mà không phải là một chén trà đầy đặn? Nửa Chén Trà — Nhìn sâu để sống nhẹ. #nct_v67 #nuachentra #nhinsaudesongnhe #khoanglang #buongbo #shorts",
+  "description": "Vì sao trà chỉ nên rót một nửa chén? Chén trà rót đầy tới mép cầm lên sẽ bỏng tay, bước đi sẽ sóng sánh đổ ra ngoài. Đời người cũng vậy, ham quá thì khổ, giữ lại một nửa khoảng trống để tâm được tự do.\n\nNửa Chén Trà — Nhìn sâu để sống nhẹ.\n#nct_v67 #nuachentra #nhinsaudesongnhe #shorts",
   "containsSyntheticMedia": true,
   "bgm": "Gymnopedie No. 1",
   "bgm_file": "gymnopedie_no_1.mp3",
@@ -75,5 +75,9 @@
   ],
   "music": "Gymnopedie No. 1",
   "musicFile": "gymnopedie_no_1.mp3",
-  "musicMood": "meditative"
+  "musicMood": "meditative",
+  "video_id": "nct_v67",
+  "replace_youtube_id": "AQ3BMaRLPdc",
+  "old_youtube_id": "AQ3BMaRLPdc",
+  "privacyStatus": "private"
 }

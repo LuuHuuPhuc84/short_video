@@ -1,9 +1,9 @@
 {
   "id": "nct_v68",
   "episode": 68,
-  "title": "10 Phút Trong Xe Trước Khi Vào Nhà",
-  "title_hook": "10 PHÚT TRƯỚC KHI VÀO NHÀ",
-  "titleHook": "10 PHÚT TRƯỚC KHI VÀO NHÀ",
+  "title": "Vì sao đàn ông thích ngồi lại trong xe?",
+  "title_hook": "SAO KHÔNG VÀO NHÀ NGAY?",
+  "titleHook": "SAO KHÔNG VÀO NHÀ NGAY?",
   "subtitle": "Triết lý Nửa Chén Trà",
   "book": "NỬA CHÉN TRÀ",
   "author": "Bài học cuộc sống",
@@ -23,7 +23,7 @@
     "chualanh",
     "shorts"
   ],
-  "description": "Đã bao giờ bạn thấy một người đàn ông,, tắt máy xe,, nhưng ngồi im trong bóng tối mười phút mới bước vào nhà chưa? Nửa Chén Trà — Nhìn sâu để sống nhẹ. #nct_v68 #nuachentra #nhinsaudesongnhe #shorts",
+  "description": "Vì sao đàn ông thích ngồi lại trong xe? Tắt máy xe, ngồi im trong bóng tối mười phút mới bước vào nhà. Không phải chán gia đình, mà cần mười phút trút bỏ áp lực ngoài xã hội để bước vào nhà với nụ cười.\n\nNửa Chén Trà — Nhìn sâu để sống nhẹ.\n#nct_v68 #nuachentra #nhinsaudesongnhe #shorts",
   "containsSyntheticMedia": true,
   "bgm": "Perspectives",
   "bgm_file": "perspectives.mp3",
@@ -34,7 +34,7 @@
       "scene": 1,
       "tag": "10 PHÚT TRƯỚC KHI VÀO NHÀ",
       "text": "Đã bao giờ bạn thấy một người đàn ông,, tắt máy xe,, nhưng ngồi im trong bóng tối mười phút mới bước vào nhà chưa?",
-      "highlight": "10 PHÚT TRƯỚC KHI VÀO NHÀ",
+      "highlight": "SAO KHÔNG VÀO NHÀ NGAY?",
       "image": "nct_v68_scene1.jpg",
       "video": "nct_v68_scene1.jpg",
       "startFrame": 0,
@@ -742,5 +742,8 @@
   "musicFile": "perspectives.mp3",
   "musicMood": "deep",
   "thumbnailImage": "thumbnail_nct_v68.jpg",
-  "audioFile": "voiceover_nct_v68.wav"
+  "audioFile": "voiceover_nct_v68.wav",
+  "video_id": "nct_v68",
+  "replace_youtube_id": "ltZJGKPZ4C8",
+  "old_youtube_id": "ltZJGKPZ4C8"
 }

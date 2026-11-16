@@ -1,9 +1,9 @@
 {
   "id": "nct_v69",
   "episode": 69,
-  "title": "Chiếc Áo Đẹp Cất Trong Tủ",
-  "title_hook": "ĐỢI DỊP ĐẶC BIỆT",
-  "titleHook": "ĐỢI DỊP ĐẶC BIỆT",
+  "title": "Đừng đợi đến \"dịp đặc biệt\" mới dám sống",
+  "title_hook": "CẤT DÀNH ĐẾN KHI NÀO?",
+  "titleHook": "CẤT DÀNH ĐẾN KHI NÀO?",
   "subtitle": "Triết lý Nửa Chén Trà",
   "book": "NỬA CHÉN TRÀ",
   "author": "Bài học cuộc sống",
@@ -23,7 +23,7 @@
     "chualanh",
     "shorts"
   ],
-  "description": "Trong tủ đồ của mẹ tôi,, có một chiếc áo lụa rất đẹp còn nguyên mác. Mẹ cứ cất mãi,, bảo để dành đến dịp đặc biệt mới mặc. Nửa Chén Trà — Nhìn sâu để sống nhẹ. #nct_v69 #nuachentra #nhinsaudesongnhe #shorts",
+  "description": "Đừng đợi đến \"dịp đặc biệt\" mới dám sống. Chiếc áo đẹp mẹ cất trong tủ năm năm đến khi ố vàng, mẹ cũng chẳng còn vừa nữa. Đừng để dành những điều tốt đẹp cho tương lai bất định, ngày hôm nay chính là dịp đặc biệt nhất.\n\nNửa Chén Trà — Nhìn sâu để sống nhẹ.\n#nct_v69 #nuachentra #nhinsaudesongnhe #shorts",
   "containsSyntheticMedia": true,
   "bgm": "Gymnopedie No. 1",
   "bgm_file": "gymnopedie_no_1.mp3",
@@ -34,7 +34,7 @@
       "scene": 1,
       "tag": "ĐỢI DỊP ĐẶC BIỆT",
       "text": "Trong tủ đồ của mẹ tôi,, có một chiếc áo lụa rất đẹp còn nguyên mác. Mẹ cứ cất mãi,, bảo để dành đến dịp đặc biệt mới mặc.",
-      "highlight": "ĐỢI DỊP ĐẶC BIỆT",
+      "highlight": "CẤT DÀNH ĐẾN KHI NÀO?",
       "image": "nct_v69_scene1.jpg",
       "video": "nct_v69_scene1.jpg",
       "startFrame": 0,
@@ -777,5 +777,8 @@
   "musicFile": "gymnopedie_no_1.mp3",
   "musicMood": "meditative",
   "thumbnailImage": "thumbnail_nct_v69.jpg",
-  "audioFile": "voiceover_nct_v69.wav"
+  "audioFile": "voiceover_nct_v69.wav",
+  "video_id": "nct_v69",
+  "replace_youtube_id": "iR-cYHhuL7A",
+  "old_youtube_id": "iR-cYHhuL7A"
 }

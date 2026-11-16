@@ -1,9 +1,9 @@
 {
   "id": "nct_v74",
   "episode": 74,
-  "title": "Căn Bệnh \"Đợi Khi Nào...\"",
-  "title_hook": "CÂU NÓI QUEN THUỘC NHẤT",
-  "titleHook": "CÂU NÓI QUEN THUỘC NHẤT",
+  "title": "Đợi kiếm đủ tiền, bố mẹ có đợi được không?",
+  "title_hook": "BỐ MẸ CÓ ĐỢI ĐƯỢC?",
+  "titleHook": "BỐ MẸ CÓ ĐỢI ĐƯỢC?",
   "subtitle": "Triết lý Nửa Chén Trà",
   "book": "NỬA CHÉN TRÀ",
   "author": "Bài học cuộc sống",
@@ -23,7 +23,7 @@
     "chualanh",
     "shorts"
   ],
-  "description": "Đợi khi nào kiếm đủ tiền sẽ nghỉ ngơi. Đợi khi nào con lớn sẽ đưa bố mẹ đi du lịch. Đợi khi nào rảnh sẽ ngồi uống trà với bạn cũ. Nửa Chén Trà — Nhìn sâu để sống nhẹ. #nct_v74 #nuachentra #nhinsaudesongnhe #shorts",
+  "description": "Đợi kiếm đủ tiền, bố mẹ có đợi được không? Chúng ta cứ sống mãi trong hai chữ \"Đợi khi nào\", như thể cha mẹ sẽ trẻ mãi chờ ta thành đạt. Đến khi có tiền tài, ngoảnh lại mái đầu mẹ đã bạc, bóng cha đã khuất.\n\nNửa Chén Trà — Nhìn sâu để sống nhẹ.\n#nct_v74 #nuachentra #nhinsaudesongnhe #shorts",
   "containsSyntheticMedia": true,
   "bgm": "Heartbreaking",
   "bgm_file": "heartbreaking.mp3",
@@ -34,7 +34,7 @@
       "scene": 1,
       "tag": "CÂU NÓI QUEN THUỘC NHẤT",
       "text": "Đợi khi nào kiếm đủ tiền sẽ nghỉ ngơi. Đợi khi nào con lớn sẽ đưa bố mẹ đi du lịch. Đợi khi nào rảnh sẽ ngồi uống trà với bạn cũ.",
-      "highlight": "CÂU NÓI QUEN THUỘC NHẤT",
+      "highlight": "BỐ MẸ CÓ ĐỢI ĐƯỢC?",
       "image": "nct_v74_scene1.jpg",
       "video": "nct_v74_scene1.jpg",
       "startFrame": 0,
@@ -842,5 +842,8 @@
   "musicFile": "heartbreaking.mp3",
   "musicMood": "sad",
   "thumbnailImage": "thumbnail_nct_v74.jpg",
-  "audioFile": "voiceover_nct_v74.wav"
+  "audioFile": "voiceover_nct_v74.wav",
+  "video_id": "nct_v74",
+  "replace_youtube_id": "DwmLLUQMEH0",
+  "old_youtube_id": "DwmLLUQMEH0"
 }
