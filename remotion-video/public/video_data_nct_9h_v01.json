@@ -1,0 +1,725 @@
+{
+  "episode": "nct_9h_v01",
+  "title": "Con làm vỡ ly, mình dạy con hay trút giận?",
+  "titleHook": "DẠY CON HAY TRÚT GIẬN?",
+  "showTitleHook": true,
+  "subtitle": "Nuôi dạy con",
+  "book": "NỬA CHÉN TRÀ",
+  "author": "Giáo dục tỉnh thức",
+  "chapter": "Cảm xúc cha mẹ",
+  "showHeroHeader": false,
+  "fps": 30,
+  "width": 1080,
+  "height": 1920,
+  "audioFile": "voiceover_nct_9h_v01.wav",
+  "thumbnailImage": "thumbnail_nct_9h_v01.jpg",
+  "bgm": "meditation_01.mp3",
+  "scenes": [
+    {
+      "scene": 1,
+      "tag": "Hook 3s",
+      "text": "Con làm vỡ ly… lúc đó, mình đang dạy con hay đang trút giận?",
+      "highlight": "DẠY CON HAY TRÚT GIẬN?",
+      "image": "nct_9h_v01_scene1.jpg",
+      "video": "nct_9h_v01_scene1.jpg",
+      "startFrame": 0,
+      "durationInFrames": 98,
+      "words": [
+        {
+          "word": "Con",
+          "startFrame": 0,
+          "endFrame": 3
+        },
+        {
+          "word": "làm",
+          "startFrame": 3,
+          "endFrame": 7
+        },
+        {
+          "word": "vỡ",
+          "startFrame": 7,
+          "endFrame": 14
+        },
+        {
+          "word": "ly…",
+          "startFrame": 14,
+          "endFrame": 35
+        },
+        {
+          "word": "lúc",
+          "startFrame": 35,
+          "endFrame": 38
+        },
+        {
+          "word": "đó,",
+          "startFrame": 38,
+          "endFrame": 41
+        },
+        {
+          "word": "mình",
+          "startFrame": 41,
+          "endFrame": 51
+        },
+        {
+          "word": "đang",
+          "startFrame": 51,
+          "endFrame": 57
+        },
+        {
+          "word": "dạy",
+          "startFrame": 57,
+          "endFrame": 64
+        },
+        {
+          "word": "con",
+          "startFrame": 64,
+          "endFrame": 69
+        },
+        {
+          "word": "hay",
+          "startFrame": 69,
+          "endFrame": 76
+        },
+        {
+          "word": "đang",
+          "startFrame": 76,
+          "endFrame": 81
+        },
+        {
+          "word": "trút",
+          "startFrame": 81,
+          "endFrame": 89
+        },
+        {
+          "word": "giận?",
+          "startFrame": 89,
+          "endFrame": 98
+        }
+      ]
+    },
+    {
+      "scene": 2,
+      "tag": "Phản xạ vô thức",
+      "text": "Tiếng vỡ vừa vang lên, cơn giận đã xộc thẳng lên cổ. Mình quát. Mình trách. Rồi tự nhủ là phải nghiêm, để lần sau con nhớ.",
+      "highlight": "CƠN GIẬN XỘC LÊN CỔ",
+      "image": "nct_9h_v01_scene2.jpg",
+      "video": "nct_9h_v01_scene2.jpg",
+      "startFrame": 103,
+      "durationInFrames": 197,
+      "words": [
+        {
+          "word": "Tiếng",
+          "startFrame": 0,
+          "endFrame": 5
+        },
+        {
+          "word": "vỡ",
+          "startFrame": 5,
+          "endFrame": 11
+        },
+        {
+          "word": "vừa",
+          "startFrame": 11,
+          "endFrame": 18
+        },
+        {
+          "word": "vang",
+          "startFrame": 18,
+          "endFrame": 25
+        },
+        {
+          "word": "lên,",
+          "startFrame": 25,
+          "endFrame": 28
+        },
+        {
+          "word": "cơn",
+          "startFrame": 37,
+          "endFrame": 40
+        },
+        {
+          "word": "giận",
+          "startFrame": 40,
+          "endFrame": 45
+        },
+        {
+          "word": "đã",
+          "startFrame": 45,
+          "endFrame": 50
+        },
+        {
+          "word": "xộc",
+          "startFrame": 50,
+          "endFrame": 57
+        },
+        {
+          "word": "thẳng",
+          "startFrame": 57,
+          "endFrame": 62
+        },
+        {
+          "word": "lên",
+          "startFrame": 62,
+          "endFrame": 66
+        },
+        {
+          "word": "cổ.",
+          "startFrame": 66,
+          "endFrame": 75
+        },
+        {
+          "word": "Mình",
+          "startFrame": 84,
+          "endFrame": 87
+        },
+        {
+          "word": "quát.",
+          "startFrame": 87,
+          "endFrame": 94
+        },
+        {
+          "word": "Mình",
+          "startFrame": 100,
+          "endFrame": 103
+        },
+        {
+          "word": "trách.",
+          "startFrame": 103,
+          "endFrame": 120
+        },
+        {
+          "word": "Rồi",
+          "startFrame": 120,
+          "endFrame": 123
+        },
+        {
+          "word": "tự",
+          "startFrame": 123,
+          "endFrame": 128
+        },
+        {
+          "word": "nhủ",
+          "startFrame": 128,
+          "endFrame": 135
+        },
+        {
+          "word": "là",
+          "startFrame": 135,
+          "endFrame": 142
+        },
+        {
+          "word": "phải",
+          "startFrame": 142,
+          "endFrame": 147
+        },
+        {
+          "word": "nghiêm,",
+          "startFrame": 147,
+          "endFrame": 155
+        },
+        {
+          "word": "để",
+          "startFrame": 155,
+          "endFrame": 164
+        },
+        {
+          "word": "lần",
+          "startFrame": 164,
+          "endFrame": 168
+        },
+        {
+          "word": "sau",
+          "startFrame": 168,
+          "endFrame": 174
+        },
+        {
+          "word": "con",
+          "startFrame": 174,
+          "endFrame": 180
+        },
+        {
+          "word": "nhớ.",
+          "startFrame": 180,
+          "endFrame": 186
+        }
+      ]
+    },
+    {
+      "scene": 3,
+      "tag": "Nhìn sâu cảm xúc",
+      "text": "Nhưng thử chậm lại một nhịp thôi. Có thật là mình giận cái ly vỡ không? Hay chỉ là bao mệt mỏi cả ngày hôm nay… vừa tìm được chỗ để tràn ra?",
+      "highlight": "CHẬM LẠI MỘT NHỊP",
+      "image": "nct_9h_v01_scene3.jpg",
+      "video": "nct_9h_v01_scene3.jpg",
+      "startFrame": 305,
+      "durationInFrames": 218,
+      "words": [
+        {
+          "word": "Nhưng",
+          "startFrame": 0,
+          "endFrame": 7
+        },
+        {
+          "word": "thử",
+          "startFrame": 7,
+          "endFrame": 13
+        },
+        {
+          "word": "chậm",
+          "startFrame": 13,
+          "endFrame": 18
+        },
+        {
+          "word": "lại",
+          "startFrame": 18,
+          "endFrame": 23
+        },
+        {
+          "word": "một",
+          "startFrame": 23,
+          "endFrame": 28
+        },
+        {
+          "word": "nhịp",
+          "startFrame": 28,
+          "endFrame": 37
+        },
+        {
+          "word": "thôi.",
+          "startFrame": 37,
+          "endFrame": 43
+        },
+        {
+          "word": "Có",
+          "startFrame": 55,
+          "endFrame": 58
+        },
+        {
+          "word": "thật",
+          "startFrame": 58,
+          "endFrame": 65
+        },
+        {
+          "word": "là",
+          "startFrame": 65,
+          "endFrame": 68
+        },
+        {
+          "word": "mình",
+          "startFrame": 68,
+          "endFrame": 72
+        },
+        {
+          "word": "giận",
+          "startFrame": 72,
+          "endFrame": 79
+        },
+        {
+          "word": "cái",
+          "startFrame": 79,
+          "endFrame": 84
+        },
+        {
+          "word": "ly",
+          "startFrame": 84,
+          "endFrame": 88
+        },
+        {
+          "word": "vỡ",
+          "startFrame": 88,
+          "endFrame": 93
+        },
+        {
+          "word": "không?",
+          "startFrame": 93,
+          "endFrame": 99
+        },
+        {
+          "word": "Hay",
+          "startFrame": 112,
+          "endFrame": 115
+        },
+        {
+          "word": "chỉ",
+          "startFrame": 115,
+          "endFrame": 122
+        },
+        {
+          "word": "là",
+          "startFrame": 122,
+          "endFrame": 125
+        },
+        {
+          "word": "bao",
+          "startFrame": 125,
+          "endFrame": 129
+        },
+        {
+          "word": "mệt",
+          "startFrame": 129,
+          "endFrame": 138
+        },
+        {
+          "word": "mỏi",
+          "startFrame": 138,
+          "endFrame": 145
+        },
+        {
+          "word": "cả",
+          "startFrame": 145,
+          "endFrame": 150
+        },
+        {
+          "word": "ngày",
+          "startFrame": 150,
+          "endFrame": 154
+        },
+        {
+          "word": "hôm",
+          "startFrame": 154,
+          "endFrame": 160
+        },
+        {
+          "word": "nay…",
+          "startFrame": 160,
+          "endFrame": 166
+        },
+        {
+          "word": "vừa",
+          "startFrame": 176,
+          "endFrame": 179
+        },
+        {
+          "word": "tìm",
+          "startFrame": 179,
+          "endFrame": 184
+        },
+        {
+          "word": "được",
+          "startFrame": 184,
+          "endFrame": 187
+        },
+        {
+          "word": "chỗ",
+          "startFrame": 187,
+          "endFrame": 194
+        },
+        {
+          "word": "để",
+          "startFrame": 194,
+          "endFrame": 199
+        },
+        {
+          "word": "tràn",
+          "startFrame": 199,
+          "endFrame": 205
+        },
+        {
+          "word": "ra?",
+          "startFrame": 205,
+          "endFrame": 211
+        }
+      ]
+    },
+    {
+      "scene": 4,
+      "tag": "Chuyển hóa thấu hiểu",
+      "text": "Cái ly vỡ, mua lại dễ lắm. Nhưng ánh mắt co rúm của con, có khi nằm lại rất lâu. Chỉ cần ngồi xuống, hỏi khẽ: Con có sao không? Mình cùng dọn nhé.",
+      "highlight": "CON CÓ SAO KHÔNG?",
+      "image": "nct_9h_v01_scene4.jpg",
+      "video": "nct_9h_v01_scene4.jpg",
+      "startFrame": 530,
+      "durationInFrames": 250,
+      "words": [
+        {
+          "word": "Cái",
+          "startFrame": 1,
+          "endFrame": 4
+        },
+        {
+          "word": "ly",
+          "startFrame": 4,
+          "endFrame": 9
+        },
+        {
+          "word": "vỡ,",
+          "startFrame": 9,
+          "endFrame": 18
+        },
+        {
+          "word": "mua",
+          "startFrame": 18,
+          "endFrame": 26
+        },
+        {
+          "word": "lại",
+          "startFrame": 26,
+          "endFrame": 30
+        },
+        {
+          "word": "dễ",
+          "startFrame": 30,
+          "endFrame": 36
+        },
+        {
+          "word": "lắm.",
+          "startFrame": 36,
+          "endFrame": 42
+        },
+        {
+          "word": "Nhưng",
+          "startFrame": 52,
+          "endFrame": 55
+        },
+        {
+          "word": "ánh",
+          "startFrame": 55,
+          "endFrame": 61
+        },
+        {
+          "word": "mắt",
+          "startFrame": 61,
+          "endFrame": 64
+        },
+        {
+          "word": "co",
+          "startFrame": 64,
+          "endFrame": 70
+        },
+        {
+          "word": "rúm",
+          "startFrame": 70,
+          "endFrame": 76
+        },
+        {
+          "word": "của",
+          "startFrame": 76,
+          "endFrame": 82
+        },
+        {
+          "word": "con,",
+          "startFrame": 82,
+          "endFrame": 89
+        },
+        {
+          "word": "có",
+          "startFrame": 89,
+          "endFrame": 100
+        },
+        {
+          "word": "khi",
+          "startFrame": 100,
+          "endFrame": 105
+        },
+        {
+          "word": "nằm",
+          "startFrame": 105,
+          "endFrame": 114
+        },
+        {
+          "word": "lại",
+          "startFrame": 114,
+          "endFrame": 117
+        },
+        {
+          "word": "rất",
+          "startFrame": 117,
+          "endFrame": 123
+        },
+        {
+          "word": "lâu.",
+          "startFrame": 123,
+          "endFrame": 130
+        },
+        {
+          "word": "Chỉ",
+          "startFrame": 142,
+          "endFrame": 145
+        },
+        {
+          "word": "cần",
+          "startFrame": 145,
+          "endFrame": 149
+        },
+        {
+          "word": "ngồi",
+          "startFrame": 149,
+          "endFrame": 157
+        },
+        {
+          "word": "xuống,",
+          "startFrame": 157,
+          "endFrame": 166
+        },
+        {
+          "word": "hỏi",
+          "startFrame": 166,
+          "endFrame": 174
+        },
+        {
+          "word": "khẽ:",
+          "startFrame": 174,
+          "endFrame": 183
+        },
+        {
+          "word": "Con",
+          "startFrame": 183,
+          "endFrame": 190
+        },
+        {
+          "word": "có",
+          "startFrame": 190,
+          "endFrame": 195
+        },
+        {
+          "word": "sao",
+          "startFrame": 195,
+          "endFrame": 200
+        },
+        {
+          "word": "không?",
+          "startFrame": 200,
+          "endFrame": 207
+        },
+        {
+          "word": "Mình",
+          "startFrame": 222,
+          "endFrame": 225
+        },
+        {
+          "word": "cùng",
+          "startFrame": 225,
+          "endFrame": 229
+        },
+        {
+          "word": "dọn",
+          "startFrame": 229,
+          "endFrame": 239
+        },
+        {
+          "word": "nhé.",
+          "startFrame": 239,
+          "endFrame": 250
+        }
+      ]
+    },
+    {
+      "scene": 5,
+      "tag": "Đúc kết tôn chỉ",
+      "text": "Khi mình dịu lại với chính mình, con cũng sẽ lớn lên bình an hơn. Nhìn sâu để sống nhẹ.",
+      "highlight": "NHÌN SÂU ĐỂ SỐNG NHẸ",
+      "image": "nct_9h_v01_scene5.jpg",
+      "video": "nct_9h_v01_scene5.jpg",
+      "startFrame": 786,
+      "durationInFrames": 149,
+      "words": [
+        {
+          "word": "Khi",
+          "startFrame": 0,
+          "endFrame": 3
+        },
+        {
+          "word": "mình",
+          "startFrame": 3,
+          "endFrame": 6
+        },
+        {
+          "word": "dịu",
+          "startFrame": 6,
+          "endFrame": 15
+        },
+        {
+          "word": "lại",
+          "startFrame": 15,
+          "endFrame": 21
+        },
+        {
+          "word": "với",
+          "startFrame": 21,
+          "endFrame": 27
+        },
+        {
+          "word": "chính",
+          "startFrame": 27,
+          "endFrame": 32
+        },
+        {
+          "word": "mình,",
+          "startFrame": 32,
+          "endFrame": 40
+        },
+        {
+          "word": "con",
+          "startFrame": 49,
+          "endFrame": 56
+        },
+        {
+          "word": "cũng",
+          "startFrame": 56,
+          "endFrame": 62
+        },
+        {
+          "word": "sẽ",
+          "startFrame": 62,
+          "endFrame": 66
+        },
+        {
+          "word": "lớn",
+          "startFrame": 66,
+          "endFrame": 74
+        },
+        {
+          "word": "lên",
+          "startFrame": 74,
+          "endFrame": 78
+        },
+        {
+          "word": "bình",
+          "startFrame": 78,
+          "endFrame": 85
+        },
+        {
+          "word": "an",
+          "startFrame": 85,
+          "endFrame": 91
+        },
+        {
+          "word": "hơn.",
+          "startFrame": 91,
+          "endFrame": 99
+        },
+        {
+          "word": "Nhìn",
+          "startFrame": 111,
+          "endFrame": 115
+        },
+        {
+          "word": "sâu",
+          "startFrame": 115,
+          "endFrame": 124
+        },
+        {
+          "word": "để",
+          "startFrame": 124,
+          "endFrame": 130
+        },
+        {
+          "word": "sống",
+          "startFrame": 130,
+          "endFrame": 137
+        },
+        {
+          "word": "nhẹ.",
+          "startFrame": 137,
+          "endFrame": 145
+        }
+      ]
+    }
+  ],
+  "durationInFrames": 946,
+  "voice": "Thiện Minh",
+  "speed": 1.0,
+  "music": "Gymnopedie No. 1",
+  "musicFile": "gymnopedie_no_1.mp3",
+  "musicMood": "meditative"
+}
