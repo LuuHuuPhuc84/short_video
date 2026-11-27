@@ -96,6 +96,17 @@ def upload_short_to_youtube(video_path, video_id):
         else:
             description = f"{description.strip()} {ep_hashtag}"
 
+    # QUY CHUẨN BẢN QUYỀN CC BY 4.0: Đảm bảo luôn có attribution trong Description
+    music_val = str(d.get("music") or d.get("musicFile") or "").lower()
+    if ("heartbreaking" in music_val or "gymnopedie" in music_val or "incompetech" in music_val) and ("incompetech.com" not in description):
+        if "heartbreaking" in music_val:
+            attr = '"Heartbreaking" Kevin MacLeod (incompetech.com)\nLicensed under Creative Commons: By Attribution 4.0 License\nhttp://creativecommons.org/licenses/by/4.0/'
+        elif "gymnopedie" in music_val:
+            attr = '"Gymnopedie No. 1" Erik Satie / Kevin MacLeod (incompetech.com)\nLicensed under Creative Commons: By Attribution 4.0 License\nhttp://creativecommons.org/licenses/by/4.0/'
+        else:
+            attr = 'Music by Kevin MacLeod (incompetech.com)\nLicensed under Creative Commons: By Attribution 4.0 License\nhttp://creativecommons.org/licenses/by/4.0/'
+        description = f"{description.strip()}\n\n{attr}"
+
     if not isinstance(tags, list):
         tags = [str(tags)] if tags else []
     if video_id not in tags:
